@@ -1,0 +1,501 @@
+---
+layout: showdown.vto
+title: DiRT Showdown RaceNet Event - Codemasters RaceNet
+tags:
+  - showdown
+  - event
+lang: en-US
+data:
+  current:
+    seconds_to_end: 172800
+    location_pic: 006_la_rampage_legends
+    location_logo: baja
+    discipline_logo: race
+    your_best: 01.23.008
+    friends:
+    - score: 01.03.001
+      name: PlayerOne
+    - score: 01.03.222
+      name: PlayerTwo
+    - score: 0
+      name: NO DATA AVAILABLE
+    community:
+    - score: 01.03.001
+      name: PlayerThree
+    - score: 01.03.222
+      name: PlayerFour
+    - score: 0
+      name: NO DATA AVAILABLE
+  previous:
+    location_pic: 006_la_rampage_legends
+    location_logo: baja
+    discipline_logo: rampage
+    your_best: 24,000
+    friends:
+    - score: 17,000
+      name: PlayerOne
+    - score: 16,000
+      name: PlayerTwo
+    - score: 0
+      name: NO DATA AVAILABLE
+    community:
+    - score: 27,000
+      name: PlayerThree
+    - score: 26,000
+      name: PlayerFour
+    - score: 0
+      name: NO DATA AVAILABLE
+  next:
+    location_pic: 006_la_rampage_legends
+    location_logo: baja
+    discipline_logo: gym_head_to_head
+  flash:
+    event_config:    /api/Showdown/RaceNetEvent/FlashConfig.json
+    event_data:      /api/Showdown/RaceNetEvent/GraphData.json
+    event_prev_data: /api/Showdown/RaceNetEvent/GraphData_Prev.json
+    event_next_data: /api/Showdown/RaceNetEvent/GraphData_Next.json
+---
+<script src="/Content/scripts/TripleBarScript.js" type="text/javascript"></script>
+
+{{ import { ShareButton } from "showdown-functions.vto" }}
+{{ ShareButton("http://www.facebook.com/sharer.php?s=100&amp;p[title]=DiRT+Showdown+RaceNet+Event+-+Codemasters+RaceNet&amp;p[summary]=I%e2%80%99m+on+RaceNet+catching+up+on+the+latest+DiRT+Showdown+RaceNet+Event!&amp;p[url]=/showdown/event&amp;&p[images][0]=/Content/Sharing/Thumbnails/ShareRacenetEvent.jpg", "http://twitter.com/share?url=/showdown/event&lang=en&text=I%e2%80%99m+on+RaceNet+catching+up+on+the+latest+DiRT+Showdown+RaceNet+Event!") }}
+
+<script type="text/javascript">
+  var shownGame = 'feature'
+  var sliderSpeed = 1000;
+  var imageWidth = 1224;
+
+  function showNext() {
+    shownGame = 'next'
+    $(".titleBox").fadeOut();
+    $(".titleBox.nextGame").fadeIn();
+    $(".showNextGame").fadeOut();
+    $('div#TripleBarDefault').show();
+    $('div#TripleBarFriends').hide();
+    $('div#TripleBarLegends').hide();
+    $('.tb_featureGame').fadeOut();
+    $('.tb_previousGame').hide();
+    $('.progressGraph').fadeOut();
+    $('#eventtracker').fadeOut();
+
+    $('.imageSlider .slider').animate({ left: 1224 * -2 }, sliderSpeed);
+    swfobject.getObjectById("historyGraph").fetchData('{{ data.flash.event_next_data }}');
+  }
+
+  function showPrevious() {
+    $(".titleBox").fadeOut();
+    $(".titleBox.previousGame").fadeIn();
+    $(".showPreviousGame").fadeOut();
+    $('div#TripleBarDefault').show();
+    $('div#TripleBarDefault .leftBox .scoreBox').fadeIn(1000); // Friend best
+    $('div#TripleBarDefault .rightBox .scoreBox').fadeIn(1000); // Community best
+    $('div#TripleBarFriends').hide();
+    $('div#TripleBarLegends').hide();
+    $('.tb_featureGame').hide();
+    $('.tb_nextGame').hide();
+    $('.tb_previousGame').show();
+
+    $('.event_complete').animate({ opacity: 1.0 }, sliderSpeed, 'swing');
+    $('.imageSlider .slider').animate({ left: '0' }, sliderSpeed);
+
+    shownGame = 'previous'
+    swfobject.getObjectById("historyGraph").fetchData('{{ data.flash.event_prev_data }}');
+  }
+
+  function showFeature() {
+    $(".titleBox").fadeOut();
+    $(".titleBox.featureGame").fadeIn();
+    $(".showPreviousGame").fadeIn();
+    $(".showNextGame").fadeIn();
+    $('div#TripleBarDefault').show();
+    $('div#TripleBarFriends').hide();
+    $('div#TripleBarLegends').hide();
+    $('.tb_nextGame').hide();
+    $('.tb_previousGame').hide();
+    $('.event_complete').animate({ opacity: 0 }, sliderSpeed, 'swing');
+    $('.tb_featureGame').fadeIn();
+    $('.progressGraph').fadeIn();
+    $('#eventtracker').fadeIn();
+
+    $('.imageSlider .slider').animate({ left: 1224 * -1 }, sliderSpeed);
+    shownGame = 'feature'
+    swfobject.getObjectById("historyGraph").fetchData('{{ data.flash.event_data }}');
+  }
+
+  $(function() {
+    $(".button").mousedown(function() {
+      $(this).toggleClass('mouseDown');
+    });
+    $(".button").mouseup(function() {
+      $(this).toggleClass('mouseDown');
+    });
+    $(".showNextGame").click(function() {
+      if (shownGame == 'feature') {
+        showNext();
+      } else {
+        showFeature();
+      }
+    });
+    $(".showPreviousGame").click(function() {
+      if (shownGame == 'feature') {
+        showPrevious();
+      } else {
+        showFeature();
+      }
+    });
+  });
+
+
+  function pad2(number) {
+    return (number < 10 ? '0' : '') + number
+  }
+
+  var secondsToCurrentGameEnd = {{ data.current.seconds_to_end }};
+
+  $(function() {
+    setInterval(function() {
+      secondsToCurrentGameEnd = Math.max(0, secondsToCurrentGameEnd - 1);
+      var days = pad2(Math.floor(secondsToCurrentGameEnd / 86400));
+      var hours = pad2(Math.floor((secondsToCurrentGameEnd - days * 86400) / 3600));
+      var mins = pad2(Math.floor((secondsToCurrentGameEnd - days * 86400 - hours * 3600) / 60));
+      var secs = pad2(Math.floor(secondsToCurrentGameEnd - days * 86400 - hours * 3600 - mins * 60));
+      $(".titleBox.featureGame .timeleft").html(days + ":" + hours + ":" + mins + ":" + secs + " REMAINING");
+    }, 1000);
+
+    $(".infoButton").mouseover(function() {
+      //reveal the info
+      $(".bg, .infoBox, .arrow").fadeToggle();
+
+    });
+    $(".infoButton").mouseout(function() {
+      //reveal the info
+      $(".bg, .infoBox, .arrow").fadeToggle();
+    });
+
+
+    $(".titleBox.featureGame").fadeIn();
+  });
+</script>
+
+<div class="sliderTop">
+  <div class="titleBox featureGame">
+    <div class="GameTitle">
+      CURRENT EVENT
+    </div>
+    <div class="timeleft">
+    </div>
+  </div>
+  <div class="titleBox previousGame">
+    <div class="GameTitle">
+      PREVIOUS EVENT
+    </div>
+    <div class="GameDescription">
+      The results are in! Where did you rank?
+    </div>
+  </div>
+  <div class="titleBox nextGame">
+    <div class="GameTitle">
+      UPCOMING EVENT
+    </div>
+    <div class="GameDescription">
+      This will be the next event so get some practice in now!
+    </div>
+  </div>
+  <div class="infoArea">
+    <div class="infoButton"></div>
+    <div class="arrow"></div>
+    <div class="bg"></div>
+    <div class="infoBox">
+      <div class="InfoTitle">RACENET EVENT</div>
+      <div class="description">Access the latest RaceNet Event via the Multiplayer menu in DiRT Showdown to earn RaceNet XP and awards! Set your best time or score and see how you compare against your friends and the community back here on RaceNet!</div>
+    </div>
+  </div>
+</div>
+
+<div class="imageSlider">
+  <div class="slider">
+    <div class="PreviousGameImage GameImage">
+      <div class="metaGameDisplay">
+        <div class="location_pic"><img src="/Content/Showdown/racenetevent/location_pic/{{ data.previous.location_pic }}.png" alt="{{ data.previous.location_pic }}" /></div>
+        <div class="event_complete"><img src="/Content/Showdown/racenetevent/event_complete.png" alt="Event completed" /></div>
+        <div class="location_logo"><img src="/Content/Showdown/racenetevent/location_logo/{{ data.previous.location_logo }}.png" alt="{{ data.previous.location_logo }}" /></div>
+        <div class="discipline_logo"><img src="/Content/Showdown/racenetevent/discipline_logo/{{ data.previous.discipline_logo }}.png" alt="{{ data.previous.discipline_logo }}" /></div>
+      </div>
+    </div>
+    <div class="FeatureGameImage GameImage">
+      <div class="metaGameDisplay">
+        <div class="location_pic"><img src="/Content/Showdown/racenetevent/location_pic/{{ data.current.location_pic }}.png" alt="{{ data.current.location_pic }}" /></div>
+        <div class="event_complete"><img src="/Content/Showdown/racenetevent/event_complete.png" alt="Event completed" /></div>
+        <div class="location_logo"><img src="/Content/Showdown/racenetevent/location_logo/{{ data.current.location_logo }}.png" alt="{{ data.current.location_logo }}" /></div>
+        <div class="discipline_logo"><img src="/Content/Showdown/racenetevent/discipline_logo/{{ data.current.discipline_logo }}.png" alt="{{ data.current.discipline_logo }}" /></div>
+      </div>
+    </div>
+    <div class="NextGameImage GameImage">
+      <div class="metaGameDisplay">
+        <div class="location_pic"><img src="/Content/Showdown/racenetevent/location_pic/{{ data.next.location_pic }}.png" alt="{{ data.next.location_pic }}" /></div>
+        <div class="event_complete"><img src="/Content/Showdown/racenetevent/event_complete.png" alt="Event completed" /></div>
+        <div class="location_logo"><img src="/Content/Showdown/racenetevent/location_logo/{{ data.next.location_logo }}.png" alt="{{ data.next.location_logo }}" /></div>
+        <div class="discipline_logo"><img src="/Content/Showdown/racenetevent/discipline_logo/{{ data.next.discipline_logo }}.png" alt="{{ data.next.discipline_logo }}" /></div>
+      </div>
+    </div>
+  </div>
+  <div class="showPreviousGame button"></div>
+  <div class="showNextGame button"></div>
+</div>
+
+<div class="tb_featureGame">
+  <div class="TripleBarContainer">
+    <div id="TripleBarDefault" class="TripleBar">
+      <div class="leftBox tbBox">
+        <div class="title">FRIEND BEST</div>
+        <div class="scoreBox">
+          <div class="score">{{ data.current.friends[0].score }}</div>
+          <div class="name">{{ data.current.friends[0].name }}</div>
+        </div>
+      </div>
+      <div class="middleBox tbBox">
+        <div class="title">YOUR BEST</div>
+        <div class="scoreBox big">
+          <div class="score">{{ data.current.your_best }}</div>
+          <div class="name">NO DATA AVAILABLE</div>
+        </div>
+      </div>
+      <div class="rightBox tbBox">
+        <div class="title">COMMUNITY BEST</div>
+        <div class="scoreBox">
+          <div class="score">{{ data.current.community[0].score }}</div>
+          <div class="name">{{ data.current.community[0].name }}</div>
+        </div>
+      </div>
+    </div>
+    <div id="TripleBarFriends" class="TripleBar">
+      <div class="leftBox tbBox">
+        <div class="title">TOP FRIENDS</div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">1ST</div></div>
+              <div class="score">{{ data.current.friends[0].score }}</div>
+              <div class="name">{{ data.current.friends[0].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middleBox tbBox">
+        <div class="title"></div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">2ND</div></div>
+              <div class="score">{{ data.current.friends[1].score }}</div>
+              <div class="name">{{ data.current.friends[1].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightBox tbBox">
+        <div class="title"></div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">3RD</div></div>
+              <div class="score">{{ data.current.friends[2].score }}</div>
+              <div class="name">{{ data.current.friends[2].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="TripleBarLegends" class="TripleBar">
+      <div class="leftBox tbBox">
+        <div class="title"></div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">1ST</div></div>
+              <div class="score">{{ data.current.community[0].score }}</div>
+              <div class="name">{{ data.current.community[0].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middleBox tbBox">
+        <div class="title"></div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">2ND</div></div>
+              <div class="score">{{ data.current.community[1].score }}</div>
+              <div class="name">{{ data.current.community[1].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightBox tbBox">
+        <div class="title">TOP COMMUNITY</div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">3RD</div></div>
+              <div class="score">{{ data.current.community[2].score }}</div>
+              <div class="name">{{ data.current.community[2].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tb_nextGame" style="display:none">
+</div>
+
+<div class="tb_previousGame" style="display:none">
+  <div class="TripleBarContainer">
+    <div id="TripleBarDefault" class="TripleBar">
+      <div class="leftBox tbBox">
+        <div class="title">FRIEND BEST</div>
+        <div class="scoreBox">
+          <div class="score">{{ data.previous.friends[0].score }}</div>
+          <div class="name">{{ data.previous.friends[0].name }}</div>
+        </div>
+      </div>
+      <div class="middleBox tbBox">
+        <div class="title">YOUR BEST</div>
+        <div class="scoreBox big">
+          <div class="score">{{ data.previous.your_best }}</div>
+          <div class="name">NO DATA AVAILABLE</div>
+        </div>
+      </div>
+      <div class="rightBox tbBox">
+        <div class="title">COMMUNITY BEST</div>
+        <div class="scoreBox">
+          <div class="score">{{ data.previous.community[0].score }}</div>
+          <div class="name">{{ data.previous.community[0].name }}</div>
+        </div>
+      </div>
+    </div>
+    <div id="TripleBarFriends" class="TripleBar">
+      <div class="leftBox tbBox">
+        <div class="title">TOP FRIENDS</div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">1ST</div></div>
+              <div class="score">{{ data.previous.friends[0].score }}</div>
+              <div class="name">{{ data.previous.friends[0].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middleBox tbBox">
+        <div class="title"></div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">2ND</div></div>
+              <div class="score">{{ data.previous.friends[1].score }}</div>
+              <div class="name">{{ data.previous.friends[1].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightBox tbBox">
+        <div class="title"></div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">3RD</div></div>
+              <div class="score">{{ data.previous.friends[2].score }}</div>
+              <div class="name">{{ data.previous.friends[2].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="TripleBarLegends" class="TripleBar">
+      <div class="leftBox tbBox">
+        <div class="title"></div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">1ST</div></div>
+              <div class="score">{{ data.previous.community[0].score }}</div>
+              <div class="name">{{ data.previous.community[0].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middleBox tbBox">
+        <div class="title"></div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">2ND</div></div>
+              <div class="score">{{ data.previous.community[1].score }}</div>
+              <div class="name">{{ data.previous.community[1].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightBox tbBox">
+        <div class="title">TOP COMMUNITY</div>
+        <div class="letterBox">
+          <div class="innerBox">
+            <div class="scoreBox">
+              <div class="position"><div class="rank">3RD</div></div>
+              <div class="score">{{ data.previous.community[2].score }}</div>
+              <div class="name">{{ data.previous.community[2].name }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="eventtracker">
+  <div class="scrollDown">
+    <div class="bar">
+      <div class="downArrow"></div>
+      <div class="title">EVENT TRACKER &amp; TIERS</div>
+      <div class="downArrow"></div>
+    </div>
+  </div>
+</div>
+
+<div class="progressGraph">
+
+  <script type="text/javascript">
+    swfobject.registerObject("historyGraph", "10.0.0");
+  </script>
+
+  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="historyGraph" name="fiabFlash" codeBase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="1440" height="840" bgcolor="#ffffff">
+    <param name="Movie" VALUE="/Content/Showdown/Flash/SoloEvent/SoloEvent.swf">
+    <param name="Src" value="/Content/Showdown/Flash/SoloEvent/SoloEvent.swf">
+    <param name="WMode" value="transparent">
+    <param name="allowScriptAccess" value="always">
+    <param name="allowFullScreen" value="false">
+    <param name="menu" value="false">
+    <param name="scale" value="noscale">
+    <param name="FlashVars" value="data={{ data.flash.event_data }}&amp;config={{ data.flash.event_config }}&amp;enablejs=true&amp;javascriptid=Showdown/Flash/SoloEvent/SoloEvent&amp;AudioVol=1.0&amp;defaultLight=false&amp;antialias=4&amp;Language=en-US&amp;separatorDecimal=.&amp;separatorGroup=,&amp;AudioMute=true">
+    <object type="application/x-shockwave-flash" data="/Content/Showdown/Flash/SoloEvent/SoloEvent.swf" width="1440" height="840">
+      <param name="Src" value="/Content/Showdown/Flash/SoloEvent/SoloEvent.swf">
+      <param name="WMode" value="transparent">
+      <param name="allowScriptAccess" value="always">
+      <param name="allowFullScreen" value="false">
+      <param name="menu" value="false">
+      <param name="scale" value="noscale">
+      <param name="FlashVars" value="data={{ data.flash.event_data }}&amp;config={{ data.flash.event_config }}&amp;enablejs=true&amp;javascriptid=Showdown/Flash/SoloEvent/SoloEvent&amp;AudioVol=1.0&amp;defaultLight=false&amp;antialias=4&amp;Language=en-US&amp;separatorDecimal=.&amp;separatorGroup=,&amp;AudioMute=true">
+      <img id=alternateContent src="/Content/Showdown/Flash/Fallback/TP_RN_Event/RN_TP_RN_Event_Bottom.png" />
+      <div id=no-flash-installed>
+        <a href="https://www.adobe.com/go/getflashplayer">
+          <img id=getFlash src="/Content/Flash/flash_player_icon.png" alt="Get Adobe Flash player" />
+          <h1>REQUIRES FLASH</h1>
+          <p>To get the most out of RaceNet you need the latest version of Adobe Flash Player installed. You can get the latest version here.</p>
+        </a>
+      </div>
+    </object>
+  </object>
+
+</div>

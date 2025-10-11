@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>{{ title }}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/Content/themes/base/images/rnicon.ico" />
+  <link rel="icon" type="image/png" href="/Content/themes/base/images/rnicon.png" />
+
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:site_name" content="Codemasters RaceNet" />
+  <meta property="og:image" content="/Content/themes/base/images/opengraph_RaceNet.jpg" />
+  <meta property="og:description" content="By signing up you’ll be able to access exclusive RaceNet Events and Challenges and get the chance to join the racing elite! You can enter challenges in-game, then check RaceNet to track your progress against your friends and the Codemasters Community. Have you got what it takes to be number one?" />
+  <meta property="og:type" content="article" />
+
+  <link href="/Content/css/layout-single.css" rel="stylesheet" type="text/css" />
+  <!-- insert new css here-->
+  <link href="/Content/css/fonts.css" rel="stylesheet" type="text/css" />
+  <script src="/Content/scripts/scripts-single.min.js" type="text/javascript"></script>
+  <!-- insert new js here-->
+
+  <script type='text/javascript'>var _cma = []; var _cma_id = "0f1cf09d-b3b2-4045-bde6-818e298d6c19"; var _cma_url = '/api/analyticsapi/save';</script>
+  <script type='text/javascript' src='/Content/scripts/racenet.analytics.js' async='true'></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#menu').hide();
+      $('#menu').width(0);
+      $('#button').click(function() {
+        $('#menu').animate({ width: 250 }, 'slow');
+        $('#menu').css('z-index', '99999');
+        $('#menu').show();
+      });
+
+      $('#close').click(function() {
+        $('#menu').animate({ width: 0 }, 'slow', function() {
+          $('#menu').delay(250).css('z-index', '-1000');
+        });
+      });
+
+
+      //move div containing mobile nav into #rt
+      var e = $('#mobiletabletnav').contents();
+      $('#rt').append(e);
+
+    });
+  </script>
+{{#
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      // site preloader -- also uncomment the div in the header and the css style for #preloader
+      $(window).load(function() {
+        $(window).trigger('preloaderGoing');
+        $('#preloader').fadeOut('slow', function() {
+          $(this).remove();
+          $(window).trigger('preloaderGone');
+        });
+      });
+    });
+  </script>
+#}}
+
+</head>
+{{ set body_class = "body_class" }}
+{{ if tags[2] == "overview" || tags[2] == "versus" }}
+{{ set body_class = "body_class CareerLanding" }}
+{{ /if }}
+<body class="{{ body_class }}">
+{{#
+  <!-- site preloader -->
+  <div id="preloader"></div>
+#}}
+
+  <div id="page-main-container">
+
+
+    <div id="menu" class="hidden-desktop">
+
+      <div id="rt">
+      </div>
+    </div>
+
+
+
+
+{{ set page_class = "RacenetPage" }}
+{{ if tags[2] == "overview" || tags[2] == "versus" }}
+{{ set page_class = "CareerLanding RacenetPage" }}
+{{ /if }}
+    <div id="right" class="{{ page_class }}">
+      <div id="footer-surround">
+
+{{ include "racenet-menu.vto" }}
+
+
+
+
+{{ content }}
+
+
+      </div>
+
+      <div class="clearfix"></div>
+
+<footer class="hidden-desktop hidden-tablet hidden-phone">
+  <div class="clearfix">
+  </div>
+  <div class="bottomfooter">
+    <div class="left ">
+      <ul class="footerNav">
+        <li>&copy; CODEMASTERS 2025 </li>
+      </ul>
+    </div>
+    <div id="rightfooter" class="right">
+      <ul class="footerNav">
+        <li id="support"><a href="http://forums.codemasters.com/categories/codemasters-general" target="_blank">SUPPORT</a></li>
+        <li id="terms"><a href="http://terms.codemasters.com" target="_blank">TERMS OF SERVICE</a></li>
+        <li><a href="http://www.facebook.com/CMRacenet" target="_blank"><div id="footer-facebook" class="footer-icon"></div></a></li>
+        <li><a href="https://twitter.com/CMRaceNet" target="_blank"><div id="footer-twitter" class="footer-icon"></div></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var tickerDisabled = true;
+    var g_textLength = 100; // just a guess initially
+    $(document).ready(function() {
+      $('.dropdown-toggle').dropdown();
+      $('.carousel').carousel({ interval: 500 });
+      // UpdateNewsTicker();
+      $(window).resize(function() {
+        if (tickerDisabled && $('#news-container-list').is(':visible')) {
+          tickerDisabled = false;
+          reInitTicker();
+        }
+      });
+
+    });
+
+    var mq_timer = 120000;
+    var mq_maxwidth = 0;
+
+    function UpdateNewsTicker() {
+      setTimeout(function() {
+        $.ajax({
+          type: "GET",
+          url: '/api/RaceNetapi/GetRaceNet_NewsTicker',
+          cache: false,
+          dataType: 'json',
+          success: function(result) {
+            g_textLength = 0;
+            mq_maxwidth = 0;
+            for (var k = 0; k <= 1; k++) {
+              interior = $('<span class="news-container-section" />');
+              for (var i = 0; i < result.length; i++) {
+                var li = $('<li/>')
+                  .append($('<div/>').addClass('news-header').text(result[i].NewsHeader))
+                  .append($('<div/>').addClass('news-body').text(result[i].NewsBody));
+                interior.append(li);
+
+              }
+              $('#news-container-list').append(interior);
+              mq_maxwidth = interior.width();
+            }
+            $(window).unload(store_mq_pos);
+            mq_init_pos = get_mq_pos();
+            if (mq_init_pos == 'NaN') {
+              mq_init_pos = 0;
+            }
+            mq_timer = mq_maxwidth * 12;
+            $('#news-container-list').css({ 'position': 'relative', 'left': mq_init_pos + 'px' });
+
+            moveTickerLeft();
+          }
+        });
+      }, 1000);
+    }
+
+    function got_storage() { try { return 'localStorage' in window && window['localStorage'] !== null; } catch (e) { return false; } }
+
+    function store_mq_pos() {
+      if (got_storage) {
+        localStorage["mq_pos"] = parseInt($('#news-container-list').css('left'), 10);
+      }
+    }
+
+    function get_mq_pos() {
+      if (got_storage && localStorage["mq_pos"]) {
+        return localStorage["mq_pos"];
+      }
+      return 0;
+    }
+
+    function reInitTicker()
+    {
+      $('#news-container-list').css({ 'left': '0px' });
+      moveTickerLeft();
+    }
+
+    function moveTickerLeft()
+    {
+      if (!($('#news-container-list').is(':visible'))) {
+        tickerDisabled = true;
+        return;
+      }
+      if (mq_maxwidth == 0)
+      {
+        $('#news-container-list').empty();
+        return UpdateNewsTicker();
+      }
+      var curPos = -parseInt($('#news-container-list').css('left'), 10);
+      if (Math.abs(curPos) >= mq_maxwidth)
+      {
+        return reInitTicker();
+      }
+      var act_timer = (1 - (Math.abs(curPos) / mq_maxwidth)) * mq_timer;
+      $('#news-container-list').animate({ 'left': '-=' + (mq_maxwidth - curPos) + 'px' }, act_timer, "linear", reInitTicker);
+    }
+  </script>
+
+</body>
+
+</html>

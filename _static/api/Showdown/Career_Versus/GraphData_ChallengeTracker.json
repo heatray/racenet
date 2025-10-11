@@ -1,0 +1,213 @@
+{
+  "PlayerLocalisedDisplayName":"PlayerOne",
+  "PlayerLogo":"/Content/avatars/48x48/logged_in_icon.png",
+  "PlayerLevel":48,
+  "PlayerXP":150,
+  "Challenges":[
+    {
+      "OtherPlayerLocalisedDisplayName":"PlayerTwo",
+      "OtherPlayerLogo":"/Content/avatars/48x48/logged_out_icon.png",
+      "OtherPlayerLevel":48,
+      "OtherPlayerXP":150,
+      "ChallengeOutcomes":[
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":0,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":2,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":0,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":2,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":3,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":2,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":0,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":-1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":-2,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":-1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":0,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":-1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":-2,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":-3,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":-2,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":-1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":0,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":2,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":3,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        }
+      ]
+    },
+    {
+      "OtherPlayerLocalisedDisplayName":"PlayerThree",
+      "OtherPlayerLogo":"/Content/avatars/48x48/logged_out_icon.png",
+      "OtherPlayerLevel":48,
+      "OtherPlayerXP":150,
+      "ChallengeOutcomes":[
+        {
+          "WinnerLocalisedDisplayName":"PlayerThree",
+          "CumulativeTally":1,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        },
+        {
+          "WinnerLocalisedDisplayName":"PlayerOne",
+          "CumulativeTally":0,
+          "TrackName":"BAJA, CALIFORNIA",
+          "DisciplineLogoUrl":"/assets/placeholder_32.png",
+          "ActualResult":10000
+        }
+      ]
+    }
+  ]
+}

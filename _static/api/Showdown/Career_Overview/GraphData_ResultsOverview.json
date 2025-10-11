@@ -1,0 +1,32 @@
+[
+  {
+    "Title": "SHOWDOWN",
+    "SubTitle": "TOUR",
+    "Wins": 80,
+    "PodiumFinishes": 90,
+    "RoundsPlayed": 100,
+    "Wins_PercentOfMaxSize": 80,
+    "PodiumFinishes_PercentOfMaxSize": 90,
+    "RoundsPlayed_PercentOfMaxSize": 100
+  },
+  {
+    "Title": "ONLINE",
+    "SubTitle": "SOLO",
+    "Wins": 40,
+    "PodiumFinishes": 50,
+    "RoundsPlayed": 75,
+    "Wins_PercentOfMaxSize": 40,
+    "PodiumFinishes_PercentOfMaxSize": 50,
+    "RoundsPlayed_PercentOfMaxSize": 75
+  },
+  {
+    "Title": "ONLINE",
+    "SubTitle": "TEAM",
+    "Wins": 25,
+    "PodiumFinishes": 25,
+    "RoundsPlayed": 90,
+    "Wins_PercentOfMaxSize": 25,
+    "PodiumFinishes_PercentOfMaxSize": 25,
+    "RoundsPlayed_PercentOfMaxSize": 90
+  }
+]

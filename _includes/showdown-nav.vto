@@ -1,0 +1,27 @@
+<div id="head-menu-nav" class="menu">
+  <ul>
+{{#
+    <li id="Button_0" class="ShowdownTopMenu ">
+      <a href="/showdown/gameinfo">SHOWDOWN INFO</a>
+    </li>
+    <li id="Button_0" class="ShowdownTopMenu menu-nav-disabled">
+      <a href="/driver/profile">SHOWDOWN HOME</a>
+    </li>
+#}}
+    <li id="Button_0" class="ShowdownTopMenu{{ if tags[1] == 'about' }} current{{ /if }}">
+      <a href="/showdown/about">ABOUT SHOWDOWN</a>
+    </li>
+    <li id="Button_1" class="ShowdownTopMenu{{ if tags[1] == 'career' }} current{{ /if }}">
+      <a href="/showdown/career/overview">TOUR PROGRESS</a>
+    </li>
+    <li id="Button_2" class="ShowdownTopMenu{{ if tags[1] == 'event' }} current{{ /if }}">
+      <a href="/showdown/event">RACENET EVENT</a>
+    </li>
+    <li id="Button_3" class="ShowdownTopMenu menu-nav-disabled">
+      <a href="/showdown/championship">TEAM CHAMPIONSHIP</a>
+    </li>
+    <li id="Button_4" class="ShowdownTopMenu menu-nav-disabled">
+      <a href="/showdown/guide">SHOWDOWN GUIDE</a>
+    </li>
+  </ul>
+</div>

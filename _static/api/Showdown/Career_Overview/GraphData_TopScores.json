@@ -1,0 +1,864 @@
+[
+  {
+    "TierCurrent": 4,
+    "TierID": 4,
+    "TierName": "PRO",
+    "TierRank": 4,
+    "TierSponsorLogoUrl": "/assets/placeholder_128.png",
+    "TierUnlocked": true,
+    "Events": [
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-13",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/eventwide.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-12",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-11",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-10",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-9",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-8",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-7",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-6",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-5",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-4",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-3",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-2",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          },
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      },
+      {
+        "DisciplineName": "8 BALL",
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackName": "Event 1-1",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "PodiumFinishUrl": "/assets/placeholder_32.png",
+        "EventCompleted": true,
+        "EventBackgroundUrl": "/assets/event.png",
+        "RoundResults": [
+          {
+            "ScoreFriendPlayerName": "DRIFTER",
+            "ScoreFriendDisplay": "00:00:00.000",
+            "ScoreFriendLogoUrl": "/assets/placeholder_64.png",
+            "ScorePlayerName": "PlayerOne",
+            "ScorePlayerDisplay": "00:00:00.000",
+            "ScoreWorldRecordPlayerName": "SMASHER",
+            "ScoreWorldRecordDisplay": "00:01:00.000",
+            "ScoreWorldRecordLogoUrl": "/assets/placeholder_64.png"
+          }
+        ],
+        "PrizeMoneyDisplay": "$30,000"
+      }
+    ]
+  },
+  {
+    "TierCurrent": 3,
+    "TierID": 3,
+    "TierName": "ALL STAR",
+    "TierRank": 3,
+    "TierSponsorLogoUrl": "/assets/placeholder_128.png",
+    "TierUnlocked": true,
+    "Events": [
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      }
+    ]
+  },
+  {
+    "TierCurrent": 2,
+    "TierID": 2,
+    "TierName": "CHAMPION",
+    "TierRank": 2,
+    "TierSponsorLogoUrl": "/assets/placeholder_128.png",
+    "TierUnlocked": false,
+    "Events": [
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      }
+    ]
+  },
+  {
+    "TierCurrent": 1,
+    "TierID": 1,
+    "TierName": "LEGEND",
+    "TierRank": 1,
+    "TierSponsorLogoUrl": "/assets/placeholder_128.png",
+    "TierUnlocked": false,
+    "Events": [
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      },
+      {
+        "DisciplineLogoUrl": "/assets/placeholder_48.png",
+        "TrackLogoUrl": "/assets/placeholder_48.png",
+        "DisciplineName": "8 BALL",
+        "TrackName": "COASTRAL RACE KINGS",
+        "PodiumFinish": 1,
+        "PodiumFinishDisplay": "1ST",
+        "EventCompleted": false,
+        "PrizeMoneyDisplay": "1111"
+      }
+    ]
+  }
+]

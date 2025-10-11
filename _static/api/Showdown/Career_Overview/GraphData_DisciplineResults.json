@@ -1,0 +1,106 @@
+[
+  {
+    "DisciplineTypeName": "8 BALL",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 88,
+    "WinsDisplay": "8,888,888 [8 BALL]"
+  },
+  {
+    "DisciplineTypeName": "RAMPAGE",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 89,
+    "WinsDisplay": "8,888,888 [RAMPAGE]"
+  },
+  {
+    "DisciplineTypeName": "HARD TARGET",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 90,
+    "WinsDisplay": "8,888,888 [HARD TARGET]"
+  },
+  {
+    "DisciplineTypeName": "KNOCK OUT",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 91,
+    "WinsDisplay": "8,888,888 [KNOCK OUT]"
+  },
+  {
+    "DisciplineTypeName": "SMASH HUNTER",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 92,
+    "WinsDisplay": "8,888,888 [SMASH HUNTER]"
+  },
+  {
+    "DisciplineTypeName": "TRICK RUSH",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 93,
+    "WinsDisplay": "8,888,888 [TRICK RUSH]"
+  },
+  {
+    "DisciplineTypeName": "HEAD 2 HEAD",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 94,
+    "WinsDisplay": "8,888,888 [HEAD 2 HEAD]"
+  },
+  {
+    "DisciplineTypeName": "RACE OFF",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 96,
+    "WinsDisplay": "8,888,888 [RACE OFF]"
+  },
+  {
+    "DisciplineTypeName": "DOMINATION",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 96,
+    "WinsDisplay": "8,888,888 [DOMINATION]"
+  },
+  {
+    "DisciplineTypeName": "ELIMINATOR",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 97,
+    "WinsDisplay": "8,888,888 [ELIMINATOR]"
+  },
+  {
+    "DisciplineTypeName": "SPEED SKIRMISH",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 98,
+    "WinsDisplay": "8,888,888 [SPEED SKIRMISH]"
+  },
+  {
+    "DisciplineTypeName": "SMASH AND GRAB",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 99,
+    "WinsDisplay": "8,888,888 [SMASH AND GRAB]"
+  },
+  {
+    "DisciplineTypeName": "TRANSPORTER",
+    "DisciplineLogoUrl": "/assets/placeholder_32.png",
+    "RoundsPlayed": 11111111,
+    "RoundsPlayedDisplay": "8,888,888",
+    "WinsPercent": 100,
+    "WinsDisplay": "8,888,888 [TRANSPORTER]"
+  }
+]
