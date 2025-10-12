@@ -4,6 +4,8 @@ const site = lume({
   location: new URL("https://heatray.github.io/racenet/"),
 });
 
+site.data("baseurl", "https://heatray.github.io/racenet/");
+
 site.copy("_static", ".");
 
 site.ignore(

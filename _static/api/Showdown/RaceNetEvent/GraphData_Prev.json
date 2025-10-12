@@ -4,7 +4,7 @@
     "DisplayName":"Heatray",
     "PlayerID":4600198,
     "Level":21,
-    "AvatarPath":"/content/avatars/48x48/logged_in_icon.png"
+    "AvatarPath":"./Content/avatars/48x48/logged_in_icon.png"
   },
   "History":[
     {

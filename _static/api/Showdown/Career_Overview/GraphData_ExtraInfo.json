@@ -2,86 +2,86 @@
   {
     "Title": "CRASHBACKS",
     "SubTitle": "1",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Destructible.swf"
   },
   {
     "Title": "SECTORS DOMINATED",
     "SubTitle": "1",
-    "Image": "/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
   },
   {
     "Title": "ELIMINATIONS AVOIDED",
     "SubTitle": "1",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Smash.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Smash.swf"
   },
   {
     "Title": "FLASHBACKS",
     "SubTitle": "1",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Speed.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Speed.swf"
   },
   {
     "Title": "TIME AS HARD TARGET",
     "SubTitle": "00:00:00",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Drift.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Drift.swf"
   },
   {
     "Title": "KNOCKOUT OUTER ZONE SCORE",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Destructible.swf"
   },
   {
     "Title": "KNOCKOUT INNER ZONE SCORE",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Destructible.swf"
   },
   {
     "Title": "KNOCKOUT STREAK",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Destructible.swf"
   },
   {
     "Title": "WRECKING STREAK",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Destructible.swf"
   },
   {
     "Title": "SMASH AND GRAB LOSSES",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Smash.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Smash.swf"
   },
   {
     "Title": "SMASH AND GRAB TAKES",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Jump.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Jump.swf"
   },
   {
     "Title": "TRANSPORTER FLAGS CAPTURED",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Jump.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Jump.swf"
   },
   {
     "Title": "TRANSPORTER FLAGS LOST",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Smash.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Smash.swf"
   },
   {
     "Title": "TRANSPORTER FLAGS RETURNED",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Jump.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Jump.swf"
   },
   {
     "Title": "TRANSPORTER FLAGS STOLEN",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/Jump.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/Jump.swf"
   },
   {
     "Title": "UNIQUE ONLINE PLAYERS BEATEN",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
   },
   {
     "Title": "YOUTUBE UPLOADS",
     "SubTitle": "0",
-    "Image": "/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+    "Image": "./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
   }
 ]

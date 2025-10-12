@@ -7,11 +7,11 @@ tags:
   - joyride
 lang: en-US
 flash:
-  joyride_config: /api/Showdown/Career/Config_JoyRide.json
-  joyride_data:   /api/Showdown/Career/GraphData_JoyRide.json
+  joyride_config: ./api/Showdown/Career/Config_JoyRide.json
+  joyride_data:   ./api/Showdown/Career/GraphData_JoyRide.json
 ---
 {{ import { ShareButton } from "showdown-functions.vto" }}
-{{ ShareButton("http://www.facebook.com/sharer.php?s=100&amp;p[title]=DiRT+Showdown+Tour+Progress+%e2%80%93+Joyride+-+Codemasters+RaceNet&amp;p[summary]=I%e2%80%99m+checking+up+on+my+progress+in+the+DiRT+Showdown+Joyride+mode+on+RaceNet!&amp;p[url]=/showdown/career/JoyRide&amp;&p[images][0]=/Content/Sharing/Thumbnails/ShareJoyride.jpg", "http://twitter.com/share?url=/showdown/career/JoyRide&lang=en&text=I%e2%80%99m+checking+up+on+my+progress+in+the+DiRT+Showdown+Joyride+mode+on+RaceNet!", "ShareFlashButton") }}
+{{ ShareButton("http://www.facebook.com/sharer.php?s=100&amp;p[title]=DiRT+Showdown+Tour+Progress+%e2%80%93+Joyride+-+Codemasters+RaceNet&amp;p[summary]=I%e2%80%99m+checking+up+on+my+progress+in+the+DiRT+Showdown+Joyride+mode+on+RaceNet!&amp;p[url]=/showdown/career/JoyRide&amp;&p[images][0]=./Content/Sharing/Thumbnails/ShareJoyride.jpg", "http://twitter.com/share?url=/showdown/career/JoyRide&lang=en&text=I%e2%80%99m+checking+up+on+my+progress+in+the+DiRT+Showdown+Joyride+mode+on+RaceNet!", "ShareFlashButton") }}
 {{ include "showdown-navsub.vto" }}
 
 <div class="progressGraph">
@@ -20,26 +20,26 @@ flash:
     swfobject.registerObject("joyride", "10.0.0");
   </script>
   <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="joyride" name="fiabFlash" codeBase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="1224" height="825" bgcolor="#ffffff">
-    <param name="Movie" VALUE="/Content/Showdown/Flash/joyride/joyride.swf">
-    <param name="Src" value="/Content/Showdown/Flash/joyride/joyride.swf">
+    <param name="Movie" VALUE="./Content/Showdown/Flash/joyride/joyride.swf">
+    <param name="Src" value="./Content/Showdown/Flash/joyride/joyride.swf">
     <param name="WMode" value="transparent">
     <param name="allowScriptAccess" value="always">
     <param name="allowFullScreen" value="false">
     <param name="menu" value="false">
     <param name="scale" value="noscale">
     <param name="FlashVars" value="data={{ flash.joyride_data }}&amp;config={{ flash.joyride_config }}&amp;enablejs=true&amp;javascriptid=Showdown/flash/joyride/joyride&amp;AudioVol=1.0&amp;defaultLight=false&amp;antialias=4&amp;Language=en-US&amp;separatorDecimal=.&amp;separatorGroup=,&amp;AudioMute=true">
-    <object type="application/x-shockwave-flash" data="/Content/Showdown/Flash/joyride/joyride.swf" width="1224" height="825">
-      <param name="Src" value="/Content/Showdown/Flash/joyride/joyride.swf">
+    <object type="application/x-shockwave-flash" data="./Content/Showdown/Flash/joyride/joyride.swf" width="1224" height="825">
+      <param name="Src" value="./Content/Showdown/Flash/joyride/joyride.swf">
       <param name="WMode" value="transparent">
       <param name="allowScriptAccess" value="always">
       <param name="allowFullScreen" value="false">
       <param name="menu" value="false">
       <param name="scale" value="noscale">
       <param name="FlashVars" value="data={{ flash.joyride_data }}&amp;config={{ flash.joyride_config }}&amp;enablejs=true&amp;javascriptid=Showdown/flash/joyride/joyride&amp;AudioVol=1.0&amp;defaultLight=false&amp;antialias=4&amp;Language=en-US&amp;separatorDecimal=.&amp;separatorGroup=,&amp;AudioMute=true">
-      <img id=alternateContent src="/Content/Showdown/Flash/Fallback/TP_Joyride/RN_TP_Joyride_Top.png" />
+      <img id=alternateContent src="./Content/Showdown/Flash/Fallback/TP_Joyride/RN_TP_Joyride_Top.png" />
       <div id=no-flash-installed>
         <a href="https://www.adobe.com/go/getflashplayer">
-          <img id=getFlash src="/Content/Flash/flash_player_icon.png" alt="Get Adobe Flash player" />
+          <img id=getFlash src="./Content/Flash/flash_player_icon.png" alt="Get Adobe Flash player" />
           <h1>REQUIRES FLASH</h1>
           <p>To get the most out of RaceNet you need the latest version of Adobe Flash Player installed. You can get the latest version here.</p>
         </a>
@@ -51,26 +51,26 @@ flash:
     swfobject.registerObject("circles", "10.0.0");
   </script>
   <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="circles" name="fiabFlash" codeBase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="1224" height="825" bgcolor="#ffffff">
-    <param name="Movie" VALUE="/Content/Showdown/Flash/joyride/circles.swf">
-    <param name="Src" value="/Content/Showdown/Flash/joyride/circles.swf">
+    <param name="Movie" VALUE="./Content/Showdown/Flash/joyride/circles.swf">
+    <param name="Src" value="./Content/Showdown/Flash/joyride/circles.swf">
     <param name="WMode" value="transparent">
     <param name="allowScriptAccess" value="always">
     <param name="allowFullScreen" value="false">
     <param name="menu" value="false">
     <param name="scale" value="noscale">
     <param name="FlashVars" value="data={{ flash.joyride_data }}&amp;config={{ flash.joyride_config }}&amp;enablejs=true&amp;javascriptid=Showdown/flash/joyride/circles&amp;AudioVol=1.0&amp;defaultLight=false&amp;antialias=4&amp;Language=en-US&amp;separatorDecimal=.&amp;separatorGroup=,&amp;AudioMute=true">
-    <object type="application/x-shockwave-flash" data="/Content/Showdown/Flash/joyride/circles.swf" width="1224" height="825">
-      <param name="Src" value="/Content/Showdown/Flash/joyride/circles.swf">
+    <object type="application/x-shockwave-flash" data="./Content/Showdown/Flash/joyride/circles.swf" width="1224" height="825">
+      <param name="Src" value="./Content/Showdown/Flash/joyride/circles.swf">
       <param name="WMode" value="transparent">
       <param name="allowScriptAccess" value="always">
       <param name="allowFullScreen" value="false">
       <param name="menu" value="false">
       <param name="scale" value="noscale">
       <param name="FlashVars" value="data={{ flash.joyride_data }}&amp;config={{ flash.joyride_config }}&amp;enablejs=true&amp;javascriptid=Showdown/flash/joyride/circles&amp;AudioVol=1.0&amp;defaultLight=false&amp;antialias=4&amp;Language=en-US&amp;separatorDecimal=.&amp;separatorGroup=,&amp;AudioMute=true">
-      <img id=alternateContent src="/Content/Showdown/Flash/Fallback/TP_Joyride/RN_TP_Joyride_Bottom.png" />
+      <img id=alternateContent src="./Content/Showdown/Flash/Fallback/TP_Joyride/RN_TP_Joyride_Bottom.png" />
       <div id=no-flash-installed>
         <a href="https://www.adobe.com/go/getflashplayer">
-          <img id=getFlash src="/Content/Flash/flash_player_icon.png" alt="Get Adobe Flash player" />
+          <img id=getFlash src="./Content/Flash/flash_player_icon.png" alt="Get Adobe Flash player" />
           <h1>REQUIRES FLASH</h1>
           <p>To get the most out of RaceNet you need the latest version of Adobe Flash Player installed. You can get the latest version here.</p>
         </a>

@@ -132,48 +132,48 @@
     {
       "JoyRideMapID":2,
       "Name":"battersea",
-      "MapURL":"/Content/Showdown/Joyride/maps/battersea.png",
-      "IconURL":"/Content/Showdown/Joyride/location_logo/small/battersea.png",
+      "MapURL":"./Content/Showdown/Joyride/maps/battersea.png",
+      "IconURL":"./Content/Showdown/Joyride/location_logo/small/battersea.png",
       "MissionSummary":[
         {
           "Name":"JUMPS",
           "JoyRideMissionTypeID":0,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf",
           "Completed":"3",
           "Total":"13"
         },
         {
           "Name":"DRIVE",
           "JoyRideMissionTypeID":1,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Speed.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Speed.swf",
           "Completed":"4",
           "Total":"2"
         },
         {
           "Name":"DRIFTS",
           "JoyRideMissionTypeID":2,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf",
           "Completed":"3",
           "Total":"26"
         },
         {
           "Name":"SMASHES",
           "JoyRideMissionTypeID":3,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf",
           "Completed":"1",
           "Total":"5"
         },
         {
           "Name":"DONUTS",
           "JoyRideMissionTypeID":5,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf",
           "Completed":"3",
           "Total":"15"
         },
         {
           "Name":"SPINS",
           "JoyRideMissionTypeID":6,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf",
           "Completed":"2",
           "Total":"14"
         }
@@ -182,7 +182,7 @@
         {
           "JoyRideZoneID":2,
           "AllHiddenPackagesFound":true,
-          "ZoneImageUrl":"/Content/Showdown/Joyride/maps/batts_depot.png",
+          "ZoneImageUrl":"./Content/Showdown/Joyride/maps/batts_depot.png",
           "JoyRideMapID":2,
           "Name":"DEPOT",
           "Missions":[
@@ -195,7 +195,7 @@
               "Description":"Drift container tops.",
               "MapXCoordinate":-371,
               "MapYCoordinate":-49,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -206,7 +206,7 @@
               "Description":"Double spin on trailers.",
               "MapXCoordinate":-124,
               "MapYCoordinate":-47,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -217,7 +217,7 @@
               "Description":"Double spin between jumps.",
               "MapXCoordinate":-212,
               "MapYCoordinate":12,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -228,7 +228,7 @@
               "Description":"Drift behind concrete tubes.",
               "MapXCoordinate":-142,
               "MapYCoordinate":165,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -239,7 +239,7 @@
               "Description":"Drift through containers.",
               "MapXCoordinate":-320,
               "MapYCoordinate":-126,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -250,7 +250,7 @@
               "Description":"Drift behind concrete tubes.",
               "MapXCoordinate":-353,
               "MapYCoordinate":-40,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -261,7 +261,7 @@
               "Description":"Land dirt jump.",
               "MapXCoordinate":-225,
               "MapYCoordinate":-18,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -272,7 +272,7 @@
               "Description":"Smash colored boxes.",
               "MapXCoordinate":-386,
               "MapYCoordinate":-45,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -283,7 +283,7 @@
               "Description":"Jump off trailers.",
               "MapXCoordinate":-134,
               "MapYCoordinate":-34,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -294,7 +294,7 @@
               "Description":"Drift under scaffolding.",
               "MapXCoordinate":-282,
               "MapYCoordinate":75,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -305,7 +305,7 @@
               "Description":"Jump to walkway.",
               "MapXCoordinate":-180,
               "MapYCoordinate":-117,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -316,7 +316,7 @@
               "Description":"Triple donut tubes.",
               "MapXCoordinate":-153,
               "MapYCoordinate":173,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -327,7 +327,7 @@
               "Description":"Jump crossover ramps.",
               "MapXCoordinate":-237,
               "MapYCoordinate":22,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -338,7 +338,7 @@
               "Description":"Drift through girders.",
               "MapXCoordinate":-153,
               "MapYCoordinate":-142,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -349,7 +349,7 @@
               "Description":"Double donut concrete tube.",
               "MapXCoordinate":-270,
               "MapYCoordinate":-82,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -360,7 +360,7 @@
               "Description":"Drift between ramps.",
               "MapXCoordinate":-201,
               "MapYCoordinate":-3,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -371,7 +371,7 @@
               "Description":"Double donut scoop.",
               "MapXCoordinate":-158,
               "MapYCoordinate":111,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -382,7 +382,7 @@
               "Description":"Slalom lamp posts.",
               "MapXCoordinate":-221,
               "MapYCoordinate":149,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Speed.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Speed.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -393,7 +393,7 @@
               "Description":"Double donut cabin.",
               "MapXCoordinate":-172,
               "MapYCoordinate":118,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -404,7 +404,7 @@
               "Description":"Drift under trailers.",
               "MapXCoordinate":-117,
               "MapYCoordinate":-32,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -415,7 +415,7 @@
               "Description":"Double spin corner zone.",
               "MapXCoordinate":-105,
               "MapYCoordinate":-18,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -426,7 +426,7 @@
               "Description":"Drift under scoop.",
               "MapXCoordinate":-174,
               "MapYCoordinate":105,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -437,7 +437,7 @@
               "Description":"Drift through corner zone.",
               "MapXCoordinate":-107,
               "MapYCoordinate":1,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -448,7 +448,7 @@
               "Description":"Drift between pipes.",
               "MapXCoordinate":-305,
               "MapYCoordinate":-26,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_depot",
@@ -459,14 +459,14 @@
               "Description":"Double donut scaffold.",
               "MapXCoordinate":-231,
               "MapYCoordinate":-3,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             }
           ]
         },
         {
           "JoyRideZoneID":3,
           "AllHiddenPackagesFound":false,
-          "ZoneImageUrl":"/Content/Showdown/Joyride/maps/batts_parking.png",
+          "ZoneImageUrl":"./Content/Showdown/Joyride/maps/batts_parking.png",
           "JoyRideMapID":2,
           "Name":"PARKING LOT",
           "Missions":[
@@ -479,7 +479,7 @@
               "Description":"Drift depot doorway.",
               "MapXCoordinate":179,
               "MapYCoordinate":121,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -490,7 +490,7 @@
               "Description":"Drift connected containers.",
               "MapXCoordinate":-57,
               "MapYCoordinate":23,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -501,7 +501,7 @@
               "Description":"Smash big depot fence.",
               "MapXCoordinate":-118,
               "MapYCoordinate":132,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -512,7 +512,7 @@
               "Description":"Jump container gap.",
               "MapXCoordinate":3,
               "MapYCoordinate":91,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -523,7 +523,7 @@
               "Description":"Smash colored boxes.",
               "MapXCoordinate":121,
               "MapYCoordinate":130,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -534,7 +534,7 @@
               "Description":"Jump to the roof.",
               "MapXCoordinate":169,
               "MapYCoordinate":96,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -545,7 +545,7 @@
               "Description":"Double donut forklift.",
               "MapXCoordinate":243,
               "MapYCoordinate":113,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -556,7 +556,7 @@
               "Description":"Smash small depot fence.",
               "MapXCoordinate":-88,
               "MapYCoordinate":84,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -567,7 +567,7 @@
               "Description":"Double donut lamp post.",
               "MapXCoordinate":148,
               "MapYCoordinate":74,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -578,7 +578,7 @@
               "Description":"Triple spin by warehouse.",
               "MapXCoordinate":92,
               "MapYCoordinate":122,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -589,7 +589,7 @@
               "Description":"Drift DC crane.",
               "MapXCoordinate":-58,
               "MapYCoordinate":57,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -600,7 +600,7 @@
               "Description":"Drift under crane.",
               "MapXCoordinate":164,
               "MapYCoordinate":22,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -611,7 +611,7 @@
               "Description":"Double spin under crane.",
               "MapXCoordinate":152,
               "MapYCoordinate":39,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -622,7 +622,7 @@
               "Description":"Double donut post.",
               "MapXCoordinate":6,
               "MapYCoordinate":102,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -633,7 +633,7 @@
               "Description":"Jump into trailer.",
               "MapXCoordinate":226,
               "MapYCoordinate":137,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -644,7 +644,7 @@
               "Description":"Double donut crane leg.",
               "MapXCoordinate":135,
               "MapYCoordinate":36,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -655,7 +655,7 @@
               "Description":"Drift depot slope.",
               "MapXCoordinate":3,
               "MapYCoordinate":73,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -666,7 +666,7 @@
               "Description":"Triple spin tram lines.",
               "MapXCoordinate":-83,
               "MapYCoordinate":56,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -677,7 +677,7 @@
               "Description":"Drift behind forklift.",
               "MapXCoordinate":205,
               "MapYCoordinate":20,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -688,7 +688,7 @@
               "Description":"Jump into container.",
               "MapXCoordinate":-75,
               "MapYCoordinate":24,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -699,7 +699,7 @@
               "Description":"Triple spin warehouse.",
               "MapXCoordinate":137,
               "MapYCoordinate":122,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -710,7 +710,7 @@
               "Description":"Double donut pole.",
               "MapXCoordinate":49,
               "MapYCoordinate":18,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -721,7 +721,7 @@
               "Description":"Drift around the corner.",
               "MapXCoordinate":-70,
               "MapYCoordinate":-2,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -732,7 +732,7 @@
               "Description":"Container top spin.",
               "MapXCoordinate":-56,
               "MapYCoordinate":8,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_parking",
@@ -743,14 +743,14 @@
               "Description":"Spin in the corner.",
               "MapXCoordinate":-46,
               "MapYCoordinate":96,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             }
           ]
         },
         {
           "JoyRideZoneID":5,
           "AllHiddenPackagesFound":false,
-          "ZoneImageUrl":"/Content/Showdown/Joyride/maps/batts_power.png",
+          "ZoneImageUrl":"./Content/Showdown/Joyride/maps/batts_power.png",
           "JoyRideMapID":2,
           "Name":"POWER STATION",
           "Missions":[
@@ -763,7 +763,7 @@
               "Description":"Double donut pillar.",
               "MapXCoordinate":10,
               "MapYCoordinate":-38,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -774,7 +774,7 @@
               "Description":"Hairpin drift.",
               "MapXCoordinate":-82,
               "MapYCoordinate":-84,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -785,7 +785,7 @@
               "Description":"Drift around chimney.",
               "MapXCoordinate":-67,
               "MapYCoordinate":-140,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -796,7 +796,7 @@
               "Description":"Triple donut post.",
               "MapXCoordinate":301,
               "MapYCoordinate":-188,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -807,7 +807,7 @@
               "Description":"Drift beach pathway.",
               "MapXCoordinate":244,
               "MapYCoordinate":58,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -818,7 +818,7 @@
               "Description":"Double spin walkway.",
               "MapXCoordinate":124,
               "MapYCoordinate":-50,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -829,7 +829,7 @@
               "Description":"Drift under cross-frame.",
               "MapXCoordinate":231,
               "MapYCoordinate":-230,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -840,7 +840,7 @@
               "Description":"Drift behind boat.",
               "MapXCoordinate":247,
               "MapYCoordinate":-322,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -851,7 +851,7 @@
               "Description":"Smash the fence.",
               "MapXCoordinate":218,
               "MapYCoordinate":-374,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -862,7 +862,7 @@
               "Description":"Double spin under jetty.",
               "MapXCoordinate":299,
               "MapYCoordinate":-143,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -873,7 +873,7 @@
               "Description":"Double donut thin support.",
               "MapXCoordinate":282,
               "MapYCoordinate":10,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -884,7 +884,7 @@
               "Description":"Double donut trailer legs.",
               "MapXCoordinate":-55,
               "MapYCoordinate":-242,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -895,7 +895,7 @@
               "Description":"Drive inside chimney.",
               "MapXCoordinate":8,
               "MapYCoordinate":-143,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Speed.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Speed.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -906,7 +906,7 @@
               "Description":"Jump the highest gap.",
               "MapXCoordinate":3,
               "MapYCoordinate":-95,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -917,7 +917,7 @@
               "Description":"Drift under the boat.",
               "MapXCoordinate":67,
               "MapYCoordinate":-282,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -928,7 +928,7 @@
               "Description":"Jump raised boat.",
               "MapXCoordinate":29,
               "MapYCoordinate":-275,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -939,7 +939,7 @@
               "Description":"Jump chimney gap.",
               "MapXCoordinate":41,
               "MapYCoordinate":-142,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -950,7 +950,7 @@
               "Description":"Drift under trailer.",
               "MapXCoordinate":-48,
               "MapYCoordinate":-259,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -961,7 +961,7 @@
               "Description":"Double donut tires.",
               "MapXCoordinate":119,
               "MapYCoordinate":-329,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -972,7 +972,7 @@
               "Description":"Jump through the trailer.",
               "MapXCoordinate":-98,
               "MapYCoordinate":-48,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -983,7 +983,7 @@
               "Description":"Double spin high walkway.",
               "MapXCoordinate":27,
               "MapYCoordinate":-93,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -994,7 +994,7 @@
               "Description":"Drift through main door.",
               "MapXCoordinate":119,
               "MapYCoordinate":-117,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -1005,7 +1005,7 @@
               "Description":"Barrel roll jump.",
               "MapXCoordinate":164,
               "MapYCoordinate":-90,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -1016,7 +1016,7 @@
               "Description":"Double spin under crane.",
               "MapXCoordinate":301,
               "MapYCoordinate":-98,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"batts_power",
@@ -1027,7 +1027,7 @@
               "Description":"Triple spin inside girders.",
               "MapXCoordinate":237,
               "MapYCoordinate":-51,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             }
           ]
         }
@@ -1044,7 +1044,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":1,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Speed.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Speed.swf"
         },
         {
           "TargetLevel1":"0.5 MILES",
@@ -1057,7 +1057,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":2,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
         },
         {
           "TargetLevel1":"500FT",
@@ -1070,7 +1070,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/long_jump.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/long_jump.swf"
         },
         {
           "TargetLevel1":"5",
@@ -1083,7 +1083,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":3,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Roll.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Roll.swf"
         },
         {
           "TargetLevel1":"10",
@@ -1096,7 +1096,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":2,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
         }
       ],
       "TargetMissions":[
@@ -1109,7 +1109,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
         },
         {
           "TargetLevel1":"2",
@@ -1120,7 +1120,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":1,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/air_roll.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/air_roll.swf"
         },
         {
           "TargetLevel1":"1.5 SEC",
@@ -1131,7 +1131,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":2,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/air_time.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/air_time.swf"
         },
         {
           "TargetLevel1":"10FT",
@@ -1142,55 +1142,55 @@
             "TargetUnit":""
           },
           "LevelAchieved":3,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/altitude.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/altitude.swf"
         }
       ]
     },
     {
       "JoyRideMapID":1,
       "Name":"yokohama",
-      "MapURL":"/Content/Showdown/Joyride/maps/yokohama.png",
-      "IconURL":"/Content/Showdown/Joyride/location_logo/small/yokohama.png",
+      "MapURL":"./Content/Showdown/Joyride/maps/yokohama.png",
+      "IconURL":"./Content/Showdown/Joyride/location_logo/small/yokohama.png",
       "MissionSummary":[
         {
           "Name":"JUMPS",
           "JoyRideMissionTypeID":0,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf",
           "Completed":"0",
           "Total":"15"
         },
         {
           "Name":"DRIVE",
           "JoyRideMissionTypeID":1,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Speed.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Speed.swf",
           "Completed":"0",
           "Total":"3"
         },
         {
           "Name":"DRIFTS",
           "JoyRideMissionTypeID":2,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf",
           "Completed":"0",
           "Total":"17"
         },
         {
           "Name":"SMASHES",
           "JoyRideMissionTypeID":3,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf",
           "Completed":"0",
           "Total":"9"
         },
         {
           "Name":"DONUTS",
           "JoyRideMissionTypeID":5,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf",
           "Completed":"0",
           "Total":"18"
         },
         {
           "Name":"SPINS",
           "JoyRideMissionTypeID":6,
-          "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf",
+          "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf",
           "Completed":"0",
           "Total":"13"
         }
@@ -1199,7 +1199,7 @@
         {
           "JoyRideZoneID":12,
           "AllHiddenPackagesFound":false,
-          "ZoneImageUrl":"/Content/Showdown/Joyride/maps/yok_construction.png",
+          "ZoneImageUrl":"./Content/Showdown/Joyride/maps/yok_construction.png",
           "JoyRideMapID":1,
           "Name":"CONSTRUCTION SITE",
           "Missions":[
@@ -1212,7 +1212,7 @@
               "Description":"Drift through warehouse 1e.",
               "MapXCoordinate":289,
               "MapYCoordinate":19,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1223,7 +1223,7 @@
               "Description":"Double spin corner.",
               "MapXCoordinate":308,
               "MapYCoordinate":4,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1234,7 +1234,7 @@
               "Description":"Warehouse 1d drift.",
               "MapXCoordinate":182,
               "MapYCoordinate":58,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1245,7 +1245,7 @@
               "Description":"Warehouse 1c drift.",
               "MapXCoordinate":66,
               "MapYCoordinate":112,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1256,7 +1256,7 @@
               "Description":"Speed through containers.",
               "MapXCoordinate":42,
               "MapYCoordinate":171,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Speed.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Speed.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1267,7 +1267,7 @@
               "Description":"Triple donut trailer legs.",
               "MapXCoordinate":465,
               "MapYCoordinate":-46,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1278,7 +1278,7 @@
               "Description":"Junction jump.",
               "MapXCoordinate":345,
               "MapYCoordinate":-106,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1289,7 +1289,7 @@
               "Description":"Drift at the junction.",
               "MapXCoordinate":338,
               "MapYCoordinate":-87,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1300,7 +1300,7 @@
               "Description":"Jump the fence.",
               "MapXCoordinate":329,
               "MapYCoordinate":-6,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1311,7 +1311,7 @@
               "Description":"Jump container gap.",
               "MapXCoordinate":388,
               "MapYCoordinate":-67,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1322,7 +1322,7 @@
               "Description":"Smash the gate.",
               "MapXCoordinate":327,
               "MapYCoordinate":-46,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1333,7 +1333,7 @@
               "Description":"Double donut tires.",
               "MapXCoordinate":309,
               "MapYCoordinate":-87,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1344,7 +1344,7 @@
               "Description":"Double donut forklift.",
               "MapXCoordinate":239,
               "MapYCoordinate":-51,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1355,7 +1355,7 @@
               "Description":"Tight corner drift.",
               "MapXCoordinate":453,
               "MapYCoordinate":-54,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1366,7 +1366,7 @@
               "Description":"Drift under trailers.",
               "MapXCoordinate":-9,
               "MapYCoordinate":190,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1377,7 +1377,7 @@
               "Description":"Jump through trailer.",
               "MapXCoordinate":32,
               "MapYCoordinate":162,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1388,7 +1388,7 @@
               "Description":"Double spin crane.",
               "MapXCoordinate":421,
               "MapYCoordinate":-12,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1399,7 +1399,7 @@
               "Description":"Drift under crane.",
               "MapXCoordinate":303,
               "MapYCoordinate":43,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1410,7 +1410,7 @@
               "Description":"Jump white trucks.",
               "MapXCoordinate":83,
               "MapYCoordinate":66,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1421,7 +1421,7 @@
               "Description":"Smash the gate.",
               "MapXCoordinate":-122,
               "MapYCoordinate":157,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1432,7 +1432,7 @@
               "Description":"Double spin grass.",
               "MapXCoordinate":-102,
               "MapYCoordinate":138,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1443,7 +1443,7 @@
               "Description":"Double donut warehouse pole.",
               "MapXCoordinate":94,
               "MapYCoordinate":99,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1454,7 +1454,7 @@
               "Description":"Double donut warehouse forklift.",
               "MapXCoordinate":207,
               "MapYCoordinate":46,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1465,7 +1465,7 @@
               "Description":"Double donut warehouse 1e.",
               "MapXCoordinate":278,
               "MapYCoordinate":0,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_construction",
@@ -1476,14 +1476,14 @@
               "Description":"Warehouse 1c drift",
               "MapXCoordinate":103,
               "MapYCoordinate":117,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             }
           ]
         },
         {
           "JoyRideZoneID":13,
           "AllHiddenPackagesFound":false,
-          "ZoneImageUrl":"/Content/Showdown/Joyride/maps/yok_container.png",
+          "ZoneImageUrl":"./Content/Showdown/Joyride/maps/yok_container.png",
           "JoyRideMapID":1,
           "Name":"CONTAINER YARD",
           "Missions":[
@@ -1496,7 +1496,7 @@
               "Description":"Jump sheltered platform.",
               "MapXCoordinate":179,
               "MapYCoordinate":-162,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1507,7 +1507,7 @@
               "Description":"Smash tree fencing.",
               "MapXCoordinate":-162,
               "MapYCoordinate":100,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1518,7 +1518,7 @@
               "Description":"Double donut raised building.",
               "MapXCoordinate":-144,
               "MapYCoordinate":66,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1529,7 +1529,7 @@
               "Description":"Jump the yard.",
               "MapXCoordinate":-64,
               "MapYCoordinate":-1,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1540,7 +1540,7 @@
               "Description":"Double donut bulldozer.",
               "MapXCoordinate":80,
               "MapYCoordinate":-27,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1551,7 +1551,7 @@
               "Description":"Smash alley fences.",
               "MapXCoordinate":92,
               "MapYCoordinate":-143,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1562,7 +1562,7 @@
               "Description":"Double donut warehouse 2f.",
               "MapXCoordinate":-48,
               "MapYCoordinate":-76,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1573,7 +1573,7 @@
               "Description":"Triple spin triangle.",
               "MapXCoordinate":61,
               "MapYCoordinate":-254,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1584,7 +1584,7 @@
               "Description":"Jump through trailer.",
               "MapXCoordinate":-72,
               "MapYCoordinate":-51,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1595,7 +1595,7 @@
               "Description":"Smash delivery yard fence.",
               "MapXCoordinate":-79,
               "MapYCoordinate":0,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1606,7 +1606,7 @@
               "Description":"Triple spin under bridge.",
               "MapXCoordinate":143,
               "MapYCoordinate":12,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1617,7 +1617,7 @@
               "Description":"Spin through 2a warehouse.",
               "MapXCoordinate":1,
               "MapYCoordinate":76,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1628,7 +1628,7 @@
               "Description":"Double donut truck.",
               "MapXCoordinate":-74,
               "MapYCoordinate":-15,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1639,7 +1639,7 @@
               "Description":"Drift under trailer.",
               "MapXCoordinate":-77,
               "MapYCoordinate":-91,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1650,7 +1650,7 @@
               "Description":"Smash alley fences.",
               "MapXCoordinate":-14,
               "MapYCoordinate":-1,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1661,7 +1661,7 @@
               "Description":"Double donut warehouse 2c.",
               "MapXCoordinate":-14,
               "MapYCoordinate":25,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1672,7 +1672,7 @@
               "Description":"Double donut trailer legs.",
               "MapXCoordinate":157,
               "MapYCoordinate":-76,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1683,7 +1683,7 @@
               "Description":"Jump over truck.",
               "MapXCoordinate":41,
               "MapYCoordinate":-81,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1694,7 +1694,7 @@
               "Description":"Drift through poles.",
               "MapXCoordinate":-35,
               "MapYCoordinate":-64,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1705,7 +1705,7 @@
               "Description":"Jump the blue drums.",
               "MapXCoordinate":86,
               "MapYCoordinate":-195,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1716,7 +1716,7 @@
               "Description":"Drift construction cabins.",
               "MapXCoordinate":140,
               "MapYCoordinate":-33,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1727,7 +1727,7 @@
               "Description":"Smash colored boxes.",
               "MapXCoordinate":10,
               "MapYCoordinate":-40,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1738,7 +1738,7 @@
               "Description":"Double spin parking bay.",
               "MapXCoordinate":49,
               "MapYCoordinate":-103,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1749,7 +1749,7 @@
               "Description":"Jump steel rod sets.",
               "MapXCoordinate":40,
               "MapYCoordinate":-19,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_container",
@@ -1760,14 +1760,14 @@
               "Description":"Drift past tower.",
               "MapXCoordinate":59,
               "MapYCoordinate":-197,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             }
           ]
         },
         {
           "JoyRideZoneID":14,
           "AllHiddenPackagesFound":false,
-          "ZoneImageUrl":"/Content/Showdown/Joyride/maps/yok_dock.png",
+          "ZoneImageUrl":"./Content/Showdown/Joyride/maps/yok_dock.png",
           "JoyRideMapID":1,
           "Name":"DOCKSIDE",
           "Missions":[
@@ -1780,7 +1780,7 @@
               "Description":"Drift under walkway.",
               "MapXCoordinate":-140,
               "MapYCoordinate":-136,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1791,7 +1791,7 @@
               "Description":"Double spin walkway.",
               "MapXCoordinate":-159,
               "MapYCoordinate":-121,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1802,7 +1802,7 @@
               "Description":"Double spin under helicopter.",
               "MapXCoordinate":-229,
               "MapYCoordinate":-84,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1813,7 +1813,7 @@
               "Description":"Double donut container hole.",
               "MapXCoordinate":-292,
               "MapYCoordinate":57,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1824,7 +1824,7 @@
               "Description":"Jump trailer platforms.",
               "MapXCoordinate":-252,
               "MapYCoordinate":-43,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1835,7 +1835,7 @@
               "Description":"Double donut truck.",
               "MapXCoordinate":-188,
               "MapYCoordinate":29,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1846,7 +1846,7 @@
               "Description":"Smash parking gate.",
               "MapXCoordinate":-141,
               "MapYCoordinate":-34,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1857,7 +1857,7 @@
               "Description":"Double spin harbor.",
               "MapXCoordinate":-344,
               "MapYCoordinate":74,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1868,7 +1868,7 @@
               "Description":"Jump container gap.",
               "MapXCoordinate":-126,
               "MapYCoordinate":-197,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1879,7 +1879,7 @@
               "Description":"Drift building corner.",
               "MapXCoordinate":-226,
               "MapYCoordinate":151,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1890,7 +1890,7 @@
               "Description":"Double donut building pole.",
               "MapXCoordinate":-238,
               "MapYCoordinate":-31,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1901,7 +1901,7 @@
               "Description":"Slalom lamp posts.",
               "MapXCoordinate":-213,
               "MapYCoordinate":-6,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Speed.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Speed.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1912,7 +1912,7 @@
               "Description":"Double spin containers.",
               "MapXCoordinate":-131,
               "MapYCoordinate":-159,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1923,7 +1923,7 @@
               "Description":"Double spin by boat",
               "MapXCoordinate":-280,
               "MapYCoordinate":-39,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1934,7 +1934,7 @@
               "Description":"Smash alley fences.",
               "MapXCoordinate":-229,
               "MapYCoordinate":82,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Destructible.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Destructible.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1945,7 +1945,7 @@
               "Description":"Triple spin square.",
               "MapXCoordinate":-6,
               "MapYCoordinate":-301,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/SpinZone.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/SpinZone.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1956,7 +1956,7 @@
               "Description":"Jump the road.",
               "MapXCoordinate":-105,
               "MapYCoordinate":-185,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1967,7 +1967,7 @@
               "Description":"Double donut forklift.",
               "MapXCoordinate":-123,
               "MapYCoordinate":-238,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1978,7 +1978,7 @@
               "Description":"Double donut container forklift.",
               "MapXCoordinate":-138,
               "MapYCoordinate":-208,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -1989,7 +1989,7 @@
               "Description":"Double donut parking post.",
               "MapXCoordinate":-129,
               "MapYCoordinate":-51,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Donut.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Donut.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -2000,7 +2000,7 @@
               "Description":"Drift behind forklift.",
               "MapXCoordinate":-147,
               "MapYCoordinate":4,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -2011,7 +2011,7 @@
               "Description":"Drift container tops.",
               "MapXCoordinate":-33,
               "MapYCoordinate":-314,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -2022,7 +2022,7 @@
               "Description":"Jump through alley.",
               "MapXCoordinate":-23,
               "MapYCoordinate":-202,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Air.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Air.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -2033,7 +2033,7 @@
               "Description":"Drift around containers.",
               "MapXCoordinate":-66,
               "MapYCoordinate":-320,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
             },
             {
               "JoyrideZoneDescription":"yok_dock",
@@ -2044,7 +2044,7 @@
               "Description":"Speed through containers.",
               "MapXCoordinate":-186,
               "MapYCoordinate":-84,
-              "IconURL":"/Content/Showdown/Flash/joyride/icons/Speed.swf"
+              "IconURL":"./Content/Showdown/Flash/joyride/icons/Speed.swf"
             }
           ]
         }
@@ -2061,7 +2061,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Drive.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Drive.swf"
         },
         {
           "TargetLevel1":"100",
@@ -2074,7 +2074,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Smash.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Smash.swf"
         },
         {
           "TargetLevel1":"100FT",
@@ -2087,7 +2087,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/altitude.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/altitude.swf"
         },
         {
           "TargetLevel1":"1 MIN",
@@ -2100,7 +2100,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/hang_time.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/hang_time.swf"
         },
         {
           "TargetLevel1":"10",
@@ -2113,7 +2113,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Spin.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Spin.swf"
         }
       ],
       "TargetMissions":[
@@ -2126,7 +2126,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/altitude.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/altitude.swf"
         },
         {
           "TargetLevel1":"150FT",
@@ -2137,7 +2137,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/long_jump.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/long_jump.swf"
         },
         {
           "TargetLevel1":"200FT",
@@ -2148,7 +2148,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Drift.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Drift.swf"
         },
         {
           "TargetLevel1":"80MPH",
@@ -2159,7 +2159,7 @@
             "TargetUnit":""
           },
           "LevelAchieved":0,
-          "TypeIconUrl":"/Content/Showdown/Flash/joyride/icons/Speed.swf"
+          "TypeIconUrl":"./Content/Showdown/Flash/joyride/icons/Speed.swf"
         }
       ]
     }
