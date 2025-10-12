@@ -1,0 +1,56 @@
+img {
+  max-width: none !important;
+}
+#right {
+  box-shadow: none;
+}
+#right p {
+  padding: 0px !important;
+}
+.RacenetPage {
+  background-image: url("../CssImages/background_tiler.jpg");
+  /*background-color: white;*/
+}
+#head-menu-nav {
+  /*top: 65px;
+  position: absolute;
+  z-index: 8;*/
+}
+/*#page {
+  padding-top: 83px;
+}
+#page-container {
+  position: relative;
+  z-index: 0;
+}*/
+body {
+  background-color: #ececec !important;
+}
+
+/* my */
+.bigBackground {
+  top: 48px;
+  left: 0;
+}
+#menubar {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom: none;
+  height: 48px;
+}
+#SubNavigation.menu {
+  padding-top: 25px;
+  position: initial;
+  top: initial;
+}
+#no-flash-installed {
+  display: none;
+}
+/* about */
+#sd-about-ratings {
+  width: 250px;
+  left: 0;
+}
+#ShareButton {
+  height: 0;
+}

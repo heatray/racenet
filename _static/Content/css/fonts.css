@@ -1,0 +1,507 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono|Open+Sans+Condensed:300&subset=latin,latin-ext,cyrillic,cyrillic-ext);
+
+/*
+@import url("https://fast.fonts.com/t/1.css?apiType=css&projectid=2260ec04-b634-4564-b437-c59a8233b70b");
+*/
+
+@font-face {
+  font-family: "UniversNext-Regular";
+  src: url('/Content/fonts/73e16764-0099-40e0-9182-d69b99396d94.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "UniversNext-Regular";
+  src: url('/Content/fonts/73e16764-0099-40e0-9182-d69b99396d94.eot?iefix');
+  src: url('/Content/fonts/c6e5b0e0-ee60-4f51-975c-6e2f4bdd6225.woff') format('woff')
+    , url('/Content/fonts/43a61655-19e5-478a-8d73-bb7e7f4f295f.ttf') format('truetype')
+    , url('/Content/fonts/337b082c-c223-40e0-971b-39d9b5b610c0.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'UniversNext-Regular';
+    src: url('/Content/fonts/337b082c-c223-40e0-971b-39d9b5b610c0.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "UniversNext-220CondT";
+  src: url('/Content/fonts/1e75dbcb-cc21-4fdc-a36b-eef8ccb49ead.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "UniversNext-220CondT";
+  src: url('/Content/fonts/1e75dbcb-cc21-4fdc-a36b-eef8ccb49ead.eot?iefix');
+  src: url('/Content/fonts/d58d8b1b-5b1c-4ab1-a9cb-2c8abc7f712c.woff') format('woff')
+    , url('/Content/fonts/66e98c4f-2e9b-4d64-9ac1-4e9b03b1fa54.ttf') format('truetype')
+    , url('/Content/fonts/9e745825-a39b-48d5-bfd9-6a02cb715c3d.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'UniversNext-220CondT';
+    src: url('/Content/fonts/9e745825-a39b-48d5-bfd9-6a02cb715c3d.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "UniversNext-320CondL";
+  src: url('/Content/fonts/8cedca58-990a-499f-8da1-79f42baadcd2.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "UniversNext-320CondL";
+  src: url('/Content/fonts/8cedca58-990a-499f-8da1-79f42baadcd2.eot?iefix');
+  src: url('/Content/fonts/9f4daf09-16e3-4902-a060-a3c56cd45f4a.woff') format('woff')
+    , url('/Content/fonts/903b05b6-2edc-4af1-b8f5-136e0e56198b.ttf') format('truetype')
+    , url('/Content/fonts/26554066-692f-4794-860f-f35814805aff.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'UniversNext-320CondL';
+    src: url('/Content/fonts/26554066-692f-4794-860f-f35814805aff.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "UniversNext-321CondL";
+  src: url('/Content/fonts/954433be-043d-4137-8283-973963427f58.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "UniversNext-321CondL";
+  src: url('/Content/fonts/954433be-043d-4137-8283-973963427f58.eot?iefix');
+  src: url('/Content/fonts/0b794321-c508-4a86-883a-6108c5f299ce.woff') format('woff')
+    , url('/Content/fonts/31a4611e-59ae-45c7-8615-71c0b23a53fb.ttf') format('truetype')
+    , url('/Content/fonts/0c01ae16-5e52-46f2-beaa-731eb8e8cfdc.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'UniversNext-321CondL';
+    src: url('/Content/fonts/0c01ae16-5e52-46f2-beaa-731eb8e8cfdc.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "UniversNext-620CondB";
+  src: url('/Content/fonts/dab444a5-5fce-477a-abbe-40e7c7b42393.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "UniversNext-620CondB";
+  src: url('/Content/fonts/dab444a5-5fce-477a-abbe-40e7c7b42393.eot?iefix');
+  src: url('/Content/fonts/2a0ca548-577f-4ea4-8bee-80303da34040.woff') format('woff')
+    , url('/Content/fonts/689738b2-97f9-42d0-ab35-2aadafce920f.ttf') format('truetype')
+    , url('/Content/fonts/be9d5374-8e09-4c99-a8df-4e72d485f333.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'UniversNext-620CondB';
+    src: url('/Content/fonts/be9d5374-8e09-4c99-a8df-4e72d485f333.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "UniversNext-720CondH";
+  src: url('/Content/fonts/0a776c3e-5f46-4f7c-ae7f-2dfdc829f814.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "UniversNext-720CondH";
+  src: url('/Content/fonts/0a776c3e-5f46-4f7c-ae7f-2dfdc829f814.eot?iefix');
+  src: url('/Content/fonts/70f8d19a-0de8-4fac-a463-3e7e138d3557.woff') format('woff')
+    , url('/Content/fonts/6ff7a6c1-0c62-4dbd-b27d-bb5125b67fec.ttf') format('truetype')
+    , url('/Content/fonts/68cc77a7-c057-4c7d-8c80-388b0f7497fe.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'UniversNext-720CondH';
+    src: url('/Content/fonts/68cc77a7-c057-4c7d-8c80-388b0f7497fe.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "UniversLTStdBoldCn";
+  src: url('/Content/fonts/universltstdboldcn.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "UniversLTStdBoldCn";
+  src: url('/Content/fonts/universltstdboldcn.eot?iefix');
+  src: url('/Content/fonts/universltstdboldcn.woff') format('woff')
+    , url('/Content/fonts/universltstdboldcn.ttf') format('truetype')
+    , url('/Content/fonts/universltstdboldcn.svg#universltstdboldcn') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'UniversLTStdBoldCn';
+    src: url('/Content/fonts/universltstdboldcn.svg#universltstdboldcn') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "DINNextLTPro-BoldCondensed";
+  src: url('/Content/fonts/d052307d-6e91-4555-841d-7d1154cfed9d.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "DINNextLTPro-BoldCondensed";
+  src: url('/Content/fonts/d052307d-6e91-4555-841d-7d1154cfed9d.eot?iefix');
+  src: url('/Content/fonts/a5ac20e8-b9b5-4423-8da8-ec1c8e6d20e5.woff') format('woff')
+    , url('/Content/fonts/de864b92-6d36-448e-9279-52492806c295.ttf') format('truetype')
+    , url('/Content/fonts/cb8026ba-ec01-4ccd-96c4-91e5419c9458.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'DINNextLTPro-BoldCondensed';
+    src: url('/Content/fonts/cb8026ba-ec01-4ccd-96c4-91e5419c9458.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "DINNextLTPro-LightCondensed";
+  src: url('/Content/fonts/b1ce5da4-b17e-43f6-95d1-438b3cb3e9a3.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "DINNextLTPro-LightCondensed";
+  src: url('/Content/fonts/b1ce5da4-b17e-43f6-95d1-438b3cb3e9a3.eot?iefix');
+  src: url('/Content/fonts/03f173c7-af1c-474f-8e81-f23cc14abc89.woff') format('woff')
+    , url('/Content/fonts/42d2d489-d3e9-4d81-b7e7-85628e5c377f.ttf') format('truetype')
+    , url('/Content/fonts/ccf50b30-6c91-4cac-8afb-cb1d3bd72055.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'DINNextLTPro-LightCondensed';
+    src: url('/Content/fonts/ccf50b30-6c91-4cac-8afb-cb1d3bd72055.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "DINNextLTPro-MediumCond";
+  src: url('/Content/fonts/5423ac72-6b0a-4c94-9a87-c2947b897d66.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "DINNextLTPro-MediumCond";
+  src: url('/Content/fonts/5423ac72-6b0a-4c94-9a87-c2947b897d66.eot?iefix');
+  src: url('/Content/fonts/4da87afe-2c67-4636-8ab8-037775bf3111.woff') format('woff')
+    , url('/Content/fonts/fef7e1ed-bd30-41aa-822e-60f12737346a.ttf') format('truetype')
+    , url('/Content/fonts/7d74c48f-eb44-4482-beac-22633e05e964.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'DINNextLTPro-MediumCond';
+    src: url('/Content/fonts/7d74c48f-eb44-4482-beac-22633e05e964.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "DINNextLTPro-Condensed";
+  src: url('/Content/fonts/8cf2ee30-97aa-4b89-9947-8facccba0d0b.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "DINNextLTPro-Condensed";
+  src: url('/Content/fonts/8cf2ee30-97aa-4b89-9947-8facccba0d0b.eot?iefix');
+  src: url('/Content/fonts/68b2a800-4041-4d83-94d6-2489e5b32bff.woff') format('woff')
+    , url('/Content/fonts/647359e3-dec6-4948-aa1c-d8aa895946ae.ttf') format('truetype')
+    , url('/Content/fonts/79b3cc8e-6148-4a17-9849-fb52c73f376a.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'DINNextLTPro-Condensed';
+    src: url('/Content/fonts/79b3cc8e-6148-4a17-9849-fb52c73f376a.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "DINNextLTPro-UltraLightCond";
+  src: url('/Content/fonts/a1b22888-eded-406a-8cc6-e947ed39a443.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "DINNextLTPro-UltraLightCond";
+  src: url('/Content/fonts/a1b22888-eded-406a-8cc6-e947ed39a443.eot?iefix');
+  src: url('/Content/fonts/87a3fd2b-61d4-46f5-9e81-249c3c389fdd.woff') format('woff')
+    , url('/Content/fonts/a1ee77eb-9c31-4735-acf3-14bd060fcb05.ttf') format('truetype')
+    , url('/Content/fonts/9f09c2a6-bde3-4f3c-91ea-dcc719bcbb95.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'DINNextLTPro-UltraLightCond';
+    src: url('/Content/fonts/9f09c2a6-bde3-4f3c-91ea-dcc719bcbb95.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Eurostile";
+  src: url('/Content/fonts/cd70c3be-0955-4748-9839-679c86753550.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Eurostile";
+  src: url('/Content/fonts/cd70c3be-0955-4748-9839-679c86753550.eot?iefix');
+  src: url('/Content/fonts/25a48952-f436-4be0-8d90-716b57f5a9a7.woff') format('woff')
+    , url('/Content/fonts/d6730b91-19ed-4863-9500-00da587d81b1.ttf') format('truetype')
+    , url('/Content/fonts/79b96186-305c-4b8a-b1bc-781d636f7b6e.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Eurostile';
+    src: url('/Content/fonts/79b96186-305c-4b8a-b1bc-781d636f7b6e.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "HelveticaNeueW02-87HvCn-694075";
+  src: url('/Content/fonts/750e1a3a-866c-41a6-9dd5-e510ebd1aea5.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "HelveticaNeueW02-87HvCn-694075";
+  src: url('/Content/fonts/750e1a3a-866c-41a6-9dd5-e510ebd1aea5.eot?iefix');
+  src: url('/Content/fonts/20e6e0e5-8853-41aa-a07f-9ee04da13642.woff') format('woff')
+    , url('/Content/fonts/4ad6f99d-2299-4bc0-a9de-b1e9a62534d6.ttf') format('truetype')
+    , url('/Content/fonts/5c190a77-3dc9-4e3f-beb9-152b4af30c69.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'HelveticaNeueW02-87HvCn-694075';
+    src: url('/Content/fonts/5c190a77-3dc9-4e3f-beb9-152b4af30c69.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "HelveticaNeueW10-97Blac-777303";
+  src: url('/Content/fonts/04afcf71-6b63-43c5-a3e2-3af3c8702fc4.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "HelveticaNeueW10-97Blac-777303";
+  src: url('/Content/fonts/04afcf71-6b63-43c5-a3e2-3af3c8702fc4.eot?iefix');
+  src: url('/Content/fonts/45bd95ea-122e-4a2e-9b96-2716ae43457d.woff') format('woff')
+    , url('/Content/fonts/de16addb-a9a9-4a72-91d0-39c93b5032da.ttf') format('truetype')
+    , url('/Content/fonts/d474dc40-8d51-4df5-82f6-a9c14a6b9d7b.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'HelveticaNeueW10-97Blac-777303';
+    src: url('/Content/fonts/d474dc40-8d51-4df5-82f6-a9c14a6b9d7b.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Helvetica-CondBold";
+  src: url('/Content/fonts/77cb0adc-646b-4830-8f4c-3db7adbb8dc4.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Helvetica-CondBold";
+  src: url('/Content/fonts/77cb0adc-646b-4830-8f4c-3db7adbb8dc4.eot?iefix');
+  src: url('/Content/fonts/631bf655-ced5-4627-93d4-89d1bdfe3014.woff') format('woff')
+    , url('/Content/fonts/96740819-d387-437f-b739-9778ddc5e5b9.ttf') format('truetype')
+    , url('/Content/fonts/05729794-671d-4a73-a294-f2f447795319.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Helvetica-CondBold';
+    src: url('/Content/fonts/05729794-671d-4a73-a294-f2f447795319.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Helvetica-CondBlack";
+  src: url('/Content/fonts/4bd6b020-50b6-4a5e-8b5a-b74ad50ddd2a.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Helvetica-CondBlack";
+  src: url('/Content/fonts/4bd6b020-50b6-4a5e-8b5a-b74ad50ddd2a.eot?iefix');
+  src: url('/Content/fonts/09b2bfcd-4b1f-42da-8c4c-289f0d1ee485.woff') format('woff')
+    , url('/Content/fonts/e194c5cd-f02a-4b7e-bdb6-dc3e66b80061.ttf') format('truetype')
+    , url('/Content/fonts/6c0969c8-b4f8-42f9-bf8b-d8c37c88d4db.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Helvetica-CondBlack';
+    src: url('/Content/fonts/6c0969c8-b4f8-42f9-bf8b-d8c37c88d4db.svg') format('svg');
+  }
+}
+
+
+
+@font-face {
+  font-family: "Swiss721W01-BlackConden";
+  src: url('/Content/fonts/aa898871-4566-469b-b50a-5d85c39eebb5.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Swiss721W01-BlackConden";
+  src: url('/Content/fonts/aa898871-4566-469b-b50a-5d85c39eebb5.eot?iefix');
+  src: url('/Content/fonts/3b500e51-91e9-44af-8c6f-52ee81e157bc.woff') format('woff')
+    , url('/Content/fonts/efe8f093-554e-4ade-9d73-0a0ccea95bb3.ttf') format('truetype')
+    , url('/Content/fonts/02ccb762-e8c9-47d9-90fc-517de3554eb3.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Swiss721W01-BlackConden';
+    src: url('/Content/fonts/02ccb762-e8c9-47d9-90fc-517de3554eb3.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Swiss721W01-LightConden";
+  src: url('/Content/fonts/492c1dc1-a0eb-449d-9c6b-5fc379d3d6ad.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Swiss721W01-LightConden";
+  src: url('/Content/fonts/492c1dc1-a0eb-449d-9c6b-5fc379d3d6ad.eot?iefix');
+  src: url('/Content/fonts/572f4033-5b20-497d-9eec-f2642057895c.woff') format('woff')
+    , url('/Content/fonts/4874e700-7150-43e5-a72e-108b74d19e58.ttf') format('truetype')
+    , url('/Content/fonts/ec9ad866-7df7-424f-841f-ca5d9b23bf9e.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Swiss721W01-LightConden';
+    src: url('/Content/fonts/ec9ad866-7df7-424f-841f-ca5d9b23bf9e.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Swiss-721-W01-Condensed";
+  src: url('/Content/fonts/479af9aa-4f26-46f2-86bd-a7a402857682.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Swiss-721-W01-Condensed";
+  src: url('/Content/fonts/479af9aa-4f26-46f2-86bd-a7a402857682.eot?iefix');
+  src: url('/Content/fonts/6c757807-f8ca-46ea-a7ec-bf318188880a.woff') format('woff')
+    , url('/Content/fonts/ed06709b-3985-4b1e-b045-e173e224060a.ttf') format('truetype')
+    , url('/Content/fonts/6a141d87-8c63-412b-9ac6-1107b02ea625.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Swiss-721-W01-Condensed';
+    src: url('/Content/fonts/6a141d87-8c63-412b-9ac6-1107b02ea625.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Swiss721W01-BoldCondens";
+  src: url('/Content/fonts/9d110454-bdb0-45fa-8bfd-27c1e5a6e0de.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Swiss721W01-BoldCondens";
+  src: url('/Content/fonts/9d110454-bdb0-45fa-8bfd-27c1e5a6e0de.eot?iefix');
+  src: url('/Content/fonts/f2bb9e08-e1b0-4de5-b414-c8a0b3ec39fa.woff') format('woff')
+    , url('/Content/fonts/d51673dd-8f8b-49c0-bc94-97ae567963c3.ttf') format('truetype')
+    , url('/Content/fonts/4c00b9f9-d6b3-46b6-b7e5-820786ed386e.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Swiss721W01-BoldCondens';
+    src: url('/Content/fonts/4c00b9f9-d6b3-46b6-b7e5-820786ed386e.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Microgramma-BoldEx";
+  src: url('/Content/fonts/02d239db-a0ee-4c7c-b718-47f6611e62fe.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Microgramma-BoldEx";
+  src: url('/Content/fonts/02d239db-a0ee-4c7c-b718-47f6611e62fe.eot?iefix');
+  src: url('/Content/fonts/73ccd7f9-454a-47d7-a355-edcb8c9cd4cc.woff') format('woff')
+    , url('/Content/fonts/d85b2d7d-5c82-4d88-ad09-782cb34c8e70.ttf') format('truetype')
+    , url('/Content/fonts/bf9cee92-1aaa-4fa2-a195-1ec41c888603.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Microgramma-BoldEx';
+    src: url('/Content/fonts/bf9cee92-1aaa-4fa2-a195-1ec41c888603.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Microgramma-MediumEx";
+  src: url('/Content/fonts/0f722089-4525-4fc1-8224-1da8a4384a22.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Microgramma-MediumEx";
+  src: url('/Content/fonts/0f722089-4525-4fc1-8224-1da8a4384a22.eot?iefix');
+  src: url('/Content/fonts/40377c83-75a9-4784-9632-e8de58f51d47.woff') format('woff')
+    , url('/Content/fonts/c8029827-3e42-40ea-a80a-3a5669a806f6.ttf') format('truetype')
+    , url('/Content/fonts/7ddbe0ec-3cbb-4226-acaa-b569b38fe34e.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Microgramma-MediumEx';
+    src: url('/Content/fonts/7ddbe0ec-3cbb-4226-acaa-b569b38fe34e.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Digital";
+  src: url('/Content/fonts/3b170ce5-2e40-4214-b159-f6aec076af53.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Digital";
+  src: url('/Content/fonts/3b170ce5-2e40-4214-b159-f6aec076af53.eot?iefix');
+  src: url('/Content/fonts/f93e0c9e-8377-4995-99b7-ec8978f1aeca.woff') format('woff')
+    , url('/Content/fonts/25304194-8167-4f10-904a-6c72a38df74b.ttf') format('truetype')
+    , url('/Content/fonts/df794cb2-8546-47bb-9597-cce43ba16a6a.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Digital';
+    src: url('/Content/fonts/df794cb2-8546-47bb-9597-cce43ba16a6a.svg') format('svg');
+  }
+}
+
+@font-face {
+  font-family: "Groboldov";
+  src: url('/Content/fonts/groboldov-webfont.eot?iefix') format('eot');
+}
+
+@font-face {
+  font-family: "Groboldov";
+  src: url('/Content/fonts/groboldov-webfont.eot?iefix');
+  src: url('/Content/fonts/groboldov-webfont.woff') format('woff')
+    , url('/Content/fonts/groboldov-webfont.ttf') format('truetype')
+    , url('/Content/fonts/groboldov-webfont.svg#groboldov-webfont') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Groboldov';
+    src: url('/Content/fonts/groboldov-webfont.svg#groboldov-webfont') format('svg');
+  }
+}
