@@ -1,13 +1,12 @@
 {
-  "maximum_time":8639999000,
-  "polling_interval":10000,
-  "ct_auto_carousel_duration":10,
-  "ct_auto_carousel_manual_delay":15,
-  "ct_marker_distance":50,
-
+  "maximum_time": 8639999000,
+  "polling_interval": 10000,
+  "ct_auto_carousel_duration": 10,
+  "ct_auto_carousel_manual_delay": 15,
+  "ct_marker_distance": 50,
   "challenge_common_challenge_tracker_title": "TITLE",
-  "challenge_common_level":"LVL",
-  "challenge_common_challenges_won":"CHALLENGES WON",
-  "challenge_common_winner":"WON BY:",
-  "challenge_no_data":"NO DATA"
+  "challenge_common_level": "LVL",
+  "challenge_common_challenges_won": "CHALLENGES WON",
+  "challenge_common_winner": "WON BY:",
+  "challenge_no_data": "NO DATA"
 }
