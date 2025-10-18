@@ -1,0 +1,723 @@
+.bs {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#g2dh_title_icon {
+  background-image: url('../Grid2/DriverHistory/driver_history_icon.png');
+  background-size: 54px 54px;
+}
+#g2dh_side {
+  background-color: black;
+  width: 332px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  font-size: 40pt;
+  color: white;
+  font-family: 'Swiss721W01-BlackConden';
+  font-weight: bold;
+}
+#g2dh_level {
+  width: 325px;
+  height: 70px;
+  background: #690101 url('../Grid2/DriverHistory/level_icon.png') no-repeat scroll 16px center;
+  background-size: 54px 54px;
+  margin-top: 8px;
+  line-height: 70px;
+  padding-left: 86px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#g2dh_cash {
+  width: 325px;
+  height: 70px;
+  background-color: #3a3939;
+  background: #3a3939 url('../Grid2/DriverHistory/grollor_icon.png') no-repeat scroll 16px center;
+  background-size: 54px 54px;
+  color: white;
+  font-family: 'Swiss721W01-BoldCondens';
+  margin-top: 9px;
+  line-height: 70px;
+  padding-left: 86px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#g2dh_level_inner,
+#g2dh_cash_inner {
+  display: inline-block;
+  padding-left: 16px;
+  background: transparent url('../Grid2/DriverHistory/left_cap.png') no-repeat scroll left center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-size: 1px 50px;
+}
+#g2dh_car {
+  width: 325px;
+  height: 188px;
+  background: #440044 url('../Grid2/DriverHistory/car_image_placeholder.jpg') no-repeat scroll left top;
+  background-size: cover;
+  margin-top: 9px;
+  position: relative;
+}
+#g2dh_main {
+  background-color: #191919;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  width: 866px;
+}
+#g2dh_comparer {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 60px;
+  background-color: #3a3939;
+  font-family: Eurostile;
+  font-size: 15pt;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#g2dh_me,
+#g2dh_vs,
+#g2dh_them {
+  height: 50px;
+  line-height: 60px;
+  padding: 0px 14px;
+}
+#g2dh_me,
+#g2dh_them {
+  width: 394px;
+  color: white;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#g2dh_me {
+  text-align: right;
+}
+#g2dh_them {
+  text-align: left;
+}
+#g2dh_vs {
+  width: 78px;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  float: left;
+  text-align: center;
+  height: 41px;
+  line-height: 41px;
+  position: relative;
+  top: 10px;
+  text-indent: -4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#g2dh_them_selector {
+  font-family: Eurostile;
+  font-size: 21pt;
+  background-color: #6b6969;
+  color: white;
+  width: 100%;
+  border: 1px solid #d8d7d7;
+  border-radius: 2px;
+}
+#g2dh_statsarea {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin: 10px 0px 2px 0px;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.g2dh_stat {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 6px 0px;
+  margin-bottom: 2px;
+  color: white;
+  text-align: center;
+  font-family: 'Swiss721W01-BoldCondens';
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.g2dh_stat_name {
+  margin-bottom: 4px;
+}
+.g2dh_stat_statcontainer {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-top: 4px;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.g2dh_stat_barcontainer {
+  width: 830px;
+  position: relative;
+  margin: 0px auto;
+  float: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.g2dh_stat_floating_middle_left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 415px;
+  border-right: 1px solid white;
+  min-height: 40px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.g2dh_stat_floating_middle_right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 415px;
+  min-height: 40px;
+  border-left: 1px solid white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.g2dh_stat_me {
+  display: inline-block;
+  background-color: #0fa029;
+  color: white;
+  height: 40px;
+  text-align: left;
+  border-bottom: 1px solid white;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-transition: width 0.7s ease-out;
+  -moz-transition: width 0.7s ease-out;
+  -o-transition: width 0.7s ease-out;
+  transition: width 0.7s ease-out;
+}
+.g2dh_stat_me_value {
+  padding-right: 8px;
+  border-right: 2px solid white;
+  float: left;
+  font-family: Eurostile;
+  font-size: 12.5pt;
+  font-weight: normal;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.g2dh_stat_them {
+  display: inline-block;
+  background-color: #6b6969;
+  color: white;
+  height: 40px;
+  float: right;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-transition: width 0.7s ease-out;
+  -moz-transition: width 0.7s ease-out;
+  -o-transition: width 0.7s ease-out;
+  transition: width 0.7s ease-out;
+}
+.g2dh_stat_value_box {
+  float: left;
+  font-family: Eurostile;
+  font-size: 12.5pt;
+  font-weight: normal;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+}
+.g2dh_stat_them_value {
+  padding-left: 8px;
+  border-left: 2px solid white;
+  text-align: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  float: left;
+  font-family: Eurostile;
+  font-size: 12.5pt;
+  font-weight: normal;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+}
+.anim {
+  -webkit-transition: width 0.7s ease-out;
+  -moz-transition: width 0.7s ease-out;
+  -o-transition: width 0.7s ease-out;
+  transition: width 0.7s ease-out;
+}
+#g2dh_content {
+  border-left: none;
+}
+#g2dh_side {
+  border-right: 1px solid #848484;
+}
+#g2dh_footer_selection_buttons input[type=radio] {
+  display: none;
+}
+#g2dh_footer_selection_buttons label {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: transparent url('../Grid2/DriverHistory/circle_nav_light.png') no-repeat scroll left top;
+  background-size: 16px 16px;
+  margin-left: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#g2dh_footer_selection_buttons label .desc {
+  display: none;
+}
+#g2dh_footer_selection_buttons input[type=radio]:checked + label {
+  color: #262626;
+  background: transparent url('../Grid2/DriverHistory/circle_nav_dark.png') no-repeat scroll left top;
+  background-size: 16px 16px;
+}
+#g2dh_footer_stat {
+  float: left;
+}
+#g2dh_footer_selector {
+  float: right;
+}
+#g2dh_footer_selection_desc {
+  float: left;
+  text-align: right;
+  margin-right: 18px;
+  font-family: Eurostile;
+  font-size: 18pt;
+  letter-spacing: -0.04em;
+}
+#g2dh_footer_selection_buttons {
+  float: right;
+  height: 44px;
+  margin-right: 6px;
+}
+#g2dh_footer_selection_buttons label {
+  float: left;
+  overflow: hidden;
+}
+#dk_container_g2dh_them_selector {
+  font-size: inherit;
+}
+.dk_theme_rng2 .dk_toggle {
+  width: 300px !important;
+}
+.dk_theme_rng2 .dk_options {
+  z-index: 30;
+}
+#gd2h_layout_levelcash,
+#gd2h_layout_car {
+  display: inline-block;
+}
+#g2dh_favourite_text {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  font-family: Eurostile;
+  font-weight: normal;
+  left: 0px;
+  top: 0px;
+  font-size: 15pt;
+  color: black;
+  line-height: 98%;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 5px 7px;
+}
+#g2dh_mobilecomparingwith {
+  display: none;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-left: 14px;
+  font-family: 'Swiss721W01-BoldCondens';
+}
+#g2dh_statsarea_loading {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: black url('../images/ajax-loader.gif') no-repeat center center;
+  z-index: 200;
+}
+.g2dh_stat_a_value {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  float: none;
+  border: none;
+  width: auto;
+}
+.g2dh_stat_me_value {
+  left: 16px;
+  text-align: left;
+  border-left: 2px solid white;
+  padding-left: 8px;
+}
+.g2dh_stat_them_value {
+  right: 16px;
+  text-align: right;
+  border-right: 2px solid white;
+  padding-right: 8px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  #g2dh_level_inner,
+  #g2dh_cash_inner {
+    background-image: url('../Grid2/DriverHistory/left_cap@2x.png');
+  }
+  #g2dh_footer_selection_buttons label {
+    background-image: url('../Grid2/DriverHistory/circle_nav_light@2x.png');
+  }
+  #g2dh_footer_selection_buttons input[type=radio]:checked + label {
+    background-image: url('../Grid2/DriverHistory/circle_nav_dark@2x.png');
+  }
+  #g2dh_level {
+    background-image: url('../Grid2/DriverHistory/level_icon@2x.png');
+  }
+  #g2dh_cash {
+    background-image: url('../Grid2/DriverHistory/grollor_icon@2x.png');
+  }
+  #g2dh_title_icon {
+    background-image: url('../Grid2/DriverHistory/driver_history_icon@2x.png');
+  }
+}
+@media (min-width: 1024px) and (max-width:1279px), only screen and (-webkit-min-device-pixel-ratio: 0) and (max-height: 933px) and (min-height: 800px) and (min-width: 1200px) and (max-width: 1370px) {
+  #g2dh_main {
+    width: 666px;
+  }
+  #g2dh_me,
+  #g2dh_them {
+    width: 294px;
+  }
+  .dk_theme_rng2 .dk_toggle {
+    width: 214px !important;
+  }
+  #g2dh_comparer {
+    font-size: 12pt;
+  }
+  .g2dh_stat_barcontainer {
+    width: 630px;
+  }
+  .g2dh_stat_floating_middle_left,
+  .g2dh_stat_floating_middle_right {
+    width: 315px;
+  }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+  #g2dh_header {
+    display: none;
+  }
+  .g2dh_stat_barcontainer {
+    width: 690px;
+  }
+  .g2dh_stat_floating_middle_left,
+  .g2dh_stat_floating_middle_right {
+    width: 345px;
+  }
+  #g2dh_level_inner,
+  #g2dh_cash_inner {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  #g2dh_statsarea {
+    min-height: 280px;
+  }
+  #g2dh_side {
+    width: 100%;
+    float: left;
+    clear: both;
+    border-right: none;
+  }
+  #g2dh_main {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+  #g2dh_content {
+    border-right: none;
+  }
+  #gd2h_layout_levelcash,
+  #gd2h_layout_car {
+    display: block;
+  }
+  #gd2h_layout_levelcash {
+    float: right;
+    clear: right;
+  }
+  #g2dh_layout_car {
+    float: left;
+    clear: left;
+  }
+  #g2dh_level {
+    width: 394px;
+    height: 90px;
+  }
+  #g2dh_cash {
+    width: 394px;
+    height: 90px;
+    margin-top: 8px;
+  }
+  #g2dh_car {
+    margin-top: 8px;
+    padding-top: 0px;
+  }
+  #g2dh_content {
+    height: auto;
+  }
+  #g2dh_main {
+    margin-top: 8px;
+  }
+  #g2dh_me {
+    display: none;
+  }
+  #g2dh_vs {
+    display: none;
+  }
+  #g2dh_them {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  #g2dh_mobilecomparingwith {
+    display: block;
+  }
+  #g2dh_comparer {
+    height: auto;
+    color: white;
+  }
+  .dk_theme_rng2 .dk_toggle {
+    width: 100% !important;
+  }
+  .dk_container {
+    width: 100%;
+  }
+  .dk_theme_rng2 .dk_toggle {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 42px !important;
+  }
+  #g2dh_footer_stat {
+    display: none;
+  }
+  .dk_theme_rng2.dk_container {
+    top: 6px !important;
+  }
+  #g2dh_stat3 {
+    margin-bottom: 24px;
+  }
+  #g2dh_footer_selector {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  #g2dh_footer_selection_desc {
+    position: relative;
+    top: 32px;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-right: 0px;
+    line-height: 39px;
+  }
+  #g2dh_footer_selection_buttons {
+    position: relative;
+    top: -36px;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: auto;
+    margin-right: 0px;
+    line-height: 39px;
+  }
+  #g2dh_footer_selection_buttons label {
+    float: none;
+    clear: none;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-top: 0px;
+  }
+  #g2dh_footer {
+    height: 72px;
+  }
+  #ss_career + label {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 600px) and (max-width:767px) {
+  #g2dh_header {
+    display: none;
+  }
+  #g2dh_level,
+  #g2dh_cash {
+    width: 306px;
+    height: 74px;
+  }
+  #g2dh_car {
+    width: 268px;
+    height: 156px;
+  }
+  #g2dh_level,
+  #g2dh_car {
+    margin-top: 10px;
+  }
+  #wrapper {
+    margin-top: 0px;
+  }
+  .g2dh_stat_barcontainer {
+    width: 544px;
+  }
+  .g2dh_stat_floating_middle_left,
+  .g2dh_stat_floating_middle_right {
+    width: 272px;
+  }
+  #g2dh_level_inner,
+  #g2dh_cash_inner {
+    margin-top: 2px;
+  }
+  #g2dh_favourite_text {
+    font-family: 'Swiss721W01-BoldCondens';
+  }
+  /*    .lang-de #g2dh_favourite_text { font-size:12pt; top:13px; }*/
+}
+@media (min-width: 480px) and (max-width:599px) {
+  #g2dh_header {
+    display: none;
+  }
+  #g2dh_level,
+  #g2dh_cash {
+    width: 232px;
+    height: 61px;
+    background-size: 46px 46px;
+    background-position: 9px center;
+    padding-left: 66px;
+    line-height: 61px;
+  }
+  #g2dh_level_inner,
+  #g2dh_cash_inner {
+    padding-left: 12px;
+    background-size: 1px 46px;
+  }
+  #g2dh_cash {
+    margin-top: 7px;
+  }
+  #g2dh_car {
+    width: 224px;
+    height: 129px;
+  }
+  #g2dh_level,
+  #g2dh_car {
+    margin-top: 10px;
+  }
+  #wrapper {
+    width: 462px;
+    margin-top: 0px;
+  }
+  #g2dh_side {
+    font-size: 28pt;
+  }
+  #g2dh_footer_selection_desc {
+    font-size: 14pt;
+    float: left;
+  }
+  #g2dh_footer_selector {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .g2dh_stat_barcontainer {
+    width: 426px;
+  }
+  .g2dh_stat_floating_middle_left,
+  .g2dh_stat_floating_middle_right {
+    width: 213px;
+  }
+  #g2dh_favourite_text {
+    font-family: 'Swiss721W01-BoldCondens';
+  }
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  #g2dh_header {
+    display: none;
+  }
+  #g2dh_level,
+  #g2dh_cash {
+    width: 300px;
+    height: 61px;
+    background-size: 46px 46px;
+    background-position: 9px center;
+    padding-left: 66px;
+    line-height: 61px;
+  }
+  #g2dh_level_inner,
+  #g2dh_cash_inner {
+    padding-left: 12px;
+    background-size: 1px 46px;
+  }
+  #g2dh_cash {
+    margin-top: 7px;
+  }
+  #g2dh_car {
+    width: 224px;
+    height: 129px;
+  }
+  #g2dh_level {
+    margin-top: 10px;
+  }
+  #g2dh_car {
+    margin-top: 7px;
+    width: 300px;
+    height: 173px;
+  }
+  #wrapper {
+    margin-top: 0px;
+  }
+  #g2dh_main {
+    margin-top: 7px;
+  }
+  #g2dh_side {
+    font-size: 28pt;
+  }
+  #g2dh_footer_selection_desc {
+    font-size: 14pt;
+    float: left;
+    white-space: nowrap;
+    font-family: 'Swiss721W01-BoldCondens';
+  }
+  #g2dh_footer_selector {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .g2dh_stat_barcontainer {
+    width: 264px;
+    margin: 0px auto;
+    float: none;
+  }
+  .g2dh_stat_floating_middle_left,
+  .g2dh_stat_floating_middle_right {
+    width: 132px;
+  }
+  #g2dh_favourite_text {
+    font-family: 'Swiss721W01-BoldCondens';
+  }
+}
