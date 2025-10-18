@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /Errors/
+
+Sitemap: http://racenet.codemasters.com/sitemap.xml

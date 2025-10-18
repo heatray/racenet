@@ -1,0 +1,142 @@
+/* FOOTER
+--------------------------------------------*/
+
+.footer {
+  height: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  float: left;
+  z-index: 100;
+}
+.gameMenu {
+  position: relative;
+  bottom: 0px;
+  z-index: 99;
+  width: 100%;
+  float: left;
+}
+/*hide the text*/
+
+.gameMenu .menu {
+  padding: 0;
+}
+.gameMenu .menu ul {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.gameMenu .menu ul li,
+.gameMenu .menu ul li:hover {
+  border: 0;
+  padding: 0;
+}
+.gameMenu .menu ul li a {
+  text-indent: -3000px;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+}
+.gameMenu .menu ul li.current {
+  border-bottom: none;
+}
+.topGradient {
+  width: 100%;
+  height: 19px;
+  background-image: url('../CssImages/footerGradient.png');
+  background-repeat: repeat-x;
+  background-position: top;
+  float: left;
+}
+.gameMenu .menu {
+  height: 78px;
+  width: 100%;
+  background-image: url("../cssimages/gameSelector/gradient.png");
+}
+.gameMenu ul {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1428px;
+}
+div.gameMenu ul li {
+  float: left;
+  margin: 0px;
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.gameMenu .logo {
+  height: 78px;
+  width: 204px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+.gameMenu ul li.current {
+  border-bottom: 0px;
+  background-position: 0px -78px;
+}
+.gameMenu .logo_showdown:hover,
+.gameMenu .logo_grid:hover,
+.gameMenu .logo_F12012:hover,
+.gameMenu .logo_RaceStars:hover {
+  background-position: 0px -156px;
+}
+.gameMenu .logo_grid:hover {
+  background-position: 0px -156px;
+}
+.gameMenu .logo.current:hover {
+  background-position: 0px 0px;
+}
+.gameMenu .coming_soon {
+  background-image: url('../cssimages/gameSelector/gameSelectorCRLogo.png');
+}
+.gameMenu .logo_showdown {
+  background-image: url('../cssimages/gameSelector/gameSelectorDirtShowdown.png');
+}
+.gameMenu .logo_grid {
+  background-image: url('../cssimages/gameSelector/gameselectorGrid2.png');
+}
+.gameMenu .logo_F12012 {
+  background-image: url('../cssimages/gameSelector/gameselectorF12012.png');
+}
+.gameMenu .logo_RaceStars {
+  background-image: url('../cssimages/gameSelector/gameselectorRaceStars.png');
+}
+.gameMenu .gameSlider {
+  width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  position: relative;
+}
+.gameMenu .window {
+  width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.gameMenu .button {
+  position: absolute;
+  top: 0px;
+  width: 204px;
+  height: 78px;
+}
+.gameMenu .button:hover {
+  background-position: bottom;
+}
+.gameMenu .leftButton {
+  left: -204px;
+  background-position: top;
+}
+.gameMenu .leftButton:hover {
+  background-position: 0px -78px;
+}
+.gameMenu .rightButton {
+  right: -204px;
+  background-position: 0px -156px;
+}

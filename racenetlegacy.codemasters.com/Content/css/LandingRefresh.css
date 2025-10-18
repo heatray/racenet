@@ -1,0 +1,1090 @@
+.profile_achievement {
+  float: left;
+}
+.ps_ncontrol {
+  display: inline-block;
+}
+.social_feed_item {
+  width: 33%;
+  float: left;
+}
+.sp_stat_control {
+  width: 20px;
+  height: 20px;
+  float: left;
+  background-color: Gray;
+}
+/* Logged out landing page refresh */
+
+#wrapper {
+  line-height: 1.2em;
+}
+.landing_slider_element {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+#landing_main_slider_container img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.slider_caption {
+  bottom: .01px;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: inherit;
+  height: 24.4%;
+  width: 100%;
+  background-color: rgba(26, 36, 45, 0.7);
+}
+.slider_info_text {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 18px;
+  font-family: 'UniversNext-620CondB';
+  color: White;
+  font-size: 19px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.more_info_button {
+  background-color: #790d16;
+  color: White;
+  position: absolute;
+  width: 15%;
+  right: 2.6%;
+  bottom: 15%;
+}
+.more_info_button.over {
+  background-color: #8a131d;
+}
+.more_info_button,
+.more_info_button:hover,
+.more_info_button:visited {
+  text-decoration: none;
+}
+p.slider_body {
+  color: White;
+  font-size: 17px;
+  width: 81%;
+  font-family: 'UniversNext-320CondL';
+  padding: 0 !important;
+  margin-left: 20px;
+}
+h2.landing_slider_item_title {
+  color: White;
+  line-height: 1em;
+  margin-top: 1.6%;
+  font-family: 'UniversNext-720CondH';
+  font-weight: normal;
+  font-size: 31.5px;
+  margin-left: 20px;
+}
+#landing_slider_controls {
+  width: 50%;
+  top: 60%;
+  left: 25%;
+  position: absolute;
+  color: Black;
+}
+.landing_slider_control.selected {
+  color: Purple;
+}
+#landing_slider_left {
+  left: 0%;
+}
+#landing_slider_right {
+  right: 0%;
+}
+#landing_main_slider_container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#landing_welcome_container {
+  position: relative;
+  background-color: #c0cbda;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#landing_signin_container_a,
+#landing_signin_container_b {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #8a131d;
+}
+.landing_sign_in_driver_img {
+  width: 100%;
+  height: 100%;
+}
+.landing_welcome_header_text {
+  font-family: 'UniversNext-720CondH';
+  font-weight: normal;
+  margin: 0px;
+  line-height: 1em;
+  font-size: 20px;
+  color: #353d43;
+}
+.landing_welcome_body_text {
+  font-family: 'UniversNext-320CondL';
+  color: #353d43;
+  font-size: 17px;
+  line-height: 17px;
+  padding-top: 2px;
+}
+.welcome_gradient {
+  background: url("../Landing/v1.0/Welcome_Grad.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.landing_community_stat {
+  float: left;
+}
+.landing_welcome_icon {
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  width: 100%;
+  height: 80%;
+}
+.landing_welcome_ribbon {
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+#landing_welcome_text_block {
+  position: relative;
+  top: 60%;
+  width: 86%;
+  padding: 7%;
+}
+.landing_button_bg_left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 100%;
+  height: 100%;
+}
+.landing_button_bg_right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  max-width: 100%;
+  height: 100%;
+}
+.landing_account_button {
+  color: #c0cbda;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  font-family: 'UniversNext-620CondB';
+  font-size: 2.0em;
+  /*letter-spacing:-0.05em;*/
+
+}
+.sign_in_box {
+  position: relative;
+  background-color: #8a131d;
+  overflow: hidden;
+}
+.sign_in_box.over {
+  background-image: none;
+}
+.landing_button_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.landing_button_element {
+  float: left;
+  display: inline-block;
+}
+.landing_button_text {
+  width: 50%;
+  left: 32%;
+  text-align: left;
+  top: 44%;
+  position: absolute;
+  vertical-align: middle;
+  line-height: 25px;
+  font-size: 26px;
+  color: White;
+}
+.landing_button_icon {
+  width: 22.5%;
+  height: 45%;
+  position: absolute;
+  left: 5%;
+  top: 28%;
+}
+.landing_button_arrow {
+  width: 10%;
+  height: 30%;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+.landing_account_button,
+.landing_account_button:hover,
+.landing_account_button:visited {
+  color: inherit;
+  text-decoration: none;
+}
+#landing_community_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: Black;
+}
+.landing_community_stat {
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.landing_com_stat_element {
+  display: inline-block;
+  top: 0px;
+  vertical-align: middle;
+  float: left;
+}
+.landing_com_stat_img {
+  left: 4%;
+  top: 20%;
+  position: absolute;
+}
+.landing_com_stat_img img {
+  width: 154px;
+  height: 80px;
+}
+.landing_com_stat_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url("../Landing/v1.0/Community_Stats_Panel_BG.jpg");
+}
+.landing_com_stat_bg_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.landing_com_stat_value_holder {
+  position: absolute;
+  top: 17%;
+  right: 0%;
+  width: 37%;
+}
+.landing_com_stat_text {
+  color: #c0cbda;
+  left: 21.3%;
+  top: 19%;
+  width: 35%;
+  height: 75%;
+  position: absolute;
+  line-height: 16.8px;
+}
+.landing_com_stat_body {
+  font-family: 'UniversNext-320CondL';
+  font-size: 16.8px;
+}
+.landing_com_stat_header {
+  font-family: 'UniversNext-620CondB';
+  font-size: 21px;
+  padding-bottom: 4px;
+  color: White;
+}
+.landing_com_stat_title {
+  font-family: 'UniversNext-620CondB';
+  color: White;
+  font-size: 21px;
+  left: 50%;
+  width: 50%;
+}
+.landing_com_stat_ribbon.ribbon_left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 10%;
+}
+.landing_com_stat_ribbon.ribbon_right {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 10%;
+}
+/*Flip Counter*/
+
+.flip-counter ul.cd {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 3px 1px 1px 1px;
+}
+.flip-counter li {
+  background: url(../Landing/v1.0/Com_Sts_ScrBrd_SS.png) 0 0 no-repeat;
+}
+.flip-counter li.t {
+  background-position: 0 0;
+  width: 41px;
+  height: 27px;
+}
+.flip-counter li.b {
+  background-position: 0 0;
+  width: 41px;
+  height: 27px;
+}
+.flip-counter-holder-mob {
+  display: none;
+}
+/*Flexislider overrides*/
+
+.flex-control-nav {
+  left: 13px;
+}
+#landing_row_1_col_l .flex-control-paging li a {
+  background-color: White;
+  border-radius: 0px;
+  box-shadow: 0;
+  opacity: 0.3;
+  width: 67px;
+  height: 8px;
+  margin-right: 3px;
+}
+#landing_row_1_col_l .flexslider .slides > li {
+  position: relative;
+}
+#landing_row_1_col_l .flex-control-paging li a:hover {
+  opacity: 0.5;
+}
+#landing_row_1_col_l .flex-control-paging li a.flex-active {
+  background-color: #8b131d;
+  opacity: 1.0;
+  cursor: default;
+}
+#landing_row_1_col_l .flex-direction-nav {
+  *height: 0;
+}
+#landing_row_1_col_l .flex-direction-nav a {
+  width: 53px;
+  height: 54px;
+  display: none;
+  margin: 10px 0 0;
+  display: block;
+  background: url(../Landing/v1.0/bg_direction_nav.png) no-repeat 0 0;
+  position: absolute;
+  top: 39%;
+  z-index: 10;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+}
+#landing_row_1_col_l .flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: 10px;
+}
+#landing_row_1_col_l .flex-direction-nav .flex-prev {
+  left: 10px;
+}
+#landing_row_1_col_l .flexslider:hover .flex-next {
+  opacity: 0.7;
+}
+#landing_row_1_col_l .flexslider:hover .flex-prev {
+  opacity: 0.7;
+}
+#landing_row_1_col_l .flexslider:hover .flex-next:hover,
+#landing_row_1_col_l .flexslider:hover .flex-prev:hover {
+  opacity: 1.0;
+}
+#landing_row_1_col_l .flex-direction-nav .flex-disabled {
+  opacity: .3!important;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+/* WHAT IS RACENET ? */
+
+.wirn_header_nav_item {
+  width: 10%;
+  height: 45px;
+  font-family: 'UniversNext-620CondB';
+  color: White;
+  background-color: Gray;
+  float: right;
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+.wirn_header_nav_item.active {
+  background-color: #aaaaaa;
+}
+.wirn_info_block_item {
+  padding: 2%;
+}
+.wirn_info_block_header {
+  font-size: 2em;
+  font-family: 'UniversNext-620CondB';
+  color: White;
+}
+.wirn_info_block_body {
+  font-size: 1em;
+  font-family: 'UniversNext-320CondL';
+  color: White;
+}
+#wirn_main_image_container {
+  width: 100%;
+  height: 100%;
+}
+.wirn_main_image {
+  width: 100%;
+  height: 100%;
+}
+#landing_row_1 {
+  overflow: hidden;
+}
+#comstats {
+  overflow: hidden;
+}
+/*
+LAYOUT!
+*/
+
+.sign_in_box {
+  height: 145px;
+}
+.com_stats_box {
+  height: 130px;
+}
+/*start of responsive stuff*/
+
+.wrapper {
+  width: 100%;
+}
+/*mobiles*/
+
+/*below is the query for mobiles effective up until 480px*/
+
+@media (min-width: 0px) and (max-width: 479px) {
+  .wrapper {
+    width: 290px;
+  }
+  .col3 {
+    width: 139px;
+  }
+  .col9 {
+    width: 284px;
+  }
+  .col12 {
+    width: 284px;
+  }
+  footer {
+    height: 50px;
+  }
+  /* responsive rows 290*/
+  
+  .row3 {
+    height: 140px;
+  }
+  .row6 {
+    height: 189px;
+  }
+  .row9 {
+    height: 248px;
+  }
+  .row12 {
+    height: 282px;
+  }
+  .sign_in_box {
+    height: 67px;
+    font-size: 0.5em;
+  }
+  .landing_hide_mobile {
+    display: none;
+  }
+  .com_stats_box {
+    height: 190px;
+  }
+  .landing_com_stat_img {
+    left: 0px;
+    top: 6px;
+    width: 100%;
+  }
+  .landing_com_stat_img img {
+    margin: auto;
+    display: block;
+  }
+  .landing_com_stat_element {
+    float: none;
+  }
+  .landing_com_stat_text {
+    display: none;
+    left: 0%;
+    top: 30%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 35%;
+    text-align: center;
+  }
+  .landing_com_stat_value_holder {
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .landing_com_stat_title {
+    width: 100%;
+    text-align: center;
+  }
+  .landing_welcome_header_text {
+    font-size: 18px;
+  }
+  #landing_row_1_col_l .flex-control-paging li a {
+    display: none;
+  }
+  .landing_com_stat_bg {
+    background-image: url("../Landing/v1.0/Community_Stats_Panel_BG_mobile.jpg");
+  }
+  #landing_row_1_col_l .flex-direction-nav a {
+    background-image: url("../Landing/v1.0/bg_direction_nav_tablet.png");
+    width: 42px;
+    height: 42px;
+  }
+  .slider_caption {
+    display: table;
+    height: 46px;
+  }
+  h2.landing_slider_item_title {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  p.slider_body {
+    display: none;
+  }
+  .slider_info_text {
+    display: none;
+  }
+  .more_info_button,
+  .more_info_button.over {
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .landing_button_text {
+    font-size: 13px;
+    top: 32%;
+  }
+  .flip-counter li {
+    background: url(../Landing/v1.0/Com_Sts_ScrBrd_SS_mobile.png) 0 0 no-repeat;
+  }
+  .flip-counter ul.cd {
+    padding: 0px 0px 0px 0px;
+  }
+  .flip-counter li.t {
+    background-position: 0 0;
+    width: 29px;
+    height: 20px;
+  }
+  .flip-counter li.b {
+    background-position: 0 0;
+    width: 29px;
+    height: 20px;
+  }
+  .flip-counter-holder-mob {
+    display: inline-block;
+  }
+  .flip-counter-holder {
+    display: none;
+  }
+}
+/*phones in portrait*/
+
+@media (min-width: 480px) and (max-width:599px) {
+  #wrapper {
+    padding-top: 20px;
+  }
+  .wrapper {
+    width: 434px;
+  }
+  .col3 {
+    width: 211px;
+  }
+  .col9 {
+    width: 428px;
+  }
+  .col12 {
+    width: 428px;
+  }
+  /* responsive rows 434*/
+  
+  /* Need to be done as pixels, also per response layout and also need to account for border width (x2) should use less for variable resuse!  */
+  
+  .row3 {
+    height: 211px;
+  }
+  .row6 {
+    height: 285px;
+  }
+  .row9 {
+    height: 319px;
+  }
+  .row12 {
+    height: 428px;
+  }
+  #landing_welcome_text_block {
+    top: 64%;
+  }
+  /*p.slider_body { display:none; }*/
+  
+  p.slider_body {
+    width: 75%;
+    font-size: 1em;
+  }
+  h2.landing_slider_item_title {
+    width: 100%;
+    font-size: 2.0em;
+    text-align: center;
+  }
+  .sign_in_box {
+    height: 102.5px;
+  }
+  .com_stats_box {
+    height: 310px;
+  }
+  .landing_com_stat_img {
+    left: 0px;
+    top: 6px;
+    width: 100%;
+  }
+  .landing_com_stat_img img {
+    margin: auto;
+    display: block;
+  }
+  .landing_com_stat_text {
+    left: 0%;
+    top: 32%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 35%;
+    text-align: center;
+  }
+  .landing_com_stat_element {
+    float: none;
+  }
+  .landing_com_stat_bg {
+    background-image: url("../Landing/v1.0/Community_Stats_Panel_BG_mobile.jpg");
+  }
+  .landing_com_stat_value_holder {
+    top: 64%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .landing_com_stat_title {
+    width: 100%;
+    text-align: center;
+  }
+  #landing_row_1_col_l .flex-control-paging li a {
+    display: none;
+  }
+  .landing_hide_mobile {
+    display: none;
+  }
+  .slider_info_text {
+    display: none;
+  }
+  .slider_caption {
+    display: table;
+    height: 70px;
+  }
+  h2.landing_slider_item_title {
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  .more_info_button,
+  .more_info_button.over {
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .landing_button_text {
+    font-size: 18px;
+    top: 39%;
+  }
+  #landing_row_1_col_l .flex-direction-nav a {
+    background-image: url("../Landing/v1.0/bg_direction_nav_tablet.png");
+    width: 42px;
+    height: 42px;
+  }
+}
+/*small tablets - portrait*/
+
+@media (min-width: 600px) and (max-width:767px) {
+  #wrapper {
+    padding-top: 20px;
+  }
+  .wrapper {
+    width: 580px;
+  }
+  .col3 {
+    width: 284px;
+  }
+  .col9 {
+    width: 574px;
+  }
+  .col12 {
+    width: 574px;
+  }
+  /* responsive rows 580*/
+  
+  /* Need to be done as pixels, also per response layout and also need to account for border width (x2) should use less for variable resuse!  */
+  
+  .row3 {
+    height: 284px;
+  }
+  .row6 {
+    height: 381px;
+  }
+  .row9 {
+    height: 574px;
+  }
+  .row12 {
+    height: 574px;
+  }
+  .landing_welcome_header_text {
+    font-size: 31.5px;
+    line-height: 1em;
+  }
+  #landing_welcome_text_block {
+    top: 62%;
+    padding: 5%;
+  }
+  p.slider_body {
+    display: none;
+  }
+  h2.landing_slider_item_title {
+    width: 78%;
+    margin-top: 2.6%;
+  }
+  .sign_in_box {
+    height: 139px;
+  }
+  .com_stats_box {
+    height: 280px;
+  }
+  .landing_com_stat_value_holder {
+    top: 60%;
+    width: 82%;
+    left: 48px;
+  }
+  .landing_com_stat_bg {
+    background-image: url("../Landing/v1.0/Community_Stats_Panel_BG_porttablet.jpg");
+  }
+  .landing_com_stat_text {
+    left: 44%;
+    top: 18%;
+    width: 45%;
+    height: 35%;
+  }
+  .landing_com_stat_body {
+    width: 115%;
+  }
+  .landing_com_stat_img {
+    top: 10%;
+  }
+  #landing_row_1_col_l .flex-control-paging li a {
+    display: none;
+  }
+  .landing_hide_mobile {
+    display: none;
+  }
+  #landing_row_1_col_l .flex-direction-nav a {
+    background-image: url("../Landing/v1.0/bg_direction_nav_tablet.png");
+    width: 42px;
+    height: 42px;
+  }
+}
+/*small tablets landsacape and ipad etc portrait*/
+
+@media (min-width: 768px) and (max-width:1023px) {
+  #wrapper {
+    padding-top: 20px;
+  }
+  .wrapper {
+    width: 726px;
+  }
+  .col3 {
+    width: 357px;
+  }
+  .col9 {
+    width: 720px;
+  }
+  .col12 {
+    width: 720px;
+  }
+  /* responsive rows 726*/
+  
+  /* Need to be done as pixels, also per response layout and also need to account for border width (x2) should use less for variable resuse!  */
+  
+  .row3 {
+    height: 358px;
+  }
+  .row6 {
+    height: 478px;
+  }
+  .row9 {
+    height: 720px;
+  }
+  .row12 {
+    height: 720px;
+  }
+  .landing_welcome_body_text {
+    font-size: 18px;
+    line-height: 1em;
+  }
+  #landing_welcome_text_block {
+    padding: 4%;
+    width: 92%;
+    top: 62%;
+  }
+  .landing_welcome_header_text {
+    font-size: 31.5px;
+  }
+  .landing_button_text {
+    font-size: 32px;
+    top: 42%;
+  }
+  p.slider_body {
+    width: 75%;
+  }
+  .sign_in_box {
+    height: 176px;
+  }
+  .com_stats_box {
+    height: 280px;
+  }
+  .landing_com_stat_value_holder {
+    top: 56%;
+    width: 75%;
+    left: 60px;
+  }
+  .landing_com_stat_text {
+    left: 40%;
+    top: 21%;
+    width: 45%;
+    height: 35%;
+  }
+  .landing_com_stat_body {
+    width: 116%;
+  }
+  .landing_com_stat_img {
+    top: 10%;
+  }
+  #landing_row_1_col_l .flex-control-paging li a {
+    display: none;
+  }
+  #landing_row_1_col_l .flex-direction-nav a {
+    background-image: url("../Landing/v1.0/bg_direction_nav_tablet.png");
+    width: 42px;
+    height: 42px;
+  }
+  .landing_com_stat_bg {
+    background-image: url("../Landing/v1.0/Community_Stats_Panel_BG_porttablet.jpg");
+  }
+}
+/* ipad landscape*/
+
+@media (min-width: 1024px) and (max-width:1279px), only screen and (-webkit-min-device-pixel-ratio: 0) and (max-height: 933px) and (min-height: 800px) and (min-width: 1200px) and (max-width: 1370px) {
+  #wrapper {
+    width: 1000px;
+  }
+  #page {
+    padding-top: 0px;
+  }
+  #MainContent,
+  #level-2 {
+    width: 1000px;
+  }
+  #GridHolder {
+    background-color: Black;
+  }
+  #wrapper {
+    padding-top: 20px;
+  }
+  .flex-control-nav {
+    display: none;
+  }
+  .wrapper {
+    width: 1000px;
+  }
+  .col3 {
+    width: 24.50%;
+  }
+  .col9 {
+    width: 74.150%;
+  }
+  /* responsive rows 1000*/
+  
+  /* Need to be done as pixels, also per response layout and also need to account for border width (x2) should use less for variable resuse!  */
+  
+  .row3 {
+    height: 244px;
+  }
+  .row6 {
+    height: 494px;
+  }
+  .row9 {
+    height: 744px;
+  }
+  .row12 {
+    height: 994px;
+  }
+  .sign_in_box {
+    height: 119px;
+  }
+  .landing_com_stat_img {
+    left: 3%;
+    top: 10%;
+  }
+  .landing_com_stat_value_holder {
+    left: 57%;
+    top: 17%;
+    width: 40%;
+  }
+  .landing_com_stat_text {
+    left: 22%;
+    top: 16%;
+    width: 30%;
+  }
+  h2.landing_slider_item_title {
+    font-size: 30px;
+  }
+  p.slider_body {
+    width: 75%;
+    font-size: 18px;
+    line-height: 1em;
+  }
+  .flex-control-nav {
+    left: 8px;
+  }
+  .landing_welcome_header_text {
+    font-size: 18px;
+    padding-bottom: 0px;
+  }
+  .landing_welcome_body_text {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .landing_button_text {
+    font-size: 22px;
+    top: 39%;
+  }
+  #landing_row_1_col_l .flex-direction-nav a {
+    background-image: url("../Landing/v1.0/bg_direction_nav_tablet.png");
+    width: 42px;
+    height: 42px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  .welcome_gradient {
+    background-image: url("../Landing/v1.0/welcome_grad@2x.png");
+  }
+  #landing_row_1_col_l .flex-direction-nav a {
+    background: url(../Landing/v1.0/bg_direction_nav@2x.png) no-repeat 0 0;
+    -moz-background-size: 207px 102px;
+    -ie-background-size: 207px 102px;
+    -o-background-size: 207px 102px;
+    -webkit-background-size: 207px 102px;
+    background-size: 207px 102px;
+  }
+  /*
+      .flip-counter li
+      {
+          background:url(../Landing/v1.0/Com_Sts_ScrBrd_SS@2x.png) 0 0 no-repeat;        
+          .background-size(164px, 594px);
+      }
+      */
+}
+@media only screen and (min-width: 200px) and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2),(-moz-min-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2) {
+  #landing_row_1_col_l .flex-direction-nav a {
+    background: url(../Landing/v1.0/bg_direction_nav_tablet@2x.png) no-repeat 0 0;
+    background-size: cover;
+    top: 34%;
+  }
+  /*
+      .flip-counter li
+      {
+          background:url(../Landing/v1.0/Com_Sts_ScrBrd_SS_mobile@2x.png) 0 0 no-repeat;
+          .background-size(116px, 409px);
+      }        
+  */
+  
+  .landing_com_stat_bg {
+    background-image: url("../Landing/v1.0/Community_Stats_Panel_BG_mobile@2x.jpg");
+  }
+}
+@media (min-width: 480px) and (max-width:599px) and (-webkit-min-device-pixel-ratio: 2),(-moz-min-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2) {
+  #landing_row_1_col_l .flex-direction-nav a {
+    background: url(../Landing/v1.0/bg_direction_nav_tablet@2x.png) no-repeat 0 0;
+    background-size: cover;
+  }
+  .landing_com_stat_bg {
+    background-image: url("../Landing/v1.0/Community_Stats_Panel_BG_mobile@2x.jpg");
+  }
+}
+@media (min-width: 600px) and (max-width:767px) and (-webkit-min-device-pixel-ratio: 2),(-moz-min-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2) {
+  #landing_row_1_col_l .flex-direction-nav a {
+    background: url(../Landing/v1.0/bg_direction_nav_tablet@2x.png) no-repeat 0 0;
+    background-size: cover;
+  }
+  .landing_com_stat_bg {
+    background-image: url("../Landing/v1.0/Community_Stats_Panel_BG_porttablet@2x.jpg");
+  }
+}
+@media (min-width: 768px) and (max-width:800px) and (-webkit-min-device-pixel-ratio: 2),(-moz-min-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2) {
+  #landing_row_1_col_l .flex-direction-nav a {
+    background: url(../Landing/v1.0/bg_direction_nav_tablet@2x.png) no-repeat 0 0;
+    background-size: cover;
+  }
+}
+@media (min-width: 1000px) and (max-width:1024px) and (-webkit-min-device-pixel-ratio: 2),(-moz-min-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2) {
+  #landing_row_1_col_l .flex-direction-nav a {
+    background: url(../Landing/v1.0/bg_direction_nav_tablet@2x.png) no-repeat 0 0;
+    background-size: cover;
+  }
+}
+/*responsive end*/
+

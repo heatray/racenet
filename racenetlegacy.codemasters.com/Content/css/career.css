@@ -1,0 +1,615 @@
+.eventGrid {
+  width: 100%;
+  height: 500px;
+  /*background-image:url("../showdown/eventBoard.png");*/
+
+}
+.scores {
+  float: left;
+  clear: both;
+}
+.selectorBar {
+  width: 400px;
+  height: 50px;
+  float: left;
+  padding: 0px;
+  background-image: url('../themes/base/images/white50.png');
+  position: relative;
+  margin: 2px;
+}
+.selectorBar .buttonLeft {
+  width: 20px;
+  font-size: 48px;
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+}
+.selectorBar .buttonRight {
+  width: 20px;
+  font-size: 48px;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+.selectorBar .options {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.selectorBar .option {
+  width: 360px;
+  font-size: 48px;
+  float: left;
+  clear: none;
+  position: absolute;
+}
+.ResultBar {
+  width: 400px;
+  height: 50px;
+  float: left;
+  padding: 0px;
+  position: relative;
+  margin: 2px;
+}
+.ResultBar div {
+  float: left;
+}
+.ResultBar .logoBox {
+  background-color: gray;
+  width: 45px;
+  height: 45px;
+  margin: 2px;
+}
+.ResultBar .position {
+  font-size: 45px;
+  width: 45px;
+  text-align: center;
+}
+.ResultBar .name {
+  font-size: 18px;
+  float: none;
+}
+.ResultBar .score {
+  font-size: 18px;
+  float: none;
+  font-weight: bold;
+}
+.carViewer_feature {
+  width: 100%;
+  height: 500px;
+  background-image: url("../media/cars/dbu.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.carTable {
+  margin-top: 50px;
+  width: 1224px;
+  float: left;
+  min-height: 500px;
+}
+.carTable .carStat {
+  width: 234px;
+  float: left;
+  position: relative;
+  margin: 4px;
+  margin-top: 20px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  font-size: 26px;
+  letter-spacing: -0.045em;
+}
+.carTable .thumb {
+  position: relative;
+  background-position: top left;
+  border: 1px solid grey;
+  background-image: url('../showdown/career/carThumbBackground.png');
+  background-repeat: repeat-x;
+}
+.carTable .priceOverlay {
+  color: #ff5c00;
+  background-image: url("../media/priceCircle.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  height: 55px;
+  width: 75px;
+  text-align: center;
+  padding-top: 25px;
+}
+.carTable .lockIcon {
+  background-image: url("../showdown/career/carThumbLock.png");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.carStats div.button {
+  width: 90px;
+  height: 40px;
+  background-image: none;
+}
+.carStats .button div {
+  width: 90px;
+  height: 40px;
+}
+.carStats .showPreviousGame .demolition {
+  background-image: url('../showdown/career/ArrowButtonLeftDemolition.png');
+  background-position: top left;
+}
+.carStats .showPreviousGame .demolition:hover {
+  background-position: bottom left;
+}
+.carStats .showPreviousGame .race {
+  background-image: url('../showdown/career/ArrowButtonLeftRace.png');
+  background-position: top left;
+}
+.carStats .showPreviousGame .race:hover {
+  background-position: bottom left;
+}
+.carStats .showPreviousGame .hoonigan {
+  background-image: url('../showdown/career/ArrowButtonLeftHoonigan.png');
+  background-position: top left;
+}
+.carStats .showPreviousGame .hoonigan:hover {
+  background-position: bottom left;
+}
+.carStats .showNextGame .demolition {
+  background-image: url('../showdown/career/ArrowButtonRightDemolition.png');
+  background-position: top Right;
+}
+.carStats .showNextGame .demolition:hover {
+  background-position: bottom Right;
+}
+.carStats .showNextGame .race {
+  background-image: url('../showdown/career/ArrowButtonRightRace.png');
+  background-position: top Right;
+}
+.carStats .showNextGame .race:hover {
+  background-position: bottom Right;
+}
+.carStats .showNextGame .hoonigan {
+  background-image: url('../showdown/career/ArrowButtonRightHoonigan.png');
+  background-position: top Right;
+}
+.carStats .showNextGame .hoonigan:hover {
+  background-position: bottom Right;
+}
+.nocar {
+  position: relative;
+  color: #404040;
+  text-align: center;
+  top: -64px;
+  z-index: 1;
+  font-size: 25px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.03em;
+}
+.favouriteVehicleInfo {
+  position: absolute;
+  background-image: url('../CssImages/titleBox2_background.png');
+  width: 175px;
+  height: 119px;
+  font-size: 21px;
+  left: 880px;
+  display: none;
+}
+.favouriteVehicleInfo .carTitle {
+  color: White;
+  padding-top: 4px;
+  padding-left: 14px;
+}
+.favouriteVehicleInfo .car {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -1px;
+  color: #404040;
+  padding-left: 14px;
+  font-size: 30px;
+  line-height: 25px;
+  margin-top: -2px;
+  width: 80%;
+}
+#SubNavigation.menu {
+  padding-top: 7px;
+  position: relative;
+  top: -45px;
+}
+div .tc_title_box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  width: 1000px;
+  height: 80px;
+  position: relative;
+}
+div .tc_content_box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  position: relative;
+}
+div .tc_title_a {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 65px;
+  color: #404040;
+  letter-spacing: -0.04em;
+  display: inline;
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  text-align: right;
+  width: 450px;
+}
+div .tc_title_b {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 65px;
+  color: #404040;
+  letter-spacing: -0.04em;
+  display: inline;
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 400px;
+  text-align: left;
+}
+div .tc_subtitle {
+  background-image: url("../CssImages/Or_Circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 83px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 40px;
+  display: inline;
+  color: #e6e7e8;
+  position: absolute;
+  left: 400px;
+  top: -12px;
+  text-align: center;
+  line-height: 2.3em;
+}
+div .tc_find_box {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+}
+div .tc_create_box {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 20px;
+  left: 500px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+}
+div .tc_vertical_separator {
+  height: 480px;
+  background-color: #bbbdbf;
+  width: 2px;
+  position: absolute;
+  top: 20px;
+  left: 449px;
+}
+div .tc_box_info {
+  width: 100%;
+  color: #404040;
+  letter-spacing: -0.02em;
+  font-size: 23px;
+  height: 130px;
+}
+div .team_list {
+  width: 100%;
+  height: 250px;
+  overflow: auto;
+}
+div .team_list li {
+  list-style: none;
+}
+div .tc_search_title,
+tc_create_box_label {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 31px;
+  color: #404040;
+  letter-spacing: -0.04em;
+  padding-left: 10px;
+}
+div .tc_create_box_label {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 31px;
+  color: #404040;
+  letter-spacing: -0.04em;
+  padding-bottom: 2px;
+}
+div .team_list_entry {
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid #bbbdbf;
+  margin-top: 10px;
+  padding-bottom: 8px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 22px;
+  color: #404040;
+  letter-spacing: -0.051em;
+  padding-left: 10px;
+}
+div .team_list_entry a,
+div .team_list_entry a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+div .team_list_entry a:hover {
+  color: Gray;
+}
+div .tc_search_title {
+  border-bottom: 2px solid #404040;
+}
+div #tc_name_requirements {
+  color: White;
+  display: none;
+  position: absolute;
+  left: 420px;
+  top: 0px;
+  width: 180px;
+  height: 120px;
+  font-size: 19px;
+  letter-spacing: -0.02em;
+  line-height: 19px;
+  background-color: #a3002e;
+  padding: 6px;
+}
+div #tc_name_requirements_arrow {
+  display: none;
+  position: absolute;
+  left: 410px;
+  top: -1px;
+  float: left;
+  background-image: url('../themes/base/images/red_arrow_sign_up_01.png');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 10px;
+  z-index: 1;
+}
+div .tc_create_box_fields {
+  position: relative;
+  top: -38px;
+}
+div .tc_create_name_field {
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  font-size: 26px;
+  height: 34px;
+  width: 100%;
+}
+div .tc_create_team_button {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 28px;
+  color: #404040;
+  letter-spacing: -0.04em;
+  float: right;
+  cursor: pointer;
+  padding-right: 8px;
+}
+div .tc_create_team_button_arrow {
+  position: relative;
+  background: url(../Showdown/TeamChampionship/nav_arrow_default.png);
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+}
+div .tc_create_box_button_row {
+  position: relative;
+  top: 20px;
+}
+/* Search bar and magnifying glass button  */
+
+#team_search_bar {
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  height: 40px;
+  margin-bottom: 20px;
+}
+#team_search_bar  #search_input {
+  margin-top: 10px;
+  display: inline;
+  width: 376px;
+}
+#team_search_bar  #search_input input {
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  font-size: 27px;
+  text-align: right;
+  width: 376px;
+  height: 34px;
+  float: right;
+  color: #404040;
+  letter-spacing: -0.03em;
+}
+#team_search_bar #search_glass {
+  background-image: url('../cssimages/mag_glass_grey.png');
+  background-repeat: no-repeat;
+  height: 34px;
+  width: 24px;
+  float: right;
+}
+/*
+auto complete stufff
+*/
+
+#tc_team_search_results .ui-widget-content li.ui-menu-item {
+  padding: 0px;
+}
+#tc_team_search_results .ui-widget-content li.ui-menu-item a {
+  background-color: White;
+  width: 390px;
+  height: 30px;
+  border-bottom: 2px solid #bbbdbf;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 23px;
+  color: #404040;
+  letter-spacing: -0.03em;
+  padding-left: 10px;
+}
+#tc_team_search_results ul.ui-autocomplete .ui-state-hover {
+  color: Gray;
+}
+#tc_team_search_results ul.ui-autocomplete .ui-state-hover div {
+  color: Gray;
+}
+#tc_team_search_results ul.ui-autocomplete li {
+  height: 32px;
+  width: 100%;
+}
+#tc_team_search_results ul.ui-autocomplete li a {
+  float: left;
+  line-height: normal;
+  height: 32px;
+  position: relative;
+}
+#tc_team_search_results .ui-autocomplete {
+  cursor: default;
+  position: absolute;
+  top: 10px;
+}
+#tc_team_search_results element.style {
+  display: block;
+  left: 0;
+  top: 140px;
+  width: 400px;
+  z-index: 1;
+}
+.add-team-members {
+  position: relative;
+  top: -32px;
+}
+.add-team-members-text-heading {
+  position: relative;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 65px;
+  top: 133px;
+  left: 110px;
+  color: #404040;
+  letter-spacing: -0.04em;
+}
+.add-team-members-text-content {
+  position: relative;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  font-size: 23px;
+  color: #404040;
+  width: 360px;
+  top: 133px;
+  left: 110px;
+  letter-spacing: -0.02em;
+}
+.add-team-members-friends-list {
+  position: relative;
+  width: 480px;
+  height: 220px;
+  overflow: auto;
+  top: 0px;
+  left: 565px;
+}
+.add-team-members-friends-title-block,
+.add-team-members-friends-title {
+  position: relative;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 31px;
+  color: #404040;
+  width: 360px;
+  left: 565px;
+  letter-spacing: -0.04em;
+}
+.add-team-members-friends-title {
+  left: 10px;
+}
+.add-team-members-friends-entry {
+  position: relative;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 22px;
+  color: #404040;
+  width: 430px;
+  left: 10px;
+  letter-spacing: -0.051em;
+  overflow: hidden;
+}
+.add-team-members-friends-add-button,
+.add-team-members-friends-delete-button {
+  position: relative;
+  background: url(../Showdown/TeamChampionship/nav_plus_default.png);
+  float: right;
+  height: 13px;
+  width: 13px;
+  top: 7px;
+  right: 0px;
+  display: inline-block;
+  cursor: pointer;
+}
+.add-team-members-friends-delete-button {
+  background: url(../Showdown/TeamChampionship/nav_minus_default.png);
+}
+.add-team-members-friends-add-button-rollover,
+.add-team-members-friends-delete-button-rollover {
+  position: relative;
+  float: right;
+  width: 120px;
+  height: 50px;
+  display: inline-block;
+  top: 7px;
+  right: 5px;
+  background: #bbbdbf;
+  margin-top: -12px;
+  margin-bottom: -12px;
+  cursor: pointer;
+}
+.add-team-members-friends-add-button-rollover-text,
+.add-team-members-friends-delete-button-rollover-text {
+  position: relative;
+  top: 10px;
+  width: 120px;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 15px;
+  color: #404040;
+}
+.add-team-members-heading-separator,
+.add-team-members-friends-separator {
+  border-bottom: 2px solid #bbbdbf;
+  height: 1px;
+  width: 450px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.add-team-members-heading-separator {
+  border-bottom: 2px solid #404040;
+}
+.add-team-members-continue {
+  position: relative;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 28px;
+  color: #404040;
+  width: 120px;
+  top: 25px;
+  left: 889px;
+  letter-spacing: -0.051em;
+  cursor: pointer;
+}
+.add-team-members-continue a {
+  color: #404040;
+  text-decoration: none;
+}
+.add-team-members-continue-button {
+  position: relative;
+  background: url(../Showdown/TeamChampionship/nav_arrow_default.png);
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+}

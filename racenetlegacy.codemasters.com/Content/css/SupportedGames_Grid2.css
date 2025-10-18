@@ -1,0 +1,29 @@
+#HeroUnitTitle {
+  margin-top: 10px;
+  height: 95px;
+  background-position: center top;
+  background-size: 239px;
+}
+#HeroUnitTitle {
+  background-image: url('../SupportedGames/grid2_logo.png');
+}
+.grid2herounit {
+  margin-top: 10px;
+}
+#wir_bottomright {
+  background-image: url("../SupportedGames/grid2_outnow.jpg");
+}
+#HeroUnitTitleContainer {
+  background: transparent;
+}
+#MainImage {
+  background-image: url('../SupportedGames/grid2_art.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  #MainImage {
+    background-image: url('../SupportedGames/grid2_art@2x.jpg');
+  }
+  #HeroUnitTitle {
+    background-image: url('../SupportedGames/grid2_logo@2x.png');
+  }
+}

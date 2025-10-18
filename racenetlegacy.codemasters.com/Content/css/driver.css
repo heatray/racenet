@@ -1,0 +1,877 @@
+#driver-profile-widgets {
+  z-index: 2;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 677px;
+  width: 1294px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+#driver-profile-widgets ul {
+  z-index: 3;
+  position: absolute;
+  width: 1230px;
+  height: 677px;
+  left: 0px;
+  list-style-type: none;
+  padding: 0;
+}
+#driver-profile-widgets ul#racenet-event-best,
+#driver-profile-widgets ul#teamchamp-event-best {
+  top: 100px;
+  height: 50px;
+}
+#driver-profile-widgets .clickable {
+  cursor: default;
+}
+.driver-profile-listMedium {
+  z-index: 0;
+  position: relative;
+  width: 302px;
+  height: 520px;
+  top: 100px;
+  left: 0px;
+  float: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  opacity: 0.92;
+}
+.driver-profile-imagedriver {
+  z-index: 0;
+  position: relative;
+  top: 5px;
+  left: 0px;
+  width: 246px;
+  height: 680px;
+  float: left;
+  overflow: visible;
+}
+#DriverProfile {
+  background: url(../Profile/profile_box_tiler.png);
+  background-repeat: repeat-x;
+}
+.driver-profile-section {
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  height: 460px;
+  float: left;
+  overflow: visible;
+}
+.driver-profile-section-header {
+  float: left;
+  width: 300px;
+}
+.driver-profile-section-header div#driver-profile-display-name {
+  width: 248px;
+  display: inline;
+}
+.driver-profile-section-header h1 {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 38px;
+  letter-spacing: -0.045em;
+  color: white;
+  padding-left: 12px;
+  display: inline;
+}
+.driver-profile-section-header #founder-image {
+  float: right;
+  padding-right: 12px;
+  padding-top: 8px;
+}
+.driver-profile-section-level {
+  padding-top: 50px;
+  padding-left: 12px;
+  width: 300px;
+}
+.driver-profile-section-level img#level-circle {
+  display: inline;
+}
+.driver-profile-section-level p#level-text {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 36px;
+  color: white;
+  display: inline;
+  position: relative;
+  left: -41px;
+  top: -11px;
+  letter-spacing: -1.5px;
+}
+.driver-profile-section-level .level-xp {
+  float: right;
+  position: relative;
+  top: -4px;
+}
+.driver-profile-section-level .level-xp p#level-to-next-value {
+  text-align: right;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  font-size: 38px;
+  letter-spacing: -0.045em;
+  color: #f1f1f1;
+  padding-right: 24px;
+  margin-bottom: -10px;
+}
+.driver-profile-section-level .level-xp p#level-to-next-text {
+  text-align: right;
+  padding-right: 24px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 18px;
+  color: #f1f1f1;
+  letter-spacing: -0.025em;
+}
+.driver-profile-section-level .level-progress {
+  position: relative;
+  top: -2px;
+}
+.driver-profile-section-level .level-progress div#level-progress-total {
+  background-color: #939498;
+  width: 276px;
+  height: 10px;
+}
+.driver-profile-section-level .level-progress div#level-progress-current {
+  background-color: white;
+  width: 0px;
+  height: 10px;
+  position: relative;
+  top: -10px;
+}
+.driver-profile-section-level img#level-lead-platform_MicrosoftLive {
+  top: -9px;
+  left: -4px;
+  position: relative;
+}
+.driver-profile-section-level img#level-lead-platform_PlaystationNetwork {
+  top: -10px;
+  position: relative;
+}
+.driver-profile-section-level img#level-lead-platform_Steam {
+  top: -11px;
+  left: -4px;
+  position: relative;
+}
+.driver-profile-section-award-list {
+  position: absolute;
+  width: 300px;
+  height: 221px;
+  top: 153px;
+  overflow: auto;
+}
+.driver-profile-section-award-list-item {
+  float: left;
+  width: 78px;
+  height: 78px;
+  margin-right: -10px;
+  margin-bottom: -8px;
+}
+.driver-profile-section-awards-summary {
+  position: absolute;
+  top: 380px;
+  margin-left: 12px;
+  width: 288px;
+}
+.driver-profile-section-awards-summary h1 {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 29px;
+  letter-spacing: -0.045em;
+  color: #808184;
+  display: inline;
+}
+.driver-profile-section-awards-summary p {
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  font-size: 76px;
+  letter-spacing: -0.045em;
+  color: #929497;
+  float: right;
+  padding-right: 18px;
+  margin-top: -8px;
+}
+.driver-profile-section-most-recent-award {
+  visibility: hidden;
+  position: absolute;
+  top: 380px;
+  margin-left: 12px;
+}
+.driver-profile-section-most-recent-award p#title {
+  position: relative;
+  padding-right: 24px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 19px;
+  color: #ff4f00;
+  letter-spacing: -0.02em;
+}
+.driver-profile-section-most-recent-award p#body {
+  position: relative;
+  margin-right: 12px;
+  line-height: 16px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  font-size: 17px;
+  color: #e6e7e8;
+  letter-spacing: -0.02em;
+}
+.driver-profile-section-text {
+  z-index: 2;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 300px;
+  height: 150px;
+  float: left;
+  overflow: visible;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#DriverProfileText .textBlock0 {
+  position: relative;
+  /* top:-279px; */
+  left: 0px;
+  width: 160px;
+  text-align: left;
+  font-size: 32px;
+  font-family: DINNextLTPro-BoldCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  display: inline;
+}
+#DriverProfileText .textBlock1 {
+  position: relative;
+  /* top:-304px; */
+  right: 10px;
+  width: 160px;
+  float: right;
+  text-align: right;
+  font-size: 32px;
+  font-family: DINNextLTPro-BoldCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  display: inline;
+}
+.driver-profile-award-section {
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 300px;
+  height: 304px;
+  float: left;
+  overflow: visible;
+  background-color: #a3002e;
+}
+#DriverAwards .textBlock0 {
+  position: relative;
+  left: 0px;
+  width: 160px;
+  text-align: left;
+  font-size: 32px;
+  font-family: DINNextLTPro-BoldCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  clear: both;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#DriverAwards .textBlock1 {
+  position: relative;
+  left: 0px;
+  width: 60px;
+  float: left;
+  text-align: left;
+  font-size: 32px;
+  font-family: DINNextLTPro-Condensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  display: inline;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+#DriverAwards .textBlock2 {
+  position: relative;
+  right: 10px;
+  width: 200px;
+  float: right;
+  text-align: left;
+  font-size: 26px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  display: inline;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+#DriverFriendList {
+  z-index: 2;
+  position: absolute;
+  background: url(../Profile/friends_box_tiler.png);
+  background-repeat: repeat-x;
+  top: 309px;
+  bottom: 0px;
+  left: 0px;
+  width: 300px;
+  height: 150px;
+  float: left;
+  overflow: visible;
+}
+.driver-profile-friendlist-text {
+  z-index: 2;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  width: 300px;
+  height: 150px;
+  float: left;
+  overflow: visible;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#DriverFriendListText .FriendsHeading {
+  position: relative;
+  left: 5px;
+  top: -2px;
+  width: 160px;
+  text-align: left;
+  font-size: 38px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  clear: both;
+  color: #808184;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+#DriverFriendListText .FriendsNumberPending {
+  position: relative;
+  right: 5px;
+  width: 280px;
+  top: -34px;
+  text-align: right;
+  color: #929497;
+  font-size: 38px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  clear: both;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+#DriverFriendListText .textBlock {
+  position: relative;
+  left: 5px;
+  width: 280px;
+  top: -20px;
+  text-align: left;
+  color: White;
+  font-size: 28px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  clear: both;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+#DriverFriendListText .textBlock a {
+  color: white;
+}
+#DriverFriendCircle {
+  z-index: 3;
+  position: relative;
+  left: 12px;
+  top: 90px;
+}
+#DriverFriendListText .DriverFriendLevel {
+  position: relative;
+  left: -241px;
+  width: 280px;
+  top: -2px;
+  text-align: right;
+  color: White;
+  font-size: 38px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  clear: both;
+  margin-left: 5px;
+}
+#DriverFriendListText .DriverFriendAwardList {
+  position: relative;
+  left: 60px;
+  width: 280px;
+  top: -48px;
+  margin-left: 5px;
+  margin-top: 0px;
+  display: inline;
+}
+#DriverFriendListText .DriverFriendAwardListItem {
+  display: inline;
+  margin-left: -15px;
+}
+#FriendsArrows {
+  z-index: 3;
+  position: relative;
+  bottom: 10px;
+  left: 235px;
+  width: 58px;
+  height: 50px;
+  float: left;
+  overflow: visible;
+  cursor: pointer;
+}
+.driver-profile-newsfeed-section {
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  height: 304px;
+  float: left;
+  overflow: visible;
+  background: url(../Profile/news_box_tiler.png);
+  background-repeat: repeat-x;
+}
+.driver-profile-newsfeed-section h1 {
+  text-align: left;
+  color: #929497;
+  font-size: 38px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  margin-left: 12px;
+  margin-top: 6px;
+}
+.driver-profile-newsfeed-list {
+  position: relative;
+  width: 288px;
+  height: 256px;
+  top: 8px;
+  overflow: auto;
+  margin-left: 12px;
+}
+.driver-profile-newsfeed-list-item {
+  position: relative;
+  width: 270px;
+  top: 8px;
+  margin-bottom: 10px;
+}
+.driver-profile-newsfeed-list-item div#separator {
+  background: url(../Profile/news_item_separator.png);
+  background-repeat: repeat-x;
+  height: 1px;
+  width: auto;
+  position: relative;
+  top: 4px;
+}
+.driver-profile-newsfeed-list-item h1 {
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  font-size: 19px;
+  color: #818286;
+  letter-spacing: -0.02em;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.driver-profile-newsfeed-list-item p {
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  font-size: 21px;
+  color: #e6e7e8;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  margin-top: 2px;
+}
+#DriverNewsFeed .newsDropmenu {
+  position: absolute;
+  display: block;
+  margin-right: 0px;
+  padding: 10px 0px;
+  height: 25px;
+  max-height: 25px;
+  width: 100px;
+  cursor: pointer;
+  top: 0px;
+  right: 0px;
+}
+#DriverNewsFeed .newsDropmenu:hover .newsSubmenu {
+  display: inline-block;
+}
+#DriverNewsFeed .newsDropmenu:hover .shareImageRollover {
+  visibility: visible;
+}
+#DriverNewsFeed .newsShareImage {
+  position: relative;
+  top: -15px;
+  left: 10px;
+}
+#DriverNewsFeed .shareImageRollover {
+  top: -57px;
+  left: 10px;
+  visibility: hidden;
+  float: right;
+}
+#DriverNewsFeed .newsSubmenu {
+  position: absolute;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  left: -40px;
+  top: -4px;
+  width: 65px;
+  height: 30px;
+  display: none;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#DriverNewsFeed .newsSubmenu li {
+  display: inline-block;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.driver-profile-racenetevent-section {
+  z-index: 2;
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  width: 300px;
+  height: 149px;
+  float: left;
+  overflow: visible;
+  cursor: pointer;
+}
+.driver-profile-racenetevent-section .backgroundImage {
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  height: 149px;
+  float: left;
+  visibility: hidden;
+}
+.driver-profile-racenetevent-section #textBlock0,
+.driver-profile-racenetevent-section #textBlock1,
+.driver-profile-racenetevent-section #textBlock2,
+.driver-profile-racenetevent-section #textBlock3,
+.driver-profile-racenetevent-section .bestTimeDescription,
+.driver-profile-racenetevent-section .bestTimeValue,
+.driver-profile-racenetevent-section .invalidTimeValue {
+  width: 100px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin-left: 12px;
+  margin-top: 3px;
+  /* -7px seems to be in the font? */
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  text-align: left;
+  line-height: 85%;
+  z-index: 3;
+}
+/* RACENET EVENT */
+
+.driver-profile-racenetevent-section #textBlock0,
+.driver-profile-racenetevent-section #textBlock2 {
+  position: absolute;
+  color: #ffdd15;
+  top: 5px;
+  font-size: 38px;
+  letter-spacing: -0.045em;
+}
+/* SAN FRANSISCO */
+
+.driver-profile-racenetevent-section #textBlock1,
+.driver-profile-racenetevent-section #textBlock3 {
+  width: 200px;
+  color: white;
+  top: 72px;
+  position: absolute;
+  font-size: 30px;
+  letter-spacing: -0.045em;
+}
+/* Logo */
+
+.driver-profile-racenetevent-section .imageBlock0 {
+  position: absolute;
+  text-align: right;
+  left: 153px;
+  top: 45px;
+}
+/* BEST */
+
+.driver-profile-racenetevent-section .bestTimeValue,
+.driver-profile-racenetevent-section .invalidTimeValue,
+.driver-profile-racenetevent-section .bestTimeDescription {
+  color: #606265;
+  top: 10px;
+  font-size: 32px;
+  letter-spacing: -0.035em;
+  display: inline;
+}
+/* VALID TIME */
+
+.driver-profile-racenetevent-section .bestTimeValue {
+  color: #ffdd15;
+}
+/* INVALID TIME */
+
+.driver-profile-racenetevent-section .invalidTimeValue {
+  color: #3f3d3c;
+}
+.driver-profile-racenetevent-section #textBlock2,
+.driver-profile-racenetevent-section #textBlock3 {
+  visibility: hidden;
+}
+.driver-profile-racenetevent-section .timeEntry {
+  display: inline;
+  position: absolute;
+}
+.driver-profile-teamchampionship-section {
+  z-index: 2;
+  position: absolute;
+  display: inline-block;
+  top: 156px;
+  left: 0px;
+  width: 300px;
+  height: 149px;
+  float: left;
+  overflow: visible;
+  background: url(../Profile/team_event_widget_bg.png);
+}
+.driver-profile-teamchampionship-section a {
+  text-decoration: none;
+}
+.driver-profile-teamchampionship-section .textBlock0,
+.driver-profile-teamchampionship-section .textBlock1,
+.driver-profile-teamchampionship-section .bestTimeDescription,
+.driver-profile-teamchampionship-section .bestTimeValue,
+.driver-profile-teamchampionship-section .invalidTimeValue {
+  width: 200px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin-left: 12px;
+  margin-top: 5px;
+  /* -7px seems to be in the font? */
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  text-align: left;
+  line-height: 85%;
+}
+/* RACENET EVENT */
+
+.driver-profile-teamchampionship-section .textBlock0 {
+  color: #ffdd15;
+  top: 5px;
+  font-size: 38px;
+  letter-spacing: -0.045em;
+}
+/* SAN FRANSISCO */
+
+.driver-profile-teamchampionship-section .textBlock1 {
+  width: 200px;
+  color: white;
+  top: 0px;
+  font-size: 30px;
+  letter-spacing: -0.045em;
+}
+/* Logo */
+
+.driver-profile-teamchampionship-section .imageBlock0 {
+  position: absolute;
+  text-align: right;
+  left: 168px;
+  top: 116px;
+  width: 130px;
+  height: 21px;
+}
+/* BEST */
+
+.driver-profile-teamchampionship-section .bestTimeValue,
+.driver-profile-teamchampionship-section .invalidTimeValue,
+.driver-profile-teamchampionship-section .bestTimeDescription {
+  color: #606265;
+  top: 12px;
+  font-size: 32px;
+  letter-spacing: -0.035em;
+  display: inline;
+}
+/* VALID TIME */
+
+.driver-profile-teamchampionship-section .bestTimeValue {
+  color: #ffdd15;
+}
+/* INVALID TIME */
+
+.driver-profile-teamchampionship-section .invalidTimeValue {
+  color: #3f3d3c;
+}
+#DriverFriendRequest {
+  z-index: 2;
+  position: absolute;
+  bottom: 61px;
+  left: 0px;
+  width: 300px;
+  height: 150px;
+  float: left;
+  overflow: hidden;
+}
+#DriverFriendRequestText a {
+  color: white;
+}
+#DriverFriendManage {
+  z-index: 2;
+  position: absolute;
+  bottom: 61px;
+  left: 0px;
+  width: 300px;
+  height: 150px;
+  float: left;
+  overflow: visible;
+  background: url(../Profile/friends_box_tiler.png);
+  background-repeat: repeat-x;
+}
+.driver-profile-friendmanage-text,
+.driver-profile-friendrequest-text {
+  z-index: 2;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  float: left;
+  overflow: visible;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.driver-profile-friendrequest-text {
+  bottom: 155px;
+}
+#DriverFriendRequestText .textBlock0,
+#DriverFriendRequestText .textBlock1,
+#DriverFriendRequestText .textBlock2,
+#DriverFriendRequestText .textBlock3,
+#DriverFriendRequestText .textBlock4,
+#DriverFriendRequestText .textBlock5,
+#DriverFriendRequestText .textBlock6,
+#DriverFriendRequestText .ManageHeading,
+#DriverFriendRequestText .ManageNumberPending,
+#DriverFriendRequestText .ManageRequestFrom,
+#DriverFriendRequestText .NoMessages,
+#DriverFriendRequestText .textBlock {
+  position: absolute;
+  left: 0px;
+  width: 160px;
+  text-align: left;
+  color: White;
+  font-size: 38px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  clear: both;
+  margin-left: 12px;
+  margin-top: 0px;
+}
+#DriverFriendRequestText .textBlock0,
+#DriverFriendRequestText .textBlock1 {
+  width: 160px;
+  font-size: 38px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  margin-left: 12px;
+}
+#DriverFriendRequestText .textBlock2,
+#DriverFriendRequestText .textBlock3 {
+  bottom: 29px;
+  width: 400px;
+  font-size: 32px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.045em;
+  margin-left: 12px;
+}
+#DriverFriendRequestText .textBlock4,
+#DriverFriendRequestText .textBlock5,
+#DriverFriendRequestText .textBlock6 {
+  bottom: 29px;
+  width: 400px;
+  font-size: 32px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.045em;
+  margin-left: 12px;
+}
+#DriverFriendRequestText .ManageHeading {
+  width: 280px;
+  top: 6px;
+  color: #929497;
+  font-size: 38px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+}
+#DriverFriendRequestText .ManageNumberPending {
+  width: 280px;
+  top: 6px;
+  text-align: right;
+  color: #929497;
+  font-size: 38px;
+  font-family: DINNextLTPro-LightCondensed, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  margin-left: 0px;
+  margin-right: 12px;
+}
+#DriverFriendRequestText .ManageRequestFrom,
+#DriverFriendRequestText .NoMessages {
+  width: 280px;
+  top: 53px;
+  color: #e6e7e8;
+  font-size: 20px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+}
+#DriverFriendRequestText .textBlock {
+  width: 280px;
+  top: 78px;
+  font-size: 28px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+}
+#DriverFriendRequestText .ManageAccept,
+#DriverFriendRequestText .ManageDelete {
+  position: relative;
+  left: -10px;
+  width: 151px;
+  height: 40px;
+  bottom: -98px;
+  text-align: center;
+  vertical-align: middle;
+  color: White;
+  font-size: 28px;
+  font-family: DINNextLTPro-MediumCond, 'Ubuntu Mono', sans-serif;
+  letter-spacing: -0.051em;
+  line-height: 85%;
+  background: Black;
+  clear: both;
+  margin-left: 5px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+#DriverFriendRequestText .ManageAccept p {
+  line-height: 45px;
+}
+#DriverFriendRequestText .ManageDelete {
+  left: 141px;
+  width: 149px;
+  bottom: -58px;
+  background: #6e6f70;
+}
+#DriverFriendRequestText .ManageDelete p {
+  line-height: 45px;
+}
+#ManageArrows {
+  z-index: 3;
+  position: absolute;
+  bottom: 80px;
+  left: 235px;
+  width: 58px;
+  height: 50px;
+  float: left;
+  overflow: visible;
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.account_admin ul {
+  list-style: none;
+  background: white;
+}
+.account_admin ul h2 {
+  font-size: 2em;
+}
+.account_admin li {
+  margin: 10px;
+  padding: 5px;
+}
+.account_admin dl dt {
+  margin-left: 10px;
+}
+.account_admin dl dd {
+  margin-left: 20px;
+}

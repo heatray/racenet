@@ -1,0 +1,55 @@
+#HeroUnitTitle {
+  margin-top: 10px;
+  height: 95px;
+  background-position: center top;
+  background-size: 239px;
+}
+#HeroUnitTitle {
+  background-image: url('../SupportedGames/showdown_logo.png');
+  background-position: 65% top !important;
+}
+.showdownherounit {
+  margin-top: 10px;
+}
+#wir_bottomright {
+  background-image: none !important;
+}
+#HeroUnitTitleContainer {
+  background: transparent;
+}
+#MainImage {
+  background-image: url('../SupportedGames/dirt_showdown_art.jpg');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  #MainImage {
+    background-image: url('../SupportedGames/dirt_showdown_art@2x.jpg');
+  }
+  #HeroUnitTitle {
+    background-image: url('../SupportedGames/showdown_logo@2x.png');
+  }
+}
+@media (min-width: 1024px) and (max-width:1279px) {
+  #HeroUnitTitle {
+    background-position: 70% top !important;
+  }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+  #HeroUnitTitle {
+    background-position: 57% top !important;
+  }
+}
+@media (min-width: 600px) and (max-width:767px) {
+  #HeroUnitTitle {
+    background-position: 60% top !important;
+  }
+}
+@media (min-width: 480px) and (max-width:599px) {
+  #HeroUnitTitle {
+    background-position: 67% top !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  #HeroUnitTitle {
+    background-position: 143% top !important;
+  }
+}
