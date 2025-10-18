@@ -1,0 +1,694 @@
+/*generic font styles/ converting px to ems */
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 2.1em;
+  padding-left: 12px;
+  padding-top: 5px;
+  letter-spacing: -0.08em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1em;
+}
+h4 {
+  font-size: 1.125em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: .75em;
+}
+p {
+  font-size: .875em;
+}
+H1,
+H2,
+H3 {
+  font-family: Eurostile, Microgramma-BoldEx;
+}
+H4,
+H5,
+H6 {
+  font-family: 'Swiss721W01-BoldCondens';
+}
+P {
+  font-family: 'Swiss721W01-BlackConden';
+}
+/*Landing*/
+
+#grid2_heading_seperator {
+  position: absolute;
+  width: 100%;
+  top: 48px;
+  left: 0px;
+  height: 1px;
+  background: #333333;
+  background-color: #333333;
+  overflow: hidden;
+}
+#grid2_header {
+  position: relative;
+  left: 330px;
+  width: 600px;
+  top: -50px;
+}
+#GridHolder {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #404040;
+}
+#grid2_tagline_section,
+#grid2_racing_logo {
+  position: relative;
+  height: 80px;
+  top: -20px;
+}
+#grid2_tagline,
+#grid2_subtagline,
+#signup_heading,
+#signup_subheading,
+#preorder_heading,
+#notify_me,
+#keep_updated {
+  font-family: Eurostile, Microgramma-BoldEx;
+  font-size: 30px;
+  color: White;
+  text-align: left;
+  line-height: 90%;
+}
+#grid2_tagline,
+#grid2_subtagline {
+  text-align: center;
+}
+#notify_me,
+#keep_updated {
+  text-align: right;
+}
+#grid2_subtagline {
+  font-family: Eurostile, Microgramma-MediumEx;
+  color: #b90b0a;
+}
+#grid2_subtagline a,
+#grid2_subtagline a:hover,
+#grid2_subtagline a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+#notify_me,
+#signup_subheading {
+  font-family: Eurostile, Microgramma-MediumEx;
+  font-size: 24px;
+  padding-top: 10px;
+}
+#grid2_youtube {
+  position: relative;
+  top: -160px;
+  left: 130px;
+  height: 500px;
+  width: 1005px;
+  overflow: hidden;
+}
+#grid2_conversation {
+  position: relative;
+  height: 175px;
+  left: 130px;
+  width: 1000px;
+  padding-top: 50px;
+  top: -150px;
+}
+#signup_text,
+#grid2_twitter,
+#grid2_facebook,
+#grid2_community {
+  position: relative;
+  width: 188px;
+  height: 175px;
+  float: left;
+  cursor: pointer;
+  z-index: 1;
+}
+#signup_text {
+  width: 395px;
+  cursor: default;
+}
+#twitter_link {
+  position: relative;
+  top: 100px;
+  left: 128px;
+}
+#twitter_count,
+#twitter_followers,
+#like_count,
+#facebook_likes,
+#community_post_count,
+#community_posts {
+  position: relative;
+  top: 105px;
+  width: 188px;
+  text-align: right;
+  color: White;
+  font-family: Eurostile, Microgramma-BoldEx;
+  font-size: 21px;
+}
+#twitter_followers,
+#facebook_likes,
+#community_posts {
+  font-family: Eurostile, Microgramma-MediumEx;
+  font-size: 12px;
+  top: 100px;
+}
+#FacebookLikeButton {
+  position: relative;
+  top: 100px;
+  float: right;
+  z-index: 2;
+}
+#racenet_sublogo {
+  position: relative;
+  float: right;
+  top: -80px;
+  right: 200px;
+}
+#grid2_community a {
+  text-decoration: none;
+}
+#grid2_rewards {
+  position: relative;
+  height: 139px;
+  width: 1200px;
+  top: -150px;
+}
+.reward_item {
+  position: relative;
+  width: 165px;
+  height: 124px;
+  float: left;
+  left: 130px;
+  padding-left: 2px;
+}
+.reward_locked_background,
+.reward_unlocked_background {
+  position: relative;
+  width: 165px;
+  height: 92px;
+  background: #111111;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.reward_locked_type,
+.reward_unlocked_type {
+  position: relative;
+  width: 165px;
+  height: 32px;
+  background: #333333;
+}
+.reward_unlocked_type_text,
+.reward_locked_type_text {
+  position: relative;
+  left: 10px;
+  width: 155px;
+  font-family: Eurostile, Microgramma-MediumEx;
+  font-size: 12px;
+  color: White;
+}
+#grid2_rewards a {
+  text-decoration: none;
+}
+.reward_like_target,
+.reward_follower_target {
+  position: relative;
+  top: 10px;
+  left: 25px;
+  color: Black;
+  padding-bottom: 5px;
+  font-family: Eurostile, Microgramma-BoldEx;
+  font-size: 21px;
+  color: White;
+}
+.reward_locked {
+  position: relative;
+  top: 30px;
+  font-family: Eurostile, Microgramma-BoldEx;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+}
+.reward_item a {
+  text-decoration: none;
+}
+.reward_facebook_icon,
+.reward_twitter_icon {
+  position: relative;
+  top: 5px;
+  left: -5px;
+  z-index: 2;
+}
+#highlight_bar {
+  width: 1000px;
+  height: 10px;
+  left: 132px;
+  position: relative;
+  background: #111111;
+  background-color: #111111;
+}
+#progress_bar {
+  width: 1000px;
+  height: 10px;
+  left: 130px;
+  position: relative;
+  background: #111111;
+}
+#progress_bar > span {
+  display: block;
+  height: 100%;
+  background-color: #b90b0a;
+  position: relative;
+  overflow: hidden;
+}
+#grid2_competition_section {
+  position: relative;
+  height: 100px;
+  width: 500px;
+  top: -209px;
+  left: 630px;
+}
+#grid2_racing_logo {
+  position: relative;
+  left: 515px;
+  width: 400px;
+  top: -115px;
+}
+#grid2_buy_it_now {
+  position: relative;
+  left: 115px;
+  height: 209px;
+  width: 402px;
+}
+#preorder_heading {
+  position: relative;
+  left: 20px;
+  padding-bottom: 20px;
+}
+#tick_box {
+  position: relative;
+  top: 20px;
+  width: 100px;
+  left: 430px;
+}
+#grid2_trademark {
+  position: relative;
+  left: 160px;
+  width: 900px;
+  text-align: center;
+  color: #686767;
+  font-family: Arial;
+  font-size: 12px;
+  top: -100px;
+}
+#grid2_platform_logos {
+  position: relative;
+  left: 120px;
+  width: 1200px;
+  padding-top: 50px;
+  top: -100px;
+}
+#sd-grid2-ratings,
+#xbox360_logo,
+#xboxlive_logo,
+#playstation_logo,
+#ps3_logo,
+#psn_logo,
+#steam_logo {
+  float: left;
+  padding-left: 50px;
+}
+/*Rivals*/
+
+#rivalsCarousel {
+  width: 100%;
+  /*max-width: 1860px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 4px;
+padding-left: 1%;
+padding-right: 1%;
+*/
+  height: 350px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#rivals_carousel_left_button {
+  float: left;
+  width: 2%;
+  height: 100px;
+  background-image: url(../Grid2/rival_arrow_L.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  z-index: 10;
+}
+#rivals_carousel_right_button {
+  float: left;
+  width: 2%;
+  height: 100px;
+  background-image: url(../Grid2/rival_arrow_R.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  z-index: 10;
+}
+.rival_slide_pointer_arrow {
+  background-image: url("../Grid2/Rivals/selected-card-arrow.png");
+  height: 5px;
+  width: 19px;
+  position: relative;
+  top: -61px;
+  left: 142px;
+  opacity: 0.0;
+}
+.rival_slide_pointer_arrow.activeRival {
+  opacity: 1.0;
+}
+#rivals_container {
+  width: 100%;
+  height: 100%;
+  /*height: 300px;*/
+  min-height: 84px;
+  margin-bottom: 43px;
+  /*background-image: url("../Grid2/Rivals/tray-tile.png");*/
+  color: White;
+  z-index: 0;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.rival_box_container.activeRival {
+  background-color: black;
+  height: 80px;
+  opacity: 1;
+}
+.rival_control_bar_container {
+  width: 100%;
+  height: 50px;
+}
+.rival_control_bar {
+  width: 100%;
+  /*height:45px;
+    border-top:1px solid #990000;
+    position:relative;*/
+  top: 0px;
+}
+.control_bar_left_end {
+  background-image: url("../Grid2/Rivals/info-bar-left.png");
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 9px;
+  float: left;
+  position: relative;
+}
+.control_bar_right_end {
+  background-image: url("../Grid2/Rivals/info-bar-right.png");
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 9px;
+  position: absolute;
+  top: 0px;
+  left: 99.5%;
+}
+.control_bar_social_info {
+  position: relative;
+  left: 10px;
+  width: 90%;
+}
+.rival_control_button {
+  color: White;
+  float: right;
+  position: relative;
+  top: 2px;
+  left: -24px;
+  text-align: right;
+}
+.button_cancel_invite {
+  position: relative;
+  top: -22px;
+}
+.button_cancel_invite_confirm {
+  position: relative;
+  top: -22px;
+}
+.button_cancel_invite_reject {
+  position: relative;
+  top: -22px;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button_red {
+  background-color: Red;
+}
+.button_invite_new {
+  top: 0px;
+  left: -45px;
+  width: 120px;
+}
+.button_end_rivalry {
+  top: -22px;
+  width: 178px;
+}
+.button_cancel_end_rivalry {
+  top: -22px;
+  width: 178px;
+}
+.button_info_ok {
+  top: -22px;
+}
+.social_rival_combo {
+  position: relative;
+  top: -6px;
+  left: -9px;
+}
+.control_bar_font {
+  font-family: 'UniversNext-Regular';
+}
+.custom_option_selector {
+  position: relative;
+  /*float:right;*/
+  top: 3px;
+  /* background-color:Black;
+    color:White;*/
+  font-family: arial;
+}
+.control_bar_title {
+  float: left;
+}
+.rival_box_title {
+  width: 300px;
+  height: 25px;
+  font-family: Eurostile, Microgramma-MediumEx;
+  font-size: 14pt;
+  text-align: center;
+  color: #1a1a1a;
+  opacity: 1;
+  position: relative;
+  left: -3px;
+  top: -1px;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+}
+.rival_status {
+  position: relative;
+  left: 12px;
+  top: 4px;
+  font-family: 'UniversNext-620CondB';
+  font-size: 13pt;
+  opacity: 0.60;
+}
+.rival_auto_edit_button,
+.rival_custom_edit_button,
+.rival_social_edit_button,
+.rival_info_button {
+  color: Gray;
+  margin-left: 3px;
+  margin-right: 10px;
+  position: relative;
+  opacity: 0.85;
+  /* display:none;*/
+
+}
+.button_confirm_auto_optout {
+  position: relative;
+  top: -22px;
+}
+.button_confirm_custom_optout {
+  position: relative;
+  top: -22px;
+}
+#button_set_custom_optout {
+  position: relative;
+  left: -140px;
+}
+.button_set_auto_optout {
+  position: relative;
+  /*left:20px;*/
+
+}
+#set_custom_options {
+  position: relative;
+  left: 84px;
+}
+.rival_custom_edit_button:hover,
+.rival_social_edit_button:hover,
+.rival_info_button:hover {
+  opacity: 1.0;
+  cursor: pointer;
+}
+.rival_info {
+  position: relative;
+  left: 5px;
+  top: 2px;
+  /*width:60%;*/
+
+}
+.rival_info p {
+  width: 80%;
+}
+.rival_type {
+  float: left;
+  margin-left: 10px;
+  font-family: 'UniversNext-620CondB';
+  font-size: 13pt;
+  position: relative;
+  top: 4px;
+}
+.rivalry_followers,
+.rivalry_xp_won,
+.rivalry_status {
+  float: left;
+  margin-left: 8px;
+}
+.custom_option {
+  float: left;
+  margin-left: 10px;
+}
+.typeWinning {
+  background-color: rgba(6, 89, 0, 0.85);
+}
+.typeLosing {
+  background-color: rgba(89, 0, 0, 0.85);
+}
+.typeTie {
+  background-color: rgba(44, 44, 44, 0.85);
+}
+.progress {
+  background-image: url("../Grid2/Rivals/loading_300x84.gif");
+  width: 292px;
+  height: 80px;
+  top: 20px;
+  position: relative;
+}
+.rivalry_xp_bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.rivalry_xp_bar.prog_bg {
+  background-color: #cccccc;
+}
+.rivalry_xp_bar.prog_bar {
+  background-color: #aaaaaa;
+}
+.rivalry_xp_bar_container {
+  height: 20px;
+  position: relative;
+  top: 0px;
+}
+.news_bar_item_button {
+  width: 17px;
+  height: 17px;
+  margin-top: 1px;
+  background-image: url("../Grid2/Rivals/tab-unselected.png");
+  display: inline-block;
+}
+.news_bar_item_button.active {
+  background-image: url("../Grid2/Rivals/tab-selected.png");
+}
+.waiting_overlay {
+  position: absolute;
+  top: -16px;
+  left: 0px;
+  z-index: 1;
+  width: 243px;
+  height: 80px;
+}
+.news_icon_holder {
+  float: left;
+  display: inline-block;
+  margin-left: 15px;
+  padding-top: 5px;
+}
+.control_bar_section {
+  padding-top: 4px;
+  margin-left: 20px;
+  position: relative;
+  top: 43px;
+  left: -60px;
+}
+.control_bar_section {
+  font-family: 'UniversNext-Regular';
+  font-size: 14pt;
+}
+/*styles for main/grid subnav*/
+
+.gridnav {
+  color: #990000;
+  padding: 5px;
+}
+.gridnav a {
+  color: #ececec;
+}
+.gridnav a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 0px;
+}
+#mobilenavbutton ul {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  display: block;
+}
+#gridmobilebuttons {
+  background-color: white;
+}
+#mobilenavbutton ul li {
+  list-style-type: none;
+  float: left;
+}
+#mobilenavbutton ul li:last-child {
+  float: right;
+  padding-right: 14px;
+  padding-top: 14px;
+}
+#mobilenavbutton ul li a {
+  list-style-type: none;
+}
+.lang_pl .Edit_Card {
+  font-family: 'Helvetica-CondBold';
+}

@@ -1,0 +1,830 @@
+.button {
+  text-align: center;
+  padding-top: 2px;
+  width: 120px;
+  text-wrap: normal;
+  overflow-wrap: break-word;
+}
+.rival_control_button {
+  font-family: 'Swiss721W01-BoldCondens' !important;
+}
+#button_invite_new {
+  position: relative;
+}
+#heading_title {
+  float: left;
+  display: inline-block;
+  font-size: 38pt;
+  letter-spacing: -0.08em;
+  position: relative;
+  top: -2px;
+}
+#g2r_infobar {
+  float: left;
+  display: inline-block;
+}
+#g2r_infobar .infobar_infoicon {
+  position: relative;
+  top: 19px;
+  left: 14px;
+}
+#g2r_infobar .infobar_content {
+  top: 66px;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+}
+#g2r_infobar .infobar_pointer {
+  top: 35px;
+}
+#rivals_call_out {
+  width: 100%;
+  margin-left: 15px;
+  position: relative;
+  top: 20px;
+}
+#rivalsCarousel {
+  background: #121212 url('../images/rivals_bg.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  height: 100%;
+  background-size: cover;
+}
+#rivals_container:last-child {
+  clear: both;
+}
+#rivalsCarousel:last-child {
+  clear: both;
+}
+#mainContent {
+  margin-top: 20px !important;
+}
+#card {
+  background-color: Green;
+  width: 300px;
+}
+#rcbc {
+  display: none;
+  height: 330px;
+  float: left;
+  width: 799px;
+}
+#rcbc p {
+  font-family: 'Swiss721W01-BoldCondens' !important;
+}
+.singlecard {
+  height: 330px;
+  width: 300px;
+  float: left;
+  position: relative;
+  border-left: 1px solid #444444;
+  border-right: 1px solid #444444;
+  border-bottom: 1px solid #444444;
+  background-color: black;
+}
+.custom_option_text {
+  position: relative;
+  top: 7px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.carddullborder {
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+}
+#custom_rival_options {
+  position: relative;
+}
+#set_custom_options {
+  position: relative;
+  top: 71px;
+}
+#custom_rival_action_buttons {
+  width: 100%;
+  display: none;
+}
+.rival_empty_social_edit_button,
+.rival_info_button,
+.rival_update_button,
+.rival_auto_edit_button,
+.rival_social_edit_button,
+.rival_custom_edit_button {
+  width: 292px;
+  padding: 5px 2px;
+  color: Gray;
+  margin: 2px 0px;
+  top: -38px;
+  position: relative;
+  z-index: 3;
+  background: url("../Grid2/Objectives/arrow_temp.png") no-repeat scroll right center;
+  font-size: 15pt;
+  background-color: #141414;
+  cursor: pointer;
+}
+.rival_info_button:hover,
+.rival_update_button:hover,
+.rival_auto_edit_button:hover,
+.rival_social_edit_button:hover,
+.rival_custom_edit_button:hover {
+  background-color: #242424;
+  color: white;
+}
+.swiper-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.rival_box_container {
+  width: 294px;
+  height: 84px;
+  margin: 20px 20px;
+  position: relative;
+  top: 24px;
+  float: left;
+  opacity: 0.75;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+.rivalBox {
+  width: 100%;
+  height: 84px;
+  border-color: White;
+  position: relative;
+  border: 2px;
+}
+.rival_box_outline {
+  border: 2px solid white;
+  opacity: 1;
+  -webkit-transition: border 50ms ease-in;
+}
+.rival_card_img {
+  width: 300px;
+  height: 84px;
+  position: relative;
+  /*top:-18px;*/
+
+}
+.rival_box_top_row {
+  width: 100%;
+  height: 24px;
+  position: relative;
+  left: 0px;
+  top: -85px;
+  z-index: 2;
+}
+.rivalry_info_bar {
+  position: relative;
+  top: -46px;
+  left: 0px;
+  width: 100%;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.6);
+  visibility: visible;
+  z-index: 2;
+}
+.rivalry_info_bar.empty {
+  visibility: hidden;
+}
+.rival_status {
+  text-transform: uppercase;
+}
+.news_item {
+  background-color: #171717;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin-left: -75px;
+  margin: 10px;
+}
+#backbutton {
+  width: 300px;
+  border-right: 1px solid #444444;
+  border-left: 1px solid #444444;
+  color: Gray;
+  background-color: #141414;
+}
+.back {
+  width: 292px;
+  background-color: #141414;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-size: 15pt;
+  background: url('../Grid2/Objectives/back_arrow.png') no-repeat left center;
+  margin-left: 5px;
+}
+.rival_box_container.activeRival {
+  position: relative;
+  top: 3px;
+}
+.back  p {
+  margin-left: 10px;
+}
+.social_rival_combo_container {
+  float: right;
+  position: relative;
+  margin-top: 2px;
+  margin-right: 20px;
+  left: -332px;
+  top: 10px;
+}
+#backbutton:hover {
+  background-color: #242424;
+  color: white;
+}
+/*.rival_box_container:hover 
+{
+    border:1px solid white;
+    opacity:0.9;
+    
+    }*/
+
+.rival_info p {
+  width: 100% !important;
+}
+#race_type_select {
+  width: 150px;
+}
+#rivals_footer {
+  clear: both;
+  width: 100%;
+  height: 44px;
+  color: black;
+  font-family: 'Swiss721W01-BoldCondens';
+  background-color: white;
+}
+#rivalries_expiry {
+  float: right;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-right: 14px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  #mainContent {
+    margin-top: 20px !important;
+    height: 100%;
+    overflow: scroll;
+  }
+  #heading {
+    margin: 0px 0px;
+    display: none;
+  }
+  #rivalsCarousel {
+    width: 300px;
+    height: 800px;
+    background-color: #171717;
+    background: none;
+  }
+  #rivals_container {
+    height: 800px;
+    clear: both;
+  }
+  .rival_control_bar {
+    border-top: 1px solid black;
+  }
+  #rcbc {
+    width: 300px;
+    float: left;
+    margin-top: 5px;
+  }
+  .news_item {
+    position: relative;
+    left: -7px;
+    width: 272px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  .rival_info,
+  .control_bar_social_info {
+    position: relative;
+    left: -9px;
+    top: 20px;
+    width: 272px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  .rival_box_container {
+    margin: 10px 1px;
+  }
+  .newclass {
+    height: 200px;
+  }
+  .button_end_rivalry {
+    top: 0;
+  }
+  .rival_control_button {
+    top: 30px;
+    left: -100px;
+  }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  #backbutton,
+  .singlecard {
+    border: none;
+  }
+  .singlecard {
+    height: 200px;
+  }
+  #backbutton {
+    width: 295px;
+    margin-left: 1px;
+    margin-bottom: 6px;
+  }
+  .control_bar_social_info {
+    background-color: #444444;
+    height: 300px;
+    margin-left: -7px;
+    position: relative;
+    width: 295px;
+    margin-top: 12px;
+  }
+  .control_bar_social_info p {
+    padding: 8px !important;
+  }
+  #set_custom_options {
+    top: 83px;
+    left: -139px;
+    z-index: 2;
+  }
+  #xp_select,
+  #winloss_select,
+  #location_select,
+  #race_type_select {
+    clear: both;
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-left: 10px;
+  }
+  #rivals_call_out {
+    width: 90%;
+  }
+  .social_rival_combo_container {
+    left: -94px;
+    top: 10px;
+  }
+  #button_invite_new {
+    position: relative;
+    left: 2px;
+    top: 80px;
+  }
+  .control_bar_section {
+    left: 0px;
+    margin-left: 2px;
+  }
+  .button_cancel_end_rivalry,
+  .rival_control_button,
+  .button_end_rivalry,
+  .button_end_rivalry {
+    position: relative;
+    top: 17px;
+    left: -46px;
+  }
+}
+@media (min-width: 480px) and (max-width:599px) {
+  #rivalsCarousel {
+    width: 429px;
+    padding-bottom: 20px;
+    background: none;
+  }
+  #rcbc {
+    width: 429px;
+    float: left;
+    height: 400px;
+  }
+  .rival_box_container {
+    margin: 10px 60px;
+  }
+  .newclass {
+    height: 200px;
+    left: -4px;
+  }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  #backbutton {
+    width: 298px;
+  }
+  #backbutton,
+  .singlecard {
+    border: none;
+  }
+  .singlecard {
+    height: 216px;
+  }
+  .control_bar_social_info {
+    background-color: #444444;
+    height: 300px;
+    margin-left: -7px;
+    position: relative;
+    width: 295px;
+    margin-top: 12px;
+  }
+  .control_bar_social_info p {
+    padding: 8px !important;
+  }
+  .news_item {
+    position: relative;
+    left: -7px;
+    width: 400px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  .rival_info,
+  .control_bar_social_info {
+    position: relative;
+    left: -8px;
+    top: 20px;
+    width: 400px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  .rival_box_container.activeRival {
+    top: 9px;
+  }
+  #set_custom_options {
+    top: 64px;
+    left: -284px;
+  }
+  .button_cancel_end_rivalry {
+    position: relative;
+    top: -44px;
+    left: -245px;
+  }
+  #xp_select,
+  #winloss_select,
+  #location_select,
+  #race_type_select {
+    clear: both;
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-left: 10px;
+  }
+  .social_rival_combo_container {
+    left: -94px;
+    top: 10px;
+  }
+  .social_rival_combo_container {
+    left: -224px;
+    top: 10px;
+  }
+  #button_invite_new {
+    position: relative;
+    left: -127px;
+    top: 61px;
+  }
+  #custom_rival_options {
+    left: 2px;
+  }
+  .control_bar_section {
+    left: 0px;
+    margin-left: 2px;
+  }
+}
+@media (min-width: 600px) and (max-width:767px) {
+  #rivalsCarousel {
+    width: 580px;
+    height: 850px;
+    background: none;
+  }
+  #rcbc {
+    width: 580px;
+    float: left;
+  }
+  .newclass {
+    height: 200px;
+    left: -44px;
+  }
+  .rival_box_container {
+    margin: 10px 90px;
+  }
+  .singlecard {
+    left: -42px;
+  }
+  .singlecard {
+    height: 216px;
+    border: 1px solid white;
+  }
+  #backbutton,
+  .singlecard {
+    border: none;
+  }
+  .rival_box_container.activeRival {
+    top: 9px;
+  }
+  .news_item {
+    position: relative;
+    left: -7px;
+    width: 550px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  .rival_info,
+  .control_bar_social_info {
+    position: relative;
+    left: -16px;
+    top: 20px;
+    width: 550px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  #set_custom_options {
+    top: 72px;
+    left: -433px;
+  }
+  #xp_select,
+  #winloss_select,
+  #location_select,
+  #race_type_select {
+    clear: both;
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-left: 10px;
+  }
+  .social_rival_combo_container {
+    left: -367px;
+    top: 10px;
+  }
+  #button_invite_new {
+    position: relative;
+    left: 153px;
+    top: 181px;
+  }
+  .control_bar_text {
+    position: relative;
+    left: -15px;
+  }
+  #custom_rival_options {
+    left: -15px;
+  }
+  .control_bar_section {
+    left: 1px;
+  }
+  .button_cancel_end_rivalry,
+  .rival_control_button,
+  .button_end_rivalry,
+  .button_end_rivalry {
+    position: relative;
+    top: 180px;
+    left: -20px;
+  }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+  #rivalsCarousel {
+    height: 500px;
+    border-right: 1px solid #444444;
+    border-left: 1px solid #444444;
+  }
+  #rcbc {
+    width: 400px;
+    float: left;
+    position: relative;
+    top: -38px;
+  }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  .rival_box_container {
+    margin: 20px 25px;
+  }
+  .singlecard {
+    height: 464px;
+  }
+  #backbutton {
+    width: 300px;
+    border-right: 1px solid #444444;
+  }
+  .rival_box_container.activeRival {
+    top: 9px;
+  }
+  .news_item {
+    position: relative;
+    left: -11px;
+    width: 368px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  .rival_info,
+  .control_bar_social_info {
+    position: relative;
+    width: 368px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  #set_custom_options {
+    top: 263px;
+    left: 8px;
+  }
+  #xp_select,
+  #winloss_select,
+  #location_select,
+  #race_type_select {
+    clear: both;
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-left: 10px;
+  }
+  .social_rival_combo_container {
+    left: -181px;
+    top: 10px;
+  }
+  #button_invite_new {
+    position: relative;
+    left: -85px;
+    top: 61px;
+  }
+  .control_bar_section {
+    position: relative;
+    left: 2px;
+  }
+  .button_cancel_end_rivalry,
+  .rival_control_button,
+  .button_end_rivalry,
+  .button_end_rivalry {
+    position: relative;
+    top: 380px;
+    left: 6px;
+  }
+  #set_custom_options {
+    position: relative;
+    top: 180px;
+    left: 10px;
+  }
+  #button_invite_new {
+    position: relative;
+    top: 357px;
+    left: 159px;
+  }
+}
+@media (min-width: 1024px) and (max-width:1279px) {
+  #rcbc {
+    width: 600px;
+    float: left;
+    position: relative;
+    top: -38px;
+  }
+  #rivalsCarousel {
+    padding-bottom: 50px;
+    border-right: 1px solid #444444;
+    border-left: 1px solid #444444;
+  }
+  .rival_box_container {
+    margin: 20px 13px;
+  }
+  .removeCardMargins {
+    margin: 0px 0px;
+  }
+  .newclass {
+    height: 200px;
+  }
+  .swiper-wrapper {
+    width: 100%;
+  }
+  #backbutton {
+    width: 300px;
+    border-right: 1px solid #444444;
+  }
+  .singlecard {
+    height: 330px;
+    border-bottom: none;
+  }
+  .rival_box_container.activeRival {
+    top: 9px;
+  }
+  .news_item {
+    position: relative;
+    left: 5px;
+    top: 0px;
+    width: 648px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  .rival_info,
+  .control_bar_social_info {
+    position: relative;
+    width: 648px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  #xp_select,
+  #winloss_select,
+  #location_select,
+  #race_type_select {
+    clear: both;
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-left: 10px;
+  }
+  .control_bar_section {
+    left: -6px;
+  }
+  .social_rival_combo_container {
+    left: -378px;
+  }
+  .button_cancel_end_rivalry,
+  .rival_control_button,
+  .button_end_rivalry,
+  .button_end_rivalry {
+    position: relative;
+    top: 209px;
+    left: 10px;
+  }
+  #button_invite_new {
+    position: relative;
+    left: 222px;
+    top: 185px;
+  }
+}
+@media (min-width: 1280px) {
+  #rivalsCarousel {
+    padding-bottom: 50px;
+    border-right: 1px solid #444444;
+    border-left: 1px solid #444444;
+  }
+  .singlecard {
+    left: -90px;
+    height: 329px;
+    width: 300px;
+    border-bottom: none;
+  }
+  .rival_box_container.activeRival {
+    top: 9px;
+  }
+  .news_item {
+    position: relative;
+    left: -10px;
+    width: 738px;
+    font-size: 24px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  .rival_info,
+  .control_bar_social_info {
+    position: relative;
+    left: 0px;
+    width: 738px;
+    font-size: 24px;
+    padding: 5px 10px 5px 10px;
+    background-color: #444444;
+  }
+  #rcbc {
+    width: 800px;
+    float: left;
+    position: relative;
+    top: -38px;
+    left: -21px;
+  }
+  #set_custom_options {
+    position: relative;
+    top: 71px;
+    left: 10px;
+  }
+  #xp_select,
+  #winloss_select,
+  #location_select,
+  #race_type_select {
+    clear: both;
+    position: relative;
+    top: 10px;
+    float: left;
+    margin-left: 10px;
+  }
+  .button_cancel_end_rivalry,
+  .rival_control_button,
+  .button_end_rivalry,
+  .button_end_rivalry {
+    position: relative;
+    top: 209px;
+    left: 10px;
+  }
+  #button_invite_new {
+    position: relative;
+    left: 222px;
+  }
+  .social_rival_combo_container {
+    left: -578px;
+  }
+}
+.removeCardMargins {
+  margin: 0px 0px;
+}
+.activeButton {
+  color: White;
+  background-color: #242424;
+}

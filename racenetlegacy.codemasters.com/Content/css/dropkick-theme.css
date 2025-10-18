@@ -1,0 +1,72 @@
+/* Container */
+
+.dk_theme_rng2.dk_container {
+  top: 10px;
+  background: transparent;
+}
+/* Toggle */
+
+.dk_theme_rng2 .dk_toggle {
+  height: 26px;
+  font-family: Eurostile;
+  font-weight: normal;
+  line-height: 26px;
+  background-color: #6b6969;
+  color: white;
+  text-shadow: none;
+  border-radius: 0px;
+  border: 1px solid #c2c1c1;
+  background: #6b6969 url('../Grid2/dk_dropdown_arrow.png') no-repeat scroll right top;
+  background-size: 46px 40px;
+  overflow: hidden;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  background-image: url('../Grid2/dk_dropdown_arrow@2x.png');
+}
+/* Focus State */
+
+.dk_theme_rng2.dk_focus .dk_toggle {
+  box-shadow: none;
+}
+/* Open State */
+
+.dk_theme_rng2.dk_open {
+  box-shadow: none;
+}
+/* Options Menu */
+
+.dk_theme_rng2 .dk_options {
+  font-weight: normal;
+  font-size: 15pt;
+  font-family: Eurostile;
+  border-radius: 0px;
+  box-shadow: 0 8px 8px 3px rgba(0, 0, 0, 0.8);
+}
+.dk_theme_rng2 .dk_options a {
+  text-shadow: none;
+  color: white;
+  background-color: #6b6969;
+  border-bottom: none;
+  font-size: 15pt;
+}
+.dk_theme_rng2 .dk_options a:hover,
+.dk_theme_rng2 .dk_option_current a {
+  text-shadow: none;
+  background-color: #8b8989;
+}
+/* Inner options */
+
+.dk_theme_rng2 .dk_options_inner {
+  border-radius: 0px;
+  border-width: 1px;
+  list-style: none inside none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* Set a width property here */
+
+/*width:357px; }*/
+
+.dk_theme_rng2 .dk_options_inner li {
+  overflow: hidden;
+}

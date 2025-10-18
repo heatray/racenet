@@ -1,0 +1,354 @@
+.rivalcarda {
+  width: 280px;
+  margin: 5px;
+  float: left;
+  border: 2px solid #ececec;
+}
+.rivalcarda:hover {
+  width: 280px;
+  margin: 5px;
+  float: left;
+  background-color: #455632;
+}
+.rivalcarda img {
+  width: 300px;
+  border: 2px solid #ececec;
+}
+.rivalcarda img:hover {
+  opacity: .7;
+}
+#G2RivalCardHolder {
+  background: #121212 url('../images/rivals_bg.jpg') no-repeat scroll center top;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  height: 100%;
+  background-size: cover;
+}
+#nextbutton,
+#previousbutton {
+  margin: 5px 2px;
+  float: right;
+  cursor: pointer;
+}
+#savebutton {
+  float: right;
+  margin: 10px 20px;
+  color: White;
+}
+#savebutton a {
+  color: White;
+}
+#savebutton a:hover {
+  color: White;
+  text-decoration: none;
+}
+#playercardsubnav {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+}
+.cardclick {
+  position: relative;
+}
+.pagelogo {
+  background: white url('../images/Grid2_icon_riv.png');
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  margin-right: 15px !important;
+}
+#b_cardname {
+  float: left;
+  clear: both;
+  font-family: Eurostile;
+  font-size: 90%;
+  text-transform: uppercase;
+  padding: 0px 10px !important;
+}
+#b_carddesc {
+  float: left;
+  clear: both;
+  font-family: Eurostile;
+  font-size: 90%;
+  text-transform: uppercase;
+  padding: 0px 10px !important;
+}
+.cardname {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 2px;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.65);
+  font-family: Eurostile;
+  text-transform: uppercase;
+  font-size: 85%;
+  letter-spacing: -0.08em;
+}
+#card_info_title {
+  float: left;
+}
+#g2src_infobar .infobar_infoicon {
+  top: 24px;
+  left: 14px;
+}
+#g2src_infobar .infobar_pointer {
+  top: 32px;
+}
+#g2src_infobar .infobar_content {
+  top: 66px;
+}
+.hide {
+  display: none;
+}
+#desc {
+  color: black;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-top: 6px;
+}
+.tick {
+  float: right;
+  background-image: url('../images/tick.png');
+}
+.whitebg {
+  background-color: white;
+}
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9,
+.card10,
+.card11,
+.card12,
+.card13,
+.card14,
+.card15,
+.card16 {
+  height: 86px;
+  background-repeat: no-repeat;
+  float: left;
+  position: relative;
+  width: 300px;
+  margin: 10px 45px;
+}
+.card1 {
+  background-image: url('../images/RaceNet.jpg');
+}
+.card2 {
+  background-image: url('../images/WSR.jpg');
+}
+.card3 {
+  background-image: url('../images/NewUnion.jpg');
+}
+.card4 {
+  background-image: url('../images/transamerica.jpg');
+}
+.card5 {
+  background-image: url('../images/divizero.jpg');
+}
+.card6 {
+  background-image: url('../images/eliminacion.jpg');
+}
+.card7 {
+  background-image: url('../images/eurorand.jpg');
+}
+.card8 {
+  background-image: url('../images/kowloon-dragons.jpg');
+}
+.card9 {
+  background-image: url('../images/dubai_vip.jpg');
+}
+.card10 {
+  background-image: url('../images/Haruna-Kyojin.jpg');
+}
+.card11 {
+  background-image: url('../images/Checkered-Flag.jpg');
+}
+.card12 {
+  background-image: url('../images/celt.jpg');
+}
+.card13 {
+  background-image: url('../images/80s-USA.jpg');
+}
+.card14 {
+  background-image: url('../images/slice.jpg');
+}
+.card15 {
+  background-image: url('../images/Technobubbles.jpg');
+}
+.card16 {
+  background-image: url('../images/Honeycomb.jpg');
+}
+.lockcard {
+  height: 86px;
+  background-repeat: no-repeat;
+  float: left;
+  position: relative;
+  width: 300px;
+}
+.lockcard {
+  background-image: url('../images/locked-overlay.jpg');
+  opacity: 0.5;
+}
+.true {
+  opacity: .75;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.true:hover {
+  opacity: 1;
+  border: 1px solid white;
+}
+.chosen {
+  opacity: 1;
+  border: 1px solid #bbbbbb;
+}
+.false {
+  opacity: .75;
+  border: 2px solid black;
+}
+alert {
+  color: #990000;
+}
+.rdesc {
+  padding: 10px;
+}
+.redText {
+  color: #be0000;
+}
+.pcard {
+  margin: 0;
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  #heading {
+    display: none;
+  }
+  .card {
+    margin: 5px 0px;
+  }
+  #desc {
+    display: none;
+  }
+  #playercardsubnav .left.half {
+    width: 100%;
+  }
+  #MainContent {
+    width: 100%;
+  }
+  #G2RivalCardHolder {
+    padding-bottom: 64px;
+  }
+}
+@media (min-width: 480px) and (max-width:599px) {
+  #heading {
+    display: none;
+  }
+  .card {
+    margin: 5px 60px;
+  }
+  #desc {
+    display: none;
+  }
+  #playercardsubnav .left.half {
+    width: 100%;
+  }
+  #heading h2 {
+    font-size: 0.9em;
+  }
+  #heading {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #MainContent {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width:767px) {
+  #heading {
+    display: none;
+  }
+  .card {
+    margin: 5px 125px;
+  }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+  #heading h2 {
+    font-size: 1.6em;
+  }
+  .card {
+    margin: 5px 25px;
+  }
+}
+@media (min-width: 1024px) and (max-width:1279px) {
+  .card {
+    margin: 5px 13px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  .card1 {
+    background-image: url('../images/RaceNet@2x.jpg');
+  }
+  .card2 {
+    background-image: url('../images/WSR@2x.jpg');
+  }
+  .card3 {
+    background-image: url('../images/NewUnion@2x.jpg');
+  }
+  .card4 {
+    background-image: url('../images/transamerica@2x.jpg');
+  }
+  .card5 {
+    background-image: url('../images/divizero@2x.jpg');
+  }
+  .card6 {
+    background-image: url('../images/eliminacion@2x.jpg');
+  }
+  .card7 {
+    background-image: url('../images/eurorand@2x.jpg');
+  }
+  .card8 {
+    background-image: url('../images/kowloon-dragons@2x.jpg');
+  }
+  .card9 {
+    background-image: url('../images/dubai_vip@2x.jpg');
+  }
+  .card10 {
+    background-image: url('../images/Haruna-Kyojin@2x.jpg');
+  }
+  .card11 {
+    background-image: url('../images/Checkered-Flag@2x.jpg');
+  }
+  .card12 {
+    background-image: url('../images/celt@2x.jpg');
+  }
+  .card13 {
+    background-image: url('../images/80s-USA@2x.jpg');
+  }
+  .card14 {
+    background-image: url('../images/slice@2x.jpg');
+  }
+  .card15 {
+    background-image: url('../images/Technobubbles@2x.jpg');
+  }
+  .card16 {
+    background-image: url('../images/Honeycomb@2x.jpg');
+  }
+  .lockcard {
+    background-image: url('../images/locked-overlay@2x.jpg');
+  }
+  #G2RivalCardHolder {
+    background: url('../images/rivals_bg@2x.jpg');
+  }
+  .pagelogo {
+    background: white url('../images/Grid2_icon_riv@2x.png');
+  }
+}
