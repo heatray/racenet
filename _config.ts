@@ -17,9 +17,9 @@ site.ignore(
   "racenetlegacy.codemasters.com/Content/Showdown/Flash/joyride/joyride.swf",
   "racenetlegacy.codemasters.com/Content/css/Compatibility.css",
   "racenetlegacy.codemasters.com/Content/css/layout-single.css",
-  "racenetlegacy.codemasters.com/Content/scripts/CareerOverview.js",
-  "racenetlegacy.codemasters.com/Content/scripts/TripleBarCarStatsScript.js",
-  "racenetlegacy.codemasters.com/Content/scripts/joyride.js"
+  "racenetlegacy.codemasters.com/Content/Scripts/CareerOverview.js",
+  "racenetlegacy.codemasters.com/Content/Scripts/TripleBarCarStatsScript.js",
+  "racenetlegacy.codemasters.com/Content/Scripts/joyride.js"
 );
 
 site.copy("racenetlegacy.codemasters.com", ".");
