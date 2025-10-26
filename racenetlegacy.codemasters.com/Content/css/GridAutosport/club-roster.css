@@ -1,0 +1,67 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#club_roster_page .cta.club_ranks {
+  margin-top: -5px;
+  float: right;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+}
+#club_invite_friends {
+  padding: 1em;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #818181;
+  background-image: url(../../GridAutosport/bg_tile.png);
+}
+#club_invite_friends .dk_container {
+  margin: 0;
+  margin-right: 0.5em;
+}
+#club_invite_friends ul.selected {
+  clear: both;
+}
+#club_roster {
+  position: relative;
+  margin-bottom: 2.8em;
+}
+#club_roster .search {
+  margin-bottom: 0.5em;
+  float: right;
+  display: inline-block;
+  position: relative;
+}
+#club_roster .filters {
+  margin-bottom: 0.75em;
+}

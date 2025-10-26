@@ -1,0 +1,127 @@
+/**
+ * DropKick custom theme for Grid Autosport on RaceNet
+ * Codemasters 2014
+ * 
+ */
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+/* Container */
+
+.dk_theme_grid_autosport.dk_container {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  background-color: transparent;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+.dk_theme_grid_autosport.dk_container.dk_open {
+  box-shadow: none;
+}
+.dk_theme_grid_autosport .dk_toggle {
+  display: block;
+  text-shadow: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  position: relative;
+  padding: 0 45px 0 10px;
+  box-shadow: none;
+  line-height: 28px;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.dk_theme_grid_autosport .dk_toggle:after {
+  background: #333333 url(../../GridAutosport/forms/dropdown_arrow.png) no-repeat center center;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  border: 0;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.dk_theme_grid_autosport.dk_focus .dk_toggle {
+  border-top: 1px solid white;
+  border-bottom: 1px solid red;
+}
+.dk_theme_grid_autosport.dk_focus .dk_toggle:after {
+  background-color: #595959;
+}
+.dk_theme_grid_autosport .dk_label {
+  border: 0;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  background-color: #0d0d0d;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.dk_theme_grid_autosport .dk_options {
+  text-transform: uppercase;
+  background: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 0;
+}
+.dk_theme_grid_autosport .dk_options a {
+  border: 0;
+  background-color: #0d0d0d;
+  color: white;
+  font-weight: normal;
+  padding: 5px 10px;
+}
+.dk_theme_grid_autosport .dk_options a:hover {
+  background-color: #333333;
+}
+.dk_theme_grid_autosport .dk_options_inner {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid red;
+}

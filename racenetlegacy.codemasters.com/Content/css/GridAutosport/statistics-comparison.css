@@ -1,0 +1,246 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#statistics_comparison {
+  position: relative;
+}
+#statistics_comparison #compare_panel {
+  padding: 0.75em 1.25em;
+  background: transparent url(../../GridAutosport/bg_tile.png) repeat;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  margin-bottom: 0.75em;
+  font-family: 'EurostileNextW02-Ext';
+}
+#statistics_comparison #compare_panel .compare {
+  float: left;
+}
+#statistics_comparison #compare_panel .compare .your_name {
+  display: inline-block;
+  padding-bottom: 0.1em;
+  color: red;
+  text-transform: uppercase;
+}
+#statistics_comparison #compare_panel .compare .vs {
+  display: inline-block;
+  margin: 0 2em;
+  width: 30px;
+  line-height: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.8em;
+}
+#statistics_comparison #compare_panel .compare .friend_list {
+  display: inline-block;
+  vertical-align: middle;
+}
+#statistics_comparison #compare_panel .compare .friend_list .dk_container {
+  margin-bottom: 0;
+}
+#statistics_comparison #compare_panel .key {
+  float: right;
+}
+#statistics_comparison #compare_panel .key .text {
+  display: block;
+  float: left;
+  line-height: 30px;
+  border-right: 1px solid #818181;
+  padding-right: 0.5em;
+  text-transform: uppercase;
+}
+#statistics_comparison #compare_panel .key .values {
+  display: block;
+  float: left;
+  font-size: 0.8em;
+  padding-left: 0.5em;
+}
+#statistics_comparison #compare_panel .key .values .you,
+#statistics_comparison #compare_panel .key .values .them {
+  display: block;
+  margin: 0.15em 0;
+  text-transform: uppercase;
+}
+#statistics_comparison #compare_panel .key .values .you .colour,
+#statistics_comparison #compare_panel .key .values .them .colour {
+  display: inline-block;
+  margin-right: 0.5em;
+  width: 7px;
+  height: 7px;
+}
+#statistics_comparison #compare_panel .key .values .you .colour {
+  background-color: red;
+}
+#statistics_comparison #compare_panel .key .values .them .colour {
+  background-color: white;
+}
+#statistics_comparison #panel_career,
+#statistics_comparison #panel_multiplayer,
+#statistics_comparison #panel_overall {
+  display: none;
+}
+#statistics_comparison #panel_career.active,
+#statistics_comparison #panel_multiplayer.active,
+#statistics_comparison #panel_overall.active {
+  display: block;
+}
+#statistics_comparison #panel_career .chart,
+#statistics_comparison #panel_multiplayer .chart,
+#statistics_comparison #panel_overall .chart {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+#statistics_comparison #panel_career .chart .padding,
+#statistics_comparison #panel_multiplayer .chart .padding,
+#statistics_comparison #panel_overall .chart .padding {
+  padding: 1em;
+}
+#statistics_comparison #panel_career .chart .radar,
+#statistics_comparison #panel_multiplayer .chart .radar,
+#statistics_comparison #panel_overall .chart .radar {
+  background: transparent url(../../GridAutosport/charts/chart_radar_bg.svg) no-repeat center center;
+  background-size: 100%;
+}
+#statistics_comparison #panel_career .chart canvas,
+#statistics_comparison #panel_multiplayer .chart canvas,
+#statistics_comparison #panel_overall .chart canvas,
+#statistics_comparison #panel_career .chart > img,
+#statistics_comparison #panel_multiplayer .chart > img,
+#statistics_comparison #panel_overall .chart > img,
+#statistics_comparison #panel_career .chart svg,
+#statistics_comparison #panel_multiplayer .chart svg,
+#statistics_comparison #panel_overall .chart svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#statistics_comparison #panel_career .chart .title,
+#statistics_comparison #panel_multiplayer .chart .title,
+#statistics_comparison #panel_overall .chart .title {
+  margin: 1em 0;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.1em;
+}
+#statistics_comparison #panel_career .chart .title span,
+#statistics_comparison #panel_multiplayer .chart .title span,
+#statistics_comparison #panel_overall .chart .title span {
+  display: inline-block;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #818181;
+}
+#statistics_comparison #chart_distance_travelled .title {
+  margin: 0.5em 0;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.1em;
+}
+#statistics_comparison #chart_distance_travelled .bar {
+  height: 20px;
+  position: relative;
+}
+#statistics_comparison #chart_distance_travelled .bar.you {
+  color: red;
+}
+#statistics_comparison #chart_distance_travelled .bar.you .fill {
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+}
+#statistics_comparison #chart_distance_travelled .bar.you .fill .value,
+#statistics_comparison #chart_distance_travelled .bar.you .fill .unit {
+  vertical-align: top;
+}
+#statistics_comparison #chart_distance_travelled .bar.them {
+  color: white;
+}
+#statistics_comparison #chart_distance_travelled .bar.them .placeholder {
+  top: 0;
+  bottom: auto;
+}
+#statistics_comparison #chart_distance_travelled .bar.them .fill {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+#statistics_comparison #chart_distance_travelled .bar.them .value {
+  border-color: white;
+}
+#statistics_comparison #chart_distance_travelled .bar .placeholder,
+#statistics_comparison #chart_distance_travelled .bar .fill {
+  display: block;
+  position: absolute;
+}
+#statistics_comparison #chart_distance_travelled .bar .placeholder {
+  background-color: #3f3f3f;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+}
+#statistics_comparison #chart_distance_travelled .bar .fill {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: right;
+  height: 100%;
+  top: 0;
+  white-space: nowrap;
+  line-height: 20px;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+#statistics_comparison #chart_distance_travelled .bar .fill .value {
+  font-family: 'EurostileNextW02-Ext';
+  margin-left: 0.5em;
+}
+#statistics_comparison #chart_distance_travelled .bar .fill .unit {
+  font-size: 0.8em;
+  margin-right: 0.25em;
+}
+@media screen and (max-width: 600px) {
+  #statistics_comparison #compare_panel .key {
+    float: none;
+    clear: both;
+  }
+  #statistics_comparison #compare_panel .compare .friend_list {
+    display: block;
+    margin: 0.5em 0;
+  }
+  #statistics_comparison #panel_career .chart,
+  #statistics_comparison #panel_multiplayer .chart,
+  #statistics_comparison #panel_overall .chart {
+    width: auto;
+    float: none;
+  }
+}

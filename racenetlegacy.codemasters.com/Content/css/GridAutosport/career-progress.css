@@ -1,0 +1,279 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#chart_container {
+  padding: 0.75em 0;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  background: transparent url(../../GridAutosport/bg_tile.png) repeat;
+}
+#chart_container #chart {
+  position: relative;
+  overflow: hidden;
+}
+#chart_container #chart #legend .legend_item {
+  position: absolute;
+  right: 10px;
+  width: 213px;
+  height: 90px;
+  background-color: white;
+  color: black;
+}
+#chart_container #chart #legend .legend_item:nth-of-type(1) {
+  top: 131px;
+}
+#chart_container #chart #legend .legend_item:nth-of-type(2) {
+  top: 230px;
+}
+#chart_container #chart #legend .legend_item:nth-of-type(3) {
+  top: 329px;
+}
+#chart_container #chart #legend .legend_item.unlocked .locked {
+  display: none;
+}
+#chart_container #chart #legend .legend_item .tail {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: transparent url(../../GridAutosport/career/progress_poster_arrow.png) no-repeat top left;
+  top: 0;
+  left: -9px;
+}
+#chart_container #chart #legend .legend_item .locked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#chart_container #chart #data,
+#chart_container #chart #labels {
+  position: relative;
+  margin-left: 50px;
+  margin-right: 234px;
+}
+#chart_container #chart #data .bar_column,
+#chart_container #chart #labels .bar_column {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+#chart_container #chart #data .bar_column .bar_container,
+#chart_container #chart #labels .bar_column .bar_container {
+  position: relative;
+  margin: 0 0.3em;
+  height: 100%;
+  overflow: hidden;
+}
+#chart_container #chart #data .bar_column .bar_container .background,
+#chart_container #chart #labels .bar_column .bar_container .background {
+  position: absolute;
+  top: 0.5em;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#chart_container #chart #data .bar_column .bar_container .top,
+#chart_container #chart #labels .bar_column .bar_container .top {
+  position: absolute;
+  top: 0.5em;
+  width: 100%;
+  height: 2px;
+}
+#chart_container #chart #data .bar_column .bar_container .top.touring,
+#chart_container #chart #labels .bar_column .bar_container .top.touring {
+  background-color: #0d55ff;
+}
+#chart_container #chart #data .bar_column .bar_container .top.endurance,
+#chart_container #chart #labels .bar_column .bar_container .top.endurance {
+  background-color: #ff4e00;
+}
+#chart_container #chart #data .bar_column .bar_container .top.grandprix,
+#chart_container #chart #labels .bar_column .bar_container .top.grandprix {
+  background-color: #cc0027;
+}
+#chart_container #chart #data .bar_column .bar_container .top.tuner,
+#chart_container #chart #labels .bar_column .bar_container .top.tuner {
+  background-color: #5c29e4;
+}
+#chart_container #chart #data .bar_column .bar_container .top.street,
+#chart_container #chart #labels .bar_column .bar_container .top.street {
+  background-color: yellow;
+}
+#chart_container #chart #data .bar_column .bar_container .bar,
+#chart_container #chart #labels .bar_column .bar_container .bar {
+  width: 100%;
+  text-align: center;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.touring .fill,
+#chart_container #chart #labels .bar_column .bar_container .bar.touring .fill {
+  background-color: #0d55ff;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.touring .foreground,
+#chart_container #chart #labels .bar_column .bar_container .bar.touring .foreground {
+  color: #0d55ff;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.endurance .fill,
+#chart_container #chart #labels .bar_column .bar_container .bar.endurance .fill {
+  background-color: #ff4e00;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.endurance .foreground,
+#chart_container #chart #labels .bar_column .bar_container .bar.endurance .foreground {
+  color: #ff4e00;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.grandprix .fill,
+#chart_container #chart #labels .bar_column .bar_container .bar.grandprix .fill {
+  background-color: #cc0027;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.grandprix .foreground,
+#chart_container #chart #labels .bar_column .bar_container .bar.grandprix .foreground {
+  color: #cc0027;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.tuner .fill,
+#chart_container #chart #labels .bar_column .bar_container .bar.tuner .fill {
+  background-color: #5c29e4;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.tuner .foreground,
+#chart_container #chart #labels .bar_column .bar_container .bar.tuner .foreground {
+  color: #5c29e4;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.street .fill,
+#chart_container #chart #labels .bar_column .bar_container .bar.street .fill {
+  background-color: yellow;
+}
+#chart_container #chart #data .bar_column .bar_container .bar.street .foreground,
+#chart_container #chart #labels .bar_column .bar_container .bar.street .foreground {
+  color: yellow;
+}
+#chart_container #chart #data .bar_column .bar_container .bar .discipline,
+#chart_container #chart #labels .bar_column .bar_container .bar .discipline {
+  padding: 1em;
+  background-color: white;
+}
+#chart_container #chart #data .bar_column .bar_container .bar .discipline img,
+#chart_container #chart #labels .bar_column .bar_container .bar .discipline img {
+  width: 80%;
+  height: auto;
+}
+#chart_container #chart #data .bar_column .bar_container .bar .level,
+#chart_container #chart #labels .bar_column .bar_container .bar .level,
+#chart_container #chart #data .bar_column .bar_container .bar .xp,
+#chart_container #chart #labels .bar_column .bar_container .bar .xp {
+  display: block;
+  padding: 0.2em;
+  color: black;
+}
+#chart_container #chart #data .bar_column .bar_container .bar .xp,
+#chart_container #chart #labels .bar_column .bar_container .bar .xp {
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+#chart_container #chart #data .bar_column .bar_container .bar .xp .value,
+#chart_container #chart #labels .bar_column .bar_container .bar .xp .value {
+  position: absolute;
+  bottom: 0.25em;
+  left: 0;
+  width: 100%;
+}
+#chart_container #chart #data .bar_column .bar_container .bar .level,
+#chart_container #chart #labels .bar_column .bar_container .bar .level {
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.1em;
+  line-height: 1.2em;
+  color: white;
+  white-space: nowrap;
+}
+#chart_container #chart #data {
+  height: 400px;
+}
+#chart_container #chart #data #markers .marker {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #7f7f7f;
+}
+#chart_container #chart #data #markers .marker.unlocked {
+  background-color: red;
+}
+#chart_container #chart #data #markers .marker.unlocked .line {
+  color: red;
+}
+#chart_container #chart #data #markers .marker .line {
+  position: absolute;
+  left: -30px;
+  top: -8px;
+  display: block;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.2em;
+  color: #7f7f7f;
+}
+#chart_container #chart #data #markers .marker:nth-of-type(1) {
+  top: 131px;
+}
+#chart_container #chart #data #markers .marker:nth-of-type(2) {
+  top: 230px;
+}
+#chart_container #chart #data #markers .marker:nth-of-type(3) {
+  top: 329px;
+}
+#chart_container #chart #data .bar_column {
+  border-top: 2px solid white;
+}
+#chart_container #chart #data .bar_column .bar_container .bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 800px) {
+  #chart_container #chart #legend {
+    display: none;
+  }
+  #chart_container #chart #data,
+  #chart_container #chart #labels {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #chart_container #chart #data,
+  #chart_container #chart #labels {
+    font-size: 10px;
+  }
+}

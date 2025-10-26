@@ -1,0 +1,245 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+.history {
+  display: none;
+}
+.history.active {
+  display: block;
+}
+.history .rows {
+  border-bottom: 1px solid #818181;
+}
+.history .rows .row {
+  height: 100px;
+  clear: both;
+}
+.history .rows .row.header {
+  border-bottom: 1px solid #818181;
+}
+.history .rows .row.alt .date {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.history .rows .row.alt .results {
+  background: transparent url(../../GridAutosport/bg_tile.png) repeat;
+}
+.history .rows .row .date,
+.history .rows .row .spacer {
+  float: left;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.2em;
+  letter-spacing: 0.25em;
+  line-height: 100px;
+  text-align: center;
+  width: 28%;
+  height: 100%;
+}
+.history .rows .row .headings,
+.history .rows .row .results {
+  float: left;
+  width: 72%;
+  height: 100%;
+}
+.history .rows .row .headings .heading,
+.history .rows .row .results .heading {
+  text-align: center;
+}
+.history .rows .row .headings .heading span,
+.history .rows .row .results .heading span {
+  display: block;
+  height: 100%;
+}
+.history .rows .row .headings .heading,
+.history .rows .row .results .heading,
+.history .rows .row .headings .result,
+.history .rows .row .results .result {
+  position: relative;
+  float: left;
+  width: 16.66666666666667%;
+  height: 100%;
+  padding: 1.25em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.history .rows .row .headings .heading img,
+.history .rows .row .results .heading img,
+.history .rows .row .headings .result img,
+.history .rows .row .results .result img {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  vertical-align: top;
+}
+.history .rows .row .headings .heading .award,
+.history .rows .row .results .heading .award,
+.history .rows .row .headings .result .award,
+.history .rows .row .results .result .award {
+  display: block;
+  height: 100%;
+  background: transparent none no-repeat center center;
+  background-size: contain;
+}
+.history .rows .row .headings .heading .award.platinum,
+.history .rows .row .results .heading .award.platinum,
+.history .rows .row .headings .result .award.platinum,
+.history .rows .row .results .result .award.platinum {
+  background-image: url(../../GridAutosport/star-platinum.png);
+}
+.history .rows .row .headings .heading .award.gold,
+.history .rows .row .results .heading .award.gold,
+.history .rows .row .headings .result .award.gold,
+.history .rows .row .results .result .award.gold {
+  background-image: url(../../GridAutosport/star-gold.png);
+}
+.history .rows .row .headings .heading .award.silver,
+.history .rows .row .results .heading .award.silver,
+.history .rows .row .headings .result .award.silver,
+.history .rows .row .results .result .award.silver {
+  background-image: url(../../GridAutosport/star-silver.png);
+}
+.history .rows .row .headings .heading .award.bronze,
+.history .rows .row .results .heading .award.bronze,
+.history .rows .row .headings .result .award.bronze,
+.history .rows .row .results .result .award.bronze {
+  background-image: url(../../GridAutosport/star-bronze.png);
+}
+.history .rows .row .headings .heading .award.none,
+.history .rows .row .results .heading .award.none,
+.history .rows .row .headings .result .award.none,
+.history .rows .row .results .result .award.none {
+  background-image: url(../../GridAutosport/star-none.png);
+}
+.history .rows .row .headings .heading .position,
+.history .rows .row .results .heading .position,
+.history .rows .row .headings .result .position,
+.history .rows .row .results .result .position {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  margin-top: -1.4em;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 0.85em;
+  text-align: center;
+}
+.history .rows .row .headings .heading .position.top05,
+.history .rows .row .results .heading .position.top05,
+.history .rows .row .headings .result .position.top05,
+.history .rows .row .results .result .position.top05 {
+  color: white;
+}
+.history .rows .row .headings .heading .position.top20,
+.history .rows .row .results .heading .position.top20,
+.history .rows .row .headings .result .position.top20,
+.history .rows .row .results .result .position.top20 {
+  color: #ced0cf;
+}
+.history .rows .row .headings .heading .position.top50,
+.history .rows .row .results .heading .position.top50,
+.history .rows .row .headings .result .position.top50,
+.history .rows .row .results .result .position.top50 {
+  color: #9ea09f;
+}
+.history .rows .row .headings .heading .position.top75,
+.history .rows .row .results .heading .position.top75,
+.history .rows .row .headings .result .position.top75,
+.history .rows .row .results .result .position.top75 {
+  color: #717372;
+}
+.history .rows .row .headings .heading .position.bottom25,
+.history .rows .row .results .heading .position.bottom25,
+.history .rows .row .headings .result .position.bottom25,
+.history .rows .row .results .result .position.bottom25 {
+  color: #4d4d4d;
+}
+.history .rows .row .headings .heading .position .value,
+.history .rows .row .results .heading .position .value,
+.history .rows .row .headings .result .position .value,
+.history .rows .row .results .result .position .value {
+  display: block;
+  clear: both;
+  font-size: 1.4em;
+}
+#medal_history .filters.wide {
+  display: block;
+  margin-top: -3px;
+}
+#medal_history .filters.narrow {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  #medal_history .filters.wide {
+    display: none;
+  }
+  #medal_history .filters.narrow {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  .history .rows .row {
+    height: auto;
+    font-size: 10px;
+  }
+  .history .rows .row.alt {
+    background: transparent url(../../GridAutosport/bg_tile.png) repeat;
+  }
+  .history .rows .row.alt .date {
+    background-color: transparent;
+  }
+  .history .rows .row.alt .results {
+    background: none;
+  }
+  .history .rows .row .spacer {
+    display: none;
+  }
+  .history .rows .row .date {
+    float: none;
+    width: auto;
+    height: auto;
+    line-height: 2.5em;
+  }
+  .history .rows .row .headings,
+  .history .rows .row .results {
+    float: none;
+    width: auto;
+    height: 50px;
+  }
+  .history .rows .row .headings .heading,
+  .history .rows .row .results .heading,
+  .history .rows .row .headings .result,
+  .history .rows .row .results .result {
+    padding: 0.5em;
+  }
+}

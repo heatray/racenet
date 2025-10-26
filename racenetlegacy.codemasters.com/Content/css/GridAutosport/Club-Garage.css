@@ -1,0 +1,134 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#club_garage {
+  position: relative;
+  border-bottom: 1px solid #818181;
+  padding-bottom: 0.25em;
+}
+.vehicles .vehicle {
+  float: left;
+  width: 25%;
+  /*min-width: 200px;*/
+
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+  -webkit-transform: translateZ(0px);
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+.vehicles .vehicle .padding {
+  padding: 0 0.5em 0.5em 0;
+}
+.vehicles .vehicle .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #818181;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.vehicles .vehicle .info {
+  font-size: 0.8em;
+  padding: 0.75em 1em;
+  background-color: #0d0d0d;
+  color: white;
+  border-bottom: 1px solid #818181;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.vehicles .vehicle .info .name,
+.vehicles .vehicle .info .owner {
+  margin: 0 0 0.25em 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.vehicles .vehicle .info .owner {
+  color: #818181;
+}
+.vehicles .vehicle .info .stats span img {
+  vertical-align: middle;
+  margin-right: 0.5em;
+  width: 21px;
+  height: 21px;
+}
+.vehicles .vehicle.inactive {
+  opacity: 0.5 !important;
+  filter: alpha(opacity=50) !important;
+}
+.vehicles .vehicle:hover {
+  cursor: pointer;
+}
+.vehicles .vehicle:hover .image img {
+  border-top: 1px solid white;
+}
+.vehicles .vehicle:hover .info {
+  background-color: #333333;
+  border-bottom: 1px solid red;
+}
+@media screen and (max-width: 1199px) {
+  .vehicles .vehicle {
+    width: 33.333%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .vehicles .vehicle {
+    width: 50%;
+  }
+  .vehicles .vehicle:nth-child(odd) .padding {
+    padding-right: 0.25em;
+  }
+  .vehicles .vehicle:nth-child(even) .padding {
+    padding-left: 0.25em;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .vehicles .vehicle {
+    width: 100%;
+  }
+  .vehicles .vehicle .padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

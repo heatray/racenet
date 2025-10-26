@@ -1,0 +1,1503 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+/*
+ * Angular
+ */
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+/*
+  page structure classes  
+   */
+
+/*reset images veryicle align as set in racenet css.*/
+
+img {
+  vertical-align: top;
+}
+.bs {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.third {
+  width: 33.333%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.fullwidth {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.col50 {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.whiteText {
+  color: white;
+  display: block;
+}
+/*
+ * Common UI styles
+ */
+
+[data-player-id] {
+  cursor: pointer;
+}
+/*
+ * Filter menus
+ */
+
+.filters {
+  position: relative;
+}
+.filters.left {
+  float: left;
+}
+.filters.right {
+  float: right;
+}
+.filters ul {
+  margin: 0;
+  padding: 0;
+}
+.filters ul li {
+  display: inline-block;
+  line-height: 1em;
+  margin: 0.25em 0 0.5em 0;
+}
+.filters ul li a {
+  display: block;
+  margin-right: 0.75em;
+  color: #818181;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.filters ul li a:hover {
+  color: white;
+}
+.filters ul li a.active {
+  color: white;
+}
+.filters ul li:last-of-type a {
+  margin: 0;
+}
+/*
+ * Form elements
+ */
+
+input[type=text] {
+  height: 28px;
+}
+input[type=text],
+textarea {
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 0 8px;
+  line-height: 28px;
+  color: #909291;
+}
+input[type=text],
+textarea {
+  border: 0;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  background: transparent url(../../GridAutosport/bg_tile.png) repeat;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+input[type=text]:focus,
+textarea:focus {
+  border-top: 1px solid white;
+  border-bottom: 1px solid red;
+}
+textarea {
+  resize: vertical;
+}
+/*
+ * Help widgets
+ */
+
+.help {
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #8c8e8d;
+  color: black;
+  padding: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  -webkit-transition: background 0.5s;
+  /* Safari */
+
+}
+.help:hover {
+  background-color: white;
+}
+/*
+ * Emblems
+ */
+
+.club_listings,
+.user_request_listings {
+  border-top: 1px solid #818181;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.club_listings.first,
+.user_request_listings.first {
+  border-top: 1px solid white;
+}
+.club_listing,
+.user_request_listing {
+  clear: both;
+  background-color: #0d0d0d;
+  border-bottom: 1px solid #818181;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.club_listing.hover,
+.user_request_listing.hover {
+  background-color: #333333;
+  border-bottom: 1px solid red;
+}
+.club_listing.hover .friends,
+.user_request_listing.hover .friends,
+.club_listing.hover .role,
+.user_request_listing.hover .role,
+.club_listing.hover .level,
+.user_request_listing.hover .level,
+.club_listing.hover .members,
+.user_request_listing.hover .members {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+.club_listing.before,
+.user_request_listing.before {
+  border-bottom: 1px solid white;
+}
+.club_listing .emblem,
+.user_request_listing .emblem {
+  display: block;
+  float: left;
+  padding: 0.5em;
+}
+.club_listing .info,
+.user_request_listing .info {
+  display: block;
+  margin-left: 75px;
+  padding: 0.5em;
+}
+.club_listing .info .name,
+.user_request_listing .info .name {
+  display: block;
+  margin: 0.25em 0 0.4em 0;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.2em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.club_listing .info .friends,
+.user_request_listing .info .friends,
+.club_listing .info .role,
+.user_request_listing .info .role,
+.club_listing .info .level,
+.user_request_listing .info .level,
+.club_listing .info .members,
+.user_request_listing .info .members {
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  margin-bottom: 0.2em;
+}
+.club_listing .info .friends img,
+.user_request_listing .info .friends img,
+.club_listing .info .role img,
+.user_request_listing .info .role img,
+.club_listing .info .level img,
+.user_request_listing .info .level img,
+.club_listing .info .members img,
+.user_request_listing .info .members img {
+  margin-right: 0.5em;
+  vertical-align: middle;
+  width: 21px;
+  height: 21px;
+}
+.club_listing .info .friends span,
+.user_request_listing .info .friends span,
+.club_listing .info .role span,
+.user_request_listing .info .role span,
+.club_listing .info .level span,
+.user_request_listing .info .level span,
+.club_listing .info .members span,
+.user_request_listing .info .members span {
+  vertical-align: middle;
+}
+.club_listing .info .friends,
+.user_request_listing .info .friends {
+  display: block;
+}
+.club_listing .info .role,
+.user_request_listing .info .role {
+  color: #909291;
+}
+.club_listing .info .level,
+.user_request_listing .info .level {
+  overflow: inherit;
+}
+.club_listing .info .level.overflow,
+.user_request_listing .info .level.overflow {
+  overflow: hidden;
+}
+.user_request_listing .info .inviter {
+  display: inline-block;
+  color: #818181;
+}
+.user_request_listing .info .inviter .name {
+  display: inline-block;
+  margin: 0;
+  font: inherit;
+  overflow: inherit;
+}
+.emblem_wrapper {
+  display: block;
+  position: relative;
+}
+.emblem_wrapper.small {
+  width: 55px;
+  height: 55px;
+}
+.emblem_wrapper.medium {
+  width: 70px;
+  height: 70px;
+}
+.emblem_wrapper.large {
+  width: 90px;
+  height: 90px;
+}
+.emblem_wrapper .foreground,
+.emblem_wrapper .background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.emblem_wrapper .foreground {
+  z-index: 1;
+}
+.emblem_wrapper .background {
+  z-index: 0;
+}
+.fullwidth {
+  display: block;
+  width: 100%;
+}
+.gasgridbg {
+  background-image: url(../../GridAutosport/bg_tile.png);
+  background-color: #171717;
+}
+#background_container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background-color: black;
+  background: black url(../../GridAutosport/background/club-bg.jpg) no-repeat top center;
+  background-size: 100% auto;
+  background-position-y: -50px;
+}
+#background_container.club {
+  background-image: url(../../GridAutosport/background/club-page-bg.jpg);
+  background-position-y: 0;
+}
+#background_container.stats {
+  background-image: url(../../GridAutosport/background/stats-comparison-bg.jpg);
+}
+#background_container.career {
+  background-image: url(../../GridAutosport/background/career-bg.jpg);
+}
+#background_container.garage {
+  background-image: url(../../GridAutosport/background/garage-bg.jpg);
+}
+#background_container.challenge {
+  background-image: url(../../GridAutosport/background/racenet-challenge-bg.jpg);
+}
+#background_container.challenge_intel {
+  background-image: url(../../GridAutosport/challenge/intel/background.jpg);
+}
+#background_container.challenge_eibach {
+  background-image: url(../../GridAutosport/challenge/eibach/background.jpg);
+}
+#background_container.home {
+  background-image: url(../../GridAutosport/background/home-bg.jpg);
+}
+#background_container.leaderboard {
+  background-image: url(../../GridAutosport/background/leaderboard-bg.jpg);
+}
+#gridautosport_content {
+  position: relative;
+}
+#gridautosport_content_header {
+  display: block;
+  height: 200px;
+}
+#gridautosport_content_background {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.underline {
+  padding-bottom: 0.25em;
+  display: inline-block;
+}
+#small_menu_control {
+  height: 100px;
+  width: 100%;
+  display: none;
+}
+#gridautosport_background_clip,
+#club_livery {
+  height: 300px;
+}
+#club_livery img {
+  width: 1048px;
+}
+.gas_wrapper {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+#gridautosport_subnav_spacer {
+  clear: both;
+  display: none;
+}
+#gridautosport_subnav {
+  background: #171717;
+  width: 100%;
+}
+#gridautosport_subnav.stick {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+#gridautosport_subnav nav {
+  display: block;
+  margin: 0 auto;
+  background: #171717;
+  font-size: 15px;
+  position: relative;
+  border-bottom: #283744;
+  background-image: url(../../GridAutosport/bg_tile.png);
+}
+#gridautosport_subnav nav ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+#gridautosport_subnav nav ul li {
+  float: left;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  word-wrap: break-word;
+  -webkit-box-sizing: border-box;
+  text-decoration: none;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  position: relative;
+  font-family: 'EurostileNextW02-Ext';
+}
+#gridautosport_subnav nav ul li.current a {
+  color: white !important;
+  border-bottom: 1px solid #fe0003;
+}
+#gridautosport_subnav nav ul li a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.25em;
+  line-height: 25px;
+  color: #707070;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  /* Safari */
+
+}
+#gridautosport_subnav nav ul li a:hover {
+  color: white;
+}
+#gas_subnav {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+nav a#pull {
+  display: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clear {
+  display: block;
+  height: 0;
+}
+.top {
+  background-color: #2c3e50;
+  width: 100%;
+  height: 90%;
+}
+.bottom {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.fix {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+h1 {
+  margin: 1em 0 40px 0;
+  font-size: 1.7em;
+  line-height: 1em;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+h2 {
+  margin: 0.5em 0 0.7em 0;
+  font-size: 1.15em;
+  line-height: 1.2em;
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid #818181;
+}
+h3 {
+  margin: 0.5em 0 0.7em 0;
+  font-size: 1.05em;
+  line-height: 1em;
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid #818181;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: 0.25em;
+  font-family: 'EurostileNextW02-Ext';
+  text-transform: uppercase;
+  clear: left;
+}
+h1.no_underline,
+h2.no_underline,
+h3.no_underline {
+  border: 0;
+  padding-bottom: 0;
+}
+h2.top_margin,
+h3.top_margin {
+  margin-top: 2.5em !important;
+}
+hr {
+  clear: both;
+  margin: 15px 0 40px 0;
+  height: 1px;
+  background-color: #818181;
+  border: 0;
+}
+hr.sub {
+  margin: 2em 0;
+}
+hr.sub.short {
+  margin: 0.75em 0;
+}
+table {
+  width: 100%;
+}
+table.leaderboard {
+  border-collapse: collapse;
+}
+table.leaderboard thead {
+  background-color: #333333;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 0.95em;
+  border-bottom: 1px solid white;
+}
+table.leaderboard thead td {
+  vertical-align: middle;
+  padding: 0.6em 1em;
+}
+table.leaderboard thead td.no_padding {
+  padding: 0;
+}
+table.leaderboard tbody tr {
+  -webkit-transform: translateZ(0px);
+}
+table.leaderboard tbody tr.ng-enter {
+  -webkit-transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -moz-transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -ms-transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -o-transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  opacity: 0;
+}
+table.leaderboard tbody tr.ng-enter.ng-enter-active {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+table.leaderboard tbody tr.player_entry {
+  background: transparent url(../../GridAutosport/bg_tile.png) repeat;
+  border-bottom: 1px solid red;
+}
+table.leaderboard tbody tr td.col_pos {
+  width: 50px;
+}
+table.leaderboard tbody tr td .content {
+  display: block;
+  position: relative;
+  font-size: 0.8em;
+  padding: 0.7em 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+table.leaderboard tbody tr td .content .flag {
+  display: inline-block;
+  width: 30px;
+  height: 21px;
+  background-image: url(../../GridAutosport/f1_racenet_miniflags_30X21.png);
+  margin-right: 0.5em;
+}
+table.leaderboard tbody tr td .content .flag.flag-65 {
+  background-position: -8px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-25 {
+  background-position: -46px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-24 {
+  background-position: -84px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-18 {
+  background-position: -122px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-58 {
+  background-position: -160px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-11 {
+  background-position: -198px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-15 {
+  background-position: -236px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-26 {
+  background-position: -274px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-74 {
+  background-position: -312px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-9 {
+  background-position: -350px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-ct {
+  background-position: -388px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-28 {
+  background-position: -426px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-co {
+  background-position: -464px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-29 {
+  background-position: -502px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-22 {
+  background-position: -540px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-30 {
+  background-position: -578px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-31 {
+  background-position: -616px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-1 {
+  background-position: -654px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-70 {
+  background-position: -692px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-32 {
+  background-position: -730px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-eu {
+  background-position: -768px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-14 {
+  background-position: -806px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-6 {
+  background-position: -844px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-4 {
+  background-position: -882px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-73 {
+  background-position: -920px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-75 {
+  background-position: -958px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-19 {
+  background-position: -996px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-69 {
+  background-position: -1034px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-34 {
+  background-position: -1072px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-35 {
+  background-position: -1110px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-36 {
+  background-position: -1148px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-37 {
+  background-position: -1186px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-17 {
+  background-position: -1224px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-77 {
+  background-position: -1262px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-7 {
+  background-position: -1300px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-38 {
+  background-position: -1338px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-3 {
+  background-position: -1376px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-39 {
+  background-position: -1414px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-63 {
+  background-position: -1452px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-78 {
+  background-position: -1490px -8px;
+}
+table.leaderboard tbody tr td .content .flag.flag-40 {
+  background-position: -8px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-41 {
+  background-position: -46px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-20 {
+  background-position: -84px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-42 {
+  background-position: -122px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-ml {
+  background-position: -160px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-43 {
+  background-position: -198px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-37 {
+  background-position: -236px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-16 {
+  background-position: -274px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-44 {
+  background-position: -312px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-45 {
+  background-position: -350px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-46 {
+  background-position: -388px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-79 {
+  background-position: -426px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-56 {
+  background-position: -464px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-47 {
+  background-position: -502px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-48 {
+  background-position: -540px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-13 {
+  background-position: -578px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-71 {
+  background-position: -616px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-80 {
+  background-position: -654px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-49 {
+  background-position: -692px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-50 {
+  background-position: -730px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-51 {
+  background-position: -768px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-5 {
+  background-position: -806px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-62 {
+  background-position: -844px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-sm {
+  background-position: -882px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-sg {
+  background-position: -920px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-33 {
+  background-position: -958px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-21 {
+  background-position: -996px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-53 {
+  background-position: -1034px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-sk {
+  background-position: -1072px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-8 {
+  background-position: -1110px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-64 {
+  background-position: -1148px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-54 {
+  background-position: -1186px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-55 {
+  background-position: -1224px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-12 {
+  background-position: -1262px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-ue {
+  background-position: -1300px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-2 {
+  background-position: -1338px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-72 {
+  background-position: -1376px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-57 {
+  background-position: -1414px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-81 {
+  background-position: -1452px -37px;
+}
+table.leaderboard tbody tr td .content .flag.flag-zi {
+  background-position: -1490px -37px;
+}
+table.leaderboard tbody tr td .content .divider {
+  color: #707070;
+}
+table.leaderboard tbody tr td .content a {
+  font: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+table.leaderboard tbody tr td .content .share {
+  float: right;
+}
+table.leaderboard tbody tr td .content .share .facebook,
+table.leaderboard tbody tr td .content .share .twitter {
+  display: inline-block;
+  text-indent: -99999px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+table.leaderboard tbody tr td .content .share .facebook {
+  width: 57px;
+  height: 20px;
+  background-image: url(../../GridAutosport/challenge/btn_share.png);
+}
+table.leaderboard tbody tr td .content .share .twitter {
+  width: 59px;
+  height: 20px;
+  background-image: url(../../GridAutosport/challenge/btn_tweet.png);
+}
+table.leaderboard tbody tr td [data-player-id],
+table.leaderboard tbody tr td a {
+  color: #707070 !important;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+table.leaderboard tbody tr td [data-player-id]:hover,
+table.leaderboard tbody tr td a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+table.leaderboard tbody tr td .position {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #868686;
+  color: black;
+  font-size: 0.8em;
+  max-width: 54px;
+}
+table.leaderboard tbody tr td .position.gold {
+  background-color: #f0ac09;
+}
+table.leaderboard tbody tr td .position.silver {
+  background-color: #f1f1f1;
+}
+table.leaderboard tbody tr td .position.bronze {
+  background-color: #9a681f;
+}
+table.leaderboard tbody tr td .position.gold,
+table.leaderboard tbody tr td .position.silver,
+table.leaderboard tbody tr td .position.bronze {
+  background-image: url(../../GridAutosport/medal_highlight.png);
+}
+table.leaderboard tbody tr td .flag {
+  vertical-align: middle;
+}
+table.leaderboard tr.alt .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: white;
+  opacity: 0.05;
+  filter: alpha(opacity=5);
+}
+#gridautosport_content {
+  padding-bottom: 10em;
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+#gridautosport_content .gas_wrapper > h1 {
+  margin-top: 0;
+  padding-top: 1em;
+}
+#page_content {
+  position: relative;
+}
+#sidebar {
+  float: left;
+  width: 26.666%;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+  padding-right: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+
+}
+#sidebar h3:first-of-type {
+  margin-top: 0;
+}
+#sidebar ul.navigation li:first-child {
+  padding-top: 0;
+}
+#sidebar ul.navigation li {
+  margin-bottom: 25px;
+  list-style-type: none;
+}
+#sidebar ul.navigation li a {
+  color: #454545;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  /* Safari */
+
+}
+#sidebar ul.navigation li a:hover {
+  color: white;
+}
+#sidebar ul.navigation li a.active {
+  color: white;
+  border-bottom: 1px solid red;
+}
+#page_content_main {
+  float: left;
+  width: 880px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#page_content_main.full {
+  float: none;
+  width: auto;
+}
+#page_content_main h2:first-of-type {
+  margin-top: 0;
+}
+#page_content_main p {
+  font-size: 0.8em;
+  line-height: 1.75em;
+  margin: 1.75em 0;
+}
+.notification {
+  position: relative;
+  border-top: 1px solid white;
+  border-bottom: 1px solid red;
+  background: transparent url(../../GridAutosport/notification_background.png) repeat left top;
+  min-height: 60px;
+  margin-bottom: 3em;
+}
+.notification .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.notification .icon .padding {
+  padding: 0.75em;
+}
+.notification .padding {
+  padding: 0.25em;
+}
+.notification .padding .message {
+  margin: 1.5em 0 1.5em 90px;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 0.8em;
+}
+.notification .padding .message a {
+  color: red;
+}
+[data-tooltip] {
+  cursor: help;
+}
+.tooltip {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  padding: 0.4em;
+  left: 0;
+  top: -4em;
+  background-color: black;
+  color: white;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+  text-rendering: geometricPrecision;
+  white-space: normal;
+  width: 200px;
+  text-align: center;
+  vertical-align: top;
+}
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black url(../../F1_2013/loader.gif) no-repeat center center;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 10;
+}
+.no_data {
+  clear: both;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  margin: 12px 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+form.inline {
+  display: inline;
+}
+input/*Content follows box model*/ {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input::-moz-focus-inner/*Remove button padding in FF*/ {
+  border: 0;
+  padding: 0;
+}
+.cta {
+  -webkit-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  border: 0;
+  border-image-width: 0;
+  margin: 0 2px;
+  padding: 0 1em;
+  background-color: #333333;
+  color: white;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  line-height: 30px;
+  height: 30px;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  cursor: pointer;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 0.875em;
+}
+.cta:hover {
+  background-color: #595959;
+  text-decoration: none;
+}
+.cta.small {
+  font-size: 0.65em;
+  line-height: 20px;
+  height: 20px;
+}
+.cta.icon {
+  width: 21px;
+  height: 21px;
+  background: none;
+  background-size: cover;
+  background-position: center center;
+  text-indent: -99999px;
+  padding: 0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.cta.icon:hover {
+  background-color: transparent !important;
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+.cta.inactive {
+  background-color: #222222;
+  color: #818181;
+  cursor: default;
+}
+.cta.full {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.cta.full.top_margin {
+  margin-top: 1em;
+}
+.button_group {
+  margin: 1em 0;
+}
+.button_group.right {
+  float: right;
+}
+.button_group.right .cta {
+  margin-right: 0;
+}
+.button_group .cta {
+  margin: 0 1em 1em 1em;
+}
+.pagination {
+  clear: both;
+}
+.page {
+  display: inline-block;
+  margin: 0.1em;
+  padding: 0.25em;
+  border: 1px solid white;
+  line-height: 1em;
+}
+.page.active {
+  background-color: #444444;
+}
+.club_banner .colour_layers {
+  clear: both;
+}
+.club_banner .colour_layer {
+  display: inline-block;
+  width: 100px;
+  border: 1px solid white;
+}
+.club_banner .swatches {
+  clear: both;
+}
+.club_banner .swatches .swatch {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 20px;
+}
+.disciplines {
+  float: right;
+}
+.disciplines .discipline {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+.disciplines .discipline .value {
+  display: block;
+}
+/*
+ * Dialogs and modals
+ */
+
+#dialog {
+  padding-bottom: 3em;
+}
+#dialog h2,
+#modal h2,
+#dialog h3,
+#modal h3 {
+  border: 0;
+  padding: 0;
+}
+#dialog h2,
+#modal h2 {
+  margin: 1em 0 0.5em 0;
+  font-family: Arial;
+}
+#dialog #content,
+#modal #content {
+  font-family: Arial;
+  text-align: center;
+}
+#dialog #content .stats,
+#modal #content .stats {
+  color: #7d7d7d;
+}
+#dialog #content .stats p,
+#modal #content .stats p {
+  margin: 0;
+  line-height: 1.3em;
+  letter-spacing: 0.05em;
+}
+#dialog #content .club_listing,
+#modal #content .club_listing {
+  width: 436px;
+  margin: 2em auto;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #818181;
+}
+#dialog #content .club_listing .info,
+#modal #content .club_listing .info {
+  margin-left: 90px;
+}
+#dialog #content .club_listing .info .role,
+#modal #content .club_listing .info .role {
+  display: block;
+}
+@media screen and (max-width: 1200px) {
+  #background_container {
+    background-position-y: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #background_container {
+    background-position-y: 100px;
+  }
+  #gridautosport_background_clip,
+  #club_livery {
+    height: 200px;
+  }
+  #club_livery img {
+    width: 699px;
+  }
+  .gas_wrapper {
+    width: 1200px;
+  }
+  nav {
+    height: auto;
+  }
+  #Button_0 a:before {
+    background-image: url(../../GridAutosport/nav/home.png);
+  }
+  #Button_1 a:before,
+  #Button_2 a:before {
+    background-image: url(../../GridAutosport/nav/clubs.png);
+  }
+  #Button_3 a:before {
+    background-image: url(../../GridAutosport/nav/leaderboards.png);
+  }
+  #Button_4 a:before {
+    background-image: url(../../GridAutosport/nav/challenges.png);
+  }
+  #gridautosport_subnav nav {
+    width: 100%;
+    background-image: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #gridautosport_subnav nav ul li {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-family: Arial;
+    font-size: 0.8em;
+  }
+  #gridautosport_subnav nav ul li a {
+    display: block;
+    margin: 0 0.5em;
+    line-height: 1.5em;
+    background-image: url(../../GridAutosport/bg_tile.png);
+    overflow: hidden;
+    height: 98px;
+  }
+  #gridautosport_subnav nav ul li a:before {
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 60px;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+    background-position: center;
+    content: "";
+  }
+  #gridautosport_subnav nav ul li.current {
+    border-top: 1px solid white;
+    border-bottom: 1px solid red;
+    height: 98px;
+    overflow: hidden;
+  }
+  #gridautosport_subnav nav ul li.current a {
+    border: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .gas_wrapper {
+    width: 94%;
+  }
+  #page_content_main {
+    margin-left: 0;
+    float: left;
+    width: 73.333%;
+  }
+}
+@media screen and (max-width: 980px) {
+  h1,
+  hr {
+    margin-bottom: 1em;
+  }
+  .gas_wrapper {
+    width: 94%;
+  }
+  #sidebar,
+  #page_content_main {
+    width: 100%;
+  }
+  #sidebar {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  #sidebar ul.navigation li {
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    transition: 1s all;
+    margin: 2px;
+  }
+  #sidebar hr {
+    margin: 1em 0;
+  }
+  .club .disciplines {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #background_container {
+    background-position-y: 110px;
+  }
+  #gridautosport_background_clip,
+  #club_livery {
+    height: 100px;
+  }
+  #club_livery img {
+    width: 349px;
+  }
+  #gridautosport_subnav nav ul li,
+  #gridautosport_subnav nav ul li a {
+    overflow: hidden;
+    height: 60px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  h1,
+  #clubIntro h1 {
+    font-size: 1.2em;
+  }
+  #sidebar ul.navigation {
+    border-top: 1px solid #818181;
+    border-bottom: 1px solid #818181;
+    margin-bottom: 1em;
+    min-height: 28px;
+    font-size: 12px;
+    -webkit-transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -ms-transition: 0.25s all;
+    -o-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  #sidebar ul.navigation li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #sidebar ul.navigation li a {
+    display: none;
+    padding: 7px 45px 7px 10px;
+    color: white;
+  }
+  #sidebar ul.navigation li a:hover {
+    background-color: #333333;
+    color: white;
+  }
+  #sidebar ul.navigation li a.active {
+    display: block;
+    border: none;
+    color: #aaaaaa;
+  }
+  #sidebar ul.navigation.active {
+    border-top: 1px solid white;
+    border-bottom: 1px solid red;
+  }
+  #sidebar ul.navigation.active li a {
+    display: block;
+  }
+  .sub {
+    border-bottom: 1px solid #333333;
+  }
+  #subnav_mobile_handle {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    display: block;
+    float: right;
+    cursor: pointer;
+    width: 32px;
+    height: 28px;
+    background: #333333 url(../../GridAutosport/forms/dropdown_arrow.png) no-repeat center center;
+    -webkit-transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -ms-transition: 0.25s all;
+    -o-transition: 0.25s all;
+    transition: 0.25s all;
+  }
+  #subnav_mobile_handle.active {
+    background-color: #595959;
+  }
+}

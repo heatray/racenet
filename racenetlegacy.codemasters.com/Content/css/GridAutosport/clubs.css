@@ -1,0 +1,838 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#imageFeature {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px red solid;
+  border-top: 1px #666666 solid;
+}
+#imageFeature img {
+  width: 100%;
+  height: auto;
+}
+#joined_club,
+#requested_join_club {
+  display: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-size: 14px;
+}
+#joined_club p,
+#requested_join_club p {
+  margin-bottom: 1em;
+}
+#club_livery {
+  position: relative;
+  text-align: center;
+}
+#club_livery canvas {
+  opacity: 0;
+}
+#club_livery img {
+  height: auto;
+  opacity: 0;
+  -webkit-transition: 1s opacity;
+  -moz-transition: 1s opacity;
+  -ms-transition: 1s opacity;
+  -o-transition: 1s opacity;
+  transition: 1s opacity;
+}
+#club_livery img.loaded {
+  opacity: 1;
+}
+.cta.accept_club,
+.cta.accept_club_membership {
+  background-image: url(../../GridAutosport/icons/tick.svg);
+}
+.cta.report_club {
+  background-image: url(../../GridAutosport/icons/blackflag.png);
+}
+.cta.reject_club,
+.cta.reject_club_membership {
+  background-image: url(../../GridAutosport/icons/cross.svg);
+}
+.club_listing,
+.user_request_listing {
+  position: relative;
+  -webkit-transform: translateZ(0px);
+}
+.club_listing .info,
+.user_request_listing .info {
+  margin-right: 170px;
+}
+.club_listing .info .name a,
+.user_request_listing .info .name a {
+  color: white;
+}
+.club_listing .info .name a:hover,
+.user_request_listing .info .name a:hover {
+  text-decoration: none;
+}
+.club_listing .actions,
+.user_request_listing .actions {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.club_listing .actions .padding,
+.user_request_listing .actions .padding {
+  padding: 0.5em 1em;
+}
+.club_listing .actions .cta,
+.user_request_listing .actions .cta {
+  margin-top: 0.5em;
+  clear: both;
+  float: right;
+}
+#clubIntro {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 90px;
+}
+#clubIntro h1 {
+  border: 0;
+  padding: 0;
+}
+#clubIntro .info {
+  float: left;
+}
+.club .club_banner .colour_layers {
+  clear: both;
+}
+.club .club_banner .colour_layer {
+  display: inline-block;
+  width: 100px;
+  border: 1px solid white;
+}
+.club .club_banner .swatches {
+  clear: both;
+}
+.club .club_banner .swatches .swatch {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 20px;
+}
+.club #disciplines {
+  float: right;
+  padding-top: 18px;
+  width: 50%;
+}
+.club #disciplines .level {
+  position: relative;
+  display: block;
+  font-family: 'EurostileNextW02-Ext';
+  overflow: hidden;
+  margin: 6px 5px;
+  white-space: nowrap;
+}
+.club #disciplines .level .name,
+.club #disciplines .level .value {
+  display: block;
+  font-size: 1.15em;
+  font-weight: bold;
+  line-height: 30px;
+  color: white;
+}
+.club #disciplines .level .name .padding,
+.club #disciplines .level .value .padding {
+  padding: 0 0.75em;
+  line-height: 1em;
+  vertical-align: middle;
+}
+.club #disciplines .level .name {
+  background: transparent url(../../GridAutosport/club/club_level_left.png) no-repeat left top;
+}
+.club #disciplines .level .value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 108px;
+  text-align: center;
+  line-height: 30px;
+  box-sizing: border-box;
+  background: transparent url(../../GridAutosport/club/club_level_right.png) no-repeat left top;
+}
+.club #disciplines .level .value .padding {
+  margin-left: 36px;
+}
+.club #disciplines .discipline {
+  width: 20%;
+  display: block;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+}
+.club #disciplines .discipline .padding {
+  padding: 0 5px;
+}
+.club #disciplines .discipline img {
+  width: 100%;
+}
+.club #disciplines .discipline .value {
+  display: block;
+  font-size: 1.063em;
+  font-family: 'EurostileNextW02-Ext';
+  margin-top: 0.25em;
+}
+.club #disciplines .discipline .value.endurance {
+  color: #ff4e00;
+}
+.club #disciplines .discipline .value.openwheel {
+  color: #cc0027;
+}
+.club #disciplines .discipline .value.street {
+  color: yellow;
+}
+.club #disciplines .discipline .value.touring {
+  color: #0d55ff;
+}
+.club #disciplines .discipline .value.tuner {
+  color: #5c29e4;
+}
+.club #disciplines .discipline .whiteValue {
+  display: block;
+  color: white;
+  font-size: 1.063em;
+  font-family: 'EurostileNextW02-Ext';
+}
+.club .disciplines .discipline:last-of-type {
+  padding-right: 1px;
+}
+.club .disciplines .discipline:first-of-type {
+  padding-left: 28px;
+}
+#doughnut1 {
+  width: 230px !important;
+  height: 230px !important;
+}
+#club_stats .charts .chart:nth-of-type(3) {
+  float: right;
+  padding-top: 5px;
+}
+#club_stats .club_stats_data {
+  float: left;
+}
+#club_stats ul {
+  margin: 20px 0px;
+  padding: 0px 20px;
+}
+#club_stats ul li {
+  border: 1px solid #666666;
+  display: inline-block;
+  padding: 2px 30px;
+  text-align: center;
+  margin: 2px;
+}
+#club_stats ul div {
+  font-size: 0.875em;
+}
+#club_stats #club_stats_titan {
+  border-bottom: 1px solid #666666;
+  border-top: 1px solid #666666;
+  height: 100%;
+  background-image: url(../../GridAutosport/bg_tile.png);
+}
+#club_stats .club_stat_row {
+  clear: both;
+}
+#club_stats .club_stat {
+  display: inline-block;
+  margin: 0.25em 0.25em 0.25em 0;
+  border: 1px solid #3f3f3f;
+  padding: 0.1em 0.5em;
+  text-transform: uppercase;
+  color: gray;
+  white-space: nowrap;
+}
+#club_stats .charts .chart_box {
+  float: left;
+  width: 66%;
+}
+#club_stats .charts .chart {
+  position: relative;
+  width: 34%;
+  float: left;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+#club_stats .charts .chart.half {
+  width: 50%;
+}
+#club_stats .charts .chart .padding {
+  padding: 1em 0;
+  width: 200px;
+  margin: 0 auto;
+}
+#club_stats .charts .chart.scale canvas,
+#club_stats .charts .chart.scale img,
+#club_stats .charts .chart.scale svg {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+#club_stats .charts .chart .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#club_stats .charts .chart .overlay .vtable {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+#club_stats .charts .chart .overlay .vtable .vcenter {
+  display: table-cell;
+  vertical-align: middle;
+}
+#club_stats .charts .chart .overlay .vtable .vcenter .stat {
+  clear: both;
+  margin: 0 0 0.5em 0;
+  font-family: Arial;
+  padding-top: 0.5em;
+}
+#club_stats .charts .chart .overlay .vtable .vcenter .stat:nth-of-type(1) {
+  color: #fd0001;
+}
+#club_stats .charts .chart .overlay .vtable .vcenter .stat:nth-of-type(2) {
+  color: white;
+}
+#club_stats .charts .chart .overlay .vtable .vcenter .stat:nth-of-type(3) {
+  color: #545655;
+}
+#club_stats .charts .chart .overlay .vtable .vcenter .label {
+  display: block;
+  font-size: 0.8em;
+}
+#club_stats .charts .chart .overlay .vtable .vcenter .value {
+  display: block;
+  margin: 0.2em 0;
+  font-size: 1.125em;
+  font-family: 'EurostileNextW02-Ext';
+}
+#club_stats .charts .chart .key {
+  clear: both;
+  font-size: 0.7em;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 35px;
+}
+#club_stats .charts .chart .key .club_level {
+  color: #fd0001;
+}
+#club_stats .charts .chart .key .vs {
+  margin: 0 1em;
+  color: #545655;
+}
+#club_stats .charts .chart .key .community_average {
+  display: block;
+  color: white;
+}
+#club_leaderboard_entries {
+  position: relative;
+}
+.barchart {
+  position: relative;
+  clear: both;
+  margin: 3px 0;
+  padding: 8px 0;
+}
+.barchart .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.barchart .icon img {
+  width: 25px;
+  height: 25px;
+}
+.barchart .horizontal {
+  margin-left: 34px;
+}
+.barchart .bar {
+  width: 100%;
+  height: 2px;
+  background-color: #545655;
+  margin-bottom: 2px;
+}
+.barchart .bar .value {
+  display: block;
+  height: 100%;
+}
+.barchart .bar .value1 {
+  background-color: #fd0001;
+}
+.barchart .bar .value2 {
+  background-color: white;
+}
+#latest_activity {
+  position: relative;
+}
+#latest_activity .latest_activity_entry {
+  clear: both;
+  padding: 0.5em;
+  background: #171717;
+  margin-bottom: 6px;
+  font-size: .9em;
+  padding-right: 15px;
+  -webkit-transform: translateZ(0px);
+}
+#latest_activity .latest_activity_entry.ng-enter {
+  -webkit-transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -moz-transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -ms-transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -o-transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  opacity: 0;
+}
+#latest_activity .latest_activity_entry.ng-enter.ng-enter-active {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#latest_activity .latest_activity_entry .icon {
+  float: left;
+  width: 50px;
+}
+#latest_activity .latest_activity_entry .info {
+  float: none;
+  margin-left: 60px;
+  color: #545655;
+}
+#latest_activity .latest_activity_entry .info h4 {
+  border-bottom: 1px solid white;
+  margin-bottom: 0.25em;
+  padding-bottom: 0.25em;
+  color: white;
+  line-height: 1.5em;
+}
+#latest_activity .latest_activity_entry .info h4:before {
+  content: "// ";
+}
+#latest_activity .latest_activity_entry .info h4:after {
+  content: " //";
+}
+#latest_activity .latest_activity_entry.new {
+  display: none;
+}
+#club_information {
+  overflow: hidden;
+}
+#club_information,
+#latest_activity .latest_activity_entry .info {
+  font-size: 0.875em;
+}
+#leftCol {
+  margin-right: 20px;
+}
+#rightCol {
+  margin-left: 20px;
+}
+/*club logo*/
+
+#teamLogo {
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+#teamDetails {
+  margin-left: 110px;
+}
+#teamDetails .tag {
+  padding-bottom: 10px;
+  color: #595959;
+  text-transform: uppercase;
+}
+#teamDetails .tag .value {
+  color: white;
+}
+#teamDetails .name {
+  margin-bottom: 1px !important;
+}
+/*styles for garage*/
+
+/* Styles for member listing */
+
+#user_membership_requests {
+  position: relative;
+}
+#user_membership_requests .user_request_listings {
+  padding-bottom: 0.5em;
+}
+#club_membership_requests {
+  position: relative;
+  padding-bottom: 0.5em;
+}
+.members {
+  clear: both;
+}
+.members .member {
+  position: relative;
+  float: left;
+  width: 32%;
+  min-width: 250px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  background-color: #0d0d0d;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.members .member:hover {
+  background-color: #333333;
+}
+.members .member .membership {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  background-color: #fe0002;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.members .member .membership.owner {
+  background-color: white;
+  background-image: url(../../GridAutosport/roster/en/roster_rank01_uk.png);
+}
+.members .member .membership.administrator {
+  background-color: #858585;
+  background-image: url(../../GridAutosport/roster/en/roster_rank02_uk.png);
+}
+.members .member .membership.moderator {
+  background-color: #3a3a3a;
+  background-image: url(../../GridAutosport/roster/en/roster_rank03_uk.png);
+}
+.members .member .membership.player {
+  background-color: #4a0001;
+  background-image: url(../../GridAutosport/roster/en/roster_rank04_uk.png);
+}
+.members .member .membership.pending {
+  background-image: url(../../GridAutosport/roster/en/roster_rank05_uk.png);
+}
+.members .member .membership span {
+  display: block;
+  overflow: hidden;
+  text-indent: -99999px;
+}
+.members .member .info {
+  width: 100%;
+  height: 83px;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.members .member .info:hover {
+  border-top: 1px solid white;
+  border-bottom: 1px solid red;
+}
+.members .member .info:hover .level {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+.members .member .info .padding {
+  padding: 10px;
+  margin-left: 20px;
+}
+.members .member .info .name {
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.2em;
+}
+.members .member .info .vehicle {
+  height: 1.2em;
+  padding: 0.25em 0;
+  line-height: 1em;
+  color: #818181;
+}
+.members .member .info .name,
+.members .member .info .vehicle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.members .member .info .level {
+  float: left;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.members .member .info .level img {
+  vertical-align: middle;
+  width: 21px;
+  height: 21px;
+}
+.members .member .info .level .value {
+  margin: 0 0.5em;
+  vertical-align: middle;
+}
+.members .member .info .actions {
+  float: right;
+}
+.members .member .info .actions .promote_club_membership {
+  background-image: url(../../GridAutosport/icons/promote.svg);
+}
+.members .member .info .actions .demote_club_membership {
+  background-image: url(../../GridAutosport/icons/demote.svg);
+}
+.members .member .info .actions .kick_from_club {
+  background-image: url(../../GridAutosport/icons/kick.svg);
+}
+.lang-fr .members .member .membership.owner {
+  background-image: url(../../GridAutosport/roster/fr/roster_rank01_fr.png);
+}
+.lang-fr .members .member .membership.administrator {
+  background-image: url(../../GridAutosport/roster/fr/roster_rank02_fr.png);
+}
+.lang-fr .members .member .membership.moderator {
+  background-image: url(../../GridAutosport/roster/fr/roster_rank03_fr.png);
+}
+.lang-fr .members .member .membership.player {
+  background-image: url(../../GridAutosport/roster/fr/roster_rank04_fr.png);
+}
+.lang-fr .members .member .membership.pending {
+  background-image: url(../../GridAutosport/roster/fr/roster_rank05_fr.png);
+}
+.lang-de .members .member .membership.owner {
+  background-image: url(../../GridAutosport/roster/de/roster_rank01_de.png);
+}
+.lang-de .members .member .membership.administrator {
+  background-image: url(../../GridAutosport/roster/de/roster_rank02_de.png);
+}
+.lang-de .members .member .membership.moderator {
+  background-image: url(../../GridAutosport/roster/de/roster_rank03_de.png);
+}
+.lang-de .members .member .membership.player {
+  background-image: url(../../GridAutosport/roster/de/roster_rank04_de.png);
+}
+.lang-de .members .member .membership.pending {
+  background-image: url(../../GridAutosport/roster/de/roster_rank05_de.png);
+}
+.lang-es .members .member .membership.owner {
+  background-image: url(../../GridAutosport/roster/es/roster_rank01_es.png);
+}
+.lang-es .members .member .membership.administrator {
+  background-image: url(../../GridAutosport/roster/es/roster_rank02_es.png);
+}
+.lang-es .members .member .membership.moderator {
+  background-image: url(../../GridAutosport/roster/es/roster_rank03_es.png);
+}
+.lang-es .members .member .membership.player {
+  background-image: url(../../GridAutosport/roster/es/roster_rank04_es.png);
+}
+.lang-es .members .member .membership.pending {
+  background-image: url(../../GridAutosport/roster/es/roster_rank05_es.png);
+}
+.lang-it .members .member .membership.owner {
+  background-image: url(../../GridAutosport/roster/it/roster_rank01_it.png);
+}
+.lang-it .members .member .membership.administrator {
+  background-image: url(../../GridAutosport/roster/it/roster_rank02_it.png);
+}
+.lang-it .members .member .membership.moderator {
+  background-image: url(../../GridAutosport/roster/it/roster_rank03_it.png);
+}
+.lang-it .members .member .membership.player {
+  background-image: url(../../GridAutosport/roster/it/roster_rank04_it.png);
+}
+.lang-it .members .member .membership.pending {
+  background-image: url(../../GridAutosport/roster/it/roster_rank05_it.png);
+}
+.lang-pt .members .member .membership.owner {
+  background-image: url(../../GridAutosport/roster/br/roster_rank01_br.png);
+}
+.lang-pt .members .member .membership.administrator {
+  background-image: url(../../GridAutosport/roster/br/roster_rank02_br.png);
+}
+.lang-pt .members .member .membership.moderator {
+  background-image: url(../../GridAutosport/roster/br/roster_rank03_br.png);
+}
+.lang-pt .members .member .membership.player {
+  background-image: url(../../GridAutosport/roster/br/roster_rank04_br.png);
+}
+.lang-pt .members .member .membership.pending {
+  background-image: url(../../GridAutosport/roster/br/roster_rank05_br.png);
+}
+@media screen and (max-width: 350px) {
+  #teamDetails .cta {
+    font-size: 0.5em;
+  }
+  #club_stats .charts .chart_box,
+  #club_stats .charts .chart {
+    width: 100% !important;
+  }
+  #club_stats .charts .chart .padding {
+    width: auto;
+  }
+  .barchart {
+    margin: 0 auto;
+  }
+  #club_leaderboard table tr td .content {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  #teamDetails .cta {
+    font-size: 0.65em;
+  }
+  #club_stats .charts .chart_box,
+  #club_stats .charts .chart {
+    width: 100% !important;
+  }
+  #club_stats .charts .chart .padding {
+    width: auto;
+  }
+  .barchart,
+  .key {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #club_stats .charts > .chart {
+    width: 100%;
+  }
+  .barchart {
+    margin: 0 auto;
+  }
+  #club_stats .charts .chart .key .community_average {
+    display: inline;
+  }
+  .key {
+    padding: 20px 0px;
+  }
+}
+@media screen and (min-width: 651px) and (max-width: 868px) {
+  #club_stats .charts .chart_box,
+  #club_stats .charts > .chart {
+    float: none;
+    width: 100%;
+  }
+  #club_stats .charts .chart_box .padding,
+  #club_stats .charts > .chart .padding {
+    padding: 0;
+    width: auto;
+    margin: 1em;
+  }
+  #club_leaderboard table tr td .content {
+    display: block;
+  }
+  .barchart {
+    margin: 0 auto;
+  }
+  #club_stats .charts .chart .key .community_average {
+    display: inline;
+  }
+  .key {
+    padding: 20px 0px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1125px) {
+  #club_leaderboard_entries table {
+    width: 100%;
+  }
+  #club_stats .charts .chart .overlay .stat {
+    padding-top: 1px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .club #clubIntro,
+  .club #disciplines {
+    float: none;
+    width: auto;
+  }
+  .club #clubIntro {
+    padding-top: 18px;
+  }
+  .club #clubIntro #teamLogo {
+    top: 18px;
+  }
+  .club #clubIntro h1 {
+    margin-top: 0;
+  }
+  .club #leftCol {
+    margin-right: 0;
+  }
+  .club #rightCol {
+    margin-left: 0;
+  }
+  .club .col50 {
+    float: none;
+    width: auto;
+    padding: 0;
+  }
+  .club #club_stats ul li {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .club_listing .emblem {
+    display: none;
+  }
+  .club_listing .info {
+    margin: 0;
+  }
+  .club_listing .info .level {
+    margin-bottom: 0;
+  }
+  .club_listing .actions {
+    position: relative;
+  }
+  .club_listing .actions .padding {
+    padding: 0.5em 0.5em 0.25em 0.5em;
+  }
+  .club_listing .actions .cta {
+    display: inline-block;
+    float: none;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+}

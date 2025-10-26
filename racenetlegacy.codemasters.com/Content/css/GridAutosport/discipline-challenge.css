@@ -1,0 +1,132 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#challenges h2.no_top_margin {
+  margin-top: 0;
+}
+#challenges #time_remaining {
+  font-family: Arial;
+  float: right;
+  color: #818181;
+}
+#challenges .challenge.active {
+  display: block !important;
+}
+#challenges .challenge .icons {
+  float: left;
+}
+#challenges .challenge .icons img {
+  margin-right: 1em;
+}
+#challenges .challenge .icons img.discipline {
+  width: 156px;
+  height: 63px;
+}
+#challenges .challenge .icons img.track {
+  width: 63px;
+  height: 63px;
+}
+#challenges .challenge .icons img.class {
+  width: 126px;
+  height: 63px;
+}
+#challenges .challenge .description {
+  margin-top: 0.75em;
+  border-top: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  padding: 2em;
+  background: transparent url(../../GridAutosport/bg_tile.png) repeat;
+}
+#challenges .challenge .description p {
+  margin: 0 0 0 410px;
+}
+#challenges .challenge .description p.full {
+  margin: 0 !important;
+}
+#challenges .leaderboard_panel {
+  position: relative;
+}
+#challenges .leaderboard_panel .filters.wide {
+  margin-top: -3px;
+}
+#challenges .leaderboard_panel .filters.narrow {
+  display: none;
+  margin-bottom: 0.7em;
+}
+@media screen and (max-width: 800px) {
+  #challenges #time_remaining {
+    display: none;
+  }
+  #challenges .challenge .description.sponsored .icons {
+    float: none;
+  }
+  #challenges .challenge .description.sponsored .icons img {
+    margin-bottom: 1em;
+  }
+  #challenges .challenge .description.sponsored p {
+    margin: 0 !important;
+  }
+  #challenges .leaderboard_panel {
+    position: relative;
+  }
+  #challenges .leaderboard_panel .filters.wide {
+    display: none;
+  }
+  #challenges .leaderboard_panel .filters.narrow {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  #challenges .challenge .icons {
+    float: none;
+  }
+  #challenges .challenge .icons img {
+    margin-bottom: 1em;
+  }
+  #challenges .challenge .description {
+    padding: 1em;
+  }
+  #challenges .challenge .description p {
+    margin: 0;
+  }
+  #challenges .challenge .leaderboard .vehicle,
+  #challenges .challenge .leaderboard .difference {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  #challenges .challenge .leaderboard .flag {
+    display: none;
+  }
+}

@@ -1,0 +1,238 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#vehicle_detail {
+  position: relative;
+  text-align: left;
+}
+#vehicle_detail .vehicle_holder {
+  position: relative;
+  margin-top: 12px;
+}
+#vehicle_detail .vehicle_holder .divider {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #909090;
+  left: 50%;
+  z-index: 0;
+}
+#vehicle_detail #club_vehicle,
+#vehicle_detail #player_vehicle {
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+#vehicle_detail #player_vehicle {
+  float: right;
+  text-align: right;
+}
+#vehicle_detail #player_vehicle h2 {
+  text-align: right;
+  line-height: 1.1em;
+  font-weight: normal;
+}
+#vehicle_detail #player_vehicle .name img,
+#vehicle_detail #player_vehicle .level img,
+#vehicle_detail #player_vehicle .owner img {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+#vehicle_detail .image_container {
+  position: relative;
+}
+#vehicle_detail .image_container.empty {
+  height: 228px;
+}
+#vehicle_detail .image_container h2 {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+#vehicle_detail .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#vehicle_detail .name,
+#vehicle_detail .level,
+#vehicle_detail .owner {
+  margin: 0.75em 0;
+  font-family: 'EurostileNextW02-Ext';
+}
+#vehicle_detail .name img,
+#vehicle_detail .level img,
+#vehicle_detail .owner img {
+  margin-right: 0.5em;
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+}
+#vehicle_detail .name span,
+#vehicle_detail .level span,
+#vehicle_detail .owner span {
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+#vehicle_detail .compare {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+#vehicle_detail .versus {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -17px;
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: white;
+  border-radius: 50%;
+  color: #222222;
+  text-align: center;
+  line-height: 34px;
+}
+#vehicle_detail .versus span {
+  font-family: 'EurostileNextW02-Ext';
+  vertical-align: middle;
+}
+#vehicle_detail #stats {
+  margin-top: 1em;
+}
+#vehicle_detail #stats .comparison {
+  clear: both;
+  margin: 10px 0;
+  position: relative;
+}
+#vehicle_detail #stats .comparison h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+#vehicle_detail #stats .comparison .club_value,
+#vehicle_detail #stats .comparison .player_value {
+  position: absolute;
+  top: 0;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.1em;
+}
+#vehicle_detail #stats .comparison .club_value {
+  left: 0;
+}
+#vehicle_detail #stats .comparison .player_value {
+  right: 0;
+}
+#vehicle_detail #stats .comparison .percentage {
+  display: block;
+  clear: both;
+  margin-top: 3px;
+  height: 2px;
+  background-color: #333333;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+#vehicle_detail #stats .comparison .percentage.active {
+  background-color: white;
+}
+#vehicle_detail #stats .comparison .percentage.active .value {
+  display: block;
+}
+#vehicle_detail #stats .comparison .percentage .value {
+  display: none;
+  height: 100%;
+  background-color: red;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+}
+.dk_theme_grid_autosport.dk_container {
+  margin: 0;
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.1em;
+}
+#secondvehicledetails {
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 700px) {
+  #vehicle_detail .vehicle_holder {
+    position: relative;
+    margin-top: 12px;
+  }
+  #vehicle_detail .vehicle_holder .divider {
+    display: none;
+  }
+  #vehicle_detail #club_vehicle,
+  #vehicle_detail #player_vehicle {
+    float: none;
+    width: auto;
+  }
+  #vehicle_detail .image_container {
+    height: auto;
+  }
+  #vehicle_detail .image_container h2 {
+    position: static;
+  }
+  #vehicle_detail .image img {
+    width: 100%;
+    height: auto;
+  }
+  #vehicle_detail #vs {
+    position: static;
+    left: auto;
+    width: auto;
+    margin: 0;
+    background: none;
+    text-align: center;
+  }
+  #vehicle_detail #vs span {
+    color: white;
+  }
+}
+@media screen and (max-width: 450px) {
+  #vehicle_detail #stats .comparison .club_value,
+  #vehicle_detail #stats .comparison .player_value {
+    position: static;
+  }
+  #vehicle_detail #stats .comparison .club_value {
+    left: auto;
+    float: left;
+  }
+  #vehicle_detail #stats .comparison .player_value {
+    right: auto;
+    float: right;
+  }
+}

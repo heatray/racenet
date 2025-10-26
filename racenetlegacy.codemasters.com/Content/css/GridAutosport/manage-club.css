@@ -1,0 +1,193 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+.manage_club {
+  position: relative;
+}
+.manage_club h2 {
+  margin: 0;
+  padding: 12px 0;
+  line-height: 1em;
+  border-bottom: 1px solid #898b8a;
+}
+.manage_club .field-validation-error {
+  display: block;
+  clear: both;
+  font-family: Arial;
+  font-size: inherit;
+}
+.manage_club .input-validation-error {
+  background-color: initial;
+}
+.manage_club .form_col {
+  float: left;
+  width: 50%;
+}
+.manage_club .form_row {
+  clear: both;
+  margin: 30px 0;
+}
+.manage_club .form_row .label {
+  font-family: 'EurostileNextW02-Ext';
+  display: block;
+  float: left;
+  width: 220px;
+  color: white;
+}
+.manage_club .form_row .value {
+  display: inline-block;
+}
+.manage_club .form_row .value input.input-validation-error {
+  border: 1px solid #8d8f8e;
+}
+.manage_club .form_row .value .radio {
+  display: block;
+  clear: both;
+  margin-bottom: 10px;
+}
+.manage_club .form_row .value .radio input {
+  vertical-align: middle;
+}
+.manage_club .form_row .value .radio label {
+  vertical-align: middle;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.manage_club .form_row .value .radio input:checked + label {
+  color: white;
+}
+.manage_club .form_row .value .styled_radio {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  background: transparent url(../../GridAutosport/forms/radio_buttons.png) no-repeat top left;
+  cursor: pointer;
+}
+.manage_club .form_row .value .styled_radio.hover {
+  background-position: center left;
+}
+.manage_club .form_row .value .styled_radio.selected {
+  background-position: bottom left;
+}
+.manage_club .form_row .value textarea {
+  width: 100%;
+  height: 16em;
+  -moz-box-shadow: inset 0 0 1px #1d1f1e;
+  -webkit-box-shadow: inset 0 0 1px #1d1f1e;
+  box-shadow: inset 0 0 1px #1d1f1e;
+  outline: none;
+}
+.manage_club .form_row .value label {
+  margin-left: 1em;
+  color: #909291;
+}
+.manage_club .form_row.name .value input {
+  width: 254px;
+}
+.manage_club .form_row.tag .value input {
+  width: 79px;
+}
+.manage_club .form_row.description .label {
+  display: block;
+  float: none;
+  width: auto;
+  margin-bottom: 20px;
+}
+.manage_club .form_row.description .value {
+  display: block;
+}
+.manage_club.create .form_row.name .label,
+.manage_club.create .form_row.tag .label,
+.manage_club.create .form_row.language .label {
+  padding: 9px 0;
+}
+.manage_club .cta.club_liveries {
+  margin-bottom: 1em;
+}
+.manage_club .button_group {
+  text-align: right;
+}
+.manage_club .button_group.button_group_top {
+  position: absolute;
+  top: -104px;
+  right: 0;
+}
+.manage_club .button_group input {
+  margin-right: 0;
+}
+@media screen and (max-width: 980px) {
+  .manage_club .button_group.button_group_top {
+    top: -88px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .manage_club .button_group.button_group_top {
+    position: static;
+    top: auto;
+    right: auto;
+  }
+  .manage_club .form_col {
+    width: auto;
+    float: none;
+  }
+  .manage_club .form_row .value textarea {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .manage_club .form_row {
+    clear: both;
+    margin: 30px 0;
+  }
+  .manage_club .form_row .label,
+  .manage_club .form_row .value {
+    display: block;
+    float: none;
+    clear: both;
+    width: auto;
+  }
+  .manage_club .form_row .label {
+    padding: 9px 0;
+  }
+  .manage_club .form_row.description .label {
+    padding: 0;
+  }
+  .manage_club .button_group .cta {
+    margin-right: 0;
+  }
+}
