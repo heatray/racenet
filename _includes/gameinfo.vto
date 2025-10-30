@@ -1,0 +1,79 @@
+---
+layout: racenet.vto
+---
+<link href="./Content/css/LandingRefresh.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2Refresh.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2Home.css" rel="Stylesheet" type="text/css" />
+<script src="./Content/scripts/RacenetUtils.js" type="text/javascript"></script>
+<script src="./Content/scripts/flipcounter.js" type="text/javascript"></script>
+<link href="./Content/css/WhatIsRaceNet.css" rel="stylesheet" type="text/css" />
+
+{{ content }}
+<div class="clearfix"></div>
+<script type="text/javascript">
+//<![CDATA[
+    $(window).resize(matchheight);
+    $(document).ready(function () { setTimeout(mhasap,200); });
+    $.fn.max = function(selector) {
+        return Math.max.apply(null, this.map(function(index, el) { return selector.apply(el); }).get() );
+    }
+
+    function elDrawn(el) {
+        return ($(el).is(":visible") && $(el).height() > 300);
+    }
+
+    function mhasap() {
+        if (elDrawn('#Panel1Content') && elDrawn('#Panel2Content') && elDrawn('#Panel3Content') && elDrawn('#Panel4Content'))
+        {
+            matchheight();
+        } else {
+            setTimeout(mhasap, 200);
+        }
+    }
+
+    function getWindowWidth() {
+        $('body').css('overflow', 'scroll');
+        var widthWithScrollBars = $(window).width();
+//        $('body').css('overflow', 'hidden');
+//        var widthNoScrollBars = $(window).width();
+//        var scrollbarWidth = widthWithScrollBars - widthNoScrollBars;
+        $('body').css('overflow', 'auto');
+        return widthWithScrollBars;
+    }
+
+    function getCellsPerRow() {
+        var w = getWindowWidth();
+        //console.log(w);
+        if (w < 480) {
+            return 1;
+        }else if (w < 1024) {
+            return 2;
+        }
+        else
+            return 4;
+    }
+
+    function matchheight() {
+        minh = 100;
+        per = getCellsPerRow();
+        $('.cell .panelbg_content').css({ 'height': 'auto' }).removeAttr('style');
+
+        if (per == 4) {
+            var h = $('.cell4 .panelbg_content').max(function () { return $(this).height(); })+30;
+            if (h < minh) h = minh;
+            $('.cell4 .panelbg_content').height(h);
+        } else if (per == 2) {
+            var h = $('.cell2 .panelbg_content').max(function () { return $(this).height(); })+30;
+            if (h < minh) h = minh;
+            $('.cell2 .panelbg_content').height(h);
+            var h = $('.cell6 .panelbg_content').max(function () { return $(this).height(); })+30;
+            if (h < minh) h = minh;
+            $('.cell6 .panelbg_content').height(h);
+        }
+    }
+
+    $(document).ready(function() {
+        $('a[rel="external"]').each(function() { $(this).attr({'target':'_blank'}); });
+    });
+//]]>
+</script>

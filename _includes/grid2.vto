@@ -1,0 +1,194 @@
+---
+layout: racenet.vto
+---
+<style type="text/css" rel="stylesheet">
+    body { overflow-x:hidden; }
+</style>
+<link href="./Content/css/Grid2.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2Refresh.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.r').toggle(
+            function () {
+                $('#gridmobilenav').slideToggle('fast', function () {
+                    $('.r').html('<img class="pointer" src="./Content/grid2/mob_dwnarrowup.png" alt="" />');
+                });
+            },
+            function () {
+                $('#gridmobilenav').slideToggle('fast', function () {
+                    $('.r').html('<img class="menu_height_fix" src="./Content/grid2/mob_dwnarrow.png" alt="" />');
+                });
+            });
+
+    });
+</script>
+
+    <div id="GridHolder">
+        <div id="gt" class="">
+            <div class="hidden-phone hidden-tablet padleft25">
+                <div class="">
+
+<ul>
+    <li id="Button_0" class="gridnav ">
+            <a href="./grid2/landing/">HOME</a>
+    </li>
+    <li id="Button_1" class="gridnav ">
+            <a href="./grid2/followers/">FOLLOWERS</a>
+    </li>
+    <li id="Button_2" class="gridnav ">
+            <a href="./grid2/rivals/">RIVALS</a>
+    </li>
+    <li id="Button_3" class="gridnav ">
+            <a href="./grid2/global_challenge/">GLOBAL CHALLENGE</a>
+    </li>
+    <li id="Button_4" class="gridnav ">
+            <a href="./grid2/objectives/">OBJECTIVES</a>
+    </li>
+    <li id="Button_5" class="gridnav ">
+            <a href="./grid2/videos/">VIDEOS</a>
+    </li>
+    <li id="Button_6" class="gridnav ">
+            <a href="./grid2/driverhistory/">DRIVER HISTORY</a>
+    </li>
+</ul>
+
+</div>
+            </div>
+        </div>
+        <div id="mobilenavbutton" class="hidden-desktop visible-phone visible-tablet">
+            <ul >
+                <li><img src="./Content/Grid2/grid-logo-dark.png" width="175" height="50" class="siteframepadfix" alt="GRID2" /><a href="/Grid2"><img class="fader menu_height_fix" src="./Content/SiteFrame/mob_home.png" width="35" height="35" alt="" class="siteframepadfix"/></a> </li>
+                <li class=" r hidden-desktop visible-phone visible-tablet right"><img class="pointer menu_height_fix" src="./Content/Grid2/mob_dwnarrow.png" class="siteframepadfix" /></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div id="gridmobilenav" >
+            <div class="clearfix"></div>
+                <div id="gridmobilebuttons" class="hidden-desktop visible-phone visible-tablet">
+                <div class="">
+
+<ul>
+    <li id="Button_0" class="gridnav ">
+            <a href="./grid2">HOME</a>
+    </li>
+    <li id="Button_1" class="gridnav ">
+            <a href="./grid2/followers">FOLLOWERS</a>
+    </li>
+    <li id="Button_2" class="gridnav ">
+            <a href="./grid2/rivals">RIVALS</a>
+    </li>
+    <li id="Button_3" class="gridnav ">
+            <a href="./grid2/global_challenge">GLOBAL CHALLENGE</a>
+    </li>
+    <li id="Button_4" class="gridnav ">
+            <a href="./grid2/objectives">OBJECTIVES</a>
+    </li>
+    <li id="Button_5" class="gridnav ">
+            <a href="./grid2/videos">VIDEOS</a>
+    </li>
+    <li id="Button_6" class="gridnav ">
+            <a href="./grid2/driverhistory">DRIVER HISTORY</a>
+    </li>
+</ul>
+
+</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div id="level-2" class="visible-desktop">
+    <ul>
+        <li>
+            <a href="./grid2/rivalcards" id="PlayerCard" class="left pcard">
+                <div id="gridPlayerCardName"><h3>Player One</h3>
+                </div>
+                <div class="gridPlayerCardEdit">
+                    <div class="Edit_Card">SELECT RIVAL CARD</div>
+                </div>
+                <p class="rcard">15</p>
+            </a>
+        </li>
+        <li>
+            <div id="FollowersBox">
+                <div id="FollowerBoxTitle"><h3>FOLLOWERS</h3></div>
+                <div id="FollowersBoxFollowers" class="right">
+                <img src="./Content/SiteFrame/Grid2/Followers_Icon_small.png" class="left FollowersImageBorder " alt="" width="48" height="48" />
+                <h3 class="right">282,934</h3>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+
+
+{{ content }}
+    <script type="text/javascript">
+    //need to be moved to its own file
+        $(document).ready(function () {
+
+            $('.rcard').hide();
+            pcard = $(this).contents().find(".rcard").text();
+
+
+            switch (pcard) {
+                case '0':
+                    $('#PlayerCard').addClass('card1');
+                    break;
+                case '1':
+                    $('#PlayerCard').addClass('card1');
+                    break;
+                case '2':
+                    $('#PlayerCard').addClass('card2');
+                    break;
+                case '3':
+                    $('#PlayerCard').addClass('card3');
+                    break;
+                case '4':
+                    $('#PlayerCard').addClass('card4');
+                    break;
+                case '5':
+                    $('#PlayerCard').addClass('card5');
+                    break;
+                case '6':
+                    $('#PlayerCard').addClass('card6');
+                    break;
+                case '7':
+                    $('#PlayerCard').addClass('card7');
+                    break;
+                case '8':
+                    $('#PlayerCard').addClass('card8');
+                    break;
+                case '9':
+                    $('#PlayerCard').addClass('card9');
+                    break;
+                case '10':
+                    $('#PlayerCard').addClass('card10');
+                    break;
+                case '11':
+                    $('#PlayerCard').addClass('card11');
+                    break;
+                case '12':
+                    $('#PlayerCard').addClass('card12');
+                    break;
+                case '13':
+                    $('#PlayerCard').addClass('card13');
+                    break;
+                case '14':
+                    $('#PlayerCard').addClass('card14');
+                    break;
+                case '15':
+                    $('#PlayerCard').addClass('card15');
+                    break;
+                case '16':
+                    $('#PlayerCard').addClass('card16');
+                    break;
+            }
+        });
+    </script>

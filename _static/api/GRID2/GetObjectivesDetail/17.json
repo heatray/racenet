@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 17,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 15.0
+  },
+  "Objective": {
+    "CurrentValue": 15.0,
+    "LocalizedTitle": "TIME ATTACK WINS",
+    "LocalizedDescription": "Win a total of 25 Time Attack events",
+    "IsCompleted": false,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_17.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_17@2x.jpg",
+    "ObjectiveId": 17,
+    "ObjectiveTypeId": 2,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_17.jpg",
+    "Name": "time_attack_wins",
+    "Title": "Objectives_title_time_attack_wins",
+    "Description": "Objectives_desc_time_attack_wins",
+    "Format": 1,
+    "Target": 25.0,
+    "FormattedTarget": "25"
+  }
+}

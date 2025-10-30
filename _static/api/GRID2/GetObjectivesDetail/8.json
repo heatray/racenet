@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 8,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 10000.0
+  },
+  "Objective": {
+    "CurrentValue": 10000.0,
+    "LocalizedTitle": "ALWAYS IN CONTROL",
+    "LocalizedDescription": "Drift a total distance of 10,000ft in Drift",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_8.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_8@2x.jpg",
+    "ObjectiveId": 8,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_8.jpg",
+    "Name": "drift_distance",
+    "Title": "Objectives_title_drift_distance",
+    "Description": "Objectives_desc_drift_distance",
+    "Format": 3,
+    "Target": 10000.0,
+    "FormattedTarget": "10000"
+  }
+}

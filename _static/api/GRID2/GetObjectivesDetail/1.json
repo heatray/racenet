@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 1,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 1000000.0
+  },
+  "Objective": {
+    "CurrentValue": 1000000.0,
+    "LocalizedTitle": "MONEY BAGS",
+    "LocalizedDescription": "Earn more than 1,000,000 dollars in GRID 2 multiplayer",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_1.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_1@2x.jpg",
+    "ObjectiveId": 1,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_1.jpg",
+    "Name": "cash",
+    "Title": "Objectives_title_cash",
+    "Description": "Objectives_desc_cash",
+    "Format": 1,
+    "Target": 1000000.0,
+    "FormattedTarget": "1000000"
+  }
+}

@@ -1,0 +1,375 @@
+---
+layout: grid2.vto
+title: GRID 2 - Driver History - Codemasters RaceNet
+nav:
+  - grid2
+  - driverhistory
+api:
+  GetComparablePlayers:  ./api/GRID2/GetComparablePlayers.json
+  GetDriverHistoryStats: ./api/GRID2/GetDriverHistoryStats
+---
+<link rel="Stylesheet" type="text/css" href="./Content/css/dropkick.css" />
+<link href="./Content/css/Grid2.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2DriverHistory.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/dropkick-theme.css" rel="stylesheet" type="text/css" />
+
+<div class="g2ip_wrapper" id="wrapper"><div class="infobar_anchor g2ip_header" id="g2dh_header"><div id="g2dh_title" class="g2ip_title g2dh_desktop"><span id="g2dh_title_text" class="g2ip_title_text">DRIVER HISTORY</span><span id="g2dh_infobar"><span class="infobar_infoicon"><span class="infobar_pointer"></span></span><span class="infobar_content">To compare GRID 2 stats with friends and rivals just select the player and type of stat you would like to compare.</span></span></div><div id="g2dh_title_icon" class="g2ip_title_icon g2dh_icon g2dh_desktop"></div></div><div id="g2dh_content" class="g2ip_content">    <div id="g2dh_side">
+        <div id="gd2h_layout_levelcash">
+            <div id="g2dh_level"><span id="g2dh_level_inner">33</span></div>
+            <div id="g2dh_cash"><span id="g2dh_cash_inner">119,321</span></div>
+        </div>
+        <div id="g2dh_layout_car">
+            <div id="g2dh_car" style="background-image:url('./Content/Grid2/DriverHistory/247.jpg')">
+                <div id="g2dh_favourite_text">FAVORITE VEHICLE</div>
+            </div>
+        </div>
+    </div>
+    <div id="g2dh_main">
+        <div id="g2dh_comparer">
+            <div id="g2dh_me"><span style="font-size:100%">Heatray</span></div>
+            <div id="g2dh_vs">VS</div>
+            <div id="g2dh_mobilecomparingwith">COMPARE WITH</div>
+            <div id="g2dh_them"><select name="pretty" tabindex="1" class="pretty dk dk_rng2" id="g2dh_them_selector" onchange="compare_with()"></select></div>
+        </div>
+        <div id="g2dh_statsarea">
+            <div id="g2dh_stat1" class="g2dh_stat">
+    <div id="g2dh_stat1_name" class="g2dh_stat_name"></div>
+    <div id="g2dh_stat1_statcontainer" class="g2dh_stat_statcontainer">
+        <div id="g2dh_stat1_me_value" class="g2dh_stat_a_value g2dh_stat_me_value"></div>
+        <div id="g2dh_stat1_barcontainer" class="g2dh_stat_barcontainer">
+            <div id="g2dh_stat1_me" class="g2dh_stat_me">
+            </div>
+            <div id="g2dh_stat1_them" class="g2dh_stat_them">
+            </div>
+            <div id="g2dh_stat1_floating_middle_left" class="g2dh_stat_floating_middle_bar g2dh_stat_floating_middle_left"></div>
+            <div id="g2dh_stat1_floating_middle_right" class="g2dh_stat_floating_middle_bar g2dh_stat_floating_middle_right"></div>
+        </div>
+        <div id="g2dh_stat1_them_value" class="g2dh_stat_a_value g2dh_stat_them_value"></div>
+    </div>
+</div>
+            <div id="g2dh_stat2" class="g2dh_stat">
+    <div id="g2dh_stat2_name" class="g2dh_stat_name"></div>
+    <div id="g2dh_stat2_statcontainer" class="g2dh_stat_statcontainer">
+        <div id="g2dh_stat2_me_value" class="g2dh_stat_a_value g2dh_stat_me_value"></div>
+        <div id="g2dh_stat2_barcontainer" class="g2dh_stat_barcontainer">
+            <div id="g2dh_stat2_me" class="g2dh_stat_me">
+            </div>
+            <div id="g2dh_stat2_them" class="g2dh_stat_them">
+            </div>
+            <div id="g2dh_stat2_floating_middle_left" class="g2dh_stat_floating_middle_bar g2dh_stat_floating_middle_left"></div>
+            <div id="g2dh_stat2_floating_middle_right" class="g2dh_stat_floating_middle_bar g2dh_stat_floating_middle_right"></div>
+        </div>
+        <div id="g2dh_stat2_them_value" class="g2dh_stat_a_value g2dh_stat_them_value"></div>
+    </div>
+</div>
+            <div id="g2dh_stat3" class="g2dh_stat">
+    <div id="g2dh_stat3_name" class="g2dh_stat_name"></div>
+    <div id="g2dh_stat3_statcontainer" class="g2dh_stat_statcontainer">
+        <div id="g2dh_stat3_me_value" class="g2dh_stat_a_value g2dh_stat_me_value"></div>
+        <div id="g2dh_stat3_barcontainer" class="g2dh_stat_barcontainer">
+            <div id="g2dh_stat3_me" class="g2dh_stat_me">
+            </div>
+            <div id="g2dh_stat3_them" class="g2dh_stat_them">
+            </div>
+            <div id="g2dh_stat3_floating_middle_left" class="g2dh_stat_floating_middle_bar g2dh_stat_floating_middle_left"></div>
+            <div id="g2dh_stat3_floating_middle_right" class="g2dh_stat_floating_middle_bar g2dh_stat_floating_middle_right"></div>
+        </div>
+        <div id="g2dh_stat3_them_value" class="g2dh_stat_a_value g2dh_stat_them_value"></div>
+    </div>
+</div>
+        </div>
+    </div>
+</div><div id="g2dh_footer" class="g2ip_footer">
+<div id="g2dh_footer_selector">
+    <div id="g2dh_footer_selection_desc"></div>
+    <div id="g2dh_footer_selection_buttons">
+        <input type="radio" name="stat_selection" id="ss_career" checked="checked" onclick="doLoadStats()" value="0" />
+        <label for="ss_career"><span class="desc">SINGLE PLAYER</span></label>
+        <input type="radio" name="stat_selection" id="ss_multi" onclick="doLoadStats()" value="1" />
+        <label for="ss_multi"><span class="desc">MULTIPLAYER</span></label>
+        <input type="radio" name="stat_selection" id="ss_rivals" onclick="doLoadStats()" value="2" />
+        <label for="ss_rivals"><span class="desc">RIVALRIES</span></label>
+        <input type="radio" name="stat_selection" id="ss_gc" onclick="doLoadStats()" value="3" />
+        <label for="ss_gc"><span class="desc">GLOBAL CHALLENGE</span></label>
+        <input type="radio" name="stat_selection" id="ss_general" onclick="doLoadStats()" value="4" />
+        <label for="ss_general"><span class="desc">GENERAL</span></label>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    
+    function doLoadStats() {
+        var btn_selected = $('input:radio[name=stat_selection]:checked');
+        loadStats(0);
+        set_wlh();
+        update_footer();
+    }
+
+    function update_footer()
+    {
+        $('#g2dh_footer_selection_desc').text($('input[type=radio,name=stat_selected]:checked + label span.desc').text());
+    }
+
+//]]>
+</script></div></div>
+<script type="text/javascript" src="./Content/scripts/jquery.dropkick-1.0.0.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+    (function ($) {
+
+        $.fn.getWidthInPercent = function () {
+            var width = parseFloat($(this).css('width')) / parseFloat($(this).parent().css('width'));
+            return Math.round(100 * width) + '%';
+        };
+
+    })(jQuery);
+
+    var curWidth;
+    var disable_resize_handler = false;
+
+    function resize_redraw() {
+        if (disable_resize_handler)
+            return;
+        var now = parseInt($('#g2dh_main').width(), 10);
+        if (curWidth != now) {
+            curWidth = now;
+            set_font_sizes();
+        }
+    }
+
+    function set_font_sizes() {
+        fix_size($('#g2dh_me span'), parseInt($('#g2dh_me').width(), 10));
+        $('#g2dh_them .dk_options_inner li a').each(function (ix, el) {
+            fix_size(el, max_option_width());
+        });
+        sz = fix_size($('#g2dh_them .dk_toggle .dk_label'), max_option_width());
+//        if (sz != '20px') {
+//            $('#g2dh_them .dk_toggle').css('line-height', parseInt(sz, 10) + 2 + 'px');
+//        } else {
+//            $('#g2dh_them .dk_toggle').css('line-height', '26px');
+//        }
+        var tl = $('#g2dh_cash_inner').text().length;
+        $('#g2dh_cash_inner').css({ 'font-size': '100%', 'position': 'relative', 'top': '0px' });
+        if ((is_d() && tl > 8) || (is_ipl() && tl > 8)) {
+            $('#g2dh_cash_inner').css({ 'font-size': '60%', 'position': 'relative', 'top': '-7px' });
+        } else if (is_ipp() && tl > 11) {
+            $('#g2dh_cash_inner').css({ 'font-size': '60%', 'position': 'relative', 'top': '1px' });
+        } else if ((is_smp() && tl > 8) || (is_ml() && tl > 8)) {
+            $('#g2dh_cash_inner').css({ 'font-size': '55%', 'position': 'relative', 'top': '-6px' });
+        } else if (is_mp() && tl > 12) {
+            $('#g2dh_cash_inner').css({ 'font-size': '80%', 'position': 'relative', 'top': '-3px' });
+        }
+    }
+
+    function is_d() {
+        return (parseInt($('#g2dh_main').width(), 10) == 866);
+    }
+
+    function is_ipl() {
+        return (parseInt($('#g2dh_main').width(), 10) == 666);
+    }
+
+    function is_ipp() {
+        return (parseInt($('#g2dh_main').width(), 10) == 726);
+    }
+
+    function is_smp() {
+        return (parseInt($('#g2dh_main').width(), 10) == 580);
+    }
+
+    function is_ml() {
+        return (parseInt($('#g2dh_main').width(), 10) == 462);
+    }
+
+    function is_mp() {
+        return (parseInt($('#g2dh_main').width(), 10) == 300);
+    }
+
+    function max_option_width() {
+        return parseInt($('#dk_container_g2dh_them_selector').width(), 10)-74;
+    }
+
+    function comparer_max_fontsize() {
+        if (is_d())
+            return 15;
+        else if (is_ipl())
+            return 12;
+        else if (is_ipp())
+            return 15;
+        else if (is_smp())
+            return 15;
+        else
+            return 15;
+    }
+
+    function hidden_width(el, sz) {
+        var clone = $(el).clone();
+        clone.css({ "visibility": "hidden", "font-family": "Eurostile", "font-weight": "normal", "font-size": sz });
+        var hmm = $('<div style="font-family:Eurostile;font-weight:normal;font-size:' + comparer_max_fontsize() + 'pt;visibility:hidden;" />');
+        hmm.append(clone);
+        $('body').append(hmm);
+        var width = clone.outerWidth();
+        hmm.remove();
+        return width;
+    }
+
+    function fix_size(el, mw) {
+        disable_resize_handler = true;
+        var i = 0;
+        size = 100;
+
+        $(el).css("font-size", "100%");
+        while (hidden_width($(el), size + "%") > mw && size > 25) {
+            size -= 2;
+            $(el).css("font-size", size + "%");
+        }
+        disable_resize_handler = false;
+        return $(el).css("font-size");
+    }
+
+    $(window).on('preloaderGone', function () { set_font_sizes(); });
+
+    $(document).ready(function () {
+        curWidth = parseInt($('#g2dh_main').width(), 10);
+        $(window).resize(resize_redraw);
+
+        $.getJSON('{{ api.GetComparablePlayers }}',
+        function (data) {
+            $(data).each(function (ix, el) {
+                var opt = $('<option />');
+                opt.val(el.RNID);
+                opt.text(el.DisplayName);
+                opt.appendTo('#g2dh_them_selector');
+            });
+            var n = get_name_from_wlh();
+            if (n != '') {
+                opt = $('#g2dh_them_selector option').filter(function () { return $(this).html() == n; }).attr({ 'selected': 'selected' });
+            }
+            $('#g2dh_them_selector').dropkick({
+                theme: 'rng2',
+                change: function (value, label) {
+                    $('#g2dh_them .dk_toggle .dk_label').css({ 'font-size': comparer_max_fontsize() + 'pt' });
+                    sz = fix_size($('#g2dh_them .dk_toggle .dk_label'), max_option_width());
+                    //                    if (sz != '28px') {
+                    //                        $('#g2dh_them .dk_toggle').css('line-height', parseInt(sz, 10) + 2 + 'px');
+                    //                    } else {
+                    //                        $('#g2dh_them .dk_toggle').css('line-height', '26px');
+                    //                    }
+                    compare_with();
+                }
+            });
+            var ss = get_type_from_wlh();
+            if (ss < 0 || ss > 5) {
+                $('#ss_career').attr({ 'checked': 'checked' });
+            } else {
+                $('input:eq(' + ss + ')', '#g2dh_footer_selection_buttons').attr({ 'checked': 'checked' });
+            }
+            update_footer();
+            compare_with();
+        });
+        $(window).on('touchstart', null, function () {
+            $('.dk_open').removeClass('dk_open');
+        });
+        $(window).on('touchstart', '.dk_open', function (e) {
+            e.stopPropagation();
+        });
+        $(window).on('touchstart', '.dk_toggle', function (e) {
+
+            var $dk = $(this).parents('.dk_container').first();
+
+            if ($.browser.webkit) {
+                $('.dk_open').removeClass('dk_open');
+                $dk.toggleClass('dk_open');
+            }
+            return false;
+        });
+    });
+
+    function set_wlh() {
+        window.location.hash = $('input:radio[name=stat_selection]:checked').val() + ',' + $('#g2dh_them_selector option:selected').text();
+    }
+
+    function get_type_from_wlh() {
+        var commaPos = window.location.hash.indexOf(',', 0);
+        if (commaPos < 0) {
+            return parseInt(window.location.hash.substring(1), 10);
+        }
+        return parseInt(window.location.hash.substring(1, commaPos+1), 10);
+    }
+
+    function get_name_from_wlh() {
+        var commaPos = window.location.hash.indexOf(',', 0);
+        if (commaPos < 0) {
+            return '';
+        }
+        return window.location.hash.substring(commaPos+1);
+    }
+
+    var debug = true;
+    var lastTargetId = 0;
+    var ignoreButtons = false;
+    var loaderEnabled = false;
+
+    function fadeoutLoader() {
+        if (loaderEnabled) {
+            $('#g2dh_statsarea_loading').fadeOut(350, function () { $('#g2dh_statsarea_loading').remove(); });
+        }
+    }
+
+    function loadStats(targetId) {
+        if (ignoreButtons)
+            return;
+        if (loaderEnabled) {
+            var gsl = $('<div />').attr('id', 'g2dh_statsarea_loading');
+            gsl.appendTo($('#g2dh_statsarea'));
+            gsl.fadeOut(1).fadeIn(100, function () { loadStats_actual(targetId); });
+        } else {
+            loadStats_actual(targetId);
+        }
+    }
+
+    function loadStats_actual(targetId) {
+        type = $('input:radio[name=stat_selection]:checked').val();
+
+        if (targetId == 0) {
+            targetId = lastTargetId;
+        }
+        if (true || targetId > 0) {
+            ignoreButtons = true;
+            // $.getJSON('{{ api.GetDriverHistoryStats }}', { statType: type, targetRNID: targetId }).success(function (data) {
+            $.getJSON('{{ api.GetDriverHistoryStats }}/'+type+'_'+targetId+'.json').success(function (data) {
+                lastTargetId = targetId;
+                for (i = 0; i <= 2; i++) {
+                    update_stat(i + 1, data[i]);
+                }
+                ignoreButtons = false;
+                fadeoutLoader();
+            }).fail(function (data) {
+                fadeoutLoader();
+            });
+        }
+    }
+
+    function compare_with() {
+        var p_id = $('#g2dh_them_selector').val();
+        set_wlh();
+        loadStats(p_id);
+    }
+
+    function update_stat(n, el) {
+        if(el == null)
+        {
+            $('#g2dh_stat' + n).hide();
+        } else
+        {
+            $('#g2dh_stat' + n + '_name').text(el.Name);
+            $('#g2dh_stat' + n + '_me_value').text(el.MeValue);
+            $('#g2dh_stat' + n + '_them_value').text(el.ThemValue);
+            $('#g2dh_stat' + n + '_me').css({ 'width': el.MeWidthPercent + '%' });
+            $('#g2dh_stat' + n + '_them').css({ 'width': el.ThemWidthPercent + '%' });
+            $('#g2dh_stat' + n).show();
+        }
+    }
+//]]>
+    
+</script>

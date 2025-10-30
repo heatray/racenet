@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 2,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 250.0
+  },
+  "Objective": {
+    "CurrentValue": 250.0,
+    "LocalizedTitle": "PASS AND GO",
+    "LocalizedDescription": "Pass a total of 250 checkpoints in Checkpoint",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_2.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_2@2x.jpg",
+    "ObjectiveId": 2,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_2.jpg",
+    "Name": "checkpoint_pass",
+    "Title": "Objectives_title_checkpoint_pass",
+    "Description": "Objectives_desc_checkpoint_pass",
+    "Format": 1,
+    "Target": 250.0,
+    "FormattedTarget": "250"
+  }
+}

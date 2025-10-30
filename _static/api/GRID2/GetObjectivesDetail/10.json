@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 10,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 100.0
+  },
+  "Objective": {
+    "CurrentValue": 100.0,
+    "LocalizedTitle": "SCRAP YARD",
+    "LocalizedDescription": "Beat a total of 100 opponents in Endurance",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_10.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_10@2x.jpg",
+    "ObjectiveId": 10,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_10.jpg",
+    "Name": "endurance_opp",
+    "Title": "Objectives_title_endurance_opp",
+    "Description": "Objectives_desc_endurance_opp",
+    "Format": 1,
+    "Target": 100.0,
+    "FormattedTarget": "100"
+  }
+}

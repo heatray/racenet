@@ -1,0 +1,74 @@
+---
+layout: grid2.vto
+title: Welcome to RaceNet!
+nav:
+  - grid2
+  - welcome
+---
+<link href="./Content/css/Grid2Refresh.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2Welcome.css" rel="stylesheet" type="text/css" />
+
+<div id="ContentHolder" class="lang-en">
+    <div class="clearfix"></div>
+    <div id="MainContent" class="infobar_anchor">
+<form action="./grid2/welcome" method="post">
+            <div id="heading">
+                <h1><span id="heading_text">Welcome to RaceNet!</span><span id="heading_icon"></span></h1>
+            </div>
+            <div id="content">
+                <div id="content_header">EARN RACENET FOLLOWERS AND BECOME FAMOUS!</div>
+                <ol id="steps_to_glory">
+                    <li id="step1" class="step">
+                        <span class="step-image"><img class="step-image-i" src="./Content/Grid2/add_rival_icon.png" alt="" /></span>
+                        <span class="step-text">1. Add Rivals on RaceNet and take them on in GRID 2&#39;s multiplayer modes</span>
+                    </li>
+                    <li id="step2" class="step">
+                        <span class="step-image"><img class="step-image-i" src="./Content/Grid2/followers_boost_icon.png" alt="" /></span>
+                        <span class="step-text">2. Compete for Followers with Rivals in Global Challenge events</span>
+                    </li>
+                    <li id="step3" class="step">
+                        <span class="step-image"><img class="step-image-i" src="./Content/Grid2/top_leader_icon.png" alt="" /></span>
+                        <span class="step-text">3. Complete RaceNet objectives to gain Follower boosts</span>
+                    </li>
+                    <li id="step4" class="step">
+                        <span class="step-image"><img class="step-image-i" src="./Content/Grid2/race_superstar_icon.png" alt="" /></span>
+                        <span class="step-text">4. Become a racing superstar by gaining RaceNet Followers</span>
+                    </li>
+                </ol>
+                <div id="content_button">
+                    <input type="submit" id="submit_button" class="gs_button" value="GET STARTED &gt;" />
+                </div>
+            </div>
+            <div id="footer">
+                    <span id="dismiss_welcome">
+                        Don&#39;t show me this again
+                        <input data-val="true" data-val-required="The Dismiss field is required." id="Dismiss" name="Dismiss" type="checkbox" value="true" /><input name="Dismiss" type="hidden" value="false" />
+                    </span>
+            </div>
+</form>    </div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    var ie = (function () {
+        var undef,
+        v = 3,
+        div = document.createElement('div'),
+        all = div.getElementsByTagName('i');
+
+        while (
+        div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+        all[0]);
+
+        return v > 4 ? v : undef;
+    } ());
+
+    $(document).ready(function () {
+        $('.step-image').addClass('animate');
+        if (ie <= 9) {
+            $('.step-image').css({ 'opacity': 1 });
+        }
+    });
+
+//]]>
+</script>

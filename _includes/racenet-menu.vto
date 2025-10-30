@@ -1,4 +1,4 @@
-{{ if true }}
+{{ if racenet_menu == "simple" }}
 <div id="menubar">
   <div id="mainnav">
     <ul>
@@ -84,113 +84,128 @@
         });
       });
     </script>
-{{ if guest }}
-    <div id="" class="">
-      <!--logged out starts-->
-      <div>
-        <div id="mainnav" class="loggedoumenushift">
-          <ul class="">
-            <li>
-              <a id="logo" href="./">RaceNet</a>
-            </li>
-          </ul>
-        </div>
-        <div class="" style="">
-          <ul id="loggedoutHeader" class="right hidden-phone hidden-tablet">
-            <li class="siteframepadfix"><a href="./OAuthLogin/Login?returnUrl=%2Fshowdown%2FGameInfo%3Fnodata%3D0">LOG IN</a></li>
-            <li class="siteframepadfix">/</li>
-            <li class="siteframepadfix padright10"><a href="./Account/SignUp">SIGN UP</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="mobiletabletnav" class="dropdown-menu">
-        <div class="quickhide" style="margin-top: 20px; float: left; margin-left: 0;">
-          <div id="m_search_bar">
-            <div id=""></div>
-            <div id="m_search_input">
-              <input id="m_menu_search" value="DRIVER SEARCH" />
-            </div>
-          </div>
-          <script type="text/javascript">
-            $["ui"]["autocomplete"].prototype["_renderItem"] = function (ul, item) {
-              return $("<li></li>").data("item.autocomplete", item).append($("<a></a>").html(item.label)).appendTo(ul);
-            };
+{{ if racenet_menu == "anonymous" }}
+<div id="" class="">
 
-            $(function () {
-              $("m_#menu_search").autocomplete({
-                appendTo: "#m_search_input",
-                source: function (request, response) {
-                  $.ajax({
+<!--logged out starts-->
+        <div>
+            <div id="mainnav" class="loggedoumenushift">
+                <ul class="">
+                    <li>
+                        <a id="logo" href="./">RaceNet</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="" style="" >
+                <ul id="loggedoutHeader" class="right hidden-phone hidden-tablet">
+                    <li class="siteframepadfix"><a href="./OAuthLogin/Login?returnUrl=">LOG IN</a>
+                    </li>
+                    <li class="siteframepadfix">/</li>
+                    <li class="siteframepadfix padright10"><a href="./Account/SignUp">SIGN UP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mobiletabletnav" class="dropdown-menu">
+            <div  class="quickhide" style="margin-top: 20px; float: left; margin-left: 0;">
+<div id="m_search_bar">
+<div id=""></div>
+    <div id="m_search_input">
+        <input id="m_menu_search" value="DRIVER SEARCH"/>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#m_menu_search').click(function () {
+            $(this).val('');
+            // _gaq.push(['_trackEvent', 'PlayerSearch', 'SearchBegun']);
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $["ui"]["autocomplete"].prototype["_renderItem"] = function (ul, item) {
+        return $("<li></li>")
+            .data("item.autocomplete", item)
+            .append($("<a></a>").html(item.label))
+            .appendTo(ul);
+    };
+
+    $(function () {
+        $("m_#menu_search").autocomplete({
+            appendTo: "#m_search_input",
+            source: function (request, response) {
+                $.ajax({
                     url: '/Menu/PlayerSearchJson',
                     html: "html",
                     dataType: "json",
-                    position: { my: "left top", at: "left bottom", collision: "none" },
+                    position:{my:"left top", at:"left bottom", collision:"none"},
                     data: {
-                      DisplayNamePrefix: request.term,
+                        DisplayNamePrefix: request.term
                     },
                     success: function (data) {
-                      response($.map(data, function (item) {
-                          return {
-                            label: "<div class='name'>" + item.DisplayName + "</div><div class='levelValue'>" + item.Lvl + "</div>",
-                            id: item.DisplayName,
-                            dest: "/Driver/Profile/" + item.LeadAccount + "/" + item.PlayerID
-                          }
+                        response($.map(data, function (item) {
+                            return {
+                                label: "<div class='name'>" + item.DisplayName + "</div><div class='levelValue'>" + item.Lvl + "</div>",
+                                id: item.DisplayName,
+                                dest: "/Driver/Profile/" + item.LeadAccount + "/" + item.PlayerID
+                            }
                         }));
                     }
-                  });
-                },
-                minLength: 1,
-                select: function (event, ui) {
-                  $("#m_menu_search").val(ui.item.id);
-                  document.location.href = ui.item.dest;
-                  // _gaq.push(['_trackEvent', 'PlayerSearch', 'ResultSelected']);
-                  return false;
-                },
-                focus: function(event, ui)
-                {
-                  event.preventDefault();
-                },
-                open: function () {
-                  $(".ui-autocomplete").removeClass("ui-corner-all");
-                  $(".ui-autocomplete .ui-menu-item a").removeClass("ui-corner-all");
-                  $(".ui-autocomplete").css("width", "284px");
-                  $(".ui-autocomplete").css("top", "+=5px");
-                  $(".ui-autocomplete").css("left", "+=10px");
-                  $(".ui-autocomplete").css("padding-left", "8px");
-                },
-                close: function () {
-                  $(this).removeClass("ui-corner-top");
-                }
-              });
-            });
-          </script>
+                });
+            },
+            minLength: 1,
+            select: function (event, ui) {
+                $("#m_menu_search").val(ui.item.id);
+                document.location.href = ui.item.dest;
+                _gaq.push(['_trackEvent', 'PlayerSearch', 'ResultSelected']);
+                return false;
+            },
+            focus: function(event, ui)
+            {
+                event.preventDefault();
+            },
+            open: function () {
+                $('.ui-autocomplete').removeClass("ui-corner-all");
+                $('.ui-autocomplete .ui-menu-item a').removeClass("ui-corner-all");
+                $('.ui-autocomplete').css("width", "284px");
+                $('.ui-autocomplete').css("top", "+=5px");
+                $('.ui-autocomplete').css("left", "+=10px");
+                $('.ui-autocomplete').css("padding-left", "8px");
+            },
+            close: function () {
+                $(this).removeClass("ui-corner-top");
+            }
+        });
+    });
+
+</script>
+</div>
+            <ul>
+                <li class="">
+                <li><a href="./OAuthLogin/Login?returnUrl=">LOG IN</a></li>
+                <li><a href="./Account/SignUp">SIGN UP</a></li>
+                <li class="pointer" id="close"><a>&lt; CLOSE</a></li>
+            </ul>
         </div>
-        <ul>
-          <li class=""></li>
-          <li><a href="./OAuthLogin/Login?returnUrl=%2Fshowdown%2FGameInfo%3Fnodata%3D0">LOG IN</a></li>
-          <li><a href="./Account/SignUp">SIGN UP</a></li>
-          <li class="pointer" id="close"><a>&lt; CLOSE</a></li>
-        </ul>
-      </div>
-      <div id="button" class="hidden-desktop">
-        <img src="./Content/Placeholder/menuButton.png" width="35" height="35" alt="" />
-      </div>
-      <div class="clearfix"></div>
-      <!--Game selector bar -->
-      <div id="gameselector" style="margin-top: 1px; margin-left: 231px;" class="hidden-phone hidden-tablet">
-        <ul class="gamepanel">
-          <li><a href="./F12014" id="gamepanel_f12014" class="gamepanel_link">F1 2014</a></li>
-          <li>
-            <a href="./grid-autosport" id="gamepanel_gridas" class="gamepanel_link">GRID Autosport</a>
-          </li>
-          <li><a href="./F12013" id="gamepanel_f12013" class="gamepanel_link">F1 2013</a></li>
-          <li>
-            <a href="./Grid2" id="gamepanel_grid2" class="gamepanel_link">GRID2</a>
-          </li>
-          <li><a href="./RaceStars" id="gamepanel_racestars" class="gamepanel_link">F1 Race Stars</a></li>
-        </ul>
-      </div>
-    </div>
+        <div id="button" class="hidden-desktop">
+            <img src="https://racenetlegacy.codemasters.com/content/Placeholder/menuButton.png" width="35" height="35" alt="" />
+        </div>
+        <div class="clearfix">
+        </div>
+        <!--Game selector bar -->
+        <div id="gameselector" style="margin-top: 1px; margin-left:231px;" class="hidden-phone hidden-tablet">
+            <ul class="gamepanel">
+                <li><a href="./F12014" id="gamepanel_f12014" class="gamepanel_link">F1 2014</a></li>
+                <li><a href="./grid-autosport" id="gamepanel_gridas" class="gamepanel_link">GRID Autosport</a></li>
+                <li><a href="./F12013" id="gamepanel_f12013" class="gamepanel_link">F1 2013</a></li>
+                <li><a href="./Grid2" id="gamepanel_grid2" class="gamepanel_link">GRID2</a></li>
+                <li><a href="./RaceStars" id="gamepanel_racestars" class="gamepanel_link">F1 Race Stars</a></li>
+                <li><a href="./F12012" id="gamepanel_f12012" class="gamepanel_link">F1 2012</a></li>
+                <li><a href="./Showdown" id="gamepanel_showdown" class="gamepanel_link">DiRT Showdown</a></li>
+            </ul>
+        </div>
+</div>
 {{ else }}
     <script type="text/javascript">
       $(function () {
@@ -214,6 +229,7 @@
       });
     </script>
     <div id="" class="">
+
       <!-- logged in state all logged in menu items here-->
       <div>
         <div id="mainnav">
@@ -247,6 +263,7 @@
                   <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 10; top: 0px; left: 0px; display: none;"></ul>
                 </div>
               </div>
+
               <script type="text/javascript">
                 $(function () {
                   $('#menu_search').click(function () {
@@ -257,7 +274,10 @@
               </script>
               <script type="text/javascript">
                 $["ui"]["autocomplete"].prototype["_renderItem"] = function (ul, item) {
-                  return $("<li></li>").data("item.autocomplete", item).append($("<a></a>").html(item.label)).appendTo(ul);
+                  return $("<li></li>")
+                    .data("item.autocomplete", item)
+                    .append($("<a></a>").html(item.label))
+                    .appendTo(ul);
                 };
 
                 $(function () {
@@ -307,6 +327,7 @@
                     }
                   });
                 });
+
               </script>
             </li>
             <li class="settings"><img class="cogcentre" src="./Content/SiteFrame/settings_icon.png" height="20" width="20" alt="" /></li>
@@ -353,46 +374,52 @@
       <!--logged in ends-->
     </div>
 {{ /if }}
-    <script type="text/javascript">
-      $(document).ready(function () {
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
         $(".settings").click(function () {
-          $("#settings-menu").slideToggle('');
-          $("#gameselector").hide('');
+            $("#settings-menu").slideToggle('');
+            $("#gameselector").hide('');
         });
 
+
         $(".gameselector").click(function () {
-          $("#gameselector").slideToggle('fast');
-          $("#settings-menu").hide('');
+            $("#gameselector").slideToggle('fast');
+            $("#settings-menu").hide('');
         });
 
         $("#gameselector,#settings-menu").mouseleave(function () {
-          $(this).delay(250).slideUp(200);
+            $(this).delay(250).slideUp(200);
+
         });
 
         /*apply grayscale filter to supported titles images on hover*/
         $(".grayscale").hover(function () {
-          $(this).toggleClass("grayscale");
+            $(this).toggleClass("grayscale");
         });
 
         /* check for notifications and display the notification icon */
         CheckNotifications();
 
         window.setInterval(CheckNotifications, 30000);
-      });
-
-      function CheckNotifications()
-      {
-        $.getJSON('/api/RaceNetapi/GetNotificationStatus', function (data)
-        {
-          if (data) {
-            $("#siteframenotification").show();
-          }
-          else {
-            $("#siteframenotification").hide();
-          }
         });
-      }
-    </script>
-  </div>
-</div>
+
+    function CheckNotifications()
+    {
+        $.getJSON('./api/RaceNet/GetNotificationStatus', function(data)
+        {
+            if (data) {
+                $("#siteframenotification").show();
+            }
+            else {
+                $("#siteframenotification").hide();
+            }
+        });
+    }
+
+</script>
+
+                        </div>
+                    </div>
 {{ /if }}

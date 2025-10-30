@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 25,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 70.0
+  },
+  "Objective": {
+    "CurrentValue": 70.0,
+    "LocalizedTitle": "LEADER OF THE PACK",
+    "LocalizedDescription": "WIN A TOTAL OF 100 RIVALRIES",
+    "IsCompleted": false,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_25.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_25@2x.jpg",
+    "ObjectiveId": 25,
+    "ObjectiveTypeId": 7,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_25.jpg",
+    "Name": "win_N_rivalries",
+    "Title": "Objectives_title_win_N_rivalries",
+    "Description": "Objectives_desc_win_N_rivalries",
+    "Format": 1,
+    "Target": 100.0,
+    "FormattedTarget": "100"
+  }
+}

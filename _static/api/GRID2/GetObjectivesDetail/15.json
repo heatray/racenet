@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 15,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 25.0
+  },
+  "Objective": {
+    "CurrentValue": 25.0,
+    "LocalizedTitle": "OVERTAKE WINS",
+    "LocalizedDescription": "Win a total of 25 Overtake events",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_15.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_15@2x.jpg",
+    "ObjectiveId": 15,
+    "ObjectiveTypeId": 2,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_15.jpg",
+    "Name": "overtake_wins",
+    "Title": "Objectives_title_overtake_wins",
+    "Description": "Objectives_desc_overtake_wins",
+    "Format": 1,
+    "Target": 25.0,
+    "FormattedTarget": "25"
+  }
+}

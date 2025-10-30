@@ -1,0 +1,21 @@
+[
+  null,
+  {
+    "Name": "RIVALRIES ENTERED",
+    "MeValue": 46,
+    "ThemValue": 1,
+    "MeName": "Player One",
+    "ThemName": "Player Two",
+    "MeWidthPercent": 97.872340425531917,
+    "ThemWidthPercent": 2.1276595744680851
+  },
+  {
+    "Name": "RIVALRIES WON",
+    "MeValue": 15,
+    "ThemValue": 0,
+    "MeName": "Player One",
+    "ThemName": "Player Two",
+    "MeWidthPercent": 100.0,
+    "ThemWidthPercent": 0.0
+  }
+]

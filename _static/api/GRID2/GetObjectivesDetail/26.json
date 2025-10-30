@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 26,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 200.0
+  },
+  "Objective": {
+    "CurrentValue": 200.0,
+    "LocalizedTitle": "METAL DETECTOR",
+    "LocalizedDescription": "EARN 200 MEDALS IN GLOBAL CHALLENGE EVENTS",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_26.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_26@2x.jpg",
+    "ObjectiveId": 26,
+    "ObjectiveTypeId": 7,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_26.jpg",
+    "Name": "earn_N_medals",
+    "Title": "Objectives_title_earn_N_medals",
+    "Description": "Objectives_desc_earn_N_medals",
+    "Format": 1,
+    "Target": 200.0,
+    "FormattedTarget": "200"
+  }
+}

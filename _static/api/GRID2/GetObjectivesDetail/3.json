@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 3,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 3600.0
+  },
+  "Objective": {
+    "CurrentValue": 3600.0,
+    "LocalizedTitle": "TICK TOCK",
+    "LocalizedDescription": "Add a total of 1 hour in Checkpoint",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_3.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_3@2x.jpg",
+    "ObjectiveId": 3,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_3.jpg",
+    "Name": "checkpoint_time",
+    "Title": "Objectives_title_checkpoint_time",
+    "Description": "Objectives_desc_checkpoint_time",
+    "Format": 2,
+    "Target": 3600.0,
+    "FormattedTarget": "01:00:00"
+  }
+}

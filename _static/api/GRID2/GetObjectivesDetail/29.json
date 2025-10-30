@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 29,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": "697",
+    "CurrentValue": 4.0
+  },
+  "Objective": {
+    "CurrentValue": 4.0,
+    "LocalizedTitle": "CAN’T GET ENOUGH",
+    "LocalizedDescription": "COMPETE IN GLOBAL CHALLENGE EVENTS FOR 5 WEEKS IN A ROW",
+    "IsCompleted": false,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_29.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_29@2x.jpg",
+    "ObjectiveId": 29,
+    "ObjectiveTypeId": 7,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_29.jpg",
+    "Name": "compete_in_gc_for_N_consecutive_weeks",
+    "Title": "Objectives_title_compete_in_gc_for_N_consecutive_weeks",
+    "Description": "Objectives_desc_compete_in_gc_for_N_consecutive_weeks",
+    "Format": 1,
+    "Target": 6.0,
+    "FormattedTarget": "6"
+  }
+}

@@ -1,0 +1,964 @@
+---
+layout: grid2.vto
+title: GRID 2 - RaceNet Followers - Codemasters RaceNet
+nav:
+  - grid2
+  - followers
+api:
+  localisation:             ./api/GRID2/GetLocalisation.json
+  followers_leaderboard:    ./api/GRID2/GetFollowersLeaderboard.json
+  graph_data:               ./api/GRID2/GetGraphData.json
+  followers_preload_images: ./api/GRID2/GetFollowersPreloadImages.json
+---
+<link href="./Content/css/Grid2.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2Refresh.css" rel="stylesheet" type="text/css" />
+
+<script src="./Content/scripts/raphael.2.1.0.min.js"></script>
+
+<script type="text/javascript" src="./Content/scripts/morris-0.4.1.min.js"></script>
+<script type="text/javascript" src="./Content/scripts/RacenetUtils.js"></script>
+
+<script type="text/javascript">
+
+    var recentActivityData = new Array();
+
+    
+    var modeLookup = new Array("0", "1", "2");
+    var spanLookup = new Array("1", "0");
+
+    
+    var leaderboardMode = 0;
+
+    
+    var leaderboardSpan = 0;
+
+    var radioButtonsSpan;
+    var radioButtonsMode;
+    var mobileButtonsSpan;
+    var mobileButtonsMode;
+
+    var modeOpen = false;
+
+    var leaderboardOpen = false;
+
+    var updatingLeaderboard = false;
+    var doneGraphDataCall = false;
+    var populatedGraph = false;
+
+    var mGraphDesktop;
+    var mGraphIpadP;
+    var mGraphIpadL;
+
+    var graphYMax = 0;
+    var graphYMin = 0;
+    var mGraphData = [];
+    var graphMetadata = [];
+
+    var preloadedImages = new Array();
+
+    var noData;
+
+    $(document).ready(function () {
+
+        $.getJSON('{{ api.localisation }}',
+        function (data) {
+
+            
+            $('#g2followers_title_text').html(data.Localisation["Followers_title"]);
+
+            $('#g2f_leaderboard_headers .g2f_col.position').html(data.Localisation["Followers_board_pos"]);
+            $('#g2f_leaderboard_headers .g2f_col.name').html(data.Localisation["Followers_board_id"]);
+            $('#g2f_leaderboard_headers .g2f_col.followers').html(data.Localisation["Followers_board_followers"]);
+            $('#g2f_leaderboard_headers .g2f_col.delta').html(data.Localisation["Followers_board_difference"]);
+            $('#g2f_leaderboard_headers .g2f_col.activity').html(data.Localisation["Followers_board_recent"]);
+
+            $('#g2f_overview').html(data.Localisation["Followers_board_followers"]);
+            $('#g2f_leaderboard').html(data.Localisation["Followers_navigation_leaderboards"]);
+
+            $('#g2f_my_pos_radio').html(data.Localisation["Followers_filter_mine"]);
+            $('#g2f_friends_radio').html(data.Localisation["Followers_filter_friends"]);
+            $('#g2f_top10_radio').html(data.Localisation["Followers_filter_top10"]);
+
+            $('#g2f_overall_radio').html(data.Localisation["Followers_filter_overall"]);
+            $('#g2f_weekly_radio').html(data.Localisation["Followers_filter_weekly"]);
+
+            $('#g2f_overall_radio_m').html(data.Localisation["Followers_filter_overall"]);
+            $('#g2f_weekly_radio_m').html(data.Localisation["Followers_filter_weekly"]);
+
+            $('#g2f_recent_title').html(data.Localisation["Followers_board_recent"]);
+
+            $('#g2f_mob_nav_weekly').html(data.Localisation["Followers_filter_weekly"]);
+            $('#g2f_mob_nav_overall').html(data.Localisation["Followers_filter_overall"]);
+
+            $('#g2f_mob_nav_myPos').html(data.Localisation["Followers_filter_mine"]);
+            $('#g2f_mob_nav_friends').html(data.Localisation["Followers_filter_friends"]);
+            $('#g2f_mob_nav_top10').html(data.Localisation["Followers_filter_top10"]);
+
+            $('#g2f_mob_filter').html(data.Localisation["Mobile_extra_filter_by"]);
+            noData = data.Localisation["No_data"];
+
+            refreshSelectHeaders();
+        });
+
+        initBlankLeaderboard();
+        requestLeaderboard();
+
+        $('#g2f_overview').click(showGraphTab);
+        $('#g2f_leaderboard').click(showLeaderboardTab);
+
+
+        radioButtonsSpan = $('#g2f_leaderboard_controls_span .g2f_radio_button');
+        radioButtonsMode = $('#g2f_leaderboard_controls_mode .g2f_radio_button');
+
+        mobileButtonsSpan = $('#g2f_leaderboard_controls_span_m .g2f_radio_button');
+        mobileButtonsMode = $('#g2f_mobile_nav_lb_mode .g2f_mob_nav_item');
+
+        $('.g2f_radio_button').mouseenter( function() {
+            $(this).children().addClass('over');
+        });
+
+        $('.g2f_radio_button').mouseleave( function() {
+            $(this).children().removeClass('over');
+        });
+
+        $('.g2f_mob_nav_item').mouseenter( function() {
+            $(this).addClass('over');
+        });
+
+        $('.g2f_mob_nav_item').mouseleave( function() {
+            $(this).removeClass('over');
+        });
+
+        $(radioButtonsSpan).click(function () {
+            var idx = radioButtonsSpan.index(this);
+            if(!updatingLeaderboard)
+            {
+                setleaderboardSpan(idx, true);
+            }
+        });
+
+        $(radioButtonsMode).click(function () {
+            var idx = radioButtonsMode.index(this);
+            if(!updatingLeaderboard)
+            {
+                setLeaderboardMode(idx, true);
+            }
+        });
+
+        $(mobileButtonsSpan).click( function() {
+            var idx = mobileButtonsSpan.index(this);
+            if(!updatingLeaderboard)
+            {
+                setleaderboardSpan(idx, true);
+            }
+        });
+
+        $(mobileButtonsMode).click( function() {
+            var idx = mobileButtonsMode.index(this);
+            if(!updatingLeaderboard)
+            {
+                setLeaderboardMode(idx, true);
+            }
+        });
+
+        showGraphTab();
+
+        setLeaderboardMode(0, false);
+        setleaderboardSpan(0, false);
+    });
+
+    function refreshSelectHeaders( )
+    {
+        
+        var activeSpan = $('#g2f_mobile_nav_lb_span .g2f_mob_nav_item.active');
+        if( activeSpan.length > 0 )
+        {
+            $('#g2f_mobile_nav_lb_span_hdr').html( activeSpan.html() );
+        }
+
+        var activeMode = $('#g2f_mobile_nav_lb_mode .g2f_mob_nav_item.active');
+        if( activeMode.length > 0 )
+        {
+            $('#g2f_mobile_nav_lb_mode_hdr').html( activeMode.html() );
+        }
+    }
+
+
+    
+    function setLeaderboardMode(mode, refreshBoard) {
+        leaderboardMode = mode;
+
+        radioButtonsMode.children().removeClass('active');
+        radioButtonsMode.eq(mode).children().addClass('active');
+
+        mobileButtonsMode.removeClass('active');
+        mobileButtonsMode.eq(mode).addClass('active');
+
+        refreshSelectHeaders();        
+
+        if (refreshBoard) {
+            updateLeaderboard();
+        }
+
+    }
+
+    
+    function setleaderboardSpan(span, refreshBoard) {
+        leaderboardSpan = span
+
+        radioButtonsSpan.children().removeClass('active');
+        radioButtonsSpan.eq(span).children().addClass('active');
+
+        mobileButtonsSpan.children().removeClass('active');
+        mobileButtonsSpan.eq(span).children().addClass('active');
+
+        refreshSelectHeaders();
+
+        if (refreshBoard) {
+            updateLeaderboard();
+        }
+    }
+
+    function updateLeaderboard( )
+    {
+        $('#g2f_recent_popup').hide();
+
+        initBlankLeaderboard();
+        requestLeaderboard();
+    }
+
+    function initBlankLeaderboard()
+    {
+        clearDynamicLeaderboardItems();
+
+        var leaderboard = $('#g2followers_leaderboard');
+        var footer = $('#g2f_leaderboard_footer');
+
+        $('#g2f_leaderboard_loader').remove();
+        leaderboard.append( buildHtml( "div", { id: "g2f_leaderboard_loader", class: "g2f_loading_spinner" }));
+
+        var i;
+        for (i = 0; i < 10; ++i) {
+            footer.before(generateLeaderboardRow(null, i, true));
+        }
+
+        footer.before(generateLeaderboardRow(null, -1, true));
+    }
+
+    function clearDynamicLeaderboardItems()
+    {
+        $('.g2f_leaderboard_row').remove();
+        $('#g2f_leaderboard_no_data_wrapper').remove()
+    }
+
+    function requestLeaderboard() {
+
+        updatingLeaderboard = true;
+
+        $.getJSON('{{ api.followers_leaderboard }}', { mode: modeLookup[leaderboardMode], span: spanLookup[leaderboardSpan] },
+        function (data) {
+
+            $('#g2f_leaderboard_loader').fadeOut(400, function() { $(this).remove(); });
+
+            clearDynamicLeaderboardItems();
+
+            updatingLeaderboard = false;
+
+            
+            recentActivityData.length = 0;
+
+            var leaderboard = $('#g2followers_leaderboard');
+            var footer = $('#g2f_leaderboard_footer');
+
+            if (data.Entries.length == 0) {
+                initBlankLeaderboard();
+                $('#g2f_leaderboard_loader').remove();
+                footer.before(generateNoDataLeaderboard());
+            }
+            else {
+                var i;
+                for (i = 0; i < data.Entries.length; ++i) {
+                    footer.before(generateLeaderboardRow(data.Entries[i], i, false));
+                }
+
+                for (; i < 10; ++i) {
+                    footer.before(generateLeaderboardRow(null, i, false));
+                }
+
+                if (data.AdditionalEntry != null) {
+                    footer.before(generateLeaderboardRow(data.AdditionalEntry, -1, false));
+                }
+
+                $('.g2f_recent').mouseenter(function (e) {
+                    var dataId = $(this).attr('data-recent-idx');
+
+                    $('#g2f_rp_message').html(recentActivityData[dataId].Message);
+                    $('#g2f_rp_delta').html(recentActivityData[dataId].DisplayFollowers);
+                    $('#g2f_rp_date').html(recentActivityData[dataId].Date);
+
+                    var width = $(g2f_recent_popup).width();
+                    var height = $(g2f_recent_popup).height();
+                    var thisWidth = $(this).width();
+                    var thisHeight = $(this).height();
+
+                    var left = parseInt($(this).position().left) - (width / 2) + (thisWidth / 2);
+                    var top = parseInt($(this).position().top) - thisHeight - height - 16;
+
+                    $('#g2f_rp_delta_wrapper, #g2f_rp_marker').removeClass("gain");
+                    $('#g2f_rp_delta_wrapper, #g2f_rp_marker').removeClass("loss");
+
+                    if( recentActivityData[dataId].Followers > 0 )
+                    {
+                        $('#g2f_rp_delta_wrapper, #g2f_rp_marker').addClass("gain");
+                    }
+                    else if( recentActivityData[dataId].Followers < 0 )
+                    {
+                        $('#g2f_rp_delta_wrapper, #g2f_rp_marker').addClass("loss");
+                    }
+
+                    $('#g2f_recent_popup').css('left', left);
+                    $('#g2f_recent_popup').css('top', top);
+                    $('#g2f_recent_popup').show();
+                });
+
+                $('.g2f_recent').mouseleave(function () {
+                    $('#g2f_recent_popup').hide();
+                });
+            }
+        }).fail( function() {
+
+            $('#g2f_leaderboard_loader').fadeOut(400, function() { $(this).remove(); });
+
+            clearDynamicLeaderboardItems();
+
+            updatingLeaderboard = false;
+
+            
+            recentActivityData.length = 0;
+
+            var footer = $('#g2f_leaderboard_footer');
+
+            initBlankLeaderboard();
+            $('#g2f_leaderboard_loader').remove();
+            footer.before(generateNoDataLeaderboard());
+        });
+    }
+
+    function generateNoDataLeaderboard()
+    {
+        var html = "<div id=\"g2f_leaderboard_no_data_wrapper\">";
+        html += "<div id=\"g2f_leaderboard_no_data\">" + noData;
+        html += "</div></div>";
+        return html;
+    }
+
+    function generateBlankRow(rowClass) {
+        var html;
+        
+        html = "<div class=\"g2f_leaderboard_row " + rowClass + "\">";
+        html += buildHtml("div", { class: "g2f_col position" });
+        html += buildHtml("div", { class: "g2f_col name" });
+        html += buildHtml("div", { class: "g2f_col followers" });
+        html += buildHtml("div", { class: "g2f_col delta" });
+
+        html += "<div class=\"g2f_col activity\"></div></div>";
+
+        return html;
+    }
+
+    function generateLeaderboardRow( data, row, loading )
+    {
+        var rowClass;
+        var html;
+
+        if( row >= 0 )
+        {
+            if( loading )
+            {
+                rowClass = "blank";
+            }
+            else
+            {
+                if( (row % 2) == 0 )
+                {
+                    rowClass = "even";
+                }
+                else
+                {
+                    rowClass = "odd";
+                }
+            }
+        }
+        else
+        {
+            rowClass = "extra";
+        }
+
+        if (data == null) {
+            return generateBlankRow(rowClass);
+        }
+
+        if( row >= 0 && data.Highlight == true )
+        {
+            rowClass = "highlight";
+        }
+
+        var profileLink = "/driver/0";
+        profileLink = profileLink.replace("0", data.PlayerRNID );
+
+        html ="<div class=\"g2f_leaderboard_row " + rowClass + "\">";
+        html += buildHtml("div", data.Position, { class: "g2f_col position" });
+        
+        html += "<div class=\"g2f_col name\">";
+        if( data.PlayerRNID != -1 )
+        {
+            html += buildHtml("a", data.PlayerName, { href: profileLink, 'class':'ProfileLink' });
+        }
+        else
+        {
+            html += data.PlayerName;
+        }
+
+        html += "</div>";
+
+        html += buildHtml("div", data.DisplayFollowers, { class: "g2f_col followers" });
+        html += buildHtml("div", data.DisplayDelta, { class: "g2f_col delta" });
+
+        html += "<div class=\"g2f_col activity\">";
+        
+        var i;
+        var dataIdx = 0;
+        for( i = 0; i < data.Recent.length && i < 5; ++i )
+        {
+            // Store data...
+            dataIdx = recentActivityData.length;
+
+            recentActivityData.push( data.Recent[i] );
+
+            // Colurise class
+            var blockClass = "g2f_recent";
+            if (data.Recent[i].Followers > 0)
+            {
+                blockClass += " gain";             
+            }
+            else if (data.Recent[i].Followers < 0) {
+                blockClass += " loss";
+            }
+
+            // Add data ID ref to array...
+            html += "<div class=\"" + blockClass + "\" data-recent-idx=\"" + dataIdx + "\"></div>";
+        }
+        html += "</div>";
+        
+        html += "</div>";
+
+        return html;
+    }
+
+    function generateMobileNewsItem(data) {
+
+        var deltaClass = "";
+
+        if (data.Followers > 0) {
+            deltaClass = "gain";
+        }
+        else if (data.Followers < 0) {
+            deltaClass = "loss";
+        }
+
+        var html;
+
+        html = "<div class=\"g2f_activity_item\">";
+        html += "<div class=\"g2f_activity_message\">" + data.Message + "</div>";
+        html += "<div class=\"g2f_activity_sub_block\">";
+        html += "<div class=\"g2f_activity_date\">" + data.LongDate + "</div>";
+        html += "<div class=\"g2f_activity_delta " + deltaClass + "\">"
+        html += "<div class=\"g2f_activity_delta_icon_arrow g2f_delta_icon_arrow\"></div>";
+        html += "<div class=\"g2f_activity_delta_icon g2_followers_icon white\"></div>";
+        html += "<div class=\"g2f_activity_delta_v_separator\"></div>";
+        html += "<div class=\"g2f_activity_delta_value\">" + data.DisplayFollowers + "</div>";
+        html += "</div></div>";
+        html += "</div>";
+
+        return html;
+    }
+
+    function showLeaderboardTab() {
+        $('.g2f_page_tab_button').removeClass("active");
+        $('#g2f_leaderboard').addClass("active");
+        $('#g2f_infobar_chart').hide();
+        $('#g2f_infobar_leaderboard').show();
+
+        $('#g2f_overview_wrapper').hide();
+        $('#g2followers_leaderboard').show();
+        $('#g2f_leaderboard_controls_span').show();
+        $('#g2f_leaderboard_controls_mode').show();
+
+        leaderboardOpen = true;
+        
+        fixBackerHeight( '#g2f_mobile_bg', '#g2followers_leaderboard' );
+    }
+
+    function showGraphTab() {
+        $('.g2f_page_tab_button').removeClass("active");
+        $('#g2f_overview').addClass("active");
+
+        $('#g2followers_leaderboard').hide();
+        $('#g2f_leaderboard_controls_span').hide();
+        $('#g2f_leaderboard_controls_mode').hide();
+        $('#g2f_overview_wrapper').show();
+        $('#g2f_infobar_leaderboard').hide();
+        $('#g2f_infobar_chart').show();
+
+        leaderboardOpen = false;
+
+        fixBackerHeight( '#g2f_mobile_bg', '#g2f_overview_wrapper' );
+
+        if( !doneGraphDataCall )
+        {
+            fixBackerHeightToWindow( '#g2f_mobile_bg' );
+            requestGraphData();
+            doneGraphDataCall = true;   
+        }
+    }
+
+    
+    function requestGraphData() {
+        $.getJSON('{{ api.graph_data }}',
+        function (data) {
+
+            $('#g2f_graph_loader').fadeOut(400, function() { $(this).remove(); });
+            $('#g2f_graph_bg').fadeIn();
+
+            if( data.GraphNodes.length == 0 )
+            {
+                
+            }
+            else
+            {
+                populatedGraph = true;
+
+                var mobileActivity = $('#g2_followers_activity');
+
+                var i;
+                for (i = 0; i < data.GraphNodes.length; ++i) {
+
+                    var yValue = data.GraphNodes[i].Y;
+
+                    mGraphData.push({ x: i, y: yValue });
+                    graphMetadata.push(data.GraphNodes[i].DisplayData);
+
+                    mobileActivity.prepend(generateMobileNewsItem(data.GraphNodes[i].DisplayData));
+                }
+
+                graphYMax = data.MaxY;
+                graphYMin = data.MinY;
+
+                initMorrisGraphs();
+
+                setAxisValues( data.YAxisValues );
+            }
+
+            fixBackerHeight( '#g2f_mobile_bg', '#g2f_overview_wrapper' );
+           
+        }).fail( function() {
+            $('#g2f_graph_loader').fadeOut(400, function() { $(this).remove(); });
+        });
+    }
+
+    function preloadImages()
+    {
+        $.getJSON('{{ api.followers_preload_images }}',
+        function (data) {
+            for( i = 0; i < data.Images.length; ++i )
+            {
+                preloadedImages[i] = new Image();
+                preloadedImages[i].src = data.Images[i];
+            }
+        });
+    }
+
+
+</script>
+
+<div id="wrapper" class="followers_page">
+
+<div id="g2f_wrapper" class="row wrapper">
+
+    
+    <div class="g2followers_header" class="infobar_anchor">
+        <div id="g2followers_title" class="g2f_desktop">
+            <span id="g2followers_title_text"></span><span id="g2f_infobar_chart"><span class="infobar_infoicon"><span class="infobar_pointer"></span></span><span class="infobar_content">The Followers chart shows how many Followers you’ve gained or lost while competing in GRID 2. Hover over each point on the graph to see how you won or lost Followers</span></span><span id="g2f_infobar_leaderboard"><span class="infobar_infoicon"><span class="infobar_pointer"></span></span><span class="infobar_content">The Followers leaderboard shows you how you compare with the rest of the RaceNet community. Use the filters to see who tops the weekly or overall leaderboards or compare with friends</span></span>
+        </div>
+        
+        <div id="g2f_page_controls" class="g2f_control_container"> 
+        <ul>
+            <li id="g2f_overview" class="g2f_page_tab_button"></li>
+            <li id="g2f_leaderboard" class="g2f_page_tab_button"></li>
+        </ul>
+        </div>
+
+        <div id="g2followers_title_icon" class="g2_followers_icon g2f_desktop"></div>
+    </div>
+
+    <div id="g2f_mobile_bg" class="g2f_mobile g2followers_bg tile"></div>
+
+    
+    <div id="g2followers_leaderboard">
+
+        
+            <div id="g2f_leaderboard_controls_span_m" class="g2f_control_container g2f_mobile">
+                <div id="g2f_mob_filter"></div>
+                <div id="g2f_overall_wrapper_m" class="g2f_radio_button">
+                    <div id="g2f_overall_radio_m" class="g2f_radio_button_text white"></div>
+                    <div class="g2f_radio_button_img white"></div>
+                </div>
+
+                <div id="g2f_weekly_wrapper_m" class="g2f_radio_button">
+                    <div id="g2f_weekly_radio_m" class="g2f_radio_button_text white"></div>
+                    <div class="g2f_radio_button_img white"></div>
+                </div>
+            </div>
+
+        <div class="g2f_mobile g2f_mob_nav_wrapper">
+        <div id="g2f_mobile_nav_control_mode" class="g2f_mobile">
+            <div class="g2f_mob_nav_drop_arrow"></div>
+            <div id="g2f_mobile_nav_lb_mode_hdr" class="g2f_lb_select"></div>
+            <div id="g2f_mobile_nav_lb_mode" class="g2f_mobile" style="display:none">
+                <div id="g2f_mob_nav_myPos" class="g2f_mob_nav_item"></div>
+                <div id="g2f_mob_nav_friends" class="g2f_mob_nav_item"></div>
+                <div id="g2f_mob_nav_top10" class="g2f_mob_nav_item"></div>
+            </div>
+        </div>
+        </div>
+        
+    
+        <div id="g2f_leaderboard_anchor" style="position:relative;">
+            <div id="g2f_leaderboard_bg" class="g2followers_bg"></div>
+
+            
+            <div id="g2f_leaderboard_headers">
+                
+                <div class="g2f_col position">POS.</div><div class="g2f_col name">DISPLAY NAME</div><div class="g2f_col followers">FOLLOWERS</div><div class="g2f_col delta">+/-</div><div class="g2f_col activity">RECENT ACTIVITY</div>
+            </div>
+
+            
+        </div>
+
+        
+
+        
+        <div id="g2f_leaderboard_footer"></div>
+
+        <div id="g2f_recent_popup" class="g2f_shadow" style="display:none">
+            <div id="g2f_rp_message"></div>
+            <div id="g2f_rp_date"></div>
+            <div id="g2f_rp_delta_wrapper">
+                <div id="g2f_rp_delta_icon" class="g2f_delta_icon_arrow"></div>
+                <div id="g2f_rp_icon" class="g2_followers_icon white"></div>
+                <div id="g2f_rp_delta"></div>
+            </div>        
+            <div id="g2f_rp_marker"></div>
+        </div>
+
+         
+        <div id="g2followers_navigation" class="g2f_desktop">
+            
+            <div id="g2f_leaderboard_controls_span" class="g2f_control_container">
+                <div id="g2f_overall_wrapper" class="g2f_radio_button">
+                    <div id="g2f_overall_radio" class="g2f_radio_button_text"></div>
+                    <div class="g2f_radio_button_img black"></div>
+                </div>
+
+                <div id="g2f_weekly_wrapper" class="g2f_radio_button">
+                    <div id="g2f_weekly_radio" class="g2f_radio_button_text"></div>
+                    <div class="g2f_radio_button_img black"></div>
+                </div>
+            </div>
+
+            
+            <div id="g2f_leaderboard_controls_mode" class="g2f_control_container">
+                <div id="g2f_my_pos_wrapper" class="g2f_radio_button">
+                    <div id="g2f_my_pos_radio" class="g2f_radio_button_text"></div>
+                    <div class="g2f_radio_button_img black"></div>
+                </div>
+                <div id="g2f_friends_wrapper" class="g2f_radio_button">
+                    <div id="g2f_friends_radio" class="g2f_radio_button_text"></div>
+                    <div class="g2f_radio_button_img black"></div>
+                </div>
+                <div id="g2f_top10_wrapper" class="g2f_radio_button">
+                    <div id="g2f_top10_radio" class="g2f_radio_button_text"></div>
+                    <div class="g2f_radio_button_img black"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="g2f_overview_wrapper">
+        <div id="g2f_graph_loader" class="g2f_loading_spinner"></div>
+        
+        <div id="g2followers_graph" class="g2f_desktop">
+            <div id="g2f_graph_bg" class="g2followers_bg"></div>
+            
+            <div id="followers_axis">
+                <div id="axis_100pc" class="g2f_axis_mark"></div>
+                <div id="axis_75pc" class="g2f_axis_mark"></div>
+                <div id="axis_50pc" class="g2f_axis_mark"></div>
+                <div id="axis_25pc" class="g2f_axis_mark"></div>
+                <div id="axis_0pc" class="g2f_axis_mark"></div>
+            </div>
+            <div id="followers_graph_desktop" class="followers_graph"></div>
+            <div id="followers_graph_ipad_l" class="followers_graph"></div>
+            <div id="followers_graph_ipad_p" class="followers_graph"></div>
+            <div id="followers_graph_smaller"></div>
+            <div id="g2f_graph_footer">
+                <div id="gf_followers_delta" class="gf_footer_item">
+                    <div id="gf_delta_icon_arrow" class="g2f_delta_icon_arrow"></div>
+                    <div id="gf_delta_icon" class="g2_followers_icon white"></div>
+                    <div id="gf_delta_value"></div>
+                </div>
+                <div id="gf_date" class="gf_footer_item"></div>
+                <div id="gf_message_outer" class="gf_footer_item">
+                    <div id="gf_message" class="gf_footer_item"></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div>
+            <div id="g2f_recent_title" class="g2f_mobile"></div>
+            <div id="g2_followers_activity" class="g2f_mobile"></div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready( function() {
+        $("#g2f_mobile_nav_control_mode").click( function() {
+            toggleModeDropdown();
+        });
+
+        
+        fixBackerWidth(parseInt($(window).width()), '#g2f_mobile_bg');
+
+        $(window).resize(function ()
+        {
+            fixBackerWidth(parseInt($(window).width()), '#g2f_mobile_bg');
+        });
+
+        preloadImages();
+
+    });
+
+    function fixBackerHeight( id, matchId )
+    {
+        if( populatedGraph )
+        {   //changed this from +64 to - 40 so the new footer could be displayed 
+            $(id).css('height', $(matchId).height() - 40 );
+        }
+        else
+        {
+            fixBackerHeightToWindow( id );
+        }
+    }
+
+    function fixBackerHeightToWindow( id )
+    {
+        var backer = $(id);
+        var height = $(window).height() - backer.position().top - 1;
+        backer.css('height', height );
+    }
+
+    function fixBackerWidth( windowWidth, id )
+    {
+        var backer = $(id);
+        var width = backer.parent().outerWidth();
+
+        if( windowWidth < width )
+        {
+            backer.css('width', width + 16);
+        }
+        else
+        {
+            backer.css('width', windowWidth);
+        }
+
+        // Which is visible?
+        if( leaderboardOpen )
+        {
+            fixBackerHeight( '#g2f_mobile_bg', '#g2followers_leaderboard' );
+        }
+        else
+        {
+            fixBackerHeight( '#g2f_mobile_bg', '#g2f_overview_wrapper' );
+        }
+    }
+
+    function toggleModeDropdown()
+    {
+        $("#g2f_mobile_nav_lb_mode").slideToggle();
+        modeOpen = !modeOpen;
+
+        if(modeOpen)
+        {
+            $('.g2f_mob_nav_drop_arrow').addClass("up");
+        }
+        else
+        {
+            $('.g2f_mob_nav_drop_arrow').removeClass("up");
+        }
+    }
+
+
+    function calculateDotHeight( value, min, max )
+    {
+        var range = max - min;
+        var progress = value - min;
+        progress = Math.max( progress, 0 );
+
+        var height = 100 -( ( progress / range ) * 100 );
+
+        
+        var diff = Math.abs( height - 50 );
+        var mod = diff / 50;
+
+        mod = Math.max( mod, 0 );
+        mod = Math.min( mod, 1 );
+
+        var nudge = 7 * mod; 
+
+        if( height > 50 )
+        {
+            height -= nudge;
+            height += 1; 
+        }
+        else
+        {
+            height += nudge;
+        }
+
+        
+        height -= 3.5;
+
+        height += "%";
+        return height;
+    }
+
+    function setAxisValues( data )
+    {
+        var display = graphYMax;
+
+        $('#axis_100pc').html( data[4] );
+        $('#axis_75pc').html( data[3] );
+        $('#axis_50pc').html( data[2] );
+        $('#axis_25pc').html( data[1] );
+        $('#axis_0pc').html( data[0] );
+    }
+
+    function graphHover( index, options )
+    {
+        if (index >= 0 && index < graphMetadata.length) {
+            $('#gf_message').html(graphMetadata[index].Message);
+            $('#gf_message').css("font-size",20);
+            var i = 0;
+            while($('#gf_message').width() > $('#gf_message_outer').width() && i++ < 10)
+            {
+                size = parseInt($('#gf_message').css("font-size"),10);
+                $('#gf_message').css("font-size", size - 1);
+            }
+            $('#gf_date').html(graphMetadata[index].LongDate);
+            $('#gf_delta_value').html(graphMetadata[index].DisplayFollowers);
+
+            $('#gf_followers_delta').removeClass('gain');
+            $('#gf_followers_delta').removeClass('loss');   // Combine?
+            $('.g2f_graph_dot').removeClass('red');
+            $('.g2f_graph_dot').removeClass('green');
+
+            var delta = graphMetadata[index].Followers;
+            if (delta > 0) {
+                $('#gf_followers_delta').addClass('gain');
+                $('.g2f_graph_dot').addClass('green');                        
+            }
+            else if (delta < 0) {
+                $('#gf_followers_delta').addClass('loss');
+                $('.g2f_graph_dot').addClass('red');
+            }
+
+            var el = (options == null) ? $('.g2f_graph_dot') : $('#'+this.element).find('.g2f_graph_dot');
+            el.css('top', calculateDotHeight( mGraphData[index].y, graphYMin, graphYMax ) );
+            
+            this.currentHover = index;
+            $.each([mGraphIpadP, mGraphIpadL, mGraphDesktop], function (i, x)
+            {
+                if(x && x.currentHover != index)
+                {
+                    x.currentHover = index;
+                    x.displayHoverForRow(index);
+                }
+            });
+        }
+    }
+
+    $(window).resize(function () {
+        $.each([mGraphIpadP, mGraphIpadL, mGraphDesktop], function ()
+        {
+            if(this && typeof this.currentHover !== 'undefined')
+            {
+                this.displayHoverForRow(this.currentHover);
+            }
+        });
+    });
+
+    
+    function doMorris( elementName, data, yMin ) {
+
+        var graph = Morris.Line({
+            element: elementName,
+            data: data,
+            xkey: 'x',
+            ykeys: ['y'],
+            labels: ['Followers'],
+            smooth: false,
+            parseTime: true,
+            xLabels: "day",
+            ymin: yMin,
+            gridEnabled: true,
+            lineColors: ['#888888'],
+            axes: false,
+            events: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+            eventLineColors: ['#888888'],
+            hoverCallback: graphHover 
+        });
+
+        graph.element = elementName;
+        return graph;
+    }
+
+
+    
+    //$(document).ready( function() {
+    function initMorrisGraphs()
+    {
+        $('.followers_graph').show();
+
+        mGraphDesktop = doMorris( 'followers_graph_desktop', mGraphData, graphYMin);
+        mGraphIpadP = doMorris('followers_graph_ipad_p', mGraphData, graphYMin);
+        mGraphIpadL = doMorris( 'followers_graph_ipad_l', mGraphData, graphYMin);
+
+        $('#followers_graph_desktop > svg').attr({'width':'1090'});
+        $(".morris-hover").append( buildHtml("div", {class: "g2f_graph_dot" }));
+        $(".morris-hover").append( buildHtml("div", {class: "g2f_graph_pointer" }));
+
+        
+        graphHover( mGraphData.length - 1, null );
+
+
+        
+        $('.followers_graph').removeAttr( 'style' );
+    }
+    //});
+    
+</script>

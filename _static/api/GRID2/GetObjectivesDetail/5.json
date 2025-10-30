@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 5,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 1609344.0
+  },
+  "Objective": {
+    "CurrentValue": 1609344.0,
+    "LocalizedTitle": "KEEP ON RACING",
+    "LocalizedDescription": "Travel a total distance of 1,000 miles",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_5.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_5@2x.jpg",
+    "ObjectiveId": 5,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_5.jpg",
+    "Name": "distance",
+    "Title": "Objectives_title_distance",
+    "Description": "Objectives_desc_distance",
+    "Format": 3,
+    "Target": 1609344.0,
+    "FormattedTarget": "1609344"
+  }
+}

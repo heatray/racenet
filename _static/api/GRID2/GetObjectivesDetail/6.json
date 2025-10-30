@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 6,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 700000.0
+  },
+  "Objective": {
+    "CurrentValue": 700000.0,
+    "LocalizedTitle": "DRIFT KING",
+    "LocalizedDescription": "Achieve a score higher than 700,000 in a drift event",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_6.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_6@2x.jpg",
+    "ObjectiveId": 6,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_6.jpg",
+    "Name": "drift_score",
+    "Title": "Objectives_title_drift_score",
+    "Description": "Objectives_desc_drift_score",
+    "Format": 1,
+    "Target": 700000.0,
+    "FormattedTarget": "700000"
+  }
+}

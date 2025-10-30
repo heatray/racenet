@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 18,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 50.0
+  },
+  "Objective": {
+    "CurrentValue": 50.0,
+    "LocalizedTitle": "CLOSE QUARTERS",
+    "LocalizedDescription": "Achieve a total of 50 passes in Touge",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_18.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_18@2x.jpg",
+    "ObjectiveId": 18,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_18.jpg",
+    "Name": "touge_pass",
+    "Title": "Objectives_title_touge_pass",
+    "Description": "Objectives_desc_touge_pass",
+    "Format": 1,
+    "Target": 50.0,
+    "FormattedTarget": "50"
+  }
+}

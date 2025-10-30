@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 4,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 25.0
+  },
+  "Objective": {
+    "CurrentValue": 25.0,
+    "LocalizedTitle": "CHECKPOINT WINS",
+    "LocalizedDescription": "Win a total of 25 Checkpoint events",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_4.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_4@2x.jpg",
+    "ObjectiveId": 4,
+    "ObjectiveTypeId": 2,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_4.jpg",
+    "Name": "checkpoint_wins",
+    "Title": "Objectives_title_checkpoint_wins",
+    "Description": "Objectives_desc_checkpoint_wins",
+    "Format": 1,
+    "Target": 25.0,
+    "FormattedTarget": "25"
+  }
+}

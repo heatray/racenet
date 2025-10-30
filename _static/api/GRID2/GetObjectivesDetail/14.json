@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 14,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 25.0
+  },
+  "Objective": {
+    "CurrentValue": 25.0,
+    "LocalizedTitle": "FACEOFF WINS",
+    "LocalizedDescription": "Win a total of 25 Faceoff events",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_14.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_14@2x.jpg",
+    "ObjectiveId": 14,
+    "ObjectiveTypeId": 2,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_14.jpg",
+    "Name": "faceoff_wins",
+    "Title": "Objectives_title_faceoff_wins",
+    "Description": "Objectives_desc_faceoff_wins",
+    "Format": 1,
+    "Target": 25.0,
+    "FormattedTarget": "25"
+  }
+}

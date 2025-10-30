@@ -1,0 +1,385 @@
+---
+layout: grid2.vto
+title: GRID 2 - Videos - Codemasters RaceNet
+nav:
+  - grid2
+  - videos
+api:
+  youtube_videos:       ./api/GRID2/GetYouTubeVideos.json
+  youtube_localisation: ./api/GRID2/GetYouTubeLocalisation.json
+---
+<script src="./Content/scripts/knockout-2.2.1.js" type="text/javascript"></script>
+<script src="./Content/scripts/jquery.ba-hashchange.min.js" type="text/javascript"></script>
+
+<link href="./Content/css/Grid2Refresh.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2YouTube.css" rel="stylesheet" type="text/css" />
+
+<div id="wrapper" class="youtube_page">
+    <div id="MainContent" class="grid2 youtube infobar_anchor">
+        <h1>
+            <div class="content">
+                <div id="youtube_icon"></div>
+                <div id="header_text"><span id="header_text_content" data-bind="text: loc.Frame_title_video"></span><span id="g2v_infobar"><span class="infobar_infoicon"><span class="infobar_pointer"></span></span><span class="infobar_content">You can check the your latest uploaded YouTube videos and those uploaded by the entire community. In order to upload a video you will need link your YouTube account and access the YouTube feature during a reply in game.</span></span></div>
+            </div>
+        </h1>
+
+        <div id="video" data-bind="with: selectedVideo">
+            <iframe class="embed" data-bind="attr: { src: embedUrl }" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+            <div class="video_footer">
+                <div class="video_stats">
+                    <div class="likes">
+                        <span data-bind="text: likesText"></span>
+                    </div>
+
+                    <div class="views" data-bind="text: viewsText"></div>
+                </div>
+
+                <div class="video_info">
+                    <div class="video_title" data-bind="text: title"></div>
+                    <div class="video_desc"><a data-bind="text: channelText, attr: { href: channelUrl }"></a></div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div id="video_list">
+            <nav class="video_view">
+                <ul>
+                    <li><a data-bind="text: loc.YouTube_type_community, css: { active: view() == 'community' }" href="javascript:void(viewModel.view('community'))"></a></li>
+                    <li><a data-bind="text: loc.YouTube_type_personal, css: { active: view() == 'personal' }" href="javascript:void(viewModel.view('personal'))"></a></li>
+                </ul>
+            </nav>
+            <div class="youtube_mobile g2f_mob_nav_wrapper">
+                <div id="youtube_mobile_sort_select" class="youtube_nav">
+                    <div class="g2f_mob_nav_drop_arrow"></div>
+                    <div id="youtube_mobile_sort_hdr" class="g2f_lb_select" data-bind="text: sortText"></div>
+                    <div id="youtube_mobile_sort" style="display:none">
+                            <div id="youtube_mobile_sort_liked" data-bind="text: loc.YouTube_order_liked, css: { active: sort() == &#39;liked&#39; }" onclick="viewModel.sort('liked')" class="g2f_mob_nav_item"></div>
+                            <div id="youtube_mobile_sort_viewed" data-bind="text: loc.YouTube_order_viewed, css: { active: sort() == &#39;viewed&#39; }" onclick="viewModel.sort('viewed')" class="g2f_mob_nav_item"></div>
+                            <div id="youtube_mobile_sort_latest" data-bind="text: loc.YouTube_order_latest, css: { active: sort() == &#39;latest&#39; }" onclick="viewModel.sort('latest')" class="g2f_mob_nav_item"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="container_wrapper">
+                <div class="container">
+                    <ul class="inner_container" data-bind="foreach: videos">
+                        <li class="list_video" data-bind="click: show, css: { active: active() }">
+                            <div class="image">
+                                <img data-bind="attr: { src: thumbnail }" />
+                            </div>
+                            <div class="video_info">
+                                <div class="title" data-bind="text: title"></div>
+                                <div class="desc" data-bind="text: channelText"></div>
+                                <div class="views" data-bind="text: viewsText"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom_fade youtube_not_mobile"></div>
+            </div>
+
+            <nav class="video_sort">
+                <ul>
+                        <li class="g2f_radio_button">
+                            <a  class="g2f_radio_button_text" data-bind="css: { active: sort() == &#39;liked&#39; }" href="javascript:void(viewModel.sort('liked'))">
+                                <span data-bind="text: loc.YouTube_order_liked"></span>
+                                <div class="g2f_radio_button_img white" data-bind="css: { active: sort() == &#39;liked&#39; }"></div>
+                            </a>
+                        </li>
+                        <li class="g2f_radio_button">
+                            <a  class="g2f_radio_button_text" data-bind="css: { active: sort() == &#39;viewed&#39; }" href="javascript:void(viewModel.sort('viewed'))">
+                                <span data-bind="text: loc.YouTube_order_viewed"></span>
+                                <div class="g2f_radio_button_img white" data-bind="css: { active: sort() == &#39;viewed&#39; }"></div>
+                            </a>
+                        </li>
+                        <li class="g2f_radio_button">
+                            <a  class="g2f_radio_button_text" data-bind="css: { active: sort() == &#39;latest&#39; }" href="javascript:void(viewModel.sort('latest'))">
+                                <span data-bind="text: loc.YouTube_order_latest"></span>
+                                <div class="g2f_radio_button_img white" data-bind="css: { active: sort() == &#39;latest&#39; }"></div>
+                            </a>
+                        </li>
+                </ul>
+
+                <div class="clearfix"></div>
+            </nav>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var viewModel = {
+        selectedVideo: ko.observable(),
+        videos: ko.observableArray([]),
+        view: ko.observable('community'),
+        sort: ko.observable('latest'),
+
+        loc: {
+            'Frame_title_video': ko.observable('VIDEOS'),
+            'YouTube_type_community': ko.observable('COMMUNITY'),
+            'YouTube_type_personal': ko.observable('MY VIDEOS'),
+            'YouTube_order_liked': ko.observable('MOST LIKED'),
+            'YouTube_order_viewed': ko.observable('MOST VIEWED'),
+            'YouTube_order_latest': ko.observable('LATEST'),
+            'YouTube_main_likes': ko.observable('LIKES:'),
+            'YouTube_main_views': ko.observable('VIEWS:'),
+            _: null
+        }
+    };
+
+    function VideoModel(data)
+    {
+        for(var n in data)
+            this[n] = ko.observable(data[n]);
+
+        this.url = ko.computed(function () {
+            return document.location.protocol + '//www.youtube.com/v/' + this.id();
+        }, this);
+
+        this.watchUrl = ko.computed(function () {
+            return document.location.protocol + '//www.youtube.com/watch?v=' + escape(this.id());
+        }, this);
+
+        this.embedUrl = ko.computed(function () {
+            return document.location.protocol + '//www.youtube.com/embed/' + this.id() + '?wmode=transparent' + (this.autoPlay ? '&autoplay=1' : '');
+        }, this);
+
+        this.thumbnail = ko.computed(function () {
+            return document.location.protocol + '//img.youtube.com/vi/' + this.id() + '/default.jpg';
+        }, this);
+
+        this.channelText = this.raceNetUser();
+        this.channelUrl = ko.computed(function () {
+            return '/driver/__driver_id__'.replace(/__driver_id__/g, this.RNID());
+        }, this);
+
+        this.likesText = ko.computed(function () {
+            return viewModel.loc.YouTube_main_likes() + ' ' + this.likes();
+        }, this);
+
+        this.viewsText = ko.computed(function () {
+            return viewModel.loc.YouTube_main_views() + ' ' + this.views();
+        }, this);
+
+        this.active = ko.computed(function () {
+            if (viewModel.selectedVideo() == null)
+                return false;
+
+            return this.id() == viewModel.selectedVideo().id();
+        }, this);
+
+        var self = this;
+        this.show = function () {
+            if ($('#video').is(':visible')) {
+                location.hash = '#!' + self.id();
+            }
+            else
+                window.location = self.embedUrl();
+        };
+    }
+
+    function updateVideoList() {
+        $.getJSON('{{ api.youtube_videos }}?view=' + escape(viewModel.view()) + "&sort=" + escape(viewModel.sort()),
+        function (data) {
+            var ids = $.map(data, function (item) { return item.videoID; }).join();
+            var videoMap = {};
+            var targetID = null;
+
+            $.each(data, function (idx, item) { videoMap[item.videoID] = item; });
+
+            if (document.location.hash.indexOf("#!") == 0) {
+                targetID = document.location.hash.substr(2);
+                data.push(targetID);
+            }
+
+            // gapi.client.youtube.videos.list({
+            //     id: ids,
+            //     part: "id,snippet,statistics"
+            // }).execute(function (resp) {
+            var videos = [{ "items": [] }];
+            videos[0].items = $.map(data, function (item) {
+                return {
+                    "id": item.videoID,
+                    "snippet": {
+                        "title": "VIDEO TITLE",
+                        "channel": "CHANNEL TITLE",
+                        "description": "VIDEO DESCRIPTION",
+                        "publishedAt": "2025-07-25T10:07:47.6978029+00:00",
+                    },
+                    "statistics": {
+                        "viewCount": 999,
+                        "likeCount": 99,
+                        "dislikeCount": 99,
+                    }
+                };
+            });
+            console.log(videos);
+            videos.forEach(function (resp) {
+
+                var items = $.map(resp.items || [], function (item) {
+                    var src = videoMap[item.id];
+
+                    return new VideoModel({
+                        id: item.id,
+                        title: item.snippet.title,
+                        channel: item.snippet.channelTitle,
+                        description: item.snippet.description,
+                        publishedAt: item.snippet.publishedAt,
+                        views: item.statistics.viewCount,
+                        likes: item.statistics.likeCount,
+                        dislikes: item.statistics.dislikeCount,
+
+                        RNID: src.userID,
+                        raceNetUser: src.userName
+                    });
+                });
+
+                switch(viewModel.sort())
+                {
+                case 'latest':
+                    items.sort(function (a, b) { return new Date(b.publishedAt()) - new Date(a.publishedAt()); });
+                    break;
+                case 'liked':
+                    items.sort(function (a, b) { return b.likes() - a.likes(); });
+                    break;
+                case 'latest':
+                    items.sort(function (a, b) { return b.views() - a.views(); });
+                    break;
+                }
+
+                viewModel.videos(items);
+                if (items.length > 0 && viewModel.selectedVideo() == null) {
+
+                    if (targetID != null) {
+                        var list = $.grep(items, function (item) { return item.id() == targetID; });
+
+                        if (list.length > 0) {
+                            viewModel.selectedVideo(list[0]);
+                            return;
+                        }
+                    }
+
+                    viewModel.selectedVideo(items[0]);
+                }
+            });
+        });
+    }
+
+    function updateListScroll()
+    {
+        var scrollBox = $('#video_list .container');
+        var jsp = scrollBox.data('jsp');
+
+        if($(window).width() >= 1024)
+        {
+            if(!jsp)
+            {
+                // Init JSP
+                scrollBox.jScrollPane({
+                    contentWidth: '0px',
+                    hideFocus: true
+                });
+                jsp = scrollBox.data('jsp');
+
+                $(jsp.getContentPane()).attr('data-bind', scrollBox.data('bind'));
+                scrollBox.attr('data-bind', '');
+            }
+            else
+                jsp.reinitialise();
+        }
+        else if(jsp)
+        {
+            // Destroy jsp.
+            var content = $(jsp.getContentPane());
+            scrollBox.attr('data-bind', content.data('bind'));
+            content.attr('data-bind', '');
+            jsp.destroy();
+        }
+    }
+
+    $(function () {
+
+        $("#youtube_mobile_sort_select").click( function() {
+            toggleSortDropdown();
+        });
+
+        viewModel.sortText = ko.computed(function () {
+            return viewModel.loc['YouTube_order_' + viewModel.sort()]();
+        });
+        viewModel.loc.Frame_title_video.subscribe(function (newValue) {
+            document.title = newValue;
+        });
+
+        ko.applyBindings(viewModel);
+        viewModel.view.subscribe(updateVideoList);
+        viewModel.sort.subscribe(updateVideoList);
+        viewModel.videos.subscribe(function () {
+            var jsp = $('#video_list .container').data('jsp');
+            if(jsp)
+                jsp.reinitialise();
+        });
+
+        $(window).hashchange(function () {
+            if (document.location.hash.indexOf('#!') == 0) {
+                var videoID = document.location.hash.substr(2);
+                var items = $.grep(viewModel.videos(), function (item) { return item.id() == videoID; });
+
+                if (items.length > 0) {
+                    viewModel.selectedVideo(items[0]);
+                }
+                else
+                    updateVideoList();
+            }
+        }).resize(updateListScroll);
+
+        $.getJSON('{{ api.youtube_localisation }}',
+        function (loc) {
+            for(var name in loc)
+            {
+                viewModel.loc[name](loc[name]);
+            }
+        });
+
+        updateListScroll();
+    });
+
+    function gapiReallyReady() {
+    }
+
+    function gapiReady() {
+        gapi.auth.init(function () {
+            window.setTimeout(gapiReallyReady, 1);
+        });
+    }
+
+    var sortOpen = false;
+    function toggleSortDropdown()
+    {
+        $("#youtube_mobile_sort").slideToggle();
+        sortOpen = !sortOpen;
+
+        if(sortOpen)
+        {
+            $('.g2f_mob_nav_drop_arrow').addClass("up");
+        }
+        else
+        {
+            $('.g2f_mob_nav_drop_arrow').removeClass("up");
+        }
+    }
+
+    function youtube_videos_list(obj) {
+        console.log(obj.id);
+    }
+
+    updateVideoList();
+</script>
+
+<script src="https://apis.google.com/js/client.js?onload=gapiReady"></script>
+

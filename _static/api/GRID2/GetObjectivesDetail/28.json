@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 28,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 5000.0
+  },
+  "Objective": {
+    "CurrentValue": 5000.0,
+    "LocalizedTitle": "#WINNER",
+    "LocalizedDescription": "STEAL A TOTAL OF 10,000 FOLLOWERS FROM YOUR RIVALS",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_28.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_28@2x.jpg",
+    "ObjectiveId": 28,
+    "ObjectiveTypeId": 7,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_28.jpg",
+    "Name": "steal_N_total_followers",
+    "Title": "Objectives_title_steal_N_total_followers",
+    "Description": "Objectives_desc_steal_N_total_followers",
+    "Format": 1,
+    "Target": 5000.0,
+    "FormattedTarget": "5000"
+  }
+}

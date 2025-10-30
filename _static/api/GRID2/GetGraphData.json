@@ -1,0 +1,413 @@
+{
+  "GraphNodes": [
+    {
+      "X": 19,
+      "Y": 281409,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-07-25T10:07:47.6978029+00:00",
+        "FollowerCount": 281409,
+        "ChangeInFollowers": -200,
+        "Message": "LOST A WEEKLY RIVALRY AGAINST HugooBoss"
+      },
+      "DisplayData": {
+        "Followers": -200,
+        "DisplayFollowers": "200",
+        "Date": "25TH JULY",
+        "LongDate": "7/25/2025 10:07 AM",
+        "Message": "LOST A WEEKLY RIVALRY AGAINST HUGOOBOSS"
+      }
+    },
+    {
+      "X": 18,
+      "Y": 281459,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-08-01T10:34:13.63862+00:00",
+        "FollowerCount": 281459,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE RED BULL RING DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "1ST AUGUST",
+        "LongDate": "8/1/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE RED BULL RING DRIFT"
+      }
+    },
+    {
+      "X": 17,
+      "Y": 281509,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-08-22T10:34:11.957322+00:00",
+        "FollowerCount": 281509,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE ALGARVE DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "22ND AUGUST",
+        "LongDate": "8/22/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE ALGARVE DRIFT"
+      }
+    },
+    {
+      "X": 16,
+      "Y": 281309,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-08-29T10:07:56.3498813+00:00",
+        "FollowerCount": 281309,
+        "ChangeInFollowers": -200,
+        "Message": "LOST A WEEKLY RIVALRY AGAINST kubakox"
+      },
+      "DisplayData": {
+        "Followers": -200,
+        "DisplayFollowers": "200",
+        "Date": "29TH AUGUST",
+        "LongDate": "8/29/2025 10:07 AM",
+        "Message": "LOST A WEEKLY RIVALRY AGAINST KUBAKOX"
+      }
+    },
+    {
+      "X": 15,
+      "Y": 281359,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-08-29T10:34:10.2800372+00:00",
+        "FollowerCount": 281359,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE RED BULL RING DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "29TH AUGUST",
+        "LongDate": "8/29/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE RED BULL RING DRIFT"
+      }
+    },
+    {
+      "X": 14,
+      "Y": 281409,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-08-29T10:34:13.9367594+00:00",
+        "FollowerCount": 281409,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE HONG KONG DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "29TH AUGUST",
+        "LongDate": "8/29/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE HONG KONG DRIFT"
+      }
+    },
+    {
+      "X": 13,
+      "Y": 281209,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-09-12T10:07:55.279681+00:00",
+        "FollowerCount": 281209,
+        "ChangeInFollowers": -200,
+        "Message": "LOST A WEEKLY RIVALRY AGAINST bartekzcc"
+      },
+      "DisplayData": {
+        "Followers": -200,
+        "DisplayFollowers": "200",
+        "Date": "12TH SEPTEMBER",
+        "LongDate": "9/12/2025 10:07 AM",
+        "Message": "LOST A WEEKLY RIVALRY AGAINST BARTEKZCC"
+      }
+    },
+    {
+      "X": 12,
+      "Y": 282220,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-03T10:07:35.3924566+00:00",
+        "FollowerCount": 282220,
+        "ChangeInFollowers": 1011,
+        "Message": "WON A SOCIAL RIVALRY AGAINST IIIIILeoNIIIII"
+      },
+      "DisplayData": {
+        "Followers": 1011,
+        "DisplayFollowers": "1,011",
+        "Date": "3RD OCTOBER",
+        "LongDate": "10/3/2025 10:07 AM",
+        "Message": "WON A SOCIAL RIVALRY AGAINST IIIIILEONIIIII"
+      }
+    },
+    {
+      "X": 11,
+      "Y": 282420,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-03T10:34:17.6292371+00:00",
+        "FollowerCount": 282420,
+        "ChangeInFollowers": 200,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE COTE D&#39;AZUR DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 200,
+        "DisplayFollowers": "200",
+        "Date": "3RD OCTOBER",
+        "LongDate": "10/3/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE COTE D&#39;AZUR DRIFT"
+      }
+    },
+    {
+      "X": 10,
+      "Y": 282470,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-03T10:34:21.4418056+00:00",
+        "FollowerCount": 282470,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE COTE D&#39;AZUR POWER LAP"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "3RD OCTOBER",
+        "LongDate": "10/3/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE COTE D&#39;AZUR POWER LAP"
+      }
+    },
+    {
+      "X": 9,
+      "Y": 282520,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-10T10:34:16.1448273+00:00",
+        "FollowerCount": 282520,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE OKUTAMA DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "10TH OCTOBER",
+        "LongDate": "10/10/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE OKUTAMA DRIFT"
+      }
+    },
+    {
+      "X": 8,
+      "Y": 282570,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-10T10:34:28.1783421+00:00",
+        "FollowerCount": 282570,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE OKUTAMA DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "10TH OCTOBER",
+        "LongDate": "10/10/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE OKUTAMA DRIFT"
+      }
+    },
+    {
+      "X": 7,
+      "Y": 282370,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-17T10:08:45.2904055+00:00",
+        "FollowerCount": 282370,
+        "ChangeInFollowers": -200,
+        "Message": "LOST A WEEKLY RIVALRY AGAINST Silv3r4ng3l"
+      },
+      "DisplayData": {
+        "Followers": -200,
+        "DisplayFollowers": "200",
+        "Date": "17TH OCTOBER",
+        "LongDate": "10/17/2025 10:08 AM",
+        "Message": "LOST A WEEKLY RIVALRY AGAINST SILV3R4NG3L"
+      }
+    },
+    {
+      "X": 6,
+      "Y": 282420,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-17T10:34:22.9251858+00:00",
+        "FollowerCount": 282420,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE CALIFORNIA DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "17TH OCTOBER",
+        "LongDate": "10/17/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE CALIFORNIA DRIFT"
+      }
+    },
+    {
+      "X": 5,
+      "Y": 282502,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-21T01:55:40.453663+00:00",
+        "FollowerCount": 282502,
+        "ChangeInFollowers": 82,
+        "Message": "BEAT THE PERSONAL BEST OF JDrakul IN CALIFORNIA DRIFT CHALLENGE EVENT"
+      },
+      "DisplayData": {
+        "Followers": 82,
+        "DisplayFollowers": "82",
+        "Date": "21ST OCTOBER",
+        "LongDate": "10/21/2025 1:55 AM",
+        "Message": "BEAT THE PERSONAL BEST OF JDRAKUL IN CALIFORNIA DRIFT CHALLENGE EVENT"
+      }
+    },
+    {
+      "X": 4,
+      "Y": 282584,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-21T02:10:01.8054109+00:00",
+        "FollowerCount": 282584,
+        "ChangeInFollowers": 82,
+        "Message": "BEAT THE PERSONAL BEST OF JDrakul IN CALIFORNIA DRIFT CHALLENGE EVENT"
+      },
+      "DisplayData": {
+        "Followers": 82,
+        "DisplayFollowers": "82",
+        "Date": "21ST OCTOBER",
+        "LongDate": "10/21/2025 2:10 AM",
+        "Message": "BEAT THE PERSONAL BEST OF JDRAKUL IN CALIFORNIA DRIFT CHALLENGE EVENT"
+      }
+    },
+    {
+      "X": 3,
+      "Y": 282584,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-22T00:56:35.8285551+00:00",
+        "FollowerCount": 282584,
+        "ChangeInFollowers": 0,
+        "Message": "PERSONAL BEST IN CALIFORNIA DRIFT BEATEN BY JDrakul"
+      },
+      "DisplayData": {
+        "Followers": 0,
+        "DisplayFollowers": "0",
+        "Date": "22ND OCTOBER",
+        "LongDate": "10/22/2025 12:56 AM",
+        "Message": "PERSONAL BEST IN CALIFORNIA DRIFT BEATEN BY JDRAKUL"
+      }
+    },
+    {
+      "X": 2,
+      "Y": 282884,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-24T10:34:13.5895361+00:00",
+        "FollowerCount": 282884,
+        "ChangeInFollowers": 300,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE CALIFORNIA DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 300,
+        "DisplayFollowers": "300",
+        "Date": "24TH OCTOBER",
+        "LongDate": "10/24/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE CALIFORNIA DRIFT"
+      }
+    },
+    {
+      "X": 1,
+      "Y": 282934,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-24T10:34:26.5591547+00:00",
+        "FollowerCount": 282934,
+        "ChangeInFollowers": 50,
+        "Message": "GLOBAL CHALLENGE RESULT IN THE CALIFORNIA DRIFT"
+      },
+      "DisplayData": {
+        "Followers": 50,
+        "DisplayFollowers": "50",
+        "Date": "24TH OCTOBER",
+        "LongDate": "10/24/2025 10:34 AM",
+        "Message": "GLOBAL CHALLENGE RESULT IN THE CALIFORNIA DRIFT"
+      }
+    },
+    {
+      "X": 0,
+      "Y": 282934,
+      "Data": {
+        "FollowerHistoryId": null,
+        "PrincipalId": 2536759,
+        "Platform": 3,
+        "CreatedAt": "2025-10-26T15:42:36.3992651+00:00",
+        "FollowerCount": 282934,
+        "ChangeInFollowers": 0,
+        "Message": "ACHIEVED XP LEVEL 34 IN GRID 2 MULTIPLAYER"
+      },
+      "DisplayData": {
+        "Followers": 0,
+        "DisplayFollowers": "0",
+        "Date": "26TH OCTOBER",
+        "LongDate": "10/26/2025 3:42 PM",
+        "Message": "ACHIEVED XP LEVEL 34 IN GRID 2 MULTIPLAYER"
+      }
+    }
+  ],
+  "YAxisValues": [
+    "281,209",
+    "281,640",
+    "282,071",
+    "282,502",
+    "282,934"
+  ],
+  "MinY": 281209,
+  "MaxY": 282934
+}

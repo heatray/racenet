@@ -1,0 +1,172 @@
+---
+layout: grid2.vto
+title: GRID 2 - Select Rival Card - Codemasters RaceNet
+nav:
+  - grid2
+  - rivalcards
+api:
+  GetRivalsCards: ./api/GRID2/GetRivalsCards.json
+  SetRivalCard:   ./api/GRID2/SetRivalCard.json
+---
+<link href="./Content/css/Grid2.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2Refresh.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2RivalCard.css" rel="stylesheet" type="text/css" />
+
+
+<div id="wrapper">
+    <div id="MainContent" class="left">
+        <div id="heading" class="infobar_anchor pagelogo">
+            <h2><span id="card_info_title">SELECT RIVAL CARD</span><span id="g2src_infobar_inner"><span id="g2src_infobar"><span class="infobar_infoicon"><span class="infobar_pointer"></span></span><span class="infobar_content">Select and save any rival card for display during your rivalries. Earn Followers to unlock more Rival cards.</span></span></span></h2>
+        </div>
+        <div id="G2RivalCardHolder">
+        <div id="" class="clearfix"></div>
+            <div id="cards1"></div>
+            <div id="cards2"></div>
+            <div id="" class="clearfix"></div>
+             <div id="playercardsubnav" class="whitebg" >
+                <div id="desc" class="left half"></div>
+                <div class="left half">
+                    <div  id="savebutton" class="button green_gradient left"><a href="./grid2">SAVE</a></div>
+                    <div  id="nextbutton" class=" left"><p>2</p></div>
+                    <div  id="previousbutton" class=" left"><p>1</p></div>
+                </div>
+             </div>
+        </div>
+
+
+    <script type="text/javascript">
+        function replaceSpaces(t) {
+            return t.replace(' ', '-');
+        }
+
+        $(document).ready(function () {
+
+            pcard = $(this).contents().find(".rcard").text();
+            // var activecard = '.card' + pcard;
+            // $('.rcard').hide();
+            //finder = $('#G2RivalCardHolder').find(activecard);
+            //alert(activecard);
+            //$('#cards1, #cards2').hasClass(activecard).hide(); ;
+            //$(activecard).css('opacity', .8);
+
+
+            //if (activecard == cardclass) {
+            //$('.rivalcard').addClass(locked);
+            //}
+
+            //when save buttion is clicked take user back to previous page
+            $('#savebutton').click(function () {
+
+                //parent.history.back().reload();
+                location.reload();
+                return false;
+
+            });
+            //set playercard background
+
+            $('#previousbutton p').css('color', 'grey');
+
+            $('#nextbutton').click(function () {
+
+                $('#nextbutton p').css('color', 'grey');
+                $('#previousbutton p').css('color', 'black');
+            });
+
+            $('#previousbutton').click(function () {
+                $('#nextbutton p').css('color', 'black');
+                $('#previousbutton p').css('color', 'grey');
+            });
+
+
+            $.getJSON('{{ api.GetRivalsCards }}',
+            function (data) {
+                $.each(data.RivalsCards, function () {
+
+                    var locstring = this['RivalCardDescription'];
+                    //var output = "<div id='rivalcard'><div id='" + this['RivalCardName'] + "' class='" + ls + "'><div class='card' id='" + this['RivalCardID'] + "'><div>" + this['RivalCardName'] + "<img src= '../content/" + this['RivalCardImageURL'] + "'/><div class='cdesc'>" + locstring + "</div>" + this['RivalCardUnlocked'] + "</div></div></div></div>";
+
+                    var cards = "<div id='" + this['RivalCardID'] +
+                            "'class='cardclick card card" + this['RivalCardID'] + " " +
+                            this['RivalCardUnlocked'] + "'><div id='" + replaceSpaces(this['RivalCardName']) +
+                            "' class='rivalcard'><div class='rivalcardname'><div id=" +
+                            this['RivalCardImageURL'] + " class='cardimage'></div>";
+
+                    if (this['RivalCardUnlocked'] == 0) {
+                        cards = cards + "<div class='lockcard'></div>"
+                    }
+
+                    cards = cards + "<div class='cardname'>" +
+                            this['RivalCardName'] + "</div><div class='carddesc hide'>" + this['RivalCardDescription'] +
+                            "</div></div></div></div>";
+                    $('#cards1').append(cards);
+                });
+
+
+                $('#cards2').hide();
+                $('#9,#10,#11,#12,#13,#14,#15,#16').appendTo('#cards2');
+                //$('#previousbutton').hide();
+
+                $('#nextbutton').click(function () {
+                    $('#cards2').show();
+                    $('#cards1').hide();
+                    //$(this).hide();
+                    //$('#previousbutton').show();
+                });
+
+                $('#previousbutton').click(function () {
+                    $('#cards1').show();
+                    $('#cards2').hide();
+                    //$(this).hide();
+                    //$('#nextbutton').show();
+                });
+
+                $('.cardclick').mouseenter(function () {
+                    var $desc = $(this).attr("id");
+                    var $cdesc = $(this).contents().find(".cdesc").text();
+                    var $ddesc = $(this).contents().find(".locked").text();
+                    var $carddesc = $(this).contents().find(".carddesc").text();
+                    var $cardname = $(this).contents().find(".cardname").text();
+
+                    var fdesc = '<div id="b_cardname" class="left rdesc redText">' + $cardname + '</div><div id="b_carddesc" class="left rdesc">' + $carddesc + '</div>';
+
+                    $('#desc').append(fdesc);
+
+                }).mouseleave(function () { $('#desc').empty(); });
+
+
+
+                //chage this selector to an unlocked selector so only unlocked cards can be selected
+                $('.true').click(function () {
+                    cardselection = $(this).contents().find(".cdesc").text();
+                    currentselection = $(this).attr("id");
+                    cardimage = $('.cardimage', this).attr("id");
+                    param = "?id=" + currentselection;
+                    cardclass = "card" + currentselection;
+
+                    //$('#PlayerCard').empty();
+                    $('#PlayerCard').removeClass('card1 card2 card3 card4 card5 card6 card7 card8 card9 card10 card11 card12 card13 card14 card15 card16 ');
+                    $('#PlayerCard').addClass(cardclass);
+                    $('.rcard').empty();
+                    $('.tick').parent().empty();
+                    $('.cardimage', this).append("<img class='tick' src='./Content/images/tick.png'/>");
+                    //$('#PlayerCard').css('background-image', 'url(../Content/' + cardimage + ')');
+
+
+                    if (!$(this).hasClass('activeRival')) {
+                        //here add active class and remove if rquired
+                    }
+                    $(this).addClass('chosen');
+                    $(this).css('opacity', 1);
+
+
+                    //set rival card via web api call
+                    $.post('{{ api.SetRivalCard }}' + param);
+
+                });
+            });
+        });
+
+    </script>
+
+</div>
+</div>

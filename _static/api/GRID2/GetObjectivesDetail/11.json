@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 11,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 2400.0
+  },
+  "Objective": {
+    "CurrentValue": 2400.0,
+    "LocalizedTitle": "EVERY SECOND COUNTS",
+    "LocalizedDescription": "Spend 40 minutes in an Endurance event",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_11.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_11@2x.jpg",
+    "ObjectiveId": 11,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_11.jpg",
+    "Name": "endurance_survive",
+    "Title": "Objectives_title_endurance_survive",
+    "Description": "Objectives_desc_endurance_survive",
+    "Format": 2,
+    "Target": 2400.0,
+    "FormattedTarget": "00:40:00"
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "Name": "EVENTS ENTERED",
+    "MeValue": 147,
+    "ThemValue": 171,
+    "MeName": "Player One",
+    "ThemName": "Player Two",
+    "MeWidthPercent": 46.226415094339622,
+    "ThemWidthPercent": 53.773584905660378
+  },
+  {
+    "Name": "PODIUM FINISHES",
+    "MeValue": 89,
+    "ThemValue": 160,
+    "MeName": "Player One",
+    "ThemName": "Player Two",
+    "MeWidthPercent": 35.7429718875502,
+    "ThemWidthPercent": 64.2570281124498
+  },
+  {
+    "Name": "EVENT WINS",
+    "MeValue": 22,
+    "ThemValue": 77,
+    "MeName": "Player One",
+    "ThemName": "Player Two",
+    "MeWidthPercent": 22.222222222222221,
+    "ThemWidthPercent": 77.777777777777786
+  }
+]

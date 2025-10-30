@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 30,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 0.0
+  },
+  "Objective": {
+    "CurrentValue": 0.0,
+    "LocalizedTitle": "TOP OF THE WORLD",
+    "LocalizedDescription": "RANK IN THE TOP POSITION ON A GLOBAL CHALLENGE LEADER BOARD AT THE END OF THE WEEK",
+    "IsCompleted": false,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_30.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_30@2x.jpg",
+    "ObjectiveId": 30,
+    "ObjectiveTypeId": 7,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_30.jpg",
+    "Name": "rank_1_on_lb_at_end_of_week",
+    "Title": "Objectives_title_rank_1_on_lb_at_end_of_week",
+    "Description": "Objectives_desc_rank_1_on_lb_at_end_of_week",
+    "Format": 1,
+    "Target": 1.0,
+    "FormattedTarget": "1"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 21,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 9.0
+  },
+  "Objective": {
+    "CurrentValue": 9.0,
+    "LocalizedTitle": "BOBBY DAZZLER",
+    "LocalizedDescription": "EARN 9 GOLD GLOBAL CHALLENGE MEDALS IN ONE WEEK",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_21.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_21@2x.jpg",
+    "ObjectiveId": 21,
+    "ObjectiveTypeId": 7,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_21.jpg",
+    "Name": "earn_nine_golds_in_week",
+    "Title": "Objectives_title_earn_nine_golds_in_week",
+    "Description": "Objectives_desc_earn_nine_golds_in_week",
+    "Format": 1,
+    "Target": 9.0,
+    "FormattedTarget": "9"
+  }
+}

@@ -1,0 +1,462 @@
+.followersdiv,
+.globaldiv,
+.objectivesdiv,
+.statsdiv,
+.youtubediv {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.followersdiv {
+  background-image: url("../Grid2/followers.png");
+}
+.globaldiv {
+  background-image: url("../Grid2/Globalcontrol.png");
+}
+.objectivesdiv {
+  background-image: url("../Grid2/objectives.png");
+}
+.statsdiv {
+  background-image: url("../Grid2/Rivals.png");
+}
+.youtubediv {
+  background-image: url("../Grid2/YouTube.png");
+}
+.gridbutton {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  height: 100%;
+}
+.vc_container {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(225, 225, 225, 0.3);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  line-height: 95%;
+  display: inline-block;
+}
+.vc_outer {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  height: 48px;
+  float: left;
+  clear: both;
+}
+.vc_inner {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  padding: 6px 10px 10px 10px;
+}
+.g2s_desc.vc_outer {
+  height: 0px;
+  float: left;
+  width: 100%;
+  clear: both;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  color: silver;
+  font-family: 'Swiss721W01-BoldCondens';
+  font-size: 0.8em;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  transition-timing-function: ease;
+}
+.iph:hover .g2s_desc.vc_outer {
+  height: 80px;
+}
+.iph_hover .vc_t + .g2s_desc.vc_outer {
+  height: 80px;
+}
+.vc_t {
+  display: table;
+}
+.vc_r {
+  display: table-row;
+}
+.vc_c {
+  display: table-cell;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  padding: 0px 10px;
+  color: black;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .vc_c {
+    position: relative;
+    top: -5px;
+  }
+}
+.no_bg {
+  background-image: none !important;
+  background-color: black;
+}
+.sectionlink {
+  display: inline-block;
+  width: 31.79%;
+  height: 166px;
+}
+.sectionlink .g2hb {
+  padding: 1px 3px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: black;
+}
+.sectionlink:hover .g2hb {
+  color: #990000;
+}
+video {
+  opacity: 0.75;
+  -webkit-transition: all 0.07s linear;
+  -moz-transition: all 0.07s linear;
+  -o-transition: all 0.07s linear;
+  transition: all 0.07s linear;
+}
+.iph:hover video {
+  opacity: 1;
+  -webkit-transition: all 0.07s linear;
+  -moz-transition: all 0.07s linear;
+  -o-transition: all 0.07s linear;
+  transition: all 0.07s linear;
+}
+.gridbutton a {
+  font-size: 2.2em;
+  color: Black;
+}
+.followersdiv img {
+  height: 332px;
+  max-width: auto;
+}
+.followersdiv a,
+.globaldiv a,
+.objectivesdiv a,
+.statsdiv a,
+.youtubediv a {
+  margin: 0;
+  padding: 0px !important;
+}
+#followersdiv {
+  height: 332px;
+  width: 31.79%;
+}
+.followersdiv img {
+  max-height: auto;
+  max-width: auto;
+  width: 100%;
+}
+#globaldiv,
+#objectivesdiv,
+#statsdiv,
+#youtubediv {
+  height: 166px;
+  width: 34.106%;
+  cursor: pointer;
+}
+.padby10 {
+  padding: 0px 0px 4px 8px;
+  position: absolute;
+  bottom: 0;
+  line-height: 1em;
+}
+.grid2section {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  height: 100%;
+}
+.g2hb {
+  background-color: rgba(225, 225, 225, 0.5);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+#gridHomeMobile {
+  width: 100%;
+}
+#gridHomeMobile ul {
+  width: 100%;
+  background-color: #1f1f1f;
+}
+#gridHomeMobile ul li {
+  padding: 5px;
+  border-bottom: 5px solid black;
+}
+#gridHomeMobile ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+#followersdiv,
+#statsdiv,
+#globaldiv,
+#objectivesdiv,
+#youtubediv {
+  opacity: 0.75;
+}
+#followersdiv:hover,
+#statsdiv:hover,
+#globaldiv:hover,
+#objectivesdiv:hover,
+#youtubediv:hover {
+  opacity: 1;
+}
+#heading_text {
+  float: left;
+  display: inline-block;
+  height: 61px;
+  overflow: hidden;
+}
+.lang-pl #heading_text {
+  padding-right: 4px;
+}
+#g2h_infobar .infobar_infoicon {
+  top: 24px;
+  left: 14px;
+}
+#g2h_infobar .infobar_pointer {
+  top: 30px;
+}
+#g2h_infobar .infobar_content {
+  top: 66px;
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  #wrapper {
+    width: 300px;
+  }
+  #page {
+    padding-top: 0px;
+  }
+  #gridHomeMobile {
+    display: inherit;
+  }
+  #gridHomeTablet {
+    display: none;
+  }
+  #gridHomeDesktop {
+    display: none;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  #level-2 {
+    display: none;
+  }
+  #GridHolder {
+    background-color: white;
+  }
+  #heading {
+    display: none;
+  }
+  #MainContent {
+    height: 200px;
+    background-color: black !important;
+    bottom: 0;
+  }
+  #PlayerCard {
+    display: none;
+  }
+  #FollowersBox {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  #wrapper {
+    width: 434px;
+  }
+  #page {
+    padding-top: 0px;
+  }
+  #gridHomeMobile {
+    display: none;
+  }
+  #gridHomeTablet {
+    display: inherit;
+  }
+  #gridHomeDesktop {
+    display: none;
+  }
+  #MainContent {
+    width: 434px;
+  }
+  #level-2 {
+    display: none;
+  }
+  #FollowersBox {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  #GridHolder {
+    background-color: white;
+  }
+  .followersdiv {
+    background-size: 100% 100%;
+  }
+  .lang-pl #heading_text {
+    font-size: 23pt;
+    position: relative;
+    top: 9px;
+    height: 40px;
+  }
+  .lang-pl #g2h_infobar .infobar_infoicon {
+    position: relative;
+    top: 13px;
+  }
+  .lang-pl #g2h_infobar .infobar_pointer {
+    top: 41px;
+  }
+}
+@media (min-width: 600px) and (max-width: 767px) {
+  #wrapper {
+    width: 580px;
+  }
+  #page {
+    padding-top: 0px;
+  }
+  #gridHomeMobile {
+    display: none;
+  }
+  #gridHomeTablet {
+    display: inherit;
+  }
+  #gridHomeDesktop {
+    display: none;
+  }
+  #MainContent,
+  #level-2 {
+    width: 580px;
+  }
+  #level-2 {
+    display: none;
+  }
+  #GridHolder {
+    background-color: white;
+  }
+  .followersdiv {
+    background-size: 100% 100%;
+  }
+  .lang-pl #heading_text {
+    font-size: 31pt;
+    position: relative;
+    top: 6px;
+    height: 46px;
+  }
+  .lang-pl #g2h_infobar .infobar_infoicon {
+    position: relative;
+    top: 19px;
+  }
+  .lang-pl #g2h_infobar .infobar_pointer {
+    top: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #wrapper {
+    width: 726px;
+  }
+  #page {
+    padding-top: 0px;
+  }
+  #gridHomeMobile {
+    display: none;
+  }
+  #gridHomeTablet {
+    display: inherit;
+  }
+  #gridHomeDesktop {
+    display: none;
+  }
+  #MainContent,
+  #level-2 {
+    width: 726px;
+  }
+  #GridHolder {
+    background-color: white;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1279px) {
+  #wrapper {
+    width: 1000px;
+  }
+  #page {
+    padding-top: 0px;
+  }
+  #gridHomeMobile {
+    display: none;
+  }
+  #gridHomeTablet {
+    display: inherit;
+  }
+  #gridHomeDesktop {
+    display: none;
+  }
+  #MainContent,
+  #level-2 {
+    width: 1000px;
+  }
+  #GridHolder {
+    background-color: Black;
+  }
+  #ContentHolder {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 1280px) {
+  #page {
+    padding-top: 0px;
+  }
+  #gridHomeMobile {
+    display: none;
+  }
+  #gridHomeTablet {
+    display: none;
+  }
+  #gridHomeDesktop {
+    display: inherit;
+  }
+  #MainContent,
+  #level-2 {
+    width: 1200px;
+  }
+  #GridHolder {
+    background-color: Black;
+  }
+  .followersdiv,
+  .globaldiv,
+  .objectivesdiv,
+  .statsdiv,
+  .youtubediv {
+    height: 424px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .followersdiv {
+    background-image: url("../Grid2/followers.png");
+  }
+  .globaldiv {
+    background-image: url("../Grid2/Globalcontrol.png");
+  }
+  .objectivesdiv {
+    background-image: url("../Grid2/objectives.png");
+  }
+  .statsdiv {
+    background-image: url("../Grid2/Rivals.png");
+  }
+  .youtubediv {
+    background-image: url("../Grid2/YouTube.png");
+  }
+}

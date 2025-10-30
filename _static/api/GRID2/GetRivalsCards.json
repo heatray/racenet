@@ -1,0 +1,132 @@
+{
+  "RivalsCards": [
+    {
+      "RivalCardID": 1,
+      "RivalCardName": "RaceNet",
+      "RivalCardDescription": "Sign up to RaceNet",
+      "RivalCardImageURL": "images/RaceNet.jpg",
+      "FollowersToUnlock": 0,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 2,
+      "RivalCardName": "WSR",
+      "RivalCardDescription": "Play GRID 2",
+      "RivalCardImageURL": "images/WSR.jpg",
+      "FollowersToUnlock": 0,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 3,
+      "RivalCardName": "New Union",
+      "RivalCardDescription": "Earn 10,000 Followers",
+      "RivalCardImageURL": "images/NewUnion.jpg",
+      "FollowersToUnlock": 10000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 4,
+      "RivalCardName": "Trans America",
+      "RivalCardDescription": "Earn 15,000 Followers",
+      "RivalCardImageURL": "images/transamerica.jpg",
+      "FollowersToUnlock": 15000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 5,
+      "RivalCardName": "Divizero",
+      "RivalCardDescription": "Earn 25,000 Followers",
+      "RivalCardImageURL": "images/Divizero.jpg",
+      "FollowersToUnlock": 25000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 6,
+      "RivalCardName": "Eliminacion",
+      "RivalCardDescription": "Earn 50,000 Followers",
+      "RivalCardImageURL": "images/Eliminacion.jpg",
+      "FollowersToUnlock": 50000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 7,
+      "RivalCardName": "Euro Rand",
+      "RivalCardDescription": "Earn 75,000 Followers",
+      "RivalCardImageURL": "images/Euro-Rand.jpg",
+      "FollowersToUnlock": 75000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 8,
+      "RivalCardName": "Kowloon Dragons",
+      "RivalCardDescription": "Earn 100,000 Followers",
+      "RivalCardImageURL": "images/Kowloon-Dragons.jpg",
+      "FollowersToUnlock": 100000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 9,
+      "RivalCardName": "Dubai Vip",
+      "RivalCardDescription": "Earn 125,000 Followers",
+      "RivalCardImageURL": "images/Dubai_Vip.jpg",
+      "FollowersToUnlock": 125000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 10,
+      "RivalCardName": "Haruna Kyojin",
+      "RivalCardDescription": "Earn 150,000 Followers",
+      "RivalCardImageURL": "images/Haruna-Kyojin.jpg",
+      "FollowersToUnlock": 150000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 11,
+      "RivalCardName": "Checkered Flag",
+      "RivalCardDescription": "Earn 175,000 Followers",
+      "RivalCardImageURL": "images/Checkered-Flag.jpg",
+      "FollowersToUnlock": 175000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 12,
+      "RivalCardName": "Celt",
+      "RivalCardDescription": "Earn 200,000 Followers",
+      "RivalCardImageURL": "images/Celt.jpg",
+      "FollowersToUnlock": 200000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 13,
+      "RivalCardName": "80s USA",
+      "RivalCardDescription": "Earn 225,000 Followers",
+      "RivalCardImageURL": "images/80s-USA.jpg",
+      "FollowersToUnlock": 225000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 14,
+      "RivalCardName": "Slice",
+      "RivalCardDescription": "Earn 250,000 Followers",
+      "RivalCardImageURL": "images/Slice.jpg",
+      "FollowersToUnlock": 250000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 15,
+      "RivalCardName": "Technobubbles",
+      "RivalCardDescription": "Earn 275,000 Followers",
+      "RivalCardImageURL": "images/Technobubbles.jpg",
+      "FollowersToUnlock": 275000,
+      "RivalCardUnlocked": true
+    },
+    {
+      "RivalCardID": 16,
+      "RivalCardName": "Honeycomb",
+      "RivalCardDescription": "Earn 300,000 Followers",
+      "RivalCardImageURL": "images/Honeycomb.jpg",
+      "FollowersToUnlock": 300000,
+      "RivalCardUnlocked": false
+    }
+  ]
+}

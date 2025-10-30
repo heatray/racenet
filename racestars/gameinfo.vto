@@ -1,0 +1,212 @@
+---
+layout: gameinfo.vto
+title: F1 Race Stars - Codemasters RaceNet
+nav:
+  - racestars
+  - gameinfo
+data:
+  anonymous: true
+api:
+  landing: ./api/RaceNet/GetLanding_CommunityStats.json
+---
+<link href="./Content/css/SupportedGames_RaceStars.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="PageOneContainer" >
+    <div id="PageOneRow1">
+        <div id="MainImage" class="left">
+
+
+
+        </div>
+        <div id="HeroUnitOuter" class="right">
+            <div id="HeroUnit">
+
+    <div id="HeroUnitTitleContainer"><div id="HeroUnitTitle"></div></div>
+    <h2>F1 RACE STARS</h2>
+    <ul>
+        <li>EXCLUSIVE FEATURES</li>
+        <li>ACTIVE COMMUNITY</li>
+        <li>COMPARE WITH FRIENDS</li>
+    </ul>
+
+                    <div id="HeroUnitButtonContainer">
+    <a href="/account/signup" class="wir_button"><span class="wir_button_inner">JOIN NOW</span></a>
+ </div>            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="PanelWrapper">
+        <div class="PanelOuter">
+            <div class="PanelRow">
+                <div id="Panel1Content" class="PanelCell cell4 cell2 cell">
+                             <div class="panelbg">
+        <h3 style="background-image:url('./Content/SupportedGames/supported_titles_RaceStars_RECENT.jpg')">
+            <span class="panelbg_title">RECENT SESSIONS</span>
+        </h3>
+        <span class="panelbg_content">Find out how you’ve performed in your latest F1 Race Stars races and if you earned RaceNet awards in single and multiplayer events.</span>
+    </div>
+
+
+                </div>
+                <div id="Panel2Content" class="PanelCell cell4 cell2 cell">
+                             <div class="panelbg">
+        <h3 style="background-image:url('./Content/SupportedGames/supported_titles_RaceStars_BADGES.jpg')">
+            <span class="panelbg_title">BADGE TARGETS</span>
+        </h3>
+        <span class="panelbg_content">Track the badges you have earned in F1 Race Stars and aim to upgrade them to Bronze, Silver and Gold Levels on RaceNet. Combine badges together to unlock new RaceNet badges as you aim to prove you’re the best F1 Race Stars driver around!</span>
+    </div>
+
+
+                </div>
+                <div id="Panel3Content" class="PanelCell cell4 cell6 cell">
+                             <div class="panelbg">
+        <h3 style="background-image:url('./Content/SupportedGames/supported_titles_RaceStars_CHALL.jpg')">
+            <span class="panelbg_title">RACENET CHALLENGES</span>
+        </h3>
+        <span class="panelbg_content">Aim to hit the badge targets in RaceNet’s F1 Race Stars Challenge! Every week set your sights on the new badge targets to unlock RaceNet awards and XP boosts, have you got what it takes to get them all?</span>
+    </div>
+
+
+                </div>
+                <div id="Panel4Content" class="PanelCell cell4 cell6 cell">
+                             <div class="panelbg">
+        <h3 style="background-image:url('./Content/SupportedGames/supported_titles_RaceStars_News.jpg')">
+            <span class="panelbg_title">STAY UP TO DATE</span>
+        </h3>
+        <span class="panelbg_content">Keep up to date with the latest news from the world of F1 Race Stars to see how your friends and the community are performing</span>
+    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="wir_bottomleft">
+
+    <div>
+        <h3>CONNECT</h3>
+    </div>
+    <div>
+        <ul>
+                <li><a href="https://twitter.com/F1RaceStars" id="wir_twitter" rel="external" class="wir_social"><span id="wir_twitter_inner" class="wir_social_inner">Twitter</span></a></li>
+                            <li><a href="https://www.facebook.com/F1RaceStars" id="wir_facebook" rel="external" class="wir_social"><span id="wir_facebook_inner" class="wir_social_inner">Facebook</span></a></li>
+                            <li><a href="http://www.youtube.com/user/F1RaceStars" id="wir_youtube" rel="external" class="wir_social"><span id="wir_youtube_inner" class="wir_social_inner">YouTube</span></a></li>
+        </ul>
+    </div>
+
+        </div>
+        <div id="wir_bottomright">
+
+        <script type="text/javascript">
+        //<![CDATA[
+
+            var comStatIdx = 0;
+            var flipcounters = new Array();
+            var flipcountersMob = new Array();
+            var counterValues = new Array();
+
+            $.getJSON('{{ api.landing }}', function (data) {
+                //console.log(data);
+                for(i=0;i<data.CommunityStats.length;i++)
+                {
+                    if(data.CommunityStats[i].GameName == 'Racestars')
+                    {
+                        addCommunityStat(data.CommunityStats[i], 0);
+                    }
+                }
+
+            });
+
+            function addCommunityStat(data, index) {
+                var html;
+
+                var counterId = "flip-counter-" + index;
+                var mobileCounterId = "flip-counter-mobile-" + index;
+
+                html = "<div class=\"landing_community_stat\" class=\"welcome_gradient\">";
+                html += "<div class=\"landing_com_stat_img landing_com_stat_element\">";
+                html += "<img src=\"" + data.GameIconURL + "\" alt=\"\" />";
+                html += "</div>";
+                html += "<div class=\"landing_com_stat_text landing_com_stat_element\" style=\"display:none\">";
+                html += buildHtml( "div", "LATEST COMMUNITY STATS", { class : "landing_com_stat_header" } );
+                html += buildHtml( "div", "RACENET TRACKS THE LATEST COMMUNITY STATISTICS FROM ALL SUPPORTED TITLES. HELP HIT MILESTONES AND TAKE PART IN COMMUNITY EVENTS!", { class : "landing_com_stat_body" } );
+                html += "</div>";
+                html += "<div class=\"landing_com_stat_value_holder landing_com_stat_element\">";
+                html += buildHtml( "div", data.StatName, { class : "landing_com_stat_title landing_com_stat_element" } );
+                html += buildFlipCounter(counterId, mobileCounterId);
+                html += "</div>";
+                html += "</div>";
+
+                $('#wir_bottomright').append(html);
+
+                var myCounter = new flipCounter(counterId, { value: 0, auto: true, tFH: 27, bFH: 27, fW: 41, bOffset: 270, minDigits: 9 });
+                var myMobCounter = new flipCounter(mobileCounterId, { value: 0, auto: true, tFH: 20, bFH:20, fW: 29, bOffset: 200, minDigits: 9 });
+
+                //set value to current stat counter, set the number of seconds it should take and the desired pace
+                myCounter.incrementTo(data.StatValueRaw, 3, 30);
+                myMobCounter.incrementTo(data.StatValueRaw, 3, 30);
+
+                flipcounters.push(myCounter);
+                flipcountersMob.push(myMobCounter);
+
+                counterValues.push(data.StatValueRaw);
+            }
+
+            function carouselCommunityStat( delay ) {
+                var communityStats = $('.landing_community_stat');
+                communityStats.hide();
+
+                communityStats.eq(comStatIdx).show();
+
+                if (delay > 0) {
+                    setInterval(function () {
+                        communityStats.hide();
+
+                        ++comStatIdx;
+                        if (comStatIdx >= communityStats.length) {
+                            comStatIdx = 0;
+                        }
+
+                        communityStats.eq(comStatIdx).show();
+
+                        flipcounters[comStatIdx].setValue(0);
+                        flipcounters[comStatIdx].incrementTo(counterValues[comStatIdx], 3, 30);
+
+                        flipcountersMob[comStatIdx].setValue(0);
+                        flipcountersMob[comStatIdx].incrementTo(counterValues[comStatIdx], 3, 30);
+
+
+                    }, delay);
+                }
+            }
+
+            function buildFlipCounter(counterId, mobileCounterId)
+            {
+                var html = "<div class=\"landing_com_stat_element flip-counter-holder\">";
+                html += "<div id=\"" + counterId + "\" class=\"flip-counter\"></div>";
+                html += "</div>";
+
+                html += "<div class=\"landing_com_stat_element flip-counter-holder-mob\">";
+                html += "<div id=\"" + mobileCounterId + "\" class=\"flip-counter\"></div>";
+                html += "</div>";
+                return html;
+            }
+
+        //]]>
+        </script>
+
+        </div>
+    </div>
+</div>

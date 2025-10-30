@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 20,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 100.0
+  },
+  "Objective": {
+    "CurrentValue": 100.0,
+    "LocalizedTitle": "CHALK UP ANOTHER WIN",
+    "LocalizedDescription": "Win a total of 100 events across all modes",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_20.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_20@2x.jpg",
+    "ObjectiveId": 20,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_20.jpg",
+    "Name": "wins",
+    "Title": "Objectives_title_wins",
+    "Description": "Objectives_desc_wins",
+    "Format": 1,
+    "Target": 100.0,
+    "FormattedTarget": "100"
+  }
+}

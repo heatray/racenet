@@ -1,0 +1,1007 @@
+---
+layout: grid2.vto
+title: GRID 2 - Select Rival Card - Codemasters RaceNet
+nav:
+  - grid2
+  - rivals
+api:
+  UpdateCustomRivalPreferences: ./api/GRID2/Rivals/UpdateCustomRivalPreferences
+  UpdateAutoRivalOpOut:         ./api/GRID2/Rivals/UpdateAutoRivalOpOut
+  UpdateCustomRivalOpOut:       ./api/GRID2/Rivals/UpdateCustomRivalOpOut
+  InviteRival:                  ./api/GRID2/Rivals/InviteRival
+  CancelInvite:                 ./api/GRID2/Rivals/CancelInvite
+  AcceptInvite:                 ./api/GRID2/Rivals/AcceptInvite
+  AutoRenewRivalry:             ./api/GRID2/Rivals/AutoRenewRivalry
+  PotentialRivalList:           ./api/GRID2/Rivals/PotentialRivalList
+data:
+  seconds_to_end: 259201
+  rivalry:
+    weekly:
+      name: Player Weekly
+      banner: RaceNet
+      id: 18774541
+    custom:
+      name: Player Custom
+      banner: WSR
+      id: 18775459
+    social1:
+      name: Player Two
+      banner: NewUnion
+      id: 15589482
+    social2:
+      name: Player Three
+      banner: transamerica
+      id: 18753648
+    social3:
+      id: 0
+    social4:
+      id: 0
+---
+<div id="wrapper">
+    <div id="MainContent" class="left">
+        <div id="heading" class="infobar_anchor pagelogo">
+            <h1><span id="heading_title">RIVALS</span><span id="g2r_infobar"><span class="infobar_infoicon"><span class="infobar_pointer"></span></span><span class="infobar_content">Create rivalries to compete for XP and cash in game while gaining Followers on RaceNet! Increase your rewards by adding more rivals.</span></span></h1>
+        </div>
+        <div>
+<link href="./Content/css/Grid2.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2Rivals.css" rel="stylesheet" type="text/css" />
+
+
+
+<div id="rivals_container"> 
+<div id="rivalsCarousel" class="swiper-container">
+        <div id="rivals_call_out"><p>Create rivalries to compete for XP and cash in game while gaining Followers on RaceNet!</p></div>
+        <div id="backbutton"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slid">
+                <div class="rival_box_container pointer unselected">
+                        <div class="rivalBox typeAuto" data-rivalry-id="{{ data.rivalry.weekly.id }}">
+        
+        <div class="waiting_overlay" style="display:none">
+            <div class="progress"></div>
+        </div>
+
+        <img class="rival_card_img" src="./Content/images/{{ data.rivalry.weekly.banner }}.jpg" width="300" height="84" alt="" />
+        <div class="rival_box_top_row typeTie">
+            <div class="rival_type">WEEKLY</div>
+            <div class="rival_status">TIED</div>
+        </div>
+        <div class="rivalry_info_bar">
+            <div class="rival_box_title">{{ data.rivalry.weekly.name }}</div>
+        </div>
+             <div class="rival_update_button activeButton"><div><p>UPDATES</p></div></div>
+                <div class="rival_auto_edit_button" style="display:none;" ><div ><p>EDIT</p></div></div>
+        <div class="rival_info_button"><div><p>INFORMATION</p></div></div>
+        <div style="clear:both"></div>
+   
+    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-slid">
+                <div class="rival_box_container pointer unselected">
+                        <div class="rivalBox typeCustom" data-rivalry-id="{{ data.rivalry.custom.id }}">
+        
+        <div class="waiting_overlay" style="display:none">
+            <div class="progress"></div>
+        </div>
+
+        <img class="rival_card_img" src="./Content/images/{{ data.rivalry.custom.banner }}.jpg" width="300" height="84" alt="" />
+        <div class="rival_box_top_row typeTie">
+            <div class="rival_type">CUSTOM</div>
+            <div class="rival_status">TIED</div>
+        </div>
+        <div class="rivalry_info_bar">
+            <div class="rival_box_title">{{ data.rivalry.custom.name }}</div>
+        </div>
+             <div class="rival_update_button activeButton"><div><p>UPDATES</p></div></div>
+                <div class="rival_custom_edit_button"><div><p>EDIT</p></div></div>
+        <div class="rival_info_button"><div><p>INFORMATION</p></div></div>
+        <div style="clear:both"></div>
+   
+    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-slid">  
+                <div class="rival_box_container pointer unselected">
+                        <div class="rivalBox typeSocial" data-rivalry-id="{{ data.rivalry.social1.id }}">
+        
+        <div class="waiting_overlay" style="display:none">
+            <div class="progress"></div>
+        </div>
+
+        <img class="rival_card_img" src="./Content/images/{{ data.rivalry.social1.banner }}.jpg" width="300" height="84" alt="" />
+        <div class="rival_box_top_row typeTie">
+            <div class="rival_type">SOCIAL</div>
+            <div class="rival_status">TIED</div>
+        </div>
+        <div class="rivalry_info_bar">
+            <div class="rival_box_title">{{ data.rivalry.social1.name }}</div>
+        </div>
+             <div class="rival_update_button activeButton"><div><p>UPDATES</p></div></div>
+                <div class="rival_social_edit_button"><div><p>EDIT</p></div></div>
+        <div class="rival_info_button"><div><p>INFORMATION</p></div></div>
+        <div style="clear:both"></div>
+   
+    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-slid">
+                <div class="rival_box_container pointer unselected">
+                        <div class="rivalBox typeSocial" data-rivalry-id="{{ data.rivalry.social2.id }}">
+        
+        <div class="waiting_overlay" style="display:none">
+            <div class="progress"></div>
+        </div>
+
+        <img class="rival_card_img" src="./Content/images/{{ data.rivalry.social2.banner }}.jpg" width="300" height="84" alt="" />
+        <div class="rival_box_top_row typeTie">
+            <div class="rival_type">SOCIAL</div>
+            <div class="rival_status">TIED</div>
+        </div>
+        <div class="rivalry_info_bar">
+            <div class="rival_box_title">{{ data.rivalry.social2.name }}</div>
+        </div>
+             <div class="rival_update_button activeButton"><div><p>UPDATES</p></div></div>
+                <div class="rival_social_edit_button"><div><p>EDIT</p></div></div>
+        <div class="rival_info_button"><div><p>INFORMATION</p></div></div>
+        <div style="clear:both"></div>
+   
+    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-slid">
+                <div class="rival_box_container pointer unselected">
+                        <div class="rivalBox typeSocial empty" data-rivalry-id="{{ data.rivalry.social3.id }}">
+        
+        <div class="waiting_overlay" style="display:none">
+            <div class="progress"></div>
+        </div>
+
+        <img class="rival_card_img" src="./Content/Grid2/Rivals/empty.png" width="300" height="84" alt="" />
+        <div class="rival_box_top_row ">
+            
+            <div class="rival_type">SOCIAL</div>
+            <div class="rival_status">NO RIVAL</div>
+           
+        </div>
+        <div class="rivalry_info_bar empty">
+            <div class="rival_box_title"></div><br />
+        </div>
+                <div class="rival_empty_social_edit_button activeButton"><div><p>EDIT</p></div></div>
+         <div class="rival_info_button"><div><p>INFORMATION</p></div></div>
+   
+    </div>
+
+
+                </div>
+            </div>
+            <div class="swiper-slid">
+                <div class="rival_box_container pointer unselected">
+                        <div class="rivalBox typeSocial empty" data-rivalry-id="{{ data.rivalry.social4.id }}">
+        
+        <div class="waiting_overlay" style="display:none">
+            <div class="progress"></div>
+        </div>
+
+        <img class="rival_card_img" src="./Content/Grid2/Rivals/empty.png" width="300" height="84" alt="" />
+        <div class="rival_box_top_row ">
+            
+            <div class="rival_type">SOCIAL</div>
+            <div class="rival_status">NO RIVAL</div>
+           
+        </div>
+        <div class="rivalry_info_bar empty">
+            <div class="rival_box_title"></div><br />
+        </div>
+                <div class="rival_empty_social_edit_button activeButton"><div><p>EDIT</p></div></div>
+         <div class="rival_info_button"><div><p>INFORMATION</p></div></div>
+   
+    </div>
+
+
+                </div>
+            </div>
+         </div>
+         <div id="rival_card_buttons"></div>
+     
+         <div id="card"></div>
+
+          <div id="rcbc" style=""></div>
+
+        </div>
+        <div ><div class="back"><p>BACK</p></div></div>
+        <div style="clear:both"></div>
+            <div id="rbc" class="rival_control_bar_container" style="display:none">
+                <div class="rival_control_bar" data-rivalry-id="18764101">
+
+        <div class="control_bar_section cbs_auto_optout" style="display:none">
+                <div class = "custom_option"><div class="custom_option_text"><p>YOU CAN TURN OFF WEEKLY RIVALS AT ANY TIME WHICH WILL REMOVE YOU FROM THE SELCTION PROCESS</p></div>
+                    <div class="button_set_auto_optout button rival_control_button">OPT OUT</div>
+                </div>
+
+        </div>
+        <div class="control_bar_section cbs_auto_optout_confirm" style="display:none">
+                <div class="control_bar_social_info">ARE YOU SURE?</div>
+                <div class="button_confirm_auto_optout rival_control_button green_gradient button">OK</div>
+                <p id="AutoOptOutSetting" style="display:none">true</p>
+        </div>
+        <div class="control_bar_section cbs_auto_optout_saved" style="display:none">
+            <div class="control_bar_social_info">SAVE SUCCESSFUL - NEW SETTINGS WILL BE APPLIED TO YOUR NEXT CUSTOM RIVAL</div>
+        </div>
+            <div class="control_bar_section cbs_default">
+
+            
+            <div class="news_icon_holder" style="display:none">
+            </div>
+
+        </div>
+    <div class="control_bar_section cbs_info" style="display:none">
+        
+                <div class="rival_info"><p>WEEKLY RIVAL: Weekly rivals are auto generated based on your skill level. Each rivalry lasts for 7 days with a new rival selected at the start of each week.</p></div>
+        
+        
+    </div>
+
+</div>
+
+
+            </div>
+            <div id="rbc" class="rival_control_bar_container" style="display:none">
+                <div class="rival_control_bar" data-rivalry-id="18767480">
+
+        <div class="control_bar_section cbs_custom_options" style="display:none">
+        <div id="custom_rival_options" style="color:White"> 
+        <div><p>Select your own custom settings via each drop down list and click save to create a new Custom Rival selection.  </p></div>
+            <div class="custom_option"><div class="custom_option_text"><p>XP</p></div>
+                <select name="xp_select" id="xp_select" class="custom_option_selector ">
+                            <option value="0" selected="selected">Any</option>
+                            <option value="1">Lower than me</option>
+                            <option value="2">Same as me</option>
+                            <option value="3">Higher than me</option>
+                </select>       
+            </div>
+            <div class="clearfix"></div>
+            <div class="custom_option"><div class="custom_option_text"><p>Win/Loss Ratio</p></div>
+                <select id="winloss_select" class="custom_option_selector">
+                            <option value="0" selected="selected">Any</option>
+                            <option value="1">Worse than me</option>
+                            <option value="2">Same as me</option>
+                            <option value="3">Better than me</option>
+                </select>  
+            </div>
+            <div class="clearfix"></div>
+            <div class="custom_option"><div class="custom_option_text"><p>Region</p></div>
+                <select id="location_select" class="custom_option_selector">
+                            <option value="0" selected="selected">Any</option>
+                            <option value="2">Same as me</option>
+                            <option value="3">Rest of World</option>
+                </select>
+            </div>
+            <div class="clearfix"></div>
+            <div class="custom_option"><div class="custom_option_text"><p>Event Preference</p></div>
+                <select id="race_type_select" class="custom_option_selector">
+                            <option value="0" selected="selected">Any</option>
+                            <option value="1">Race</option>
+                            <option value="2">Faceoff</option>
+                            <option value="3">Checkpoint</option>
+                            <option value="4">Time Attack</option>
+                            <option value="6">Power Lap</option>
+                            <option value="7">Drift</option>
+                            <option value="8">Endurance</option>
+                            <option value="9">Overtake</option>
+                            <option value="10">Tougue</option>
+                </select>
+            </div>
+            <br /> <br />
+            </div>
+        </div>
+           <div id="custom_rival_action_buttons">
+            <div id="set_custom_options" class="rival_control_button green_gradient  button">SAVE</div>
+            </div>
+        <div class="control_bar_section cbs_custom_optout_confirm" style="display:none">
+                <div class="control_bar_social_info"><p>ARE YOU SURE?</p></div>
+                <div class="button_confirm_custom_optout rival_control_button green_gradient button">CONFIRM</div>
+                <p id="CustomOptOutSetting" style="display:none">true</p>
+            
+        </div>
+        <div class="control_bar_section cbs_custom_optout_saved" style="display:none">
+            <div class="control_bar_social_info"><p>SAVE SUCCESSFUL - NEW SETTINGS WILL BE APPLIED TO YOUR NEXT CUSTOM RIVAL</p></div>
+        </div>
+            <div class="control_bar_section cbs_default">
+
+            
+            <div class="news_icon_holder" style="display:none">
+            </div>
+
+        </div>
+    <div class="control_bar_section cbs_info" style="display:none">
+        
+                <div class="rival_info"><p>CUSTOM RIVAL: Custom rivalries allow you to set up custom filters to create a unique rivalry every 7 days. Custom filters can be changed at any time via the edit option</p></div>
+        
+        
+    </div>
+
+</div>
+
+
+            </div>
+            <div id="rbc" class="rival_control_bar_container" style="display:none">
+                <div class="rival_control_bar" data-rivalry-id="15589482">
+
+                    <div class="control_bar_section cbs_end_rivalry" style="display:none">
+                        <div class="control_bar_social_info"><p>EDIT SOCIAL RIVAL: YOU WILL NEED TO END YOUR CURRENT SOCIAL RIVALRY BEFORE BEING ABLE TO SELECT A NEW ONE</p></div>
+                        <div class="clearfix"></div>
+                        <div id="button_end_rivalry " class=" red_gradient button button_red button_end_rivalry rival_control_button"><p>CANCEL RIVALRY</p></div>
+                    </div>
+            <div class="control_bar_section cbs_default">
+
+            
+            <div class="news_icon_holder" style="display:none">
+            </div>
+
+        </div>
+    <div class="control_bar_section cbs_info" style="display:none">
+        
+                <div class="rival_info"><p>SOCIAL RIVAL: Social rivalries allow you to select either your friends or previous weekly rivals to go up against. You can end and start new rivalries via the edit option</p></div>           
+        
+        
+    </div>
+
+</div>
+
+
+            </div>
+            <div id="rbc" class="rival_control_bar_container" style="display:none">
+                <div class="rival_control_bar" data-rivalry-id="18753648">
+
+                    <div class="control_bar_section cbs_end_rivalry" style="display:none">
+                        <div class="control_bar_social_info"><p>EDIT SOCIAL RIVAL: YOU WILL NEED TO END YOUR CURRENT SOCIAL RIVALRY BEFORE BEING ABLE TO SELECT A NEW ONE</p></div>
+                        <div class="clearfix"></div>
+                        <div id="button_end_rivalry " class=" red_gradient button button_red button_end_rivalry rival_control_button"><p>CANCEL RIVALRY</p></div>
+                    </div>
+            <div class="control_bar_section cbs_default">
+
+            
+            <div class="news_icon_holder" style="display:none">
+            </div>
+
+        </div>
+    <div class="control_bar_section cbs_info" style="display:none">
+        
+                <div class="rival_info"><p>SOCIAL RIVAL: Social rivalries allow you to select either your friends or previous weekly rivals to go up against. You can end and start new rivalries via the edit option</p></div>           
+        
+        
+    </div>
+
+</div>
+
+
+            </div>
+            <div id="rbc" class="rival_control_bar_container" style="display:none">
+                <div class="rival_control_bar" data-rivalry-id="0">
+
+            <div id="ccc" class="control_bar_section cbs_default">
+            <div><p>Select a friend or previous rival from the drop down list to send them a Social Rival request. </p></div>
+                
+                <div class="control_bar_text"></div>
+                
+                <div class="social_rival_combo_container">
+                        <select class="social_rival_combo">
+    <option disabled>---FRIENDS---</option>
+    <option disabled>---PREVIOUS RIVALS---</option>
+        <option value="2552454">ManiaQ2137</option>
+        <option value="2450199">kubamrox</option>
+        <option value="794741">Alcoholig197</option>
+        <option value="562508">JaysonWallson</option>
+        <option value="1153267">DryFox</option>
+        <option value="10528">Gibasi</option>
+        <option value="239590">MadMann</option>
+        <option value="25716">rouliette25</option>
+    </select>
+
+                </div>
+                <div id="button_invite_new" class="button green_gradient button_invite_new rival_control_button">SEND REQUEST</div>    
+            </div>
+        <div class="control_bar_section cbs_info" style="display:none">
+        
+                <div class="rival_info"><p>SOCIAL RIVAL: Social rivalries allow you to select either your friends or previous weekly rivals to go up against. You can end and start new rivalries via the edit option</p></div>           
+        
+        
+    </div>
+
+</div>
+
+
+            </div>
+            <div id="rbc" class="rival_control_bar_container" style="display:none">
+                <div class="rival_control_bar" data-rivalry-id="0">
+
+            <div id="ccc" class="control_bar_section cbs_default">
+            <div><p>Select a friend or previous rival from the drop down list to send them a Social Rival request. </p></div>
+                
+                <div class="control_bar_text"></div>
+                
+                <div class="social_rival_combo_container">
+                        <select class="social_rival_combo">
+    <option disabled>---FRIENDS---</option>
+    <option disabled>---PREVIOUS RIVALS---</option>
+        <option value="2552454">ManiaQ2137</option>
+        <option value="2450199">kubamrox</option>
+        <option value="794741">Alcoholig197</option>
+        <option value="562508">JaysonWallson</option>
+        <option value="1153267">DryFox</option>
+        <option value="10528">Gibasi</option>
+        <option value="239590">MadMann</option>
+        <option value="25716">rouliette25</option>
+    </select>
+
+                </div>
+                <div id="button_invite_new" class="button green_gradient button_invite_new rival_control_button">SEND REQUEST</div>    
+            </div>
+        <div class="control_bar_section cbs_info" style="display:none">
+        
+                <div class="rival_info"><p>SOCIAL RIVAL: Social rivalries allow you to select either your friends or previous weekly rivals to go up against. You can end and start new rivalries via the edit option</p></div>           
+        
+        
+    </div>
+
+</div>
+
+
+            </div>
+
+    <div id="rivals_footer"><div id="rivalries_expiry"></div></div>
+</div>
+
+<div style="clear:both"></div>
+
+<script type="text/javascript">
+    var mySwiper;
+    var secondsRemaining;
+    var expiresIn = "RIVALRIES END IN:";
+    var daysString = "D";
+    var hoursString = "H";
+    var expiredString = "EXPIRED";
+
+    $(document).ready(function () {
+        secondsRemaining = {{ data.seconds_to_end }};
+        doExpiryTicker();
+         
+//         mySwiper = $('.swiper-container').swiper({
+//                speed: 500, //Set animation duration to 500ms
+//                freeMode: true, //Enable free mode
+//                slidesPerSlide: 'auto',
+//                slidesPerGroup: 1,
+//                resistance: false
+//            });
+        
+        $('.rival_control_bar_container').appendTo($('#rcbc'));
+        
+        $('.rival_info_button, .back, .rival_update_button, .rival_empty_social_edit_button, .rival_social_edit_button, .rival_custom_edit_button').hide();
+      
+        $('#set_custom_options').click(function(){
+            $('#set_custom_options').hide();
+        }); 
+
+        $('.rival_custom_edit_button').click(function(){
+            $('#set_custom_options').show();
+        }); 
+
+        /* remove the save button when clicking back on to updates*/
+        $('.rival_update_button').click(function (){
+            $('#set_custom_options').hide();
+        });
+   
+//    $('#button_end_rivalry p').click(function(){
+//    location.reload();
+//    });
+       
+        $('.back').click(function(){
+            $('.rival_box_container, #rivals_call_out').show();
+            $('.rival_box_container').removeClass('activeRival');
+            $(this).removeClass('carddullborder');
+            $(this).hide();
+            $('.back, #rcbc').hide();
+            $('#card').empty();
+            $('.swiper-slid').removeClass('singlecard');
+            $('.rival_box_container').removeClass('removeCardMargins');
+            $('.rival_empty_social_edit_button, .rival_info_button, .rival_update_button, .rival_auto_edit_button, .rival_social_edit_button, .rival_custom_edit_button ').removeClass('activeButton');
+            $(' .rival_update_button, .rival_empty_social_edit_button ').addClass('activeButton');
+            $('#rivalsCarousel').css('padding-bottom','50px');
+            
+            $('#card, #set_custom_options, .rival_auto_edit_button, .rival_empty_social_edit_button, .rival_custom_edit_button,.rival_social_edit_button,.rival_info_button, .rival_update_button').hide();
+        });
+
+        
+//        $('.rival_box_container').eq(0).addClass('activeRival');
+//        $('.rival_box_container').eq(0).find('.rival_slide_pointer_arrow').addClass('activeRival');
+//        $('.rival_control_bar_container').eq(0).show( );
+
+        $('#set_custom_options').click( function() {
+            
+
+            
+            var xpSelect = document.getElementById( "xp_select" );
+            var xpValue = xpSelect.options[ xpSelect.selectedIndex ].value;
+
+            var winLossSelect = document.getElementById( "winloss_select" );
+            var winLossValue = winLossSelect.options[ winLossSelect.selectedIndex ].value;
+
+            var locationSelect = document.getElementById( "location_select" );
+            var locationValue = locationSelect.options[ locationSelect.selectedIndex ].value;
+
+            var raceTypeSelect = document.getElementById( "race_type_select" );
+            var raceTypeValue = raceTypeSelect.options[ raceTypeSelect.selectedIndex ].value;
+
+            $.ajax({
+                type: "POST",
+                url: '{{ api.UpdateCustomRivalPreferences }}',
+                data: "{ 'xpValue' : '" + xpValue + "', 'winLossValue' : '" + winLossValue + "', 'locationValue' : '" + locationValue + "', 'raceTypeValue' : '" + raceTypeValue + "' }",
+                contentType: "application/json;",
+                cache: false
+            });
+
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_custom_optout_saved").show( );
+        });
+
+        $('.button_confirm_auto_optout').click( function() {
+            
+            var optOutSelect = document.getElementById( "AutoOptOutSetting");
+            var optOut = optOutSelect.innerHTML;
+
+            $.ajax({
+                type: "POST",
+                url: '{{ api.UpdateAutoRivalOpOut }}',
+                data: "{ 'optOut' : '" + optOut + "' }",
+                contentType: "application/json;",
+                cache: false
+            }).done(function(msg) {
+                if(optOut == 1)
+                {
+                    document.getElementById( "AutoOptOutSetting").innerHTML = 'false';
+                }
+                else
+                {
+                    document.getElementById( "AutoOptOutSetting").innerHTML = 'true';
+                }
+            });
+            
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_auto_optout_saved").show( );
+        });
+
+        $('.button_confirm_custom_optout').click( function () {
+
+            var optOutSelect = document.getElementById( "CustomOptOutSetting");
+            var optOut = optOutSelect.innerHTML;
+
+            $.ajax({
+                type: "POST",
+                url: '{{ api.UpdateCustomRivalOpOut }}',
+                data: "{ 'optOut' : '" + optOut + "' }",
+                contentType: "application/json;",
+                cache: false
+            }).done(function(msg) {
+                if(optOut == 1)
+                {
+                    document.getElementById( "CustomOptOutSetting").innerHTML = 'false';
+                }
+                else
+                {
+                    document.getElementById( "CustomOptOutSetting").innerHTML = 'true';
+                }
+            });
+
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_custom_optout_saved").show( );
+        });
+
+
+        
+
+        //   add transition border to all cards that dont have the active rival class.    
+        
+       $('.rival_box_container').mouseenter(function(){
+            if( $(this).hasClass('activeRival')) 
+        {
+        
+        }
+         
+        else
+        {
+            $(this).addClass('rival_box_outline');
+        }
+        
+        });
+
+        $('.rival_box_container').mouseleave(function(){
+         $(this).removeClass('rival_box_outline');
+        });
+        
+
+
+        
+        $('.rival_box_container').click(function() {
+
+
+            if( !$(this).hasClass('activeButton'))
+            {
+                $('.rival_control_bar_container').hide( );
+                $('.rival_box_container').removeClass('activeRival');
+                $('.rival_slide_pointer_arrow').removeClass('activeRival');
+                $(this).addClass('activeRival');
+                $('.rival_box_container').removeClass('pointer');
+                //$('.rival_box').click(false);
+                $(this).parent().addClass('singlecard');
+                $('.rival_box_container').hide();
+                $('.back').show();
+                $(this).addClass('carddullborder');
+                $('.back').appendTo('#backbutton');
+                $('.rival_box_container').removeClass('rival_box_outline');
+                $(this).show();
+                $('#card').empty();
+                $('#rcbc').show();
+                $('.rival_box_container').addClass('removeCardMargins unselectable');
+                var idx = $('.rival_box_container').index(this);
+                $('.rival_control_bar_container').eq(idx).show( );
+                $('#rivals_call_out').hide();
+                $('.rival_empty_social_edit_button').show();
+                $('#rivalsCarousel').css('padding-bottom','0px');
+                //$(' .rival_update_button').addClass('activeButton');
+                
+                //send browser to top fix for iphone
+                // document.location.href = '#'
+                document.location.href = './grid2/rivals/#'
+
+
+                //show info and edit buttons
+                $('.rival_custom_edit_button,.rival_social_edit_button,.rival_info_button, .rival_update_button').show();
+
+            }
+
+       $('.rival_empty_social_edit_button, .rival_info_button, .rival_update_button, .rival_auto_edit_button, .rival_social_edit_button, .rival_custom_edit_button ').click(function(){
+            $('.rival_empty_social_edit_button, .rival_info_button, .rival_update_button, .rival_auto_edit_button, .rival_social_edit_button, .rival_custom_edit_button ').removeClass('activeButton');
+                
+                
+                if( !$(this).hasClass('activeButton'))
+                {
+                    $(this).removeClass('activeButton');
+                    $(this).addClass('activeButton');
+                }
+        });
+            
+            $(".control_bar_section").hide( );
+            $(".cbs_default").show( );
+        });
+
+        
+        $('#rivals_container').on("click", ".news_bar_item_button", function () {
+             var controlBar = $(this).parents('.control_bar_section');
+             $(controlBar).find('.news_item').show( );
+            
+//            if(!$(this).hasClass('active'))
+//            {
+//                
+//                // Switch visible news item
+//                var controlBar = $(this).parents('.control_bar_section');
+//               // $(controlBar).find('.news_item').hide();
+
+//                //$(controlBar).find('.news_bar_item_button').removeClass('active');
+//                //$(this).addClass('active');
+//                
+//                var idx = $(controlBar).find('.news_bar_item_button').index(this);
+//                $(controlBar).find('.news_item').show( );
+//            }    
+        });
+
+        
+        $('#rivals_container').on("click", ".rival_info_button", function () {
+            var controlBoxContainerDiv = $(this).parents(".rival_box_container");
+            var idx = $('.rival_box_container').index(controlBoxContainerDiv);
+            var bar = $('.rival_control_bar_container').eq(idx);
+
+            $('#custom_rival_action_buttons').hide();
+
+            // TODO: Determine if info is visible and toggle?
+            bar.find(".control_bar_section").hide( );
+            bar.find(".cbs_info").show( );
+            
+
+        });
+
+        
+        $('#rivals_container').on("click", ".button_info_ok", function () {
+            var controlBoxContainerDiv = $(this).parents(".rival_box_container");
+            var idx = $('.rival_box_container').index(controlBoxContainerDiv);
+            var bar = $('.rival_control_bar_container').eq(idx);
+
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_default").show( );
+
+        });
+
+        
+        $('#rivals_container').on("click", ".rival_auto_edit_button", function () {
+            var controlBoxContainerDiv = $(this).parents(".rival_box_container");
+            var idx = $('.rival_box_container').index(controlBoxContainerDiv);
+            var bar = $('.rival_control_bar_container').eq(idx);
+
+            
+            bar.find(".control_bar_section").hide( );
+            bar.find(".cbs_auto_optout").show( );
+        });
+
+        
+        $('#rivals_container').on("click", ".button_set_auto_optout", function () {
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_auto_optout_confirm").show( );
+        });
+
+        
+        $('#rivals_container').on("click", "#button_set_custom_optout", function () {
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_custom_optout").show( );
+        });
+
+        
+        $('#rivals_container').on("click", "#button_set_custom_optout", function () {
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_custom_optout_confirm").show( );
+        });
+
+        
+        $('#rivals_container').on("click", ".rival_custom_edit_button", function () {
+            var controlBoxContainerDiv = $(this).parents(".rival_box_container");
+            var idx = $('.rival_box_container').index(controlBoxContainerDiv);
+            var bar = $('.rival_control_bar_container').eq(idx);
+            $('#custom_rival_action_buttons').show();
+
+            
+            bar.find(".control_bar_section").hide( );
+            bar.find(".cbs_custom_options").show( );
+        });
+        
+        $('.rival_empty_social_edit_button').click(function(){
+            $('#ccc').show();
+        });
+
+        
+        $('#rivals_container').on("click", ".rival_social_edit_button", function () {
+            var controlBoxContainerDiv = $(this).parents(".rival_box_container");
+            var idx = $('.rival_box_container').index(controlBoxContainerDiv);
+            var bar = $('.rival_control_bar_container').eq(idx);
+        
+            
+            bar.find(".control_bar_section").hide( );
+            bar.find(".cbs_end_rivalry").show( );
+        }); 
+
+
+
+        
+        $('#rivals_container').on("click", ".button_invite_new", function () {
+            
+            var controlBarContainerDiv = $(this).parents(".rival_control_bar_container");
+            var boxContainerDiv = GetBoxFromControlBar( controlBarContainerDiv );
+
+            var comboBox = $(this).siblings('.social_rival_combo_container').children('.social_rival_combo');
+            var select = comboBox.get(0);
+            var rivalId = select.options[ select.selectedIndex ].value;
+
+            var url = '{{ api.InviteRival }}';
+            var data = "{ 'fromPrincipalId' : '" + 2536759 + "', 'toPrincipalId' : '" + rivalId + "' }";
+
+            UpdateRivalBox( url, data, boxContainerDiv, controlBarContainerDiv );
+
+            //needs to be better
+            //alert ("rival request sent")
+        });
+
+        
+        $('#rivals_container').on("click", ".button_cancel_invite", function () {
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_confirm_cancel").show( );
+        });
+
+        
+        $('#rivals_container').on("click", ".button_cancel_invite_confirm", function () {
+            var rivalryId = $(this).parents(".rival_control_bar").attr('data-rivalry-id');
+
+            var controlBarContainerDiv = $(this).parents(".rival_control_bar_container");
+            var boxContainerDiv = GetBoxFromControlBar( controlBarContainerDiv );
+
+            var url = '{{ api.CancelInvite }}';
+            var data = "{ 'principalId' : '" + 2536759 + "', 'rivalryId' : '" + rivalryId + "' }";
+
+            UpdateRivalBox( url, data, boxContainerDiv, controlBarContainerDiv );
+        });
+
+        
+        $('#rivals_container').on("click", ".button_cancel_invite_reject", function () {
+            var controlBarDiv = $(this).parents(".rival_control_bar");
+            controlBarDiv.children(".control_bar_section").hide( );
+            controlBarDiv.children(".cbs_default").show( );
+        });
+
+        
+        $('#rivals_container').on("click", ".button_accept_invite", function () {
+            var rivalryId = $(this).parents(".rival_control_bar").attr('data-rivalry-id');
+
+            var controlBarContainerDiv = $(this).parents(".rival_control_bar_container");
+            var boxContainerDiv = GetBoxFromControlBar( controlBarContainerDiv );
+
+            var url = '{{ api.AcceptInvite }}';
+            var data = "{ 'principalId' : '" + 2536759 + "', 'rivalryId' : '" + rivalryId + "' }";
+
+            UpdateRivalBox( url, data, boxContainerDiv, controlBarContainerDiv );
+        });
+
+        
+        $('#rivals_container').on("click", ".button_reject_invite", function () {
+            var rivalryId = $(this).parents(".rival_control_bar").attr('data-rivalry-id');
+
+            var controlBarContainerDiv = $(this).parents(".rival_control_bar_container");
+            var boxContainerDiv = GetBoxFromControlBar( controlBarContainerDiv );
+
+            var url = '{{ api.CancelInvite }}';
+            var data = "{ 'principalId' : '" + 2536759 + "', 'rivalryId' : '" + rivalryId + "' }";
+
+            UpdateRivalBox( url, data, boxContainerDiv, controlBarContainerDiv );
+        });
+
+        
+        $('#rivals_container').on("click", ".button_end_rivalry", function () {
+            var rivalryId = $(this).parents(".rival_control_bar").attr('data-rivalry-id');
+            
+            var controlBarContainerDiv = $(this).parents(".rival_control_bar_container");
+            var boxContainerDiv = GetBoxFromControlBar( controlBarContainerDiv );
+
+            var url = '{{ api.AutoRenewRivalry }}';
+            var data = "{ 'principalId' : '" + 2536759 + "', 'rivalryId' : '" + rivalryId + "', 'renew' : 'false' }";
+
+            UpdateRivalBox( url, data, boxContainerDiv, controlBarContainerDiv );
+            window.location.href ='../grid2/rivals'
+
+        });
+
+        $('#rivals_container').on("click", ".button_cancel_end_rivalry", function () {
+            var rivalryId = $(this).parents(".rival_control_bar").attr('data-rivalry-id');
+            
+            var controlBarContainerDiv = $(this).parents(".rival_control_bar_container");
+            var boxContainerDiv = GetBoxFromControlBar( controlBarContainerDiv );
+
+            var url = '{{ api.AutoRenewRivalry }}';
+            var data = "{ 'principalId' : '" + 2536759 + "', 'rivalryId' : '" + rivalryId + "', 'renew' : 'true' }";
+
+            UpdateRivalBox( url, data, boxContainerDiv, controlBarContainerDiv );
+            window.location.href ='../grid2/rivals'
+            
+        });
+        
+    });
+
+    
+    function ResetCustomOptions()
+    {
+        var xpSelect = document.getElementById( "xp_select" );
+        $(xpSelect).val( 0 );    
+
+        var winLossSelect = document.getElementById( "winloss_select" );
+        $(winLossSelect).val( 0 );    
+
+        var locationSelect = document.getElementById( "location_select" );
+        $(locationSelect).val( 0 );    
+
+        var raceTypeSelect = document.getElementById( "race_type_select" );
+        $(raceTypeSelect).val( 0 );    
+    }
+
+
+    function GetBoxFromControlBar( controlBar )
+    {
+        var idx = $('.rival_control_bar_container').index(controlBar);
+        var box = $('.rival_box_container').eq(idx);
+        return box;
+    }
+
+    function ShowWaitingBox( targetDiv )
+    {
+        targetDiv.find(".waiting_overlay").show( );
+    }
+
+    function HideWaitingBox( targetDiv )
+    {
+        targetDiv.find(".waiting_overlay").hide( );
+    }
+
+    function ShowErrorBox( targetDiv )
+    {
+        
+    }
+
+    function UpdateRivalBox( url, data, boxContainerDiv, controlBarContainerDiv )
+    {
+        
+        ShowWaitingBox( boxContainerDiv );
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            contentType: "application/json;",
+            cache: false,
+            dataType: 'json',
+            success: function (result) {
+
+                setTimeout( function() {
+                    if( result != null)
+                    {
+                        HideWaitingBox( boxContainerDiv );
+                        boxContainerDiv.html(result.RivalBox);
+                        controlBarContainerDiv.html(result.RivalBar);
+
+                        
+                        $.ajax({
+                            type:"GET",
+                            url: '{{ api.PotentialRivalList }}',
+                            cache: false,
+                            dataType: 'html',
+                            success: function ( result ) {
+                                $('.social_rival_combo_container').html(result);
+                            }
+                        });
+                    }
+                    else
+                    {
+                        
+                        HideWaitingBox( boxContainerDiv );
+                        ShowErrorBox( boxContainerDiv );
+                    }
+                }, 2000 );
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                
+                HideWaitingBox( boxContainerDiv );
+                ShowErrorBox( boxContainerDiv );
+            } 
+        });
+    }
+
+    function doExpiryTicker()
+    {
+        if(secondsRemaining <= 0)
+        {
+            $('#rivalries_expiry').text(expiredString);
+        }else
+        {
+            secondsRemaining--;
+            seconds = ('00' + parseInt(secondsRemaining % 60, 10)).substr(-2);
+            minutes = ('00' + parseInt((secondsRemaining / 60) % 60, 10)).substr(-2);
+            hours = ('00' + parseInt((secondsRemaining / 3600) % 24, 10)).substr(-2);
+            days = parseInt(secondsRemaining / 86400, 10);
+            $('#rivalries_expiry').text(expiresIn+' ' + days + daysString + ' '+hours + hoursString);
+            setTimeout(doExpiryTicker, 20000);
+        }
+    }
+</script>
+
+        </div>
+    </div>
+</div>

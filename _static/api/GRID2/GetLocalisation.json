@@ -1,0 +1,25 @@
+{
+  "Localisation": {
+    "Followers_board_difference": "+/-",
+    "Followers_board_followers": "FOLLOWERS",
+    "Followers_board_gained": "FOLLWERS GAINED",
+    "Followers_board_id": "DISPLAY NAME",
+    "Followers_board_lost": "FOLLOWERS LOST",
+    "Followers_board_pos": "POS.",
+    "Followers_board_recent": "RECENT ACTIVITY",
+    "Followers_filter_friends": "FRIENDS",
+    "Followers_filter_mine": "MY POSITION",
+    "Followers_filter_top10": "TOP",
+    "Followers_filter_overall": "OVERALL",
+    "Followers_filter_weekly": "WEEKLY",
+    "Followers_info_chart": "The Followers chart shows how many Followers you’ve gained or lost while competing in GRID 2. Hover over each point on the graph to see how you won or lost Followers",
+    "Followers_info_leader": "The Followers leaderboard shows you how you compare with the rest of the RaceNet community. Use the filters to see who tops the weekly or overall leaderboards or compare with friends",
+    "Followers_navigation_history": "HISTORY",
+    "Followers_navigation_history_alt1": "OVERVIEW",
+    "Followers_navigation_history_alt2": "ACTIVITY",
+    "Followers_navigation_leaderboards": "LEADERBOARDS",
+    "Followers_title": "FOLLOWERS",
+    "Mobile_extra_filter_by": "FILTER BY:",
+    "No_data": "NO DATA"
+  }
+}

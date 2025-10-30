@@ -1,0 +1,121 @@
+---
+layout: grid2.vto
+title: GRID 2 - Global Challenge - Codemasters RaceNet
+nav:
+  - grid2
+  - globalchallenge
+api:
+  GetGlobalDominationModel: ./api/GRID2/GetGlobalDominationModel.json
+---
+<script src="./Content/scripts/grid2.globaldomination.js" type="text/javascript"></script>
+<link href="./Content/css/Grid2Refresh.css" rel="stylesheet" type="text/css" />
+<link href="./Content/css/Grid2GlobalChallenge.css" rel="stylesheet" type="text/css" />
+
+<div id="wrapper">
+    <div id="MainContent" class="grid2 globaldomination infobar_anchor lang-en">
+        <h1>
+            <div class="content">
+                <div class="globaldomination_icon"></div>
+                <div id="header_text"><span id="header_text_container">&nbsp;</span><span id="g2gd_infobar"><span class="infobar_infoicon"><span class="infobar_pointer"></span></span><span class="infobar_content">The Global Challenge leaderboards let you see how you&#39;re performing against the entire RaceNet community. To enter a Global Challenge event head into the GRID online section in GRID 2</span></span></div>
+            </div>
+        </h1>
+        <div id="board_container"></div>
+        <div id="board_footer" class="bottom_bar"><div id="board_event_expires"></div></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var secondsRemaining;
+    var expiresIn = "EVENTS END IN:";
+    var daysString = "D";
+    var hoursString = "H";
+    var expiredString = "EXPIRED";
+
+    function doExpiryTicker()
+    {
+        if(secondsRemaining <= 0)
+        {
+            $('#board_event_expires').text(expiredString);
+        }else
+        {
+            secondsRemaining--;
+            seconds = ('00' + parseInt(secondsRemaining % 60, 10)).substr(-2);
+            minutes = ('00' + parseInt((secondsRemaining / 60) % 60, 10)).substr(-2);
+            hours = ('00' + parseInt((secondsRemaining / 3600) % 24, 10)).substr(-2);
+            days = parseInt(secondsRemaining / 86400, 10);
+            $('#board_event_expires').text(expiresIn+' ' + days + daysString + ' '+hours + hoursString);
+            setTimeout(doExpiryTicker, 20000);
+        }
+    }
+
+    $(function () {
+        $.getJSON('{{ api.GetGlobalDominationModel }}',
+        function (data) {
+            secondsRemaining = parseInt(data.SecondsRemaining, 10);
+            $('#header_text_container').text(data.Title);
+            var container = $('#board_container');
+
+            container.innerHTML = ""; // remove all children.
+            data.Events.forEach(function (item, idx) {
+                var elem = $('<a/>').attr({ href: '/grid2/global_challenge/' + data.GlobalDominationId + "/" + item.GlobalDominationEventId }).addClass("event");
+                var elembg = $('<div />').addClass("event_bg");
+                var elemcontent = $('<div />').addClass("event_content");
+                elembg.css({ 'background-image': 'url("./Content/Grid2/GC/event_card/' + (window.devicePixelRatio > 1 ? item.EventCardFilenameRetina : item.EventCardFilename) + '")' });
+                //elembg.css({ 'background-image': 'url("./Content/Grid2/GC/event_card/' + item.EventCardFilenameRetina + '")' });
+                elem.append(elembg);
+                // Title
+                var title = $('<div/>').addClass("event_footer");
+                title.append($('<div/>').addClass("r_arrow"));
+
+                if(item.IsRockstarSponsored)
+                {
+                    title.append($('<h5/>').text('ROCKSTAR ENERGY'));
+                }else
+                {
+                    title.append($('<h5/>').text(item.Location));
+                }
+                title.append($('<h5/>').text(item.Mode));
+                title.append($('<h6/>').text(item.Track));
+
+
+                elemcontent.append(title);
+
+                // My Score
+
+                //if(item.MyScore == null)
+                //    item.MyScore = { Score: "TEST", Medal: 1 };
+
+                if (item.MyScore != null) {
+                    var myScore = $('<div/>').addClass("event_header");
+                    
+                    var scoreEl = $('<div/>').addClass("score");
+
+                    var score = item.MyScore;
+                    var medal = MedalClasses[score.Medal];
+
+                    scoreEl.text(score.Score);
+                    if (medal != null) {
+                        scoreEl.addClass(medal).addClass("mini");
+                    }else
+                    {
+                        scoreEl.addClass('medal_none').addClass("mini");
+                    }
+                    myScore.append(scoreEl);
+                    
+                    elemcontent.append(myScore);
+                }
+                elem.append(elemcontent);
+
+                container.append(elem);
+
+                //var wrapper = $('<a/>').attr({ href: '/grid2/global_challenge?eventID=' + item.GlobalDominationEventId });
+                //wrapper.append(elem);
+
+
+                //container.append(wrapper);
+            });
+            doExpiryTicker();
+        });
+    });
+
+</script>

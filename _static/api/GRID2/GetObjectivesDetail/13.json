@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 13,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 50.0
+  },
+  "Objective": {
+    "CurrentValue": 50.0,
+    "LocalizedTitle": "IN MY MIRROR",
+    "LocalizedDescription": "Achieve a total of 50 passes in Faceoff",
+    "IsCompleted": true,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_13.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_13@2x.jpg",
+    "ObjectiveId": 13,
+    "ObjectiveTypeId": 1,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_13.jpg",
+    "Name": "faceoff_pass",
+    "Title": "Objectives_title_faceoff_pass",
+    "Description": "Objectives_desc_faceoff_pass",
+    "Format": 1,
+    "Target": 50.0,
+    "FormattedTarget": "50"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "PlayerProgress": {
+    "PrincipalId": 2536759,
+    "Platform": 3,
+    "ObjectiveId": 27,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "UpdatedAt": "0001-01-01T00:00:00",
+    "CompletedAt": null,
+    "Metadata": null,
+    "CurrentValue": 0.0
+  },
+  "Objective": {
+    "CurrentValue": 0.0,
+    "LocalizedTitle": "SOCIALLY ACCEPTABLE",
+    "LocalizedDescription": "COMPETE AGAINST 4 SOCIAL RIVALS IN A SINGLE GLOBAL CHALLENGE EVENT",
+    "IsCompleted": false,
+    "CdnImageFilename": "./Content/Grid2/Objectives/details/objective_27.jpg",
+    "CdnRetinaImageFilename": "./Content/Grid2/Objectives/details/objective_27@2x.jpg",
+    "ObjectiveId": 27,
+    "ObjectiveTypeId": 7,
+    "Metadata": null,
+    "NewsItemId": null,
+    "ObjectiveTitleOverride": null,
+    "ObjectiveDescOverride": null,
+    "ImageFilename": "objective_27.jpg",
+    "Name": "compete_against_4_social_rivals_in_one_event",
+    "Title": "Objectives_title_compete_against_4_social_rivals_in_one_event",
+    "Description": "Objectives_desc_compete_against_4_social_rivals_in_one_event",
+    "Format": 1,
+    "Target": 1.0,
+    "FormattedTarget": "1"
+  }
+}

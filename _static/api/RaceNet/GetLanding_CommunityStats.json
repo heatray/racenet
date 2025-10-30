@@ -1,0 +1,62 @@
+{
+  "CommunityStats": [
+    {
+      "GameIconURL": "./Content/Landing/v1.0/Com_Sts_GAS.png",
+      "BodyText": "RACENET TRACKS THE LATEST COMMUNITY STATISTICS FROM ALL SUPPORTED TITLES. HELP HIT MILESTONES AND TAKE PART IN COMMUNITY EVENTS!",
+      "StatName": "RaceNet Challenges",
+      "StatValue": "4,111,316",
+      "StatValueRaw": 4111316,
+      "GameName": "Grid2"
+    },
+    {
+      "GameIconURL": "./Content/Landing/v1.0/Com_Sts_F1_2014.png",
+      "BodyText": "RACENET TRACKS THE LATEST COMMUNITY STATISTICS FROM ALL SUPPORTED TITLES. HELP HIT MILESTONES AND TAKE PART IN COMMUNITY EVENTS!",
+      "StatName": "TOTAL RACES",
+      "StatValue": "7,663,124",
+      "StatValueRaw": 7663124,
+      "GameName": "F12014"
+    },
+    {
+      "GameIconURL": "./Content/Landing/v1.0/Com_Sts_G2.png",
+      "BodyText": "RACENET TRACKS THE LATEST COMMUNITY STATISTICS FROM ALL SUPPORTED TITLES. HELP HIT MILESTONES AND TAKE PART IN COMMUNITY EVENTS!",
+      "StatName": "TOTAL RACES",
+      "StatValue": "244,888,022",
+      "StatValueRaw": 244888022,
+      "GameName": "Grid2"
+    },
+    {
+      "GameIconURL": "./Content/Landing/v1.0/Com_Sts_F12012.png",
+      "BodyText": "RACENET TRACKS THE LATEST COMMUNITY STATISTICS FROM ALL SUPPORTED TITLES. HELP HIT MILESTONES AND TAKE PART IN COMMUNITY EVENTS!",
+      "StatName": "TOTAL RACES",
+      "StatValue": "68,346,657",
+      "StatValueRaw": 68346657,
+      "GameName": "F12012"
+    },
+    {
+      "GameIconURL": "./Content/Landing/v1.0/Com_Sts_DrtShwdn.png",
+      "BodyText": "RACENET TRACKS THE LATEST COMMUNITY STATISTICS FROM ALL SUPPORTED TITLES. HELP HIT MILESTONES AND TAKE PART IN COMMUNITY EVENTS!",
+      "StatName": "TOTAL RACES",
+      "StatValue": "167,435,669",
+      "StatValueRaw": 167435669,
+      "GameName": "Showdown"
+    },
+    {
+      "GameIconURL": "./Content/Landing/v1.0/Com_Sts_F12013.png",
+      "BodyText": "RACENET TRACKS THE LATEST COMMUNITY STATISTICS FROM ALL SUPPORTED TITLES. HELP HIT MILESTONES AND TAKE PART IN COMMUNITY EVENTS!",
+      "StatName": "TOTAL RACES",
+      "StatValue": "13,733,814",
+      "StatValueRaw": 13733814,
+      "GameName": "F12013"
+    },
+    {
+      "GameIconURL": "./Content/Landing/v1.0/Com_Sts_RceStrs.png",
+      "BodyText": "???",
+      "StatName": "???",
+      "StatValue": "9,999,999",
+      "StatValueRaw": 9999999,
+      "GameName": "Racestars"
+    }
+  ],
+  "RibbonLeftUrl": "./Content/Landing/v1.0/Com_Sts_RRibbon.png",
+  "RibbonRightUrl": "./Content/Landing/v1.0/Com_Sts_LRibbon.png"
+}
