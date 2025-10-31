@@ -1,0 +1,8 @@
+#modal #content {
+  text-align: left;
+  font-size: 0.9em;
+}
+#modal #content p {
+  margin: 0.25em 0;
+  text-transform: none;
+}

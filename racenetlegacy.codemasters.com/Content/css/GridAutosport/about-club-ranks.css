@@ -1,0 +1,11 @@
+#modal #content {
+  text-align: left;
+  font-size: 0.9em;
+}
+#modal #content .rank p {
+  margin: 0.25em 0;
+  text-transform: none;
+}
+#modal #content .rank p:nth-of-type(2) {
+  color: #818181;
+}
