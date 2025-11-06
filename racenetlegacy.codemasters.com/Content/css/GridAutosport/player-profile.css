@@ -1,0 +1,87 @@
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.GasTransitionShort {
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+.GasTransitionMedium {
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.GasTransitionLong {
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.fadedOut {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.notFadedOut {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+#player_profile {
+  font-family: 'EurostileNextW02-Ext';
+  font-size: 1.1em;
+  text-align: left;
+}
+#player_profile .vehicle_image img {
+  width: 100%;
+  height: auto;
+}
+#player_profile .name,
+#player_profile .vehicle,
+#player_profile .level,
+#player_profile .club {
+  margin: 0.75em 0;
+}
+#player_profile .name img,
+#player_profile .vehicle img,
+#player_profile .level img,
+#player_profile .club img {
+  width: 33px;
+  height: 33px;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+#player_profile .name a,
+#player_profile .vehicle a,
+#player_profile .level a,
+#player_profile .club a {
+  color: white;
+  text-decoration: underline;
+}
+#player_profile .name .value,
+#player_profile .vehicle .value,
+#player_profile .level .value,
+#player_profile .club .value {
+  vertical-align: middle;
+}
+#player_profile .player_stats .stat {
+  clear: both;
+  margin-top: 1em;
+  background: transparent url(../../GridAutosport/bg_dot.png) repeat-x left center;
+}
+#player_profile .player_stats .stat span {
+  background-color: black;
+}
+#player_profile .player_stats .stat span.left {
+  float: left;
+  padding-right: 1em;
+}
+#player_profile .player_stats .stat span.right {
+  float: right;
+  padding-left: 1em;
+}
