@@ -24,6 +24,8 @@ site.ignore(
   "racenetlegacy.codemasters.com/Content/scripts/TripleBarCarStatsScript.js",
   "racenetlegacy.codemasters.com/Content/scripts/joyride.js"
 );
+site.ignore("dirt4.dirtgame.com")
+site.ignore("ecdn.codemasters.com")
 
 site.copy("racenetlegacy.codemasters.com", ".");
 
