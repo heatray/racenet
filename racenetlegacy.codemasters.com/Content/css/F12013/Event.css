@@ -1,0 +1,1221 @@
+/* #c0d2db */
+/* #6bd6df */
+.bs {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.shadow {
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.4);
+}
+.wrappingheaders .box_header,
+.wrappingheaders .box_subheader {
+  width: 101%;
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  transform: skewX(0deg);
+  border-radius: 0px;
+  left: 0px;
+}
+.wrappingheaders .box_header_text,
+.wrappingheaders .box_subheader_text {
+  height: auto;
+  padding: 0px 10px;
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  transform: skewX(0deg);
+  word-wrap: break-word;
+}
+.wrappingheaders .box_header,
+.wrappingheaders .box_header_text,
+.wrappingheaders .box_subheader,
+.wrappingheaders .box_subheader_text {
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: normal;
+}
+.wrappingheaders .box_header_container {
+  width: 100%;
+}
+/* == CSS animation == */
+.skew36 {
+  -webkit-transform: skewX(-36deg);
+  -moz-transform: skewX(-36deg);
+  -ms-transform: skewX(-36deg);
+  transform: skewX(-36deg);
+}
+.skewback36 {
+  -webkit-transform: skewX(36deg);
+  -moz-transform: skewX(36deg);
+  -ms-transform: skewX(36deg);
+  transform: skewX(36deg);
+}
+.skew0 {
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  transform: skewX(0deg);
+}
+/* #c0d2db */
+/* #6bd6df */
+.bs {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.shadow {
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.4);
+}
+.wrappingheaders .box_header,
+.wrappingheaders .box_subheader {
+  width: 101%;
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  transform: skewX(0deg);
+  border-radius: 0px;
+  left: 0px;
+}
+.wrappingheaders .box_header_text,
+.wrappingheaders .box_subheader_text {
+  height: auto;
+  padding: 0px 10px;
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  transform: skewX(0deg);
+  word-wrap: break-word;
+}
+.wrappingheaders .box_header,
+.wrappingheaders .box_header_text,
+.wrappingheaders .box_subheader,
+.wrappingheaders .box_subheader_text {
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: normal;
+}
+.wrappingheaders .box_header_container {
+  width: 100%;
+}
+/* == CSS animation == */
+.skew36 {
+  -webkit-transform: skewX(-36deg);
+  -moz-transform: skewX(-36deg);
+  -ms-transform: skewX(-36deg);
+  transform: skewX(-36deg);
+}
+.skewback36 {
+  -webkit-transform: skewX(36deg);
+  -moz-transform: skewX(36deg);
+  -ms-transform: skewX(36deg);
+  transform: skewX(36deg);
+}
+.skew0 {
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  transform: skewX(0deg);
+}
+.tracklocationflag {
+  background: transparent no-repeat scroll center left;
+  background-size: 110px 55px;
+}
+.track190 {
+  background-image: url('../../f1_2013/flags/f_monaco.png');
+}
+.track184 {
+  background-image: url('../../f1_2013/flags/f_united_arab_em.png');
+}
+.track176 {
+  background-image: url('../../f1_2013/flags/f_belgium.png');
+}
+.track179 {
+  background-image: url('../../f1_2013/flags/f_italy.png');
+}
+.track180 {
+  background-image: url('../../f1_2013/flags/f_catalunya.png');
+}
+.track181 {
+  background-image: url('../../f1_2013/flags/f_hungary.png');
+}
+.track185 {
+  background-image: url('../../f1_2013/flags/f_bahrain.png');
+}
+.track186 {
+  background-image: url('../../f1_2013/flags/f_brazil.png');
+}
+.track189 {
+  background-image: url('../../f1_2013/flags/f_australia.png');
+}
+.track191 {
+  background-image: url('../../f1_2013/flags/f_canada.png');
+}
+.track193 {
+  background-image: url('../../f1_2013/flags/f_malaysia.png');
+}
+.track194 {
+  background-image: url('../../f1_2013/flags/f_china.png');
+}
+.track195 {
+  background-image: url('../../f1_2013/flags/f_singapore.png');
+}
+.track196 {
+  background-image: url('../../f1_2013/flags/f_japan.png');
+}
+.track201 {
+  background-image: url('../../f1_2013/flags/f_britain.png');
+}
+.track202 {
+  background-image: url('../../f1_2013/flags/f_southkorea.png');
+}
+.track205 {
+  background-image: url('../../f1_2013/flags/f_germany.png');
+}
+.track208 {
+  background-image: url('../../f1_2013/flags/f_india.png');
+}
+.track213 {
+  background-image: url('../../f1_2013/flags/f_usa.png');
+}
+.track216 {
+  background-image: url('../../f1_2013/flags/f_spain.png');
+}
+.track217 {
+  background-image: url('../../f1_2013/flags/f_portugal.png');
+}
+.track218 {
+  background-image: url('../../f1_2013/flags/f_italy.png');
+}
+.track219 {
+  background-image: url('../../f1_2013/flags/f_britain.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  .track190 {
+    background-image: url('../../f1_2013/flags/f_monaco@2x.png');
+  }
+  .track184 {
+    background-image: url('../../f1_2013/flags/f_united_arab@2x.png');
+  }
+  .track176 {
+    background-image: url('../../f1_2013/flags/f_belgium@2x.png');
+  }
+  .track179 {
+    background-image: url('../../f1_2013/flags/f_italy@2x.png');
+  }
+  .track180 {
+    background-image: url('../../f1_2013/flags/f_catalunya@2x.png');
+  }
+  .track181 {
+    background-image: url('../../f1_2013/flags/f_hungary@2x.png');
+  }
+  .track185 {
+    background-image: url('../../f1_2013/flags/f_bahrain@2x.png');
+  }
+  .track186 {
+    background-image: url('../../f1_2013/flags/f_brazil@2x.png');
+  }
+  .track189 {
+    background-image: url('../../f1_2013/flags/f_australia@2x.png');
+  }
+  .track191 {
+    background-image: url('../../f1_2013/flags/f_canada@2x.png');
+  }
+  .track193 {
+    background-image: url('../../f1_2013/flags/f_malaysia@2x.png');
+  }
+  .track194 {
+    background-image: url('../../f1_2013/flags/f_china@2x.png');
+  }
+  .track195 {
+    background-image: url('../../f1_2013/flags/f_singapore@2x.png');
+  }
+  .track196 {
+    background-image: url('../../f1_2013/flags/f_japan@2x.png');
+  }
+  .track201 {
+    background-image: url('../../f1_2013/flags/f_britain@2x.png');
+  }
+  .track202 {
+    background-image: url('../../f1_2013/flags/f_southkorea@2x.png');
+  }
+  .track205 {
+    background-image: url('../../f1_2013/flags/f_germany@2x.png');
+  }
+  .track208 {
+    background-image: url('../../f1_2013/flags/f_india@2x.png');
+  }
+  .track213 {
+    background-image: url('../../f1_2013/flags/f_usa@2x.png');
+  }
+  .track216 {
+    background-image: url('../../f1_2013/flags/f_spain@2x.png');
+  }
+  .track217 {
+    background-image: url('../../f1_2013/flags/f_portugal@2x.png');
+  }
+  .track218 {
+    background-image: url('../../f1_2013/flags/f_italy@2x.png');
+  }
+  .track219 {
+    background-image: url('../../f1_2013/flags/f_britain@2x.png');
+  }
+}
+.box_inner {
+  background-color: transparent;
+}
+#event_details {
+  display: table;
+  margin-top: 12px;
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.event_detail {
+  display: table-row;
+  word-wrap: break-word;
+}
+.event_detail .key {
+  display: table-cell;
+  padding: 0px 0px 11px;
+  font-family: 'Conduit_Bold';
+  overflow: hidden;
+  width: 135px;
+}
+.event_detail .value {
+  display: table-cell;
+  padding: 0px 0px 11px;
+}
+#event_others_wrapper {
+  display: block;
+  float: none;
+  overflow: hidden;
+  text-align: right;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.event_times {
+  float: left;
+  clear: both;
+  display: block;
+  /*font-size: 0.75em;*/
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 18px 18px 9px 18px;
+  /*
+    position:absolute;
+    bottom:32px;
+    */
+  margin-top: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.rne_row .track a {
+  color: #c0d2db;
+}
+.rne_row .track a.extlnk {
+  padding-right: 28px;
+  background: transparent url('../../f1_2013/go.png') scroll no-repeat right 1px;
+  background-size: 18px 18px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  .rne_row .track a.extlnk {
+    background-image: url('../../f1_2013/go@2x.png');
+  }
+}
+.rne_row.selected .track a {
+  color: black;
+}
+.event_time {
+  float: left;
+  display: inline-block;
+  width: 32%;
+  margin-left: 1.5%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.event_time:first-child {
+  margin-left: 0px;
+}
+#event_personalbest {
+  width: auto;
+  float: left;
+  clear: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#event_personalbest .time_time_name {
+  font-size: 2em;
+  width: auto;
+}
+#event_racenetbest,
+#event_friendbest {
+  width: auto;
+  float: right;
+  clear: right;
+}
+#event_racenetbest .time_title,
+#event_friendbest .time_title {
+  float: right;
+  clear: right;
+  width: auto;
+}
+#event_racenetbest .time_time_name,
+#event_friendbest .time_time_name {
+  float: right;
+  clear: right;
+  width: auto;
+}
+#event_racenetbest .time_time,
+#event_friendbest .time_time {
+  font-size: 1em;
+  position: relative;
+  top: -2px;
+}
+#event_racenetbest .time_name,
+#event_friendbest .time_name {
+  display: none;
+}
+/* switch order of boxes as per wireframe - remove this section to change back to [STATS] [TRACK] */
+
+#event_flag_container {
+  float: left;
+  clear: left;
+  width: 51.6%;
+  margin: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#event_flag_container_image {
+  float: left;
+  clear: both;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#event_flag_container_social {
+  float: left;
+  clear: both;
+  width: 100%;
+  position: relative;
+  margin-top: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+button.nmSocialButton {
+  clear: none;
+  display: inline-block;
+  margin: 0px;
+}
+#event_flag {
+  width: 100%;
+  background: transparent url('../../f1_2013/events/event-placeholder-wide.jpg') no-repeat scroll left top;
+  background-size: cover;
+}
+#requires_dlc {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px), only screen and (max-width: 400px) {
+  #requires_dlc {
+    position: static;
+  }
+}
+#requires_dlc .nmBorderedButton {
+  margin-right: 0.5em;
+  white-space: nowrap;
+  padding: 4px 10px;
+}
+#requires_dlc_padding {
+  padding: 15px;
+  word-wrap: break-word;
+}
+#requires_dlc_message {
+  font-size: 0.8em;
+  line-height: 1em;
+}
+#requires_dlc_links {
+  clear: both;
+}
+.requires_dlc_link {
+  display: inline-block;
+  margin-bottom: 0.15em;
+}
+#track_stats {
+  clear: right;
+  margin-top: 18px;
+}
+#track_view_controls {
+  float: left;
+  text-align: left;
+}
+/* end of order switch */
+
+#track_stats {
+  color: white;
+  text-transform: uppercase;
+}
+#track_location_name {
+  float: left;
+  display: inline-block;
+  clear: both;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding-left: 102px;
+  margin-bottom: 18px;
+  background-position: left 7px;
+}
+#track_location {
+  font-family: 'Conduit_Bold';
+  float: left;
+  display: inline-block;
+  font-size: 1.5em;
+  clear: both;
+  padding-left: 16px;
+}
+#track_name {
+  display: inline-block;
+  float: left;
+  font-size: 1.2em;
+  clear: both;
+}
+#track_wetdry_filter {
+  display: none;
+}
+.time_title,
+.time_time,
+.time_name {
+  float: left;
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.time_time {
+  font-family: 'Conduit_Bold';
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1px 0px 4px;
+}
+.elb_box {
+  margin-top: 24px;
+}
+.ehist_box {
+  margin-top: 24px;
+}
+.tc_team {
+  display: none;
+}
+.table1 .tc_time,
+.table1 .tc_gap {
+  width: 150px;
+}
+.ehist_box .table1 {
+  font-size: 0.8em;
+  width: auto;
+}
+.ehist_box table.table1 {
+  width: 100%;
+  table-layout: auto;
+}
+.ehist_box table.table1 tr td {
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+.ehist_box table.table1 tr th:first-child,
+.ehist_box table.table1 tr td:first-child {
+  border-radius: 0px;
+}
+.ehist_box table.table1 tr td {
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+.ehist_box table.table1 tr.hovered td {
+  background-color: #0091c8;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+.ehist_box table.table1 tr.hovered td.tc_nobg {
+  background-color: black;
+}
+.ehist_box table.table1 tr.selected td {
+  background-color: #bedcf0;
+  cursor: default;
+  color: black;
+}
+.ehist_box table.table1 tr.unselectable td {
+  background-color: #646464;
+  cursor: default;
+}
+.ehist_box .table1 th:last-child,
+.ehist_box .table1 tr td:last-child {
+  border-radius: 0px;
+}
+.top_event_btn {
+  float: left;
+  clear: both;
+  font-size: 0.9em;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.4);
+}
+.vsmobile {
+  display: none;
+}
+#event_id_controls {
+  float: left;
+  text-align: left;
+  clear: both;
+  width: 100%;
+  font-size: 1.5em;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#event_id_controls > a {
+  display: inline-block;
+}
+#event_id_controls .event_id_control_most_recent {
+  float: right;
+  padding-right: 10px;
+}
+.elb_box.box_outer .box_content {
+  padding-left: 0px;
+}
+.elb_box.box_outer .table1 th:first-child,
+.elb_box.box_outer .table1 tr td:first-child {
+  border-radius: 0px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
+  #event_flag {
+    background: transparent url('../../f1_2013/events/event-placeholder-wide.jpg') no-repeat scroll left top;
+  }
+}
+.verticaltimes #event_others_wrapper {
+  float: left;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.verticaltimes #event_racenetbest,
+.verticaltimes #event_friendbest {
+  float: left;
+  clear: left;
+}
+.verticaltimes #event_racenetbest .time_title,
+.verticaltimes #event_friendbest .time_title {
+  float: left;
+  clear: left;
+}
+.verticaltimes #event_racenetbest .time_time_name,
+.verticaltimes #event_friendbest .time_time_name {
+  float: left;
+  clear: left;
+}
+.verticaltimes .event_time {
+  margin-left: 0px;
+}
+.horizontaltimes #event_others_wrapper {
+  float: right;
+  clear: right;
+  width: auto;
+}
+.horizontaltimes #event_racenetbest,
+.horizontaltimes #event_friendbest {
+  float: right;
+  clear: right;
+}
+.horizontaltimes #event_racenetbest .time_title,
+.horizontaltimes #event_friendbest .time_title {
+  float: right;
+  clear: right;
+}
+.horizontaltimes #event_racenetbest .time_time_name,
+.horizontaltimes #event_friendbest .time_time_name {
+  float: right;
+  clear: right;
+}
+.horizontaltimes .event_time {
+  margin-left: 0px;
+}
+.pagination_col {
+  background-color: transparent !important;
+  color: #c0d2db !important;
+  width: 20px;
+}
+.info_se {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px), only screen and (max-width: 400px) {
+  .lang-en #event_others_wrapper {
+    float: left;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .lang-en #event_racenetbest,
+  .lang-en #event_friendbest {
+    float: left;
+    clear: left;
+  }
+  .lang-en #event_racenetbest .time_title,
+  .lang-en #event_friendbest .time_title {
+    float: left;
+    clear: left;
+  }
+  .lang-en #event_racenetbest .time_time_name,
+  .lang-en #event_friendbest .time_time_name {
+    float: left;
+    clear: left;
+  }
+  .lang-en .event_time {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1090px), only screen and (max-width: 428px) {
+  .lang-fr #event_others_wrapper {
+    float: left;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .lang-fr #event_racenetbest,
+  .lang-fr #event_friendbest {
+    float: left;
+    clear: left;
+  }
+  .lang-fr #event_racenetbest .time_title,
+  .lang-fr #event_friendbest .time_title {
+    float: left;
+    clear: left;
+  }
+  .lang-fr #event_racenetbest .time_time_name,
+  .lang-fr #event_friendbest .time_time_name {
+    float: left;
+    clear: left;
+  }
+  .lang-fr .event_time {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px), only screen and (max-width: 400px) {
+  .lang-it #event_others_wrapper {
+    float: left;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .lang-it #event_racenetbest,
+  .lang-it #event_friendbest {
+    float: left;
+    clear: left;
+  }
+  .lang-it #event_racenetbest .time_title,
+  .lang-it #event_friendbest .time_title {
+    float: left;
+    clear: left;
+  }
+  .lang-it #event_racenetbest .time_time_name,
+  .lang-it #event_friendbest .time_time_name {
+    float: left;
+    clear: left;
+  }
+  .lang-it .event_time {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1240px), only screen and (max-width: 555px) {
+  .lang-de #event_others_wrapper {
+    float: left;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .lang-de #event_racenetbest,
+  .lang-de #event_friendbest {
+    float: left;
+    clear: left;
+  }
+  .lang-de #event_racenetbest .time_title,
+  .lang-de #event_friendbest .time_title {
+    float: left;
+    clear: left;
+  }
+  .lang-de #event_racenetbest .time_time_name,
+  .lang-de #event_friendbest .time_time_name {
+    float: left;
+    clear: left;
+  }
+  .lang-de .event_time {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1099px), only screen and (max-width: 424px) {
+  .lang-es #event_others_wrapper {
+    float: left;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .lang-es #event_racenetbest,
+  .lang-es #event_friendbest {
+    float: left;
+    clear: left;
+  }
+  .lang-es #event_racenetbest .time_title,
+  .lang-es #event_friendbest .time_title {
+    float: left;
+    clear: left;
+  }
+  .lang-es #event_racenetbest .time_time_name,
+  .lang-es #event_friendbest .time_time_name {
+    float: left;
+    clear: left;
+  }
+  .lang-es .event_time {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1099px), only screen and (max-width: 424px) {
+  .lang-pt #event_others_wrapper {
+    float: left;
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .lang-pt #event_racenetbest,
+  .lang-pt #event_friendbest {
+    float: left;
+    clear: left;
+  }
+  .lang-pt #event_racenetbest .time_title,
+  .lang-pt #event_friendbest .time_title {
+    float: left;
+    clear: left;
+  }
+  .lang-pt #event_racenetbest .time_time_name,
+  .lang-pt #event_friendbest .time_time_name {
+    float: left;
+    clear: left;
+  }
+  .lang-pt .event_time {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1169px) {
+  .lang-it .ev_box .box_header,
+  .lang-it .ev_box .box_subheader {
+    width: 101%;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    border-radius: 0px;
+    left: 0px;
+  }
+  .lang-it .ev_box .box_header_text,
+  .lang-it .ev_box .box_subheader_text {
+    height: auto;
+    padding: 0px 10px;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    word-wrap: break-word;
+  }
+  .lang-it .ev_box .box_header,
+  .lang-it .ev_box .box_header_text,
+  .lang-it .ev_box .box_subheader,
+  .lang-it .ev_box .box_subheader_text {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: normal;
+  }
+  .lang-it .ev_box .box_header_container {
+    width: 100%;
+  }
+  .lang-it .ev_box .box_header,
+  .lang-it .ev_box .box_subheader {
+    width: 101%;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    border-radius: 0px;
+    left: 0px;
+  }
+  .lang-it .ev_box .box_header_text,
+  .lang-it .ev_box .box_subheader_text {
+    height: auto;
+    padding: 0px 10px;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    word-wrap: break-word;
+  }
+  .lang-it .ev_box .box_header,
+  .lang-it .ev_box .box_header_text,
+  .lang-it .ev_box .box_subheader,
+  .lang-it .ev_box .box_subheader_text {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: normal;
+  }
+  .lang-it .ev_box .box_header_container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1104px) {
+  .lang-es .ev_box .box_header,
+  .lang-es .ev_box .box_subheader {
+    width: 101%;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    border-radius: 0px;
+    left: 0px;
+  }
+  .lang-es .ev_box .box_header_text,
+  .lang-es .ev_box .box_subheader_text {
+    height: auto;
+    padding: 0px 10px;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    word-wrap: break-word;
+  }
+  .lang-es .ev_box .box_header,
+  .lang-es .ev_box .box_header_text,
+  .lang-es .ev_box .box_subheader,
+  .lang-es .ev_box .box_subheader_text {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: normal;
+  }
+  .lang-es .ev_box .box_header_container {
+    width: 100%;
+  }
+  .lang-es .ev_box .box_header,
+  .lang-es .ev_box .box_subheader {
+    width: 101%;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    border-radius: 0px;
+    left: 0px;
+  }
+  .lang-es .ev_box .box_header_text,
+  .lang-es .ev_box .box_subheader_text {
+    height: auto;
+    padding: 0px 10px;
+    -webkit-transform: skewX(0deg);
+    -moz-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+    word-wrap: break-word;
+  }
+  .lang-es .ev_box .box_header,
+  .lang-es .ev_box .box_header_text,
+  .lang-es .ev_box .box_subheader,
+  .lang-es .ev_box .box_subheader_text {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: normal;
+  }
+  .lang-es .ev_box .box_header_container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  /*#event_details { table-layout: fixed; }*/
+  
+  .vsmobile {
+    display: inline-block;
+  }
+  .table1 .weather {
+    display: none;
+  }
+  .table1 .team {
+    display: none;
+  }
+  .table1 .vsmob_weather {
+    display: block;
+    clear: both;
+    margin: 0px;
+  }
+  .table1 .vsmob_weather:before {
+    content: "";
+  }
+  .table1 .vsmob_team {
+    display: block;
+    clear: both;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .elb_box.box_outer .box_content {
+    padding-right: 0px;
+  }
+  #track_view_container {
+    height: auto;
+    min-height: 330px;
+    float: none;
+    clear: both;
+  }
+  #event_flag_container {
+    float: none;
+    clear: both;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px;
+  }
+  #event_flag {
+    background-position: center top;
+  }
+  #track_view_controls {
+    float: left;
+    clear: both;
+  }
+  .event_times {
+    float: left;
+    clear: both;
+    position: static;
+    width: 100%;
+  }
+  #event_racenetbest,
+  #event_friendbest {
+    float: right;
+    clear: right;
+  }
+  #right {
+    background-attachment: scroll !important;
+    background-position: left top !important;
+  }
+  /*#event_details { table-layout: fixed; }*/
+  
+  .ehist_box .table1 {
+    font-size: 0.7em;
+  }
+  .ehist_box .table1 .whose {
+    word-wrap: break-word;
+  }
+  .table1 th.tc_lastdatacell,
+  .table1 tr td.tc_lastdatacell {
+    border-radius: 0px;
+  }
+  .tc_ctrl,
+  .tc_spacer {
+    display: none;
+  }
+  .elb_box.box_outer .box_content {
+    padding: 12px;
+  }
+  .tc_name .full {
+    display: block;
+  }
+  .tc_name .reduced {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ehist_box table.table1 .res {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #outer_wrapper {
+    font-size: 13.5pt;
+  }
+  #lb_table {
+    font-size: 0.7em;
+  }
+  #lb_table {
+    font-size: 0.59em;
+  }
+  #track_people_filter {
+    width: 100%;
+    clear: both;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .opt_mobile select {
+    display: block;
+    width: 100%;
+    clear: both;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .opt_mobile input[type=radio],
+  .opt_mobile label {
+    display: none;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .ehist_box table.table1 {
+    table-layout: fixed;
+  }
+  .ehist_box table.table1 .evlink_col {
+    width: 50px;
+    padding: 0px;
+  }
+  .ehist_box table.table1 .exp {
+    display: none;
+  }
+  .ehist_box table.table1 .whose {
+    width: 152px;
+  }
+  .ehist_box table.table1 .pagination_col {
+    padding: 0px;
+  }
+  .ehist_box table.table1 .pagination_col button {
+    padding: 4px 4px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #lb_table {
+    font-size: 0.7em;
+  }
+  .table1 th.tc_pos span {
+    display: none;
+  }
+  .table1 .tc_time {
+    width: 76px;
+  }
+  .table1 .tc_pos {
+    width: 50px;
+  }
+  .table1 .tc_gap {
+    display: none;
+  }
+  .table1 th {
+    padding: 2px;
+  }
+  .table1 td {
+    padding: 2px;
+  }
+  .vsmobile {
+    display: inline-block;
+  }
+  .table1 .exp {
+    display: none;
+  }
+  .ehist_box .table1 {
+    font-size: 0.66em;
+  }
+  #outer_wrapper {
+    font-size: 13.5pt;
+  }
+  #outer_content {
+    padding: 0px;
+  }
+  #lb_table {
+    font-size: 0.59em;
+  }
+  label.f1_rb {
+    min-width: 100px;
+    font-size: 0.62em;
+  }
+  #event_personalbest .time_time {
+    font-size: 1em;
+  }
+  .ehist_box table.table1 {
+    table-layout: fixed;
+  }
+  .ehist_box table.table1 .whose {
+    width: 102px;
+  }
+  .ehist_box table.table1 .evlink_col {
+    width: 42px;
+  }
+  a.nmBorderedButton {
+    padding: 4px 6px 5px;
+  }
+  a.nmBorderedButton img {
+    top: -1px;
+  }
+  button.nmBorderedButton {
+    padding: 4px 3px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .ehist_box table.table1 .res {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .table1 .tc_time {
+    width: 72px;
+  }
+  .table1 .tc_gap {
+    display: none;
+  }
+  #track_view_container_outer,
+  #track_view_container {
+    height: auto;
+    min-height: 210px;
+    float: left;
+    clear: both;
+  }
+  #track_view_img {
+    height: 210px;
+  }
+  #event_racenetbest,
+  #event_friendbest {
+    float: left;
+    clear: both;
+    margin: 0px;
+  }
+  /*#event_details { table-layout:fixed; }*/
+  
+  #event_others_wrapper {
+    float: left;
+  }
+}

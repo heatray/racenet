@@ -1,0 +1,100 @@
+.bs {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* Container */
+
+.dk_theme_f12014.dk_container {
+  background: transparent;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* Toggle */
+
+.dk_theme_f12014 .dk_toggle {
+  width: 100%;
+  min-width: 300px;
+  max-width: 500x;
+  position: relative;
+  top: 2px;
+  width: auto !important;
+  font-family: 'Conduit_Bold';
+  font-weight: normal;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: #062c37;
+  background: url('../F1_2014/dropdown.png') scroll no-repeat right top;
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.dk_open .dk_toggle,
+.dk_open .dk_label {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+.dk_label {
+  position: relative;
+  display: inline-block;
+}
+/* Focus State */
+
+.dk_theme_f12014.dk_focus .dk_toggle {
+  box-shadow: none;
+}
+/* Open State */
+
+.dk_theme_f12014.dk_open {
+  box-shadow: none;
+}
+/* Options Menu */
+
+.dk_theme_f12014 .dk_options {
+  margin-top: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Conduit';
+  border-radius: 0px;
+  bottom: auto !important;
+  top: 27px !important;
+}
+.dk_theme_f12014 .dk_options a {
+  text-shadow: none;
+  color: white;
+  background-color: rgba(0, 43, 61, 0.5);
+  border-bottom: none;
+  font-size: 15pt;
+  white-space: nowrap;
+}
+.dk_theme_f12014 .dk_options a:hover,
+.dk_theme_f12014 .dk_option_current a {
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* Inner options */
+
+.dk_theme_f12014 .dk_options_inner {
+  border-radius: 0px;
+  list-style: none inside none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* Set a width property here */
+
+/*width:357px; }*/
+
+.dk_theme_f12014 .dk_options_inner li {
+  overflow: hidden;
+}
